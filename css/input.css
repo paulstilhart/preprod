@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    /* font-family: "Francois One", sans-serif;  */
+  }
+}
+
+
+
+@layer components {
+  /*   a,
+  button {
+    @apply cursor-pointer
+  } */
+
+  .title_h1 {
+    @apply font-francoisone font-normal uppercase text-title_h1_mobile md:text-title_h1;
+  }
+
+  .title_h2 {
+    @apply font-francoisone font-normal uppercase text-title_h2_mobile md:text-title_h2;
+  }
+
+  .title_h3 {
+    @apply font-francoisone font-normal uppercase text-title_h3_mobile md:text-title_h3;
+  }
+
+  .title_h4 {
+    @apply font-francoisone font-normal uppercase text-title_h4_mobile md:text-title_h4;
+  }
+
+  .title_h5 {
+    @apply font-francoisone font-normal uppercase text-title_h5_mobile md:text-title_h5;
+  }
+
+  .title_h6 {
+    @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_h6;
+  }
+  .title_mini {
+    @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
+  }
+
+  .body_bold_xl {
+    @apply font-manrope font-bold text-body_xl;
+  }
+
+  .body_bold_lg {
+    @apply font-manrope font-bold text-body_lg;
+  }
+
+  .body_bold_base {
+    @apply font-manrope font-bold text-body_base;
+  }
+
+  .body_bold_sm {
+    @apply font-manrope font-bold text-body_sm;
+  }
+
+  .body_bold_xs {
+    @apply font-manrope font-bold text-body_xs;
+  }
+
+  .body_semibold_xl {
+    @apply font-manrope font-semibold text-body_xl;
+  }
+
+  .body_semibold_lg {
+    @apply font-manrope font-semibold text-body_lg;
+  }
+
+  .body_semibold_base {
+    @apply font-manrope font-semibold text-body_base;
+  }
+
+  .body_semibold_sm {
+    @apply font-manrope font-semibold text-body_sm;
+  }
+
+  .body_semibold_xs {
+    @apply font-manrope font-semibold text-body_xs;
+  }
+
+  .body_medium_xl {
+    @apply font-manrope font-medium text-body_xl;
+  }
+
+  .body_medium_lg {
+    @apply font-manrope font-medium text-body_lg;
+  }
+
+  .body_medium_base {
+    @apply font-manrope font-medium text-body_base;
+  }
+
+  .body_medium_sm {
+    @apply font-manrope font-medium text-body_sm;
+  }
+
+  .body_medium_xs {
+    @apply font-manrope font-medium text-body_xs;
+  }
+
+  .body_regular_xl {
+    @apply font-manrope font-normal text-body_xl;
+  }
+
+  .body_regular_lg {
+    @apply font-manrope font-normal text-body_lg;
+  }
+
+  .body_regular_base {
+    @apply font-manrope font-normal text-body_base;
+  }
+
+  .body_regular_sm {
+    @apply font-manrope font-normal text-body_regular_sm;
+  }
+
+  .body_regular_xs {
+    @apply font-manrope font-normal text-body_xs;
+  }
+
+  .body_regular_xs {
+    @apply font-manrope font-normal text-body_xs;
+  }
+
+  /* evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px) 1280 (120px)  */
+  .wrapper_1440 {
+    @apply max-w-1440 mx-auto px-4 md:px-8 lg:px-16 xl:px-31;
+  }
+
+}
+
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no_scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no_scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+}
+
+
+
+/* Enlever chrome autofill color pour les inputs => solution mettre une transition très longie */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
+  -webkit-transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
+}
+
+/* Pour les inputs avec un style imposé sur safari */
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
