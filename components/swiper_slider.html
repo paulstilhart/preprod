@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>SWIPER SLIDER</title>
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+    <!-- alpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+
+    <div class="bg-green-500 h-screen flex flex-col justify-center items-center">
+  
+        <div 
+          class="max-w-4xl mx-auto relative"
+          x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
+         >
+          <!-- Slides -->
+          <template x-for="slide in slides" :key="slide">
+            <div
+               x-show="activeSlide === slide"
+               class="p-24 font-bold text-5xl h-64 flex items-center bg-green-500 text-white rounded-lg">
+              <span class="w-12 text-center" x-text="slide"></span>
+              <span class="text-green-300">/</span>
+              <span class="w-12 text-center" x-text="slides.length"></span>
+            </div>
+          </template>
+          
+          <!-- Prev/Next Arrows -->
+          <div class="absolute inset-0 flex">
+            <div class="flex items-center justify-start w-1/2">
+              <button 
+                class="bg-green-100 text-green-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
+                &#8592;
+               </button>
+            </div>
+            <div class="flex items-center justify-end w-1/2">
+              <button 
+                class="bg-green-100 text-green-500 hover:text-orange-500 font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
+                x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
+                &#8594;
+              </button>
+            </div>        
+          </div>
+      
+          <!-- Buttons -->
+          <div class="absolute w-full flex items-center justify-center px-4">
+            <template x-for="slide in slides" :key="slide">
+              <button
+                class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-green-600 hover:shadow-lg"
+                :class="{ 
+                    'bg-orange-600': activeSlide === slide,
+                    'bg-green-300': activeSlide !== slide 
+                }" 
+                x-on:click="activeSlide = slide"
+              ></button>
+            </template>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+
+
+
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -53,8 +53,17 @@
   .title_h6 {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_h6;
   }
+
   .title_mini {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
+  }
+
+  .title_drop {
+    @apply font-francoisone font-normal text-title_drop_mobile md:text-title_drop;
+  }
+
+  .title_drop_2 {
+    @apply font-francoisone font-normal text-title_drop_2_mobile md:text-title_drop_2;
   }
 
   .body_bold_xl {
@@ -143,9 +152,8 @@
 
   /* evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px) 1280 (120px)  */
   .wrapper_1440 {
-    @apply max-w-1440 mx-auto px-4 md:px-8 lg:px-16 xl:px-31;
+    @apply max-w-1440 mx-auto px-4 md:px-8 lg:px-16 xl:px-30;
   }
-
 }
 
 
@@ -182,3 +190,5 @@ input {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
+
+

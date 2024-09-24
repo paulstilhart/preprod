@@ -118,6 +118,11 @@ module.exports = {
       title_h6_mobile: ["1rem", "1.25"], // 16px 20px
       title_mini: ["1rem", "1.5"], // 16px 24px
 
+      title_drop :["1.25rem", "1.5"], // 20px 30px
+      title_drop_mobile :["1.1rem", "1.5"], // 17.6px 26.4px
+      title_drop_2 :["0.85rem", "1.5"], // 13.6px 20.4px
+      title_drop_2_mobile :["0.75rem", "1.5"], // 12px 18px
+
       body_xl: ["1.25rem", "1.5"], // 20px 30px
       body_lg: ["1.125rem", "1.5"], // 18px 27px
       body_base: ["1rem", "1.5"], // 16px 24px
@@ -143,7 +148,7 @@ module.exports = {
         reviews:
           "0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00)",
 
-        cards: "0px 4px 80px 0px rgba(89, 57, 13, 0.10)",
+        cards: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)",//0px 4px 80px 0px rgba(89, 57, 13, 0.10)
       },
 
       spacing: {
