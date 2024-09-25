@@ -54,6 +54,11 @@
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_h6;
   }
 
+  .title_h6_nomq {
+    @apply font-francoisone font-normal uppercase text-title_h6;
+  }
+
+
   .title_mini {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
   }
@@ -150,9 +155,9 @@
     @apply font-manrope font-normal text-body_xs;
   }
 
-  /* evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px) 1280 (120px)  */
+  /* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
   .wrapper_1440 {
-    @apply max-w-1440 mx-auto px-4 md:px-8 lg:px-16 xl:px-30;
+    @apply max-w-1328 mx-auto px-4 md:px-8 lg:px-16;
   }
 }
 
@@ -172,23 +177,24 @@
     /* Firefox */
   }
 
+
+  /* Enlever chrome autofill color pour les inputs => solution mettre une transition très longie */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
+    -webkit-transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
+  }
+
+  /* Pour les inputs avec un style imposé sur safari */
+  input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
 }
-
-
-
-/* Enlever chrome autofill color pour les inputs => solution mettre une transition très longie */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
-  -webkit-transition: color 9999s ease-out 9999s, background-color 9999s ease-out 9999s;
-}
-
-/* Pour les inputs avec un style imposé sur safari */
-input {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
-
-

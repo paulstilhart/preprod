@@ -32,10 +32,5 @@ const swiper = new Swiper(".swiper_cards_homepage", {
       slidesOffsetBefore:64,
       slidesOffsetAfter:16,
     },
-    1280: {
-      spaceBetween: 32,
-      slidesOffsetBefore:120,
-      slidesOffsetAfter:16,
-    },
   },
 });

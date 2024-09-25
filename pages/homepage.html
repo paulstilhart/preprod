@@ -9,9 +9,12 @@
 
     <title>HOMEPAGE</title>
 
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
 
-    <!-- alpineJS CDN -->
+    <!-- Alpine Core CDN -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 
     <!-- swiperJS CDN version 11 -->
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -25,9 +28,98 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body class="overflow-x-hidden">
+<body x-data="{ openheadermobile: false }" 
+    x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden aria-expanded:overflow-y-hidden lg:!overflow-y-auto">
 
-    <header></header>
+    <header class="sticky top-0 z-50 left-0 w-full bg-neutrals-white text-green shadow-md">
+
+        <div
+            class="relative z-50 lg:!hidden wrapper_1440 flex justify-between items-center h-16 w-full border-b border-[#EAEAEB]">
+            <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+            <div class="flex items-center gap-3">
+                <a href="/" class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
+                bg-cart_green bg-center bg-no-repeat [length:50%_auto] ring-1 ring-green ring-inset"></a>
+                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
+                bg-menu_green bg-center bg-no-repeat [length:50%_auto]"></button>
+            </div>
+        </div>
+
+        <nav x-show="openheadermobile" x-cloak x-transition
+            class="bg-neutrals-white z-40 fixed top-0 left-0 w-full !h-dvh h-screen !min-h-svh lg:!h-auto lg:!min-h-0 overflow-y-auto 
+            lg:!static lg:!flex flex-col-reverse  ">
+
+            <div
+                class="relative lg:static flex-auto wrapper_1440 w-full min-h-16 py-22 lg:py-2 flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+
+                <a href="/"
+                    class="flex-none hidden lg:inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+
+                <div
+                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
+                    <div class="title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
+                        <a href="/" aria-selected="true"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block after:content-[''] after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block after:content-[''] after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
+                            centres de vacances</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block after:content-[''] after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
+                            pratiques</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block after:content-[''] after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
+                    </div>
+                    <div class="flex lg:items-center gap-x-2">
+
+                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                            aria-controls="dropdownmenu" class="group relative">
+                            <div x-on:click="opendropdown = ! opendropdown"
+                                class="relative z-40 cursor-pointer  body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
+                                <span class="inline-block">Les colos par thématique</span>
+                                <span
+                                    class="flex-none inline-block w-3.5 h-3.5 bg-carret_down bg-center bg-no-repeat bg-contain group-aria-expanded:rotate-180 transition-transform"></span>
+                            </div>
+
+                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
+                            flex flex-col gap-2 body_bold_base text-neutrals-dark bg-kidyellow">
+                                <a href="/">Les colos sportives</a>
+                                <a href="/">Les colos culturelles</a>
+                                <a href="/">Les colos scientifiques</a>
+                                <a href="/">Les colos sportives</a>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="absolute bottom-6 lg:static body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
+                            <span
+                                class="flex-none inline-block w-3.5 h-3.5 bg-user_green bg-center bg-no-repeat bg-contain"></span>
+                            <span class="inline-block">Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+            class="bg-camel lg:bg-neutrals-white py-6 lg:py-0 body_bold_sm wrapper_1440 w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between  items-start lg:items-center gap-6 border-b border-white lg:border-dark-200">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+                <a href="">Pourquoi choisir Gocolo ?</a>
+                <a href="">Nos colonie de vacances</a>
+            </div>
+
+            <div class="flex justify-between items-center gap-6">
+                <a href="/" class="hidden lg:flex items-center gap-2">
+                    <span
+                        class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
+                    <span class="inline-block">Mon panier</span>
+                </a>
+                <a href="tel:0033471782243" class="body_semibold_sm  flex items-center gap-2">
+                    <span
+                        class="flex-none inline-block w-4.5 h-4.5 bg-phone_green bg-center bg-no-repeat bg-contain"></span>
+                    <span class="inline-block">04 71 78 22 43</span>
+                </a>
+            </div>
+        </div>
+        </nav>
+
+    </header>
 
     <main>
         <section class="  bg-[url('../sources/img/homepage/homepage_banner.jpeg')] bg-center bg-cover bg-no-repeat relative 
@@ -52,7 +144,7 @@
 
             <div class="wrapper_1440 py-10 md:pt-18 md:pb-20">
                 <p class="title_h2 text-green pb-18 text-left md:text-center">Explorez nos <span
-                        class="inline-block relative after:content-[''] after:inline-block after:absolute after:bottom-[-5px] after:left-[-2.5%] after:h-[11px] after:w-[105%] after:bg-[url('../sources/img/homepage/homepage_vector/homepage_vector_section2_underline.svg')] after:bg-center after:bg-contain after:bg-no-repeat">thématiques</span>
+                        class="inline-block relative after:content-[''] after:inline-block after:absolute after:bottom-[-3px] after:left-[-2.5%] after:h-[11px] after:w-[105%] after:bg-[url('../sources/img/homepage/homepage_vector/homepage_vector_section2_underline.svg')] after:bg-center after:bg-contain after:bg-no-repeat">thématiques</span>
                     de colonies</p>
 
                 <div
@@ -159,7 +251,7 @@
 
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             culturelle</span>
                                         <p class="title_h5">COLONIE CABANE EN FORÊT</p>
                                         <p class="body_medium_sm">Tu as toujours rêvé d'être comme Robinson Crusoé ...
@@ -211,7 +303,7 @@
 
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             sportive</span>
                                         <p class="title_h5">Colonie découverte du poney</p>
                                         <p class="body_medium_sm">Tu as toujours rêvé de découvrir le monde équestre.
@@ -261,7 +353,7 @@
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             sportive</span>
                                         <p class="title_h5">Colonie Multisport montagne</p>
                                         <p class="body_medium_sm">Découvre la montagne sous un angle que tu n'as jamais
@@ -311,7 +403,7 @@
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             sportive</span>
                                         <p class="title_h5">Colonie Multisport montagne</p>
                                         <p class="body_medium_sm">Découvre la montagne sous un angle que tu n'as jamais
@@ -361,7 +453,7 @@
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             sportive</span>
                                         <p class="title_h5">Colonie Multisport montagne</p>
                                         <p class="body_medium_sm">Découvre la montagne sous un angle que tu n'as jamais
@@ -411,7 +503,7 @@
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
                                         <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-full">Colo
+                                            class="bg-kidorange-100 text-neonorange inline-block w-fit title_mini px-2 rounded-2xl">Colo
                                             sportive</span>
                                         <p class="title_h5">Colonie Multisport montagne</p>
                                         <p class="body_medium_sm">Découvre la montagne sous un angle que tu n'as jamais
@@ -570,7 +662,7 @@
                             heure
                             de Clermont-Ferrand, dans un ancien corps de ferme.</p>
                         <a href=""
-                            class="body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                            class="body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
                             <span class="inline-block">Découvrir le lieu</span>
                             <span
                                 class="flex-none inline-block w-3.5 h-3.5 bg-arrow_narrow bg-center bg-no-repeat bg-contain"></span>
@@ -610,7 +702,7 @@
                             heure
                             de Clermont-Ferrand, dans un ancien corps de ferme.</p>
                         <a href=""
-                            class="body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                            class="body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ">
                             <span class="inline-block">Découvrir le lieu</span>
                             <span
                                 class="flex-none inline-block w-3.5 h-3.5 bg-arrow_narrow bg-center bg-no-repeat bg-contain"></span>
@@ -709,10 +801,11 @@
 
                     <div class="flex-auto flex flex-col gap-4">
 
-                        <div x-data="{ open: false }" x-bind:aria-expanded="open" aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
                         aria-expanded:outline-neonorange aria-expanded:outline-2">
 
-                            <div x-on:click="open = ! open"
+                            <div x-on:click="openaccordion = ! openaccordion"
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p class="body_bold_lg text-dark-700 group-aria-expanded:text-neonorange">Aux enfants de
                                     quel âge s’adressent vos colonies ?</p>
@@ -720,7 +813,8 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded:bg-close_red"></span>
                             </div>
 
-                            <div x-show="open" x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
+                            <div x-show="openaccordion" x-cloak x-transition
+                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
                                 <p class="body_bold_base">Les intérêts personnels de l’enfant</p>
                                 <p class="body_regular_base">Il est essentiel de tenir compte des intérêts et des
                                     passions
@@ -745,10 +839,11 @@
                             </div>
                         </div>
 
-                        <div x-data="{ open: false }" x-bind:aria-expanded="open" aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
                         aria-expanded:outline-neonorange aria-expanded:outline-2">
 
-                            <div x-on:click="open = ! open"
+                            <div x-on:click="openaccordion = ! openaccordion"
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p class="body_bold_lg text-dark-700 group-aria-expanded:text-neonorange">Quelles sont
                                     les
@@ -757,7 +852,8 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded:bg-close_red"></span>
                             </div>
 
-                            <div x-show="open" x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
+                            <div x-show="openaccordion" x-cloak x-transition
+                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
                                 <p class="body_bold_base">Les intérêts personnels de l’enfant</p>
                                 <p class="body_regular_base">Il est essentiel de tenir compte des intérêts et des
                                     passions
@@ -782,10 +878,11 @@
                             </div>
                         </div>
 
-                        <div x-data="{ open: false }" x-bind:aria-expanded="open" aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
                         aria-expanded:outline-neonorange aria-expanded:outline-2">
 
-                            <div x-on:click="open = ! open"
+                            <div x-on:click="openaccordion = ! openaccordion"
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p class="body_bold_lg text-dark-700 group-aria-expanded:text-neonorange">Pourquoi
                                     partir en
@@ -794,7 +891,8 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded:bg-close_red"></span>
                             </div>
 
-                            <div x-show="open" x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
+                            <div x-show="openaccordion" x-cloak x-transition
+                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
                                 <p class="body_bold_base">Les intérêts personnels de l’enfant</p>
                                 <p class="body_regular_base">Il est essentiel de tenir compte des intérêts et des
                                     passions
@@ -819,10 +917,11 @@
                             </div>
                         </div>
 
-                        <div x-data="{ open: false }" x-bind:aria-expanded="open" aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
                         aria-expanded:outline-neonorange aria-expanded:outline-2">
 
-                            <div x-on:click="open = ! open"
+                            <div x-on:click="openaccordion = ! openaccordion"
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p class="body_bold_lg text-dark-700 group-aria-expanded:text-neonorange">Comment
                                     choisir la
@@ -831,7 +930,8 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded:bg-close_red"></span>
                             </div>
 
-                            <div x-show="open" x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
+                            <div x-show="openaccordion" x-cloak x-transition
+                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
                                 <p class="body_bold_base">Les intérêts personnels de l’enfant</p>
                                 <p class="body_regular_base">Il est essentiel de tenir compte des intérêts et des
                                     passions
@@ -856,10 +956,11 @@
                             </div>
                         </div>
 
-                        <div x-data="{ open: false }" x-bind:aria-expanded="open" aria-controls="accordion-item" class="group rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
                         aria-expanded:outline-neonorange aria-expanded:outline-2">
 
-                            <div x-on:click="open = ! open"
+                            <div x-on:click="openaccordion = ! openaccordion"
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p class="body_bold_lg text-dark-700 group-aria-expanded:text-neonorange">Pourquoi faire
                                     confiance à Gocolo ?</p>
@@ -867,7 +968,8 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded:bg-close_red"></span>
                             </div>
 
-                            <div x-show="open" x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
+                            <div x-show="openaccordion" x-cloak x-transition
+                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
                                 <p class="body_bold_base">Les intérêts personnels de l’enfant</p>
                                 <p class="body_regular_base">Il est essentiel de tenir compte des intérêts et des
                                     passions
@@ -895,7 +997,7 @@
                     </div>
 
 
-                    <div class="flex-none md:w-[320px] px-6 py-8 bg-camel rounded-3xl text-center md:sticky md:top-8">
+                    <div class="flex-none md:w-[320px] px-6 py-8 bg-camel rounded-3xl text-center md:sticky md:top-30">
                         <p class="title_h6 text-green pb-2">Vous ne trouvez pas les réponses à vos questions ?</p>
                         <p class="body_medium_sm text-dark-700">Prenez-contact avec nos équipes, nous nous ferons un
                             plaisir
@@ -914,7 +1016,7 @@
                             </a>
                         </div>
                         <a href=""
-                            class="inline-block px-4 py-2 body_bold_base text-neutrals-dark bg-kidyellow rounded-full hover:scale-105 transition-transform">Contacter
+                            class="inline-block px-4 py-2 body_bold_base text-neutrals-dark bg-kidyellow rounded-4xl">Contacter
                             Gocolo</a>
                     </div>
                 </div>
@@ -935,7 +1037,8 @@
         bg-[url('../sources/img/footer/footer_background.svg')] bg-left-bottom bg-no-repeat bg-contain">
 
             <div class="flex flex-col gap-4">
-                <a href="/" class="inline-block h-8 w-30 bg-gocolo_yellow bg-center bg-no-repeat bg-contain"></a>
+                <a href="/"
+                    class="flex-none inline-block h-8 w-30 bg-gocolo_yellow bg-center bg-no-repeat bg-contain"></a>
                 <p class="body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt eveniet
                     reiciendis.</p>
             </div>

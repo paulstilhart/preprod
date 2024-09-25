@@ -15,12 +15,13 @@ module.exports = {
       white: "#FFFFFF", // rgb(255, 255, 255)
       black: "#000000", // rgb(0, 0, 0)
 
-      camel: "#FFF2E1", // rgb(255, 242, 225)
+      camel: "#FFF2E1", // rgb(255, 242, 225) OU var(--Yellow-BG, #FFF2E1)
       camellight: "#FFFBF8", // rgb(255, 251, 248)
 
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
         dark: "#0C0C0C", // rgb(12, 12, 12)
+        //--neutrals-cool-grey-eaeaeb, #EAEAEB);
       },
 
       green: {
@@ -130,9 +131,23 @@ module.exports = {
       body_regular_sm: ["0.875rem", "1.5"], // 14px 21px
       body_xs: ["0.75rem", "1.25"], // 12px 15px
     },
+    borderRadius: {
+      'none': '0',
+      'sm': '0.125rem',//2px
+      DEFAULT: '0.25rem',//4px
+      DEFAULT: '4px',
+      'md': '0.375rem',//6px
+      'lg': '0.5rem',//8px
+      'xl': '0.75rem',//12px
+      '2xl': '1rem',//16px
+      '3xl': '1.5rem',//24px
+      '4xl': '2rem',//32px
+      'full': '9999px',
+    },
 
     extend: {
       maxWidth: {
+        1328: "1328px",
         1440: "1440px",
       },
       screens: {
@@ -195,7 +210,14 @@ module.exports = {
         close: "url('../sources/icons/close.svg')",
         close_red: "url('../sources/icons/close_red.svg')",
         gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
+        gocolo_green: "url('../sources/logos/gocolo_green.svg')",
         star_green: "url('../sources/icons/star_green.svg')",
+        cart: "url('../sources/logos/Cart.svg')",
+        cart_green: "url('../sources/icons/Cart_green.svg')",
+        carret_down: "url('../sources/icons/Carret_down.svg')",
+        user: "url('../sources/icons/User.svg')",
+        user_green: "url('../sources/icons/User_green.svg')",
+        menu_green: "url('../sources/icons/Menu_green.svg')",
       },
 
       keyframes: {
