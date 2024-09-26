@@ -167,6 +167,7 @@ module.exports = {
       },
 
       spacing: {
+        2.5: "0.625rem", //10px
         3.5: "0.875rem", //14px
         4.5: "1.125rem", //18px
         15: "3.75rem", //60px
@@ -218,6 +219,14 @@ module.exports = {
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
+        tabler_icon_credit_card: "url('../sources/icons/tabler-icon-credit-card.svg')",
+        tabler_icon_home_shield: "url('../sources/icons/tabler-icon-home-shield.svg')",
+        tabler_icon_thumb_up: "url('../sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_user_shield: "url('../sources/icons/tabler-icon-user-shield.svg')",
+        tabler_icon_credit_card_white: "url('../sources/icons/tabler-icon-credit-card-white.svg')",
+        tabler_icon_home_shield_white: "url('../sources/icons/tabler-icon-home-shield-white.svg')",
+        tabler_icon_thumb_up_white: "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
+        tabler_icon_user_shield_white: "url('../sources/icons/tabler-icon-user-shield-white.svg')",
       },
 
       keyframes: {
