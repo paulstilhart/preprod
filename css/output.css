@@ -1154,10 +1154,6 @@ html {
   height: auto !important;
 }
 
-.\!h-svh{
-  height: 100svh !important;
-}
-
 .h-10{
   height: 2.5rem;
 }
@@ -1254,16 +1250,16 @@ html {
   height: 100vh;
 }
 
-.h-\[1000px\]{
-  height: 1000px;
+.h-dvh{
+  height: 100dvh;
+}
+
+.\!h-dvh{
+  height: 100dvh !important;
 }
 
 .min-h-0{
   min-height: 0px;
-}
-
-.min-h-\[calc\(100\%_-151px\)\]{
-  min-height: calc(100% - 151px);
 }
 
 .min-h-\[calc\(100\%_-150px\)\]{
@@ -1600,10 +1596,6 @@ html {
   border-width: 0px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1615,11 +1607,6 @@ html {
 .border-\[\#EAEAEB\]{
   --tw-border-opacity: 1;
   border-color: rgb(234 234 235 / var(--tw-border-opacity));
-}
-
-.border-dark{
-  --tw-border-opacity: 1;
-  border-color: rgb(12 12 12 / var(--tw-border-opacity));
 }
 
 .border-dark-200{
@@ -3270,15 +3257,6 @@ input {
 
   .lg\:overflow-y-visible{
     overflow-y: visible;
-  }
-
-  .lg\:border-b{
-    border-bottom-width: 1px;
-  }
-
-  .lg\:border-dark-200{
-    --tw-border-opacity: 1;
-    border-color: rgb(224 224 224 / var(--tw-border-opacity));
   }
 
   .lg\:bg-neutrals-white{
