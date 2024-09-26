@@ -1037,20 +1037,12 @@ html {
   left: 0.5rem;
 }
 
-.left-\[-2\.5\%\]{
-  left: -2.5%;
-}
-
 .right-0{
   right: 0px;
 }
 
 .right-\[-16px\]{
   right: -16px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .top-2{
@@ -1162,6 +1154,10 @@ html {
   height: auto !important;
 }
 
+.\!h-svh{
+  height: 100svh !important;
+}
+
 .h-10{
   height: 2.5rem;
 }
@@ -1258,12 +1254,8 @@ html {
   height: 100vh;
 }
 
-.\!h-screen{
-  height: 100vh !important;
-}
-
-.\!h-svh{
-  height: 100svh !important;
+.h-\[1000px\]{
+  height: 1000px;
 }
 
 .min-h-0{
@@ -1272,6 +1264,10 @@ html {
 
 .min-h-\[calc\(100\%_-151px\)\]{
   min-height: calc(100% - 151px);
+}
+
+.min-h-\[calc\(100\%_-150px\)\]{
+  min-height: calc(100% - 150px);
 }
 
 .\!w-8{
@@ -1336,10 +1332,6 @@ html {
 
 .w-8{
   width: 2rem;
-}
-
-.w-\[105\%\]{
-  width: 105%;
 }
 
 .w-\[337px\]{
@@ -1608,6 +1600,10 @@ html {
   border-width: 0px;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1619,6 +1615,16 @@ html {
 .border-\[\#EAEAEB\]{
   --tw-border-opacity: 1;
   border-color: rgb(234 234 235 / var(--tw-border-opacity));
+}
+
+.border-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(12 12 12 / var(--tw-border-opacity));
+}
+
+.border-dark-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
 }
 
 .bg-camel{
@@ -2653,32 +2659,13 @@ input {
   display: inline-block;
 }
 
-.group[aria-expanded="true"] .group-aria-expanded\:rotate-180{
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/do[aria-expanded="true"] .group-aria-expanded\/do\:rotate-180{
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group\/dropdown[aria-expanded="true"] .group-aria-expanded\/dropdown\:rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group[aria-expanded="true"] .group-aria-expanded\:bg-close_red{
-  background-image: url('../sources/icons/close_red.svg');
-}
-
 .group\/accordion[aria-expanded="true"] .group-aria-expanded\/accordion\:bg-close_red{
   background-image: url('../sources/icons/close_red.svg');
-}
-
-.group[aria-expanded="true"] .group-aria-expanded\:text-neonorange{
-  --tw-text-opacity: 1;
-  color: rgb(253 99 24 / var(--tw-text-opacity));
 }
 
 .group\/accordion[aria-expanded="true"] .group-aria-expanded\/accordion\:text-neonorange{
@@ -2800,48 +2787,6 @@ input {
 
 .data-\[slide\=5\]\:animate-homepage_cards_5[data-slide="5"]{
   animation: slide_5 12.5s steps(5) infinite;
-}
-
-@keyframes slide_2{
-  0%{
-    transform: translateX(0);
-  }
-
-  100%{
-    transform: translateX(-200%);
-  }
-}
-
-.group[data-slide="2"] .group-data-\[slide\=2\]\:animate-homepage_reviews_2{
-  animation: slide_2 10s steps(2) infinite;
-}
-
-@keyframes slide_3{
-  0%{
-    transform: translateX(0);
-  }
-
-  100%{
-    transform: translateX(-300%);
-  }
-}
-
-.group[data-slide="3"] .group-data-\[slide\=3\]\:animate-homepage_reviews_3{
-  animation: slide_3 15s steps(3) infinite;
-}
-
-@keyframes slide_2{
-  0%{
-    transform: translateX(0);
-  }
-
-  100%{
-    transform: translateX(-200%);
-  }
-}
-
-.group\/slider[data-slide="2"] .group-data-\[slide\=2\]\/slider\:animate-homepage_reviews_2{
-  animation: slide_2 10s steps(2) infinite;
 }
 
 @keyframes slide_2{
