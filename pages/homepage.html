@@ -28,28 +28,28 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body x-data="{ openheadermobile: false }" 
-    x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden aria-expanded:overflow-y-hidden lg:!overflow-y-auto">
+<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
 
-    <header class="sticky top-0 z-50 left-0 w-full bg-neutrals-white text-green shadow-md">
+    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
-        <div
-            class="relative z-50 lg:!hidden wrapper_1440 flex justify-between items-center h-16 w-full border-b border-[#EAEAEB]">
+        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed top-0 left-0 right-0 w-full h-16 wrapper_1440   
+            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
             <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
             <div class="flex items-center gap-3">
                 <a href="/" class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
-                bg-cart_green bg-center bg-no-repeat [length:50%_auto] ring-1 ring-green ring-inset"></a>
+                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset"></a>
                 <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
-                bg-menu_green bg-center bg-no-repeat [length:50%_auto]"></button>
+                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto]"></button>
             </div>
         </div>
 
-        <nav x-show="openheadermobile" x-cloak x-transition
-            class="bg-neutrals-white z-40 fixed top-0 left-0 w-full !h-dvh h-screen !min-h-svh lg:!h-auto lg:!min-h-0 overflow-y-auto 
-            lg:!static lg:!flex flex-col-reverse  ">
-
+        <nav x-show="openheadermobile" x-cloak x-transition class="z-40 fixed top-0 bottom-0 left-0 right-0 w-full h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto">
+            
             <div
-                class="relative lg:static flex-auto wrapper_1440 w-full min-h-16 py-22 lg:py-2 flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+                class="bg-neutrals-white text-green  lg:border-b lg:border-dark-200 relative lg:static 
+                wrapper_1440 w-full min-h-[calc(100%_-151px)] lg:min-h-16 py-22 lg:py-2 
+                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
 
                 <a href="/"
                     class="flex-none hidden lg:inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
@@ -98,25 +98,28 @@
             </div>
 
             <div
-            class="bg-camel lg:bg-neutrals-white py-6 lg:py-0 body_bold_sm wrapper_1440 w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between  items-start lg:items-center gap-6 border-b border-white lg:border-dark-200">
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
-                <a href="">Pourquoi choisir Gocolo ?</a>
-                <a href="">Nos colonie de vacances</a>
+                class="bg-camel lg:bg-neutrals-white text-green   lg:border-b lg:border-dark-200 body_bold_sm 
+        wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="">Pourquoi choisir Gocolo ?</a>
+                    <a href="">Nos colonie de vacances</a>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="/" class="hidden lg:flex items-center gap-2">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">Mon panier</span>
+                    </a>
+                    <a href="tel:0033471782243" class="body_semibold_sm  flex items-center gap-2">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-phone_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="flex justify-between items-center gap-6">
-                <a href="/" class="hidden lg:flex items-center gap-2">
-                    <span
-                        class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
-                    <span class="inline-block">Mon panier</span>
-                </a>
-                <a href="tel:0033471782243" class="body_semibold_sm  flex items-center gap-2">
-                    <span
-                        class="flex-none inline-block w-4.5 h-4.5 bg-phone_green bg-center bg-no-repeat bg-contain"></span>
-                    <span class="inline-block">04 71 78 22 43</span>
-                </a>
-            </div>
-        </div>
+
         </nav>
 
     </header>
