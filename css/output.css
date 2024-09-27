@@ -1658,24 +1658,16 @@ html {
   background-image: url('../sources/img/footer/footer_actus_2.jpeg');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis\/homepage_avis_1\.jpeg\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_avis/homepage_avis_1.jpeg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_1\.jpeg\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_avis_1.jpeg');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis\/homepage_avis_blur_mobile\.svg\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_avis/homepage_avis_blur_mobile.svg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_mobile\.svg\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_avis_blur_mobile.svg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_banner\.jpeg\'\)\]{
   background-image: url('../sources/img/homepage/homepage_banner.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances\/homepage_centres_vacances_1\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_centres_vacances/homepage_centres_vacances_1.png');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances\/homepage_centres_vacances_2\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_centres_vacances/homepage_centres_vacances_2.png');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances_1\.png\'\)\]{
@@ -1686,12 +1678,12 @@ html {
   background-image: url('../sources/img/homepage/homepage_centres_vacances_2.png');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur\/homepage_colos_coeur_1\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_colos_coeur/homepage_colos_coeur_1.png');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_1\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur\/homepage_colos_coeur_2\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_colos_coeur/homepage_colos_coeur_2.png');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_2\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_map_mobile\.svg\'\)\]{
@@ -1852,46 +1844,6 @@ html {
 
 .bg-user_green{
   background-image: url('../sources/icons/User_green.svg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_1\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_2\.png\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_1\.jpeg\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_avis_1.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_mobile\.svg\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_avis_blur_mobile.svg');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_1\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_1.png');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_2\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_2.png');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_3\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_3.png');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_4\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_4.png');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_5\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_5.png');
-}
-
-.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_6\.png\'\)\]{
-  background-image: url('/sources/img/thematiques/thematiques_6.png');
 }
 
 .bg-\[length\:275px_194px\]{
@@ -2386,29 +2338,9 @@ input {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_top_18\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/img/footer/footer_top.svg');
-}
-
-.before\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section2_top\.svg\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section2_top.svg');
-}
-
-.before\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section5_top\.svg\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section5_top.svg');
-}
-
-.before\:bg-clip_green_footer_top_34::before{
-  content: var(--tw-content);
-  background-image: url('../sources/clip/clip_green_footer_top_34.svg');
-}
-
-.before\:bg-\[url\(\'\.\.\/sources\/img\/clip\/clip_camel_top_35\.svg\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('../sources/img/clip/clip_camel_top_35.svg');
+  background-image: url('../sources/clip/clip_camel_top_18.svg');
 }
 
 .before\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_top_35\.svg\'\)\]::before{
@@ -2416,19 +2348,14 @@ input {
   background-image: url('../sources/clip/clip_camel_top_35.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_top\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/');
+  background-image: url('../sources/img/footer/footer_top.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/\/clip\/clip_camel_top_18\.svg\'\)\]::before{
+.before\:bg-clip_green_footer_top_34::before{
   content: var(--tw-content);
-  background-image: url('../sources//clip/clip_camel_top_18.svg');
-}
-
-.before\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_top_18\.svg\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('../sources/clip/clip_camel_top_18.svg');
+  background-image: url('../sources/clip/clip_green_footer_top_34.svg');
 }
 
 .before\:bg-cover::before{
@@ -2546,6 +2473,36 @@ input {
   top: -80px;
 }
 
+.after\:right-\[-2\.5\%\]::after{
+  content: var(--tw-content);
+  right: -2.5%;
+}
+
+.after\:right-\[12px\]::after{
+  content: var(--tw-content);
+  right: 12px;
+}
+
+.after\:right-\[-50px\]::after{
+  content: var(--tw-content);
+  right: -50px;
+}
+
+.after\:top-\[-3px\]::after{
+  content: var(--tw-content);
+  top: -3px;
+}
+
+.after\:right-\[-40px\]::after{
+  content: var(--tw-content);
+  right: -40px;
+}
+
+.after\:top-\[-40px\]::after{
+  content: var(--tw-content);
+  top: -40px;
+}
+
 .after\:-z-10::after{
   content: var(--tw-content);
   z-index: -10;
@@ -2616,6 +2573,11 @@ input {
   height: 60px;
 }
 
+.after\:h-\[56px\]::after{
+  content: var(--tw-content);
+  height: 56px;
+}
+
 .after\:w-10::after{
   content: var(--tw-content);
   width: 2.5rem;
@@ -2654,6 +2616,11 @@ input {
 .after\:w-full::after{
   content: var(--tw-content);
   width: 100%;
+}
+
+.after\:w-\[66px\]::after{
+  content: var(--tw-content);
+  width: 66px;
 }
 
 .after\:-translate-x-1\/2::after{
@@ -2700,14 +2667,19 @@ input {
   background-image: url('../sources/background/background_homepage_colos_coeur.svg');
 }
 
+.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_18\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/clip/clip_camel_bottom_18.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_34\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/clip/clip_camel_bottom_34.svg');
+}
+
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_star\.svg\'\)\]::after{
   content: var(--tw-content);
   background-image: url('../sources/img/homepage/homepage_vector/homepage_star.svg');
-}
-
-.after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section2_bottom\.svg\'\)\]::after{
-  content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section2_bottom.svg');
 }
 
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section2_highlight\.svg\'\)\]::after{
@@ -2725,11 +2697,6 @@ input {
   background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section3_underline.svg');
 }
 
-.after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section5_bottom\.svg\'\)\]::after{
-  content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section5_bottom.svg');
-}
-
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section6_stars_1\.svg\'\)\]::after{
   content: var(--tw-content);
   background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section6_stars_1.svg');
@@ -2740,19 +2707,114 @@ input {
   background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section6_stars_2.svg');
 }
 
-.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_18\.svg\'\)\]::after{
+.after\:bg-\[url\(\'\.\.\/sources\/highlight_yellowkid_underline\.svg\'\)\]::after{
   content: var(--tw-content);
-  background-image: url('../sources/clip/clip_camel_bottom_18.svg');
+  background-image: url('../sources/highlight_yellowkid_underline.svg');
 }
 
-.after\:bg-\[url\(\'\.\.\/sources\/\'\)\]::after{
+.after\:bg-\[url\(\'\.\.\/sources\/\/highlight_yellowkid_underline\.svg\'\)\]::after{
   content: var(--tw-content);
-  background-image: url('../sources/');
+  background-image: url('../sources//highlight_yellowkid_underline.svg');
 }
 
-.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_34\.svg\'\)\]::after{
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_yellowkid_underline\.svg\'\)\]::after{
   content: var(--tw-content);
-  background-image: url('../sources/clip/clip_camel_bottom_34.svg');
+  background-image: url('../sources/highlight/highlight_yellowkid_underline.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_underline\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_underline.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight_kidyellow_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight_kidyellow_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlighthighlight_kidyellow_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlighthighlight_kidyellow_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sourceshighlight_green_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sourceshighlight_green_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/\/highlight_green_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources//highlight_green_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_green_star\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_green_star.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight_kidyellow_underline_double\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight_kidyellow_underline_double.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/hi\/highlight_kidyellow_underline_double\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/hi/highlight_kidyellow_underline_double.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlighthighlight_kidyellow_underline_double\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlighthighlight_kidyellow_underline_double.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_underline_double\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_underline_double.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/\/\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources//');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/\/highlight_kidyellow_stars_1\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources//highlight_kidyellow_stars_1.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_stars_1\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_stars_1.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/highlight_kidyellow_stars_2\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/img/homepage/homepage_vector/highlight_kidyellow_stars_2.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight_kidyellow_stars_2\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight_kidyellow_stars_2.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/\/highlight_kidyellow_stars_2\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources//highlight_kidyellow_stars_2.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_stars_2\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_stars_2.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/highlight\/highlight_kidyellow_faq\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_faq.svg');
 }
 
 .after\:bg-contain::after{
@@ -3138,16 +3200,12 @@ input {
     background-image: url('../sources/background/background_faq_homepage.svg');
   }
 
-  .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis\/homepage_avis_blur_desktop\.svg\'\)\]{
-    background-image: url('../sources/img/homepage/homepage_avis/homepage_avis_blur_desktop.svg');
+  .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_desktop\.svg\'\)\]{
+    background-image: url('../sources/img/homepage/homepage_avis_blur_desktop.svg');
   }
 
   .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_map_desktop\.svg\'\)\]{
     background-image: url('../sources/img/homepage/homepage_map_desktop.svg');
-  }
-
-  .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_desktop\.svg\'\)\]{
-    background-image: url('../sources/img/homepage/homepage_avis_blur_desktop.svg');
   }
 
   .md\:bg-\[length\:60\%_auto\]{
