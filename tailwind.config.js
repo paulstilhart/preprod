@@ -119,10 +119,10 @@ module.exports = {
       title_h6_mobile: ["1rem", "1.25"], // 16px 20px
       title_mini: ["1rem", "1.5"], // 16px 24px
 
-      title_drop :["1.25rem", "1.5"], // 20px 30px
-      title_drop_mobile :["1.1rem", "1.5"], // 17.6px 26.4px
-      title_drop_2 :["0.85rem", "1.5"], // 13.6px 20.4px
-      title_drop_2_mobile :["0.75rem", "1.5"], // 12px 18px
+      title_drop: ["1.25rem", "1.5"], // 20px 30px
+      title_drop_mobile: ["1.1rem", "1.5"], // 17.6px 26.4px
+      title_drop_2: ["0.85rem", "1.5"], // 13.6px 20.4px
+      title_drop_2_mobile: ["0.75rem", "1.5"], // 12px 18px
 
       body_xl: ["1.25rem", "1.5"], // 20px 30px
       body_lg: ["1.125rem", "1.5"], // 18px 27px
@@ -132,17 +132,17 @@ module.exports = {
       body_xs: ["0.75rem", "1.25"], // 12px 15px
     },
     borderRadius: {
-      'none': '0',
-      'sm': '0.125rem',//2px
-      DEFAULT: '0.25rem',//4px
-      DEFAULT: '4px',
-      'md': '0.375rem',//6px
-      'lg': '0.5rem',//8px
-      'xl': '0.75rem',//12px
-      '2xl': '1rem',//16px
-      '3xl': '1.5rem',//24px
-      '4xl': '2rem',//32px
-      'full': '9999px',
+      none: "0",
+      sm: "0.125rem", //2px
+      DEFAULT: "0.25rem", //4px
+      DEFAULT: "4px",
+      md: "0.375rem", //6px
+      lg: "0.5rem", //8px
+      xl: "0.75rem", //12px
+      "2xl": "1rem", //16px
+      "3xl": "1.5rem", //24px
+      "4xl": "2rem", //32px
+      full: "9999px",
     },
 
     extend: {
@@ -161,9 +161,12 @@ module.exports = {
 
       boxShadow: {
         reviews:
-          "0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00)",
+        "0px 25px 80px 0px rgba(0, 0, 0, 0.02), 0px 16.20375px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 9.62975px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 5px 13px 0px rgba(0, 0, 0, 0.01), 0px 2.037px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 0.463px 3.148px 0px rgba(0, 0, 0, 0.00)",
 
-        cards: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)",//0px 4px 80px 0px rgba(89, 57, 13, 0.10)
+        /*reviews:
+          "0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00)", */
+          
+        cards: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)", //0px 4px 80px 0px rgba(89, 57, 13, 0.10)
       },
 
       spacing: {
@@ -219,16 +222,25 @@ module.exports = {
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
-        tabler_icon_credit_card: "url('../sources/icons/tabler-icon-credit-card.svg')",
-        tabler_icon_home_shield: "url('../sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up: "url('../sources/icons/tabler-icon-thumb-up.svg')",
-        tabler_icon_user_shield: "url('../sources/icons/tabler-icon-user-shield.svg')",
-        tabler_icon_credit_card_white: "url('../sources/icons/tabler-icon-credit-card-white.svg')",
-        tabler_icon_home_shield_white: "url('../sources/icons/tabler-icon-home-shield-white.svg')",
-        tabler_icon_thumb_up_white: "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
-        tabler_icon_user_shield_white: "url('../sources/icons/tabler-icon-user-shield-white.svg')",
+        tabler_icon_credit_card:
+          "url('../sources/icons/tabler-icon-credit-card.svg')",
+        tabler_icon_home_shield:
+          "url('../sources/icons/tabler-icon-home-shield.svg')",
+        tabler_icon_thumb_up:
+          "url('../sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_user_shield:
+          "url('../sources/icons/tabler-icon-user-shield.svg')",
+        tabler_icon_credit_card_white:
+          "url('../sources/icons/tabler-icon-credit-card-white.svg')",
+        tabler_icon_home_shield_white:
+          "url('../sources/icons/tabler-icon-home-shield-white.svg')",
+        tabler_icon_thumb_up_white:
+          "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
+        tabler_icon_user_shield_white:
+          "url('../sources/icons/tabler-icon-user-shield-white.svg')",
         background_footer: "url('../sources/background/background_footer.svg')",
-        clip_green_footer_top_34: "url('../sources/clip/clip_green_footer_top_34.svg')",
+        clip_green_footer_top_34:
+          "url('../sources/clip/clip_green_footer_top_34.svg')",
       },
 
       keyframes: {
