@@ -29,7 +29,7 @@
 </head>
 
 <body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class=" !overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
@@ -37,10 +37,12 @@
             flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
             <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
             <div class="flex items-center gap-3">
-                <a href="/" class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
-                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset"></a>
+                <a data-cart="3" href="/" class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
+                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset relative 
+                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:body_bold_xs"></a>
                 <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
-                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto]"></button>
+                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto] 
+                "></button>
             </div>
         </div>
 
@@ -106,7 +108,8 @@
                 </div>
 
                 <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                    <a href="/" class="hidden lg:flex items-center gap-2">
+                    <a data-cart="3" href="/" class="hidden lg:flex items-center gap-2 relative 
+                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:body_bold_xs">
                         <span
                             class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
                         <span class="inline-block">Mon panier</span>
