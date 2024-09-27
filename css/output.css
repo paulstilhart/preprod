@@ -1174,10 +1174,6 @@ html {
   height: 0.875rem;
 }
 
-.h-30{
-  height: 7.5rem;
-}
-
 .h-4\.5{
   height: 1.125rem;
 }
@@ -1394,10 +1390,6 @@ html {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1654,20 +1646,8 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-credit-card\.svg\'\)\]{
-  background-image: url('../sources/icons/tabler-icon-credit-card.svg');
-}
-
 .bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-home-shield\.svg\'\)\]{
   background-image: url('../sources/icons/tabler-icon-home-shield.svg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-thumb-up\.svg\'\)\]{
-  background-image: url('../sources/icons/tabler-icon-thumb-up.svg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-user-shield\.svg\'\)\]{
-  background-image: url('../sources/icons/tabler-icon-user-shield.svg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_actus_1\.jpeg\'\)\]{
@@ -1676,10 +1656,6 @@ html {
 
 .bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_actus_2\.jpeg\'\)\]{
   background-image: url('../sources/img/footer/footer_actus_2.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_background\.svg\'\)\]{
-  background-image: url('../sources/img/footer/footer_background.svg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis\/homepage_avis_1\.jpeg\'\)\]{
@@ -1700,6 +1676,14 @@ html {
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances\/homepage_centres_vacances_2\.png\'\)\]{
   background-image: url('../sources/img/homepage/homepage_centres_vacances/homepage_centres_vacances_2.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances_1\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_centres_vacances_1.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_centres_vacances_2\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_centres_vacances_2.png');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur\/homepage_colos_coeur_1\.png\'\)\]{
@@ -1746,6 +1730,30 @@ html {
   background-image: url('../sources/img/homepage_numbers/8+.svg');
 }
 
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_1\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_1.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_2\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_2.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_3\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_3.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_4\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_4.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_5\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_5.png');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_6\.png\'\)\]{
+  background-image: url('../sources/img/thematiques/thematiques_6.png');
+}
+
 .bg-add{
   background-image: url('../sources/icons/add.svg');
 }
@@ -1756,6 +1764,10 @@ html {
 
 .bg-arrow_narrow_green{
   background-image: url('../sources/icons/Arrow_narrow_green.svg');
+}
+
+.bg-background_footer{
+  background-image: url('../sources/background/background_footer.svg');
 }
 
 .bg-carret_down{
@@ -1806,16 +1818,32 @@ html {
   background-image: url('../sources/icons/star_green.svg');
 }
 
+.bg-tabler_icon_credit_card{
+  background-image: url('../sources/icons/tabler-icon-credit-card.svg');
+}
+
 .bg-tabler_icon_credit_card_white{
   background-image: url('../sources/icons/tabler-icon-credit-card-white.svg');
+}
+
+.bg-tabler_icon_home_shield{
+  background-image: url('../sources/icons/tabler-icon-home-shield.svg');
 }
 
 .bg-tabler_icon_home_shield_white{
   background-image: url('../sources/icons/tabler-icon-home-shield-white.svg');
 }
 
+.bg-tabler_icon_thumb_up{
+  background-image: url('../sources/icons/tabler-icon-thumb-up.svg');
+}
+
 .bg-tabler_icon_thumb_up_white{
   background-image: url('../sources/icons/tabler-icon-thumb-up-white.svg');
+}
+
+.bg-tabler_icon_user_shield{
+  background-image: url('../sources/icons/tabler-icon-user-shield.svg');
 }
 
 .bg-tabler_icon_user_shield_white{
@@ -1826,20 +1854,44 @@ html {
   background-image: url('../sources/icons/User_green.svg');
 }
 
-.bg-tabler_icon_home_shield{
-  background-image: url('../sources/icons/tabler-icon-home-shield.svg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_1\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png');
 }
 
-.bg-tabler_icon_user_shield{
-  background-image: url('../sources/icons/tabler-icon-user-shield.svg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_2\.png\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png');
 }
 
-.bg-tabler_icon_thumb_up{
-  background-image: url('../sources/icons/tabler-icon-thumb-up.svg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_1\.jpeg\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_avis_1.jpeg');
 }
 
-.bg-tabler_icon_credit_card{
-  background-image: url('../sources/icons/tabler-icon-credit-card.svg');
+.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_mobile\.svg\'\)\]{
+  background-image: url('../sources/img/homepage/homepage_avis_blur_mobile.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_1\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_1.png');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_2\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_2.png');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_3\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_3.png');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_4\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_4.png');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_5\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_5.png');
+}
+
+.bg-\[url\(\'\/sources\/img\/thematiques\/thematiques_6\.png\'\)\]{
+  background-image: url('/sources/img/thematiques/thematiques_6.png');
 }
 
 .bg-\[length\:275px_194px\]{
@@ -1966,16 +2018,16 @@ html {
   padding-top: 2rem !important;
 }
 
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
 
 .pb-14{
   padding-bottom: 3.5rem;
-}
-
-.pb-18{
-  padding-bottom: 4.5rem;
 }
 
 .pb-2{
@@ -2020,10 +2072,6 @@ html {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -2292,14 +2340,14 @@ input {
   top: -5px;
 }
 
-.before\:top-\[-9px\]::before{
-  content: var(--tw-content);
-  top: -9px;
-}
-
 .before\:top-\[-7px\]::before{
   content: var(--tw-content);
   top: -7px;
+}
+
+.before\:top-\[-9px\]::before{
+  content: var(--tw-content);
+  top: -9px;
 }
 
 .before\:h-\[10px\]::before{
@@ -2317,19 +2365,14 @@ input {
   height: 6px;
 }
 
-.before\:h-full::before{
-  content: var(--tw-content);
-  height: 100%;
-}
-
 .before\:h-\[9px\]::before{
   content: var(--tw-content);
   height: 9px;
 }
 
-.before\:h-\[9x\]::before{
+.before\:h-full::before{
   content: var(--tw-content);
-  height: 9x;
+  height: 100%;
 }
 
 .before\:w-full::before{
@@ -2358,34 +2401,34 @@ input {
   background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section5_top.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/media\/paul\/DATA\/FREELANCE\/PROJETS_CLIENTS\/preprod\/sources\/img\/centre_de_vacances\/centre_de_vacances_vector_section4_top\.svg\'\)\]::before{
+.before\:bg-clip_green_footer_top_34::before{
   content: var(--tw-content);
-  background-image: url('../media/paul/DATA/FREELANCE/PROJETS_CLIENTS/preprod/sources/img/centre_de_vacances/centre_de_vacances_vector_section4_top.svg');
+  background-image: url('../sources/clip/clip_green_footer_top_34.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_vector_section4_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/img\/clip\/clip_camel_top_35\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_vector_section4_top.svg');
+  background-image: url('../sources/img/clip/clip_camel_top_35.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/\/media\/paul\/DATA\/FREELANCE\/PROJETS_CLIENTS\/preprod\/sources\/img\/centre_de_vacances\/centre_de_vacances_vector_section4_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_top_35\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('..//media/paul/DATA/FREELANCE/PROJETS_CLIENTS/preprod/sources/img/centre_de_vacances/centre_de_vacances_vector_section4_top.svg');
+  background-image: url('../sources/clip/clip_camel_top_35.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/homepage_vector_section2_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/img/centre_de_vacances/homepage_vector_section2_top.svg');
+  background-image: url('../sources/');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vectorcentre_de_vacances\/homepage_vector_section2_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/\/clip\/clip_camel_top_18\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vectorcentre_de_vacances/homepage_vector_section2_top.svg');
+  background-image: url('../sources//clip/clip_camel_top_18.svg');
 }
 
-.before\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/centre_de_vacances\/homepage_vector_section2_top\.svg\'\)\]::before{
+.before\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_top_18\.svg\'\)\]::before{
   content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_vector/centre_de_vacances/homepage_vector_section2_top.svg');
+  background-image: url('../sources/clip/clip_camel_top_18.svg');
 }
 
 .before\:bg-cover::before{
@@ -2652,9 +2695,9 @@ input {
   background-color: rgb(255 204 73 / var(--tw-bg-opacity));
 }
 
-.after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur\/homepage_colos_coeur_background\.svg\'\)\]::after{
+.after\:bg-\[url\(\'\.\.\/sources\/background\/background_homepage_colos_coeur\.svg\'\)\]::after{
   content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_colos_coeur/homepage_colos_coeur_background.svg');
+  background-image: url('../sources/background/background_homepage_colos_coeur.svg');
 }
 
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_star\.svg\'\)\]::after{
@@ -2695,6 +2738,21 @@ input {
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section6_stars_2\.svg\'\)\]::after{
   content: var(--tw-content);
   background-image: url('../sources/img/homepage/homepage_vector/homepage_vector_section6_stars_2.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_18\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/clip/clip_camel_bottom_18.svg');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/');
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/clip\/clip_camel_bottom_34\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/clip/clip_camel_bottom_34.svg');
 }
 
 .after\:bg-contain::after{
@@ -2984,10 +3042,6 @@ input {
     margin-right: auto;
   }
 
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:h-17{
     height: 4.25rem;
   }
@@ -3080,6 +3134,10 @@ input {
     gap: 2rem;
   }
 
+  .md\:bg-\[url\(\'\.\.\/sources\/background\/background_faq_homepage\.svg\'\)\]{
+    background-image: url('../sources/background/background_faq_homepage.svg');
+  }
+
   .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis\/homepage_avis_blur_desktop\.svg\'\)\]{
     background-image: url('../sources/img/homepage/homepage_avis/homepage_avis_blur_desktop.svg');
   }
@@ -3088,8 +3146,8 @@ input {
     background-image: url('../sources/img/homepage/homepage_map_desktop.svg');
   }
 
-  .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_faq\.svg\'\)\]{
-    background-image: url('../sources/img/homepage/homepage_vector/homepage_faq.svg');
+  .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_desktop\.svg\'\)\]{
+    background-image: url('../sources/img/homepage/homepage_avis_blur_desktop.svg');
   }
 
   .md\:bg-\[length\:60\%_auto\]{
@@ -3138,6 +3196,10 @@ input {
     padding-bottom: 6.5rem;
   }
 
+  .md\:pb-30{
+    padding-bottom: 7.5rem;
+  }
+
   .md\:pb-34{
     padding-bottom: 8.5rem;
   }
@@ -3164,10 +3226,6 @@ input {
 
   .md\:pt-8{
     padding-top: 2rem;
-  }
-
-  .md\:pb-30{
-    padding-bottom: 7.5rem;
   }
 
   .md\:text-center{

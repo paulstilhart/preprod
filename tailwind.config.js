@@ -227,6 +227,8 @@ module.exports = {
         tabler_icon_home_shield_white: "url('../sources/icons/tabler-icon-home-shield-white.svg')",
         tabler_icon_thumb_up_white: "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
         tabler_icon_user_shield_white: "url('../sources/icons/tabler-icon-user-shield-white.svg')",
+        background_footer: "url('../sources/background/background_footer.svg')",
+        clip_green_footer_top_34: "url('../sources/clip/clip_green_footer_top_34.svg')",
       },
 
       keyframes: {
