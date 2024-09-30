@@ -161,11 +161,11 @@ module.exports = {
 
       boxShadow: {
         reviews:
-        "0px 25px 80px 0px rgba(0, 0, 0, 0.02), 0px 16.20375px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 9.62975px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 5px 13px 0px rgba(0, 0, 0, 0.01), 0px 2.037px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 0.463px 3.148px 0px rgba(0, 0, 0, 0.00)",
+          "0px 25px 80px 0px rgba(0, 0, 0, 0.02), 0px 16.20375px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 9.62975px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 5px 13px 0px rgba(0, 0, 0, 0.01), 0px 2.037px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 0.463px 3.148px 0px rgba(0, 0, 0, 0.00)",
 
         /*reviews:
           "0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00)", */
-          
+
         cards: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)", //0px 4px 80px 0px rgba(89, 57, 13, 0.10)
       },
 
@@ -222,25 +222,30 @@ module.exports = {
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
-        tabler_icon_credit_card:
-          "url('../sources/icons/tabler-icon-credit-card.svg')",
-        tabler_icon_home_shield:
-          "url('../sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up:
-          "url('../sources/icons/tabler-icon-thumb-up.svg')",
-        tabler_icon_user_shield:
-          "url('../sources/icons/tabler-icon-user-shield.svg')",
-        tabler_icon_credit_card_white:
-          "url('../sources/icons/tabler-icon-credit-card-white.svg')",
-        tabler_icon_home_shield_white:
-          "url('../sources/icons/tabler-icon-home-shield-white.svg')",
-        tabler_icon_thumb_up_white:
-          "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
-        tabler_icon_user_shield_white:
-          "url('../sources/icons/tabler-icon-user-shield-white.svg')",
+        tabler_icon_credit_card:"url('../sources/icons/tabler-icon-credit-card.svg')",
+        tabler_icon_home_shield:"url('../sources/icons/tabler-icon-home-shield.svg')",
+        tabler_icon_thumb_up:"url('../sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_user_shield:"url('../sources/icons/tabler-icon-user-shield.svg')",
+        tabler_icon_credit_card_white:"url('../sources/icons/tabler-icon-credit-card-white.svg')",
+        tabler_icon_home_shield_white:"url('../sources/icons/tabler-icon-home-shield-white.svg')",
+        tabler_icon_thumb_up_white:"url('../sources/icons/tabler-icon-thumb-up-white.svg')",
+        tabler_icon_user_shield_white:"url('../sources/icons/tabler-icon-user-shield-white.svg')",
         background_footer: "url('../sources/background/background_footer.svg')",
-        clip_green_footer_top_34:
-          "url('../sources/clip/clip_green_footer_top_34.svg')",
+        clip_green_footer_top_34:"url('../sources/clip/clip_green_footer_top_34.svg')",
+        clip_camel_top_18:"url('../sources/clip/clip_camel_top_18.svg')",
+        clip_camel_top_34:"url('../sources/clip/clip_camel_top_34.svg')",
+        clip_camel_top_35:"url('../sources/clip/clip_camel_top_35.svg')",
+        clip_camel_bottom_18:"url('../sources/clip/clip_camel_bottom_18.svg')",
+        clip_camel_bottom_18_nav:"url('../sources/clip/clip_camel_bottom_18_nav.svg')",
+        clip_camel_bottom_34:"url('../sources/clip/clip_camel_bottom_34.svg')",
+        clip_camel_bottom_35:"url('../sources/clip/clip_camel_bottom_35.svg')",
+        highlight_green_star:"url('../sources/highlight/highlight_green_star.svg')",
+        highlight_kidyellow_faq:"url('../sources/highlight/highlight_kidyellow_faq.svg')",
+        highlight_kidyellow_star:"url('../sources/highlight/highlight_kidyellow_star.svg')",
+        highlight_kidyellow_stars_1:"url('../sources/highlight/highlight_kidyellow_stars_1.svg')",
+        highlight_kidyellow_stars_2:"url('../sources/highlight/highlight_kidyellow_stars_2.svg')",
+        highlight_kidyellow_underline:"url('../sources/highlight/highlight_kidyellow_underline.svg')",
+        highlight_kidyellow_underline_double:"url('../sources/highlight/highlight_kidyellow_underline_double')",
       },
 
       keyframes: {
