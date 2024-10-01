@@ -139,7 +139,7 @@
         </ul>
     </nav>
 
-    <div aria-hidden="false" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[226px]">
+    <div aria-hidden="false" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[180px]">
         <div class="w-full md:w-[312px] relative z-20   bg-kidyellow text-green px-4 py-5 flex flex-col items-start md:items-center gap-3 
             after:absolute after:inline-block apply_after_background_center_contain after:bg-freepik_character after:h-[155px] after:w-[168px] 
             md:after:h-[164px] md:after:w-[178px] after:bottom-[-13px] after:right-[0px]  md:after:left-[-80px]">
@@ -157,22 +157,22 @@
     <main>
 
         <section class="bg-neutrals-white text-green">
-            <div class="apply_wrapper_1440 py-10 md:pt-18 md:pb-36">
-
+            <div class="apply_wrapper_1440 py-10 md:pt-18 md:pb-36  bg-[url('../sources/background/background_centre.svg')] bg-[left_0px_top_330px] md:bg-[left_0px_top_440px]  bg-[length:260px_129px] md:bg-[length:391px_194px] bg-no-repeat">
+    
                 <div class="text-center">
                     <p class="apply_title_h2 pb-4">LE Domaine de Moulibez</p>
                     <p class="font-gochihand font-normal text-[22px] md:text-[28px] leading-none">Saint-Beauzely,
                         Averyron</p>
                 </div>
-
+    
                 <div
                     class="pt-6 pb-12 md:pt-25 md:pb-22 flex flex-col md:flex-row md:items-center md:justify-between gap-y-6">
-
+    
                     <div class="apply_background_center_contain w-full h-[330px] md:w-[40%] md:h-[462px] md:flex-none
-                        bg-[url('../sources/img/centre_de_vacances/centre_de_vances_map_mobile.svg')] 
-                        md:bg-[url('../sources/img/centre_de_vacances/centre_de_vances_map_desktop.svg')]">
+                        bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')] 
+                        md:bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')]">
                     </div>
-
+    
                     <div class="md:flex-auto md:max-w-[640px]">
                         <p class="apply_title_h3 pb-4">Où se situe le centre ?</p>
                         <p class="apply_body_medium_base text-neutrals-dark">Le domaine de Moulibez se situe sur la
@@ -189,12 +189,13 @@
                         </p>
                     </div>
                 </div>
-
+    
                 <div class="flex flex-col gap-12 md:gap-26">
-
-                    <div data-direction="normal" class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-y-8 gap-x-16">
-                        <div class="md:flex-1">
-                            <p class="apply_title_h3 pb-4">Les infrastructures</p>
+    
+                    <div data-direction="normal"
+                        class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-8 xl:gap-x-16">
+                        <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
+                            <p class="apply_title_h3">Les infrastructures</p>
                             <p class="apply_body_medium_base text-neutrals-dark">12 salles d’activités sont à la
                                 disposition des enfants, ainsi qu’une bibliothèque, un babyfoot, une table de ping pong,
                                 un terrain de sports collectifs, une salle de restaurant avec vue sur La Muse, un espace
@@ -204,16 +205,45 @@
                                 peuvent donc pendant les temps libres aller voir leurs montures, leur donner une
                                 carotte, et leur dire à demain avant d’aller au lit !
                             </p>
+                            <div class="hidden md:flex gap-4 items-center">
+                                <div
+                                    class="swiper_centre_1_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                                <div
+                                    class="swiper_centre_1_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                            </div>
                         </div>
                         <div class="md:flex-1">
-
-                            <p class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">Légende de la photo mise en avant</p>
+    
+                            <div class="swiper swiper_centre_1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
+                                    </div>
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
+                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p
+                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
+                                Légende de la photo mise en avant</p>
                         </div>
                     </div>
-
-                    <div data-direction="reverse" class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-y-8 gap-x-16">
-                        <div class="md:flex-1">
-                            <p class="apply_title_h3 pb-4">Les chambres</p>
+    
+                    <div data-direction="reverse"
+                        class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-8 xl:gap-x-16">
+                        <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
+                            <p class="apply_title_h3">Les chambres</p>
                             <p class="apply_body_medium_base text-neutrals-dark">12 salles d’activités sont à la
                                 disposition des enfants, ainsi qu’une bibliothèque, un babyfoot, une table de ping pong,
                                 un terrain de sports collectifs, une salle de restaurant avec vue sur La Muse, un espace
@@ -223,23 +253,89 @@
                                 peuvent donc pendant les temps libres aller voir leurs montures, leur donner une
                                 carotte, et leur dire à demain avant d’aller au lit !
                             </p>
+                            <div class="hidden md:flex gap-4 items-center">
+                                <div
+                                    class="swiper_centre_2_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                                <div
+                                    class="swiper_centre_2_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                            </div>
                         </div>
-                        <div class="md:flex-1"></div>
-                    </div>
-
-                    <div data-direction="normal" class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-y-8 gap-x-16">
                         <div class="md:flex-1">
-                            <p class="apply_title_h3 pb-4">Les repas</p>
+    
+                            <div class="swiper swiper_centre_2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
+                                    </div>
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
+                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p
+                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
+                                Légende de la photo mise en avant</p>
+                        </div>
+                    </div>
+    
+                    <div data-direction="normal"
+                        class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse  gap-8 xl:gap-x-16">
+                        <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
+                            <p class="apply_title_h3">Les repas</p>
                             <p class="apply_body_medium_base text-neutrals-dark">Les repas sont confectionnés sur place
                                 par notre équipe de cuisine. Ils sont servis sous forme de buffet pour les entrées, le
                                 fromage et les desserts, les plats chaud sont servis à table, pour que chacun profite de
                                 ce moment de convivialité.</p>
+                            <div class="hidden md:flex gap-4 items-center">
+                                <div
+                                    class="swiper_centre_3_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                                <div
+                                    class="swiper_centre_3_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                </div>
+                            </div>
                         </div>
-                        <div class="md:flex-1"></div>
+                        <div class="md:flex-1">
+    
+                            <div class="swiper swiper_centre_3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
+                                    </div>
+                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
+                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
+                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
+                                    </div>
+                                    <div
+                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p
+                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
+                                Légende de la photo mise en avant</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+    
+
+
 
 
         <section class="bg-camel text-green relative apply_before_clip apply_after_clip before:bg-clip_camel_top_34 after:bg-clip_camel_bottom_35
@@ -262,7 +358,7 @@
 
                 <div class="apply_wrapper_1440 px-0">
 
-                    <div class="swiper swiper_cards_homepage !pt-8 md:!pt-16">
+                    <div class="swiper swiper_thematiques !pt-8 md:!pt-16">
                         <div class="swiper-wrapper">
                             <a href="/"
                                 class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards rounded-2xl overflow-hidden">
@@ -579,14 +675,13 @@
                                 </div>
                             </a>
                         </div>
-                        <!--<div class="swiper-pagination"></div>-->
                         <!-- Flèches de navigation -->
                         <div class="apply_wrapper_1440 pt-8 md:pt-16 flex gap-4 justify-end">
                             <div
-                                class="swiper-button-prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 transition-transform">
+                                class="swiper_thematiques_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                             </div>
                             <div
-                                class="swiper-button-next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 transition-transform">
+                                class="swiper_thematiques_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                             </div>
                         </div>
                     </div>
