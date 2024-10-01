@@ -800,6 +800,21 @@ html {
   }
 }
 
+.apply_title_h3{
+  font-family: "Francois One", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px){
+  .apply_title_h3{
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+}
+
 .apply_title_h5{
   font-family: "Francois One", sans-serif;
   font-size: 1.25rem;
@@ -1220,6 +1235,10 @@ html {
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
 }
@@ -1270,10 +1289,6 @@ html {
 
 .h-3\.5{
   height: 0.875rem;
-}
-
-.h-30{
-  height: 7.5rem;
 }
 
 .h-4\.5{
@@ -1562,6 +1577,10 @@ html {
   gap: 3px;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -1597,6 +1616,15 @@ html {
 
 .gap-y-6{
   row-gap: 1.5rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
+}
+
+.gap-x-16{
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
@@ -1916,6 +1944,14 @@ html {
   background-image: url('../sources/icons/User_green.svg');
 }
 
+.bg-\[url\(\'\.\.\/media\/paul\/DATA\/FREELANCE\/PROJETS_CLIENTS\/preprod\/sources\/img\/centre_de_vacances\/centre_de_vances_map_mobile\.svg\'\)\]{
+  background-image: url('../media/paul/DATA/FREELANCE/PROJETS_CLIENTS/preprod/sources/img/centre_de_vacances/centre_de_vances_map_mobile.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vances_map_mobile\.svg\'\)\]{
+  background-image: url('../sources/img/centre_de_vacances/centre_de_vances_map_mobile.svg');
+}
+
 .bg-\[length\:275px_194px\]{
   background-size: 275px 194px;
 }
@@ -2113,6 +2149,10 @@ html {
   padding-top: 2rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2198,6 +2238,10 @@ html {
 .text-title_h6_mobile{
   font-size: 1rem;
   line-height: 1.25;
+}
+
+.text-\[22px\]{
+  font-size: 22px;
 }
 
 .font-bold{
@@ -2523,6 +2567,11 @@ input {
   bottom: -11px;
 }
 
+.after\:bottom-\[-13px\]::after{
+  content: var(--tw-content);
+  bottom: -13px;
+}
+
 .after\:bottom-\[-17px\]::after{
   content: var(--tw-content);
   bottom: -17px;
@@ -2618,26 +2667,6 @@ input {
   top: -80px;
 }
 
-.after\:bottom-\[-13px\]::after{
-  content: var(--tw-content);
-  bottom: -13px;
-}
-
-.after\:right-\[\]::after{
-  content: var(--tw-content);
-  right: ;
-}
-
-.after\:right-\[-10px\]::after{
-  content: var(--tw-content);
-  right: -10px;
-}
-
-.after\:right-\[-13px\]::after{
-  content: var(--tw-content);
-  right: -13px;
-}
-
 .after\:-z-10::after{
   content: var(--tw-content);
   z-index: -10;
@@ -2703,6 +2732,11 @@ input {
   height: 141px;
 }
 
+.after\:h-\[155px\]::after{
+  content: var(--tw-content);
+  height: 155px;
+}
+
 .after\:h-\[188px\]::after{
   content: var(--tw-content);
   height: 188px;
@@ -2738,16 +2772,6 @@ input {
   height: 8px;
 }
 
-.after\:h-\[\]::after{
-  content: var(--tw-content);
-  height: ;
-}
-
-.after\:h-\[155px\]::after{
-  content: var(--tw-content);
-  height: 155px;
-}
-
 .after\:w-10::after{
   content: var(--tw-content);
   width: 2.5rem;
@@ -2778,6 +2802,11 @@ input {
   width: 141px;
 }
 
+.after\:w-\[168px\]::after{
+  content: var(--tw-content);
+  width: 168px;
+}
+
 .after\:w-\[331px\]::after{
   content: var(--tw-content);
   width: 331px;
@@ -2801,16 +2830,6 @@ input {
 .after\:w-full::after{
   content: var(--tw-content);
   width: 100%;
-}
-
-.after\:w-\[\]::after{
-  content: var(--tw-content);
-  width: ;
-}
-
-.after\:w-\[168px\]::after{
-  content: var(--tw-content);
-  width: 168px;
 }
 
 .after\:-translate-x-1\/2::after{
@@ -2908,6 +2927,11 @@ input {
   background-image: url('../sources/clip/clip_camel_bottom_35.svg');
 }
 
+.after\:bg-freepik_character::after{
+  content: var(--tw-content);
+  background-image: url('../sources/logos/freepik--Character--inject-109.svg');
+}
+
 .after\:bg-highlight_green_star::after{
   content: var(--tw-content);
   background-image: url('../sources/highlight/highlight_green_star.svg');
@@ -2936,11 +2960,6 @@ input {
 .after\:bg-highlight_kidyellow_underline::after{
   content: var(--tw-content);
   background-image: url('../sources/highlight/highlight_kidyellow_underline.svg');
-}
-
-.after\:bg-freepik_character::after{
-  content: var(--tw-content);
-  background-image: url('../sources/logos/freepik--Character--inject-109.svg');
 }
 
 .after\:bg-contain::after{
@@ -3245,18 +3264,6 @@ input {
     top: 226px;
   }
 
-  .md\:bottom-\[-13px\]{
-    bottom: -13px;
-  }
-
-  .md\:left-\[\]{
-    left: ;
-  }
-
-  .md\:left-\[-50px\]{
-    left: -50px;
-  }
-
   .md\:order-none{
     order: 0;
   }
@@ -3276,6 +3283,10 @@ input {
 
   .md\:h-auto{
     height: auto;
+  }
+
+  .md\:h-\[462px\]{
+    height: 462px;
   }
 
   .md\:min-h-\[480px\]{
@@ -3315,6 +3326,14 @@ input {
     width: fit-content;
   }
 
+  .md\:w-\[530px\]{
+    width: 530px;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
   .md\:max-w-\[358px\]{
     max-width: 358px;
   }
@@ -3323,8 +3342,24 @@ input {
     max-width: 480px;
   }
 
+  .md\:max-w-\[\]{
+    max-width: ;
+  }
+
+  .md\:max-w-\[640px\]{
+    max-width: 640px;
+  }
+
   .md\:flex-auto{
     flex: 1 1 auto;
+  }
+
+  .md\:flex-none{
+    flex: none;
+  }
+
+  .md\:flex-1{
+    flex: 1 1 0%;
   }
 
   .md\:grid-cols-4{
@@ -3351,12 +3386,20 @@ input {
     align-items: stretch;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
   .md\:gap-4{
     gap: 1rem;
   }
 
   .md\:gap-8{
     gap: 2rem;
+  }
+
+  .md\:gap-26{
+    gap: 6.5rem;
   }
 
   .md\:bg-\[url\(\'\.\.\/sources\/background\/background_faq_centre_de_vacances\.svg\'\)\]{
@@ -3369,6 +3412,14 @@ input {
 
   .md\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_map_desktop\.svg\'\)\]{
     background-image: url('../sources/img/homepage/homepage_map_desktop.svg');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vances_map_mobile\.svg\'\)\]{
+    background-image: url('../sources/img/centre_de_vacances/centre_de_vances_map_mobile.svg');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vances_map_desktop\.svg\'\)\]{
+    background-image: url('../sources/img/centre_de_vacances/centre_de_vances_map_desktop.svg');
   }
 
   .md\:bg-\[length\:60\%_auto\]{
@@ -3434,6 +3485,10 @@ input {
     padding-bottom: 8.5rem;
   }
 
+  .md\:pb-36{
+    padding-bottom: 9rem;
+  }
+
   .md\:pt-16{
     padding-top: 4rem;
   }
@@ -3456,6 +3511,18 @@ input {
 
   .md\:pt-8{
     padding-top: 2rem;
+  }
+
+  .md\:pt-25{
+    padding-top: 6.25rem;
+  }
+
+  .md\:pt-4{
+    padding-top: 1rem;
+  }
+
+  .md\:pt-6{
+    padding-top: 1.5rem;
   }
 
   .md\:text-center{
@@ -3490,6 +3557,14 @@ input {
   .md\:text-title_h6{
     font-size: 1.25rem;
     line-height: 1.5;
+  }
+
+  .md\:text-\[28px\]{
+    font-size: 28px;
+  }
+
+  .md\:text-\[20px\]{
+    font-size: 20px;
   }
 
   .md\:before\:top-\[-17px\]::before{
@@ -3547,16 +3622,6 @@ input {
     left: -12px;
   }
 
-  .md\:after\:bottom-\[-13px\]::after{
-    content: var(--tw-content);
-    bottom: -13px;
-  }
-
-  .md\:after\:left-\[-50px\]::after{
-    content: var(--tw-content);
-    left: -50px;
-  }
-
   .md\:after\:left-\[-80px\]::after{
     content: var(--tw-content);
     left: -80px;
@@ -3575,6 +3640,11 @@ input {
   .md\:after\:h-7::after{
     content: var(--tw-content);
     height: 1.75rem;
+  }
+
+  .md\:after\:h-\[164px\]::after{
+    content: var(--tw-content);
+    height: 164px;
   }
 
   .md\:after\:h-\[18px\]::after{
@@ -3597,34 +3667,9 @@ input {
     height: 35px;
   }
 
-  .md\:after\:h-\[155px\]::after{
-    content: var(--tw-content);
-    height: 155px;
-  }
-
-  .md\:after\:h-\[16\]::after{
-    content: var(--tw-content);
-    height: 16;
-  }
-
-  .md\:after\:h-\[164px\]::after{
-    content: var(--tw-content);
-    height: 164px;
-  }
-
   .md\:after\:w-48::after{
     content: var(--tw-content);
     width: 12rem;
-  }
-
-  .md\:after\:w-\[400px\]::after{
-    content: var(--tw-content);
-    width: 400px;
-  }
-
-  .md\:after\:w-\[168px\]::after{
-    content: var(--tw-content);
-    width: 168px;
   }
 
   .md\:after\:w-\[178px\]::after{
@@ -3632,10 +3677,19 @@ input {
     width: 178px;
   }
 
+  .md\:after\:w-\[400px\]::after{
+    content: var(--tw-content);
+    width: 400px;
+  }
+
   .md\:hover\:scale-125:hover{
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:data-\[direction\=reverse\]\:flex-row-reverse[data-direction="reverse"]{
+    flex-direction: row-reverse;
   }
 }
 
@@ -3695,6 +3749,10 @@ input {
     display: flex;
   }
 
+  .lg\:grid{
+    display: grid;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -3727,6 +3785,16 @@ input {
     width: 100%;
   }
 
+  .lg\:flex-1{
+    flex: 1 1 0%;
+  }
+
+  @media (min-width: 1024px){
+    .lg\:lg\:flex-1{
+      flex: 1 1 0%;
+    }
+  }
+
   .lg\:auto-rows-\[106px\]{
     grid-auto-rows: 106px;
   }
@@ -3737,6 +3805,10 @@ input {
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .lg\:flex-wrap{
@@ -3757,6 +3829,10 @@ input {
 
   .lg\:gap-6{
     gap: 1.5rem;
+  }
+
+  .lg\:gap-26{
+    gap: 6.5rem;
   }
 
   .lg\:gap-x-25{
@@ -3814,6 +3890,10 @@ input {
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:data-\[direction\=reverse\]\:flex-row-reverse[data-direction="reverse"]{
+    flex-direction: row-reverse;
   }
 }
 
