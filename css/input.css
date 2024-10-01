@@ -4,12 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 
 @layer base {
@@ -30,147 +27,194 @@
     @apply cursor-pointer
   } */
 
-  .title_h1 {
+  .apply_title_h1 {
     @apply font-francoisone font-normal uppercase text-title_h1_mobile md:text-title_h1;
   }
 
-  .title_h2 {
+  .apply_title_h2 {
     @apply font-francoisone font-normal uppercase text-title_h2_mobile md:text-title_h2;
   }
 
-  .title_h3 {
+  .apply_title_h3 {
     @apply font-francoisone font-normal uppercase text-title_h3_mobile md:text-title_h3;
   }
 
-  .title_h4 {
+  .apply_title_h4 {
     @apply font-francoisone font-normal uppercase text-title_h4_mobile md:text-title_h4;
   }
 
-  .title_h5 {
+  .apply_title_h5 {
     @apply font-francoisone font-normal uppercase text-title_h5_mobile md:text-title_h5;
   }
 
-  .title_h6 {
+  .apply_title_h6 {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_h6;
   }
 
-  .title_h6_nomq {
+  .apply_title_h6_nomq {
     @apply font-francoisone font-normal uppercase text-title_h6;
   }
 
 
-  .title_mini {
+  .apply_title_mini {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
   }
 
-  .title_drop {
+  .apply_title_drop {
     @apply font-francoisone font-normal text-title_drop_mobile md:text-title_drop;
   }
 
-  .title_drop_2 {
+  .apply_title_drop_2 {
     @apply font-francoisone font-normal text-title_drop_2_mobile md:text-title_drop_2;
   }
 
-  .body_bold_xl {
+  .apply_body_bold_xl {
     @apply font-manrope font-bold text-body_xl;
   }
 
-  .body_bold_lg {
+  .apply_body_bold_lg {
     @apply font-manrope font-bold text-body_lg;
   }
 
-  .body_bold_base {
+  .apply_body_bold_base {
     @apply font-manrope font-bold text-body_base;
   }
 
-  .body_bold_sm {
+  .apply_body_bold_sm {
     @apply font-manrope font-bold text-body_sm;
   }
 
-  .body_bold_xs {
+  .apply_body_bold_xs {
     @apply font-manrope font-bold text-body_xs;
   }
 
-  .body_semibold_xl {
+  .apply_body_semibold_xl {
     @apply font-manrope font-semibold text-body_xl;
   }
 
-  .body_semibold_lg {
+  .apply_body_semibold_lg {
     @apply font-manrope font-semibold text-body_lg;
   }
 
-  .body_semibold_base {
+  .apply_body_semibold_base {
     @apply font-manrope font-semibold text-body_base;
   }
 
-  .body_semibold_sm {
+  .apply_body_semibold_sm {
     @apply font-manrope font-semibold text-body_sm;
   }
 
-  .body_semibold_xs {
+  .apply_body_semibold_xs {
     @apply font-manrope font-semibold text-body_xs;
   }
 
-  .body_medium_xl {
+  .apply_body_medium_xl {
     @apply font-manrope font-medium text-body_xl;
   }
 
-  .body_medium_lg {
+  .apply_body_medium_lg {
     @apply font-manrope font-medium text-body_lg;
   }
 
-  .body_medium_base {
+  .apply_body_medium_base {
     @apply font-manrope font-medium text-body_base;
   }
 
-  .body_medium_sm {
+  .apply_body_medium_sm {
     @apply font-manrope font-medium text-body_sm;
   }
 
-  .body_medium_xs {
+  .apply_body_medium_xs {
     @apply font-manrope font-medium text-body_xs;
   }
 
-  .body_regular_xl {
+  .apply_body_regular_xl {
     @apply font-manrope font-normal text-body_xl;
   }
 
-  .body_regular_lg {
+  .apply_body_regular_lg {
     @apply font-manrope font-normal text-body_lg;
   }
 
-  .body_regular_base {
+  .apply_body_regular_base {
     @apply font-manrope font-normal text-body_base;
   }
 
-  .body_regular_sm {
+  .apply_body_regular_sm {
     @apply font-manrope font-normal text-body_regular_sm;
   }
 
-  .body_regular_xs {
+  .apply_body_regular_xs {
     @apply font-manrope font-normal text-body_xs;
   }
 
-  .body_regular_xs {
-    @apply font-manrope font-normal text-body_xs;
-  }
 
   /* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
-  .wrapper_1440 {
+  .apply_wrapper_1440 {
     @apply max-w-1328 mx-auto px-4 md:px-8 lg:px-16;
   }
+
+  .apply_background_center_contain {
+    @apply bg-contain bg-center bg-no-repeat;
+  }
+
+  .apply_background_center_cover {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+
+  .apply_after_background_center_contain {
+    @apply after:bg-contain after:bg-center after:bg-no-repeat;
+  }
+
+  .apply_background_center_cover {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+
+  .apply_before_clip {
+    @apply before:absolute before:z-10 before:w-full before:left-0 before:bg-center before:bg-cover before:bg-no-repeat;
+  }
+
+  .apply_after_clip {
+    @apply after:absolute after:z-10 after:w-full after:left-0 after:bg-center after:bg-cover after:bg-no-repeat;
+  }
+
+  .apply_breadcrumb>li {
+    @apply flex items-center;
+  }
+
+
+  .apply_breadcrumb>li>a {
+    @apply inline-block;
+  }
+
+  .apply_breadcrumb>li>a:hover {
+    @apply underline;
+  }
+
+  .apply_breadcrumb>li:first-of-type>a {
+    @apply apply_background_center_contain bg-home flex-none w-4.5 h-4.5;
+  }
+
+  .apply_breadcrumb>li:last-of-type>a {
+    @apply apply_body_bold_base text-neonorange pointer-events-none;
+  }
+
+  .apply_breadcrumb>li:not(:last-of-type):after {
+    @apply content-[''] inline-block ml-2 w-2.5 h-2.5 flex-none apply_background_center_contain bg-carret_right;
+  }
+
 }
 
 
 @layer utilities {
 
   /* Hide scrollbar for Chrome, Safari and Opera */
-  .no_scrollbar::-webkit-scrollbar {
+  .css_no_scrollbar::-webkit-scrollbar {
     display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
-  .no_scrollbar {
+  .css_no_scrollbar {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
