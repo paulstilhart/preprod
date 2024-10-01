@@ -166,6 +166,10 @@
     @apply after:bg-contain after:bg-center after:bg-no-repeat;
   }
 
+  .apply_after_background_center_cover {
+    @apply after:bg-cover after:bg-center after:bg-no-repeat;
+  }
+
   .apply_background_center_cover {
     @apply bg-cover bg-center bg-no-repeat;
   }
