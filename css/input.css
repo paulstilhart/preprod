@@ -28,6 +28,12 @@
     @apply max-w-1440 mx-auto px-4 md:px-8 xl:px-30;
   }
 
+  /* pour les cgv, avec 32px paddingX => 1088px de contenu max  */
+  .apply_wrapper_1152 {
+    @apply max-w-1152 mx-auto px-4 md:px-8;
+  }
+
+
 
   em {
     @apply not-italic text-neonorange;

@@ -147,6 +147,7 @@ module.exports = {
 
     extend: {
       maxWidth: {
+        1152: "1152px",//pour les cgv, avec 32px paddingX => 1088px de contenu max
         1328: "1328px",
         1440: "1440px",
       },
@@ -232,7 +233,8 @@ module.exports = {
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
           "url('../sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up: "url('../sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_thumb_up:
+          "url('../sources/icons/tabler-icon-thumb-up.svg')",
         tabler_icon_user_shield:
           "url('../sources/icons/tabler-icon-user-shield.svg')",
         tabler_icon_credit_card_white:
@@ -251,6 +253,9 @@ module.exports = {
           "url('../sources/background/background_striated_high.svg')",
         background_striated_low_and_points:
           "url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg')",
+        background_camel_template_desktop_79:
+          "url('../sources/background/background_camel_template_desktop_79.svg')",
+          background_camel_template_mobile_62:"url('../sources/background/background_camel_template_mobile_62.svg')",
         clip_green_footer_top_34:
           "url('../sources/clip/clip_green_footer_top_34.svg')",
         clip_camel_top_18: "url('../sources/clip/clip_camel_top_18.svg')",
@@ -261,6 +266,7 @@ module.exports = {
           "url('../sources/clip/clip_camel_bottom_18_nav.svg')",
         clip_camel_bottom_34: "url('../sources/clip/clip_camel_bottom_34.svg')",
         clip_camel_bottom_35: "url('../sources/clip/clip_camel_bottom_35.svg')",
+        clip_white_top_18: "url('../sources/clip/clip_white_top_18.svg')",
         highlight_green_star:
           "url('../sources/highlight/highlight_green_star.svg')",
         highlight_kidyellow_faq:
@@ -275,17 +281,21 @@ module.exports = {
           "url('../sources/highlight/highlight_kidyellow_underline.svg')",
         highlight_kidyellow_underline_double:
           "url('../sources/highlight/highlight_kidyellow_underline_double.svg')",
+          highlight_cgv_desktop:
+          "url('../sources/highlight/highlight_cgv_desktop.svg')",
+          highlight_cgv_mobile:
+          "url('../sources/highlight/highlight_cgv_mobile.svg')",
         listing_pages_infos_1:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
         listing_pages_infos_2:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg')",
-          listing_pages_infos_3:
+        listing_pages_infos_3:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg')",
-          listing_pages_infos_4:
+        listing_pages_infos_4:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg')",
-          listing_pages_infos_5:
+        listing_pages_infos_5:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
-          listing_pages_infos_6:
+        listing_pages_infos_6:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
       },
 

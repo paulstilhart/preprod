@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>CGV</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/draft.js"></script>
+</head>
+
+<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+
+    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
+
+        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed w-full h-16 apply_wrapper_1440   
+            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
+            <a href="/" class="apply_span_icon h-8 w-30 bg-gocolo_green"></a>
+            <div class="flex items-center gap-3">
+                <a data-cart="3" href="/"
+                    class="apply_span_icon_50 bg-cart_green h-10 w-10 bg-neutrals-white rounded-lg 
+                    ring-1 ring-green ring-inset relative 
+                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs"></a>
+                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile"
+                    class="apply_span_icon_50 bg-menu_green h-10 w-10 bg-kidyellow rounded-lg"></button>
+            </div>
+        </div>
+
+        <div x-show="openheadermobile" x-cloak x-transition
+            class="z-40 fixed w-full !h-dvh h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto lg:overflow-y-visible">
+            <hr class="hidden lg:block border-dark-200">
+            <div class="bg-neutrals-white text-green  relative lg:static 
+                apply_wrapper_1440 w-full min-h-[calc(100%_-150px)] lg:min-h-16 py-22 lg:py-2 
+                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+
+                <a href="/" class="apply_span_icon hidden lg:inline-block h-8 w-30 bg-gocolo_green"></a>
+
+                <div
+                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
+                    <div class="apply_title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
+                            centres de vacances</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
+                            pratiques</a>
+                        <a href="/" aria-selected="true"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
+                    </div>
+                    <div class="flex lg:items-center gap-x-2">
+
+                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                            aria-controls="dropdownmenu" class="group/dropdown relative">
+                            <div x-on:click="opendropdown = ! opendropdown"
+                                class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
+                                <span class="inline-block">Les colos par thématique</span>
+                                <span
+                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
+                            </div>
+
+                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
+                            flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
+                                <a href="/">Les colos sportives</a>
+                                <a href="/">Les colos culturelles</a>
+                                <a href="/">Les colos scientifiques</a>
+                                <a href="/">Les colos sportives</a>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="absolute bottom-6 lg:static apply_body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
+                            <span class="apply_span_icon bg-user_green w-3.5 h-3.5"></span>
+                            <span class="inline-block">Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hidden lg:block border-dark-200">
+            <div
+                class="bg-camel lg:bg-neutrals-white text-green  apply_body_bold_sm  apply_wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="">Pourquoi choisir Gocolo ?</a>
+                    <a href="">Nos colonie de vacances</a>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a data-cart="3" href="/"
+                        class="hidden lg:flex items-center gap-2 relative 
+                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-cart_green"></span>
+                        <span class="inline-block">Mon panier</span>
+                    </a>
+                    <a href="tel:0033471782243" class="apply_body_semibold_sm  flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green"></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <nav aria-hidden="true" aria-label="breadcrumb" class="aria-hidden:hidden bg-camel relative apply_after_clip after:bg-clip_camel_bottom_18_nav 
+    after:h-[12px] after:bottom-[-11px] md:after:h-[18px] md:after:bottom-[-17px]">
+
+        <ul
+            class="apply_breadcrumb apply_wrapper_1440 apply_body_medium_base text-green pt-4 pb-3 md:pb-1 flex flex-wrap items-center justify-start gap-2">
+            <li><a href="/"></a></li>
+            <li><a href="/">Infos pratiques</a></li>
+            <li><a href="/">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+
+    <div aria-hidden="true" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[180px]">
+        <div class="w-full md:w-[312px] relative z-20   bg-kidyellow text-green px-4 py-5 flex flex-col items-start md:items-center gap-3 
+            after:absolute after:inline-block apply_after_background_center_contain after:bg-freepik_character after:h-[155px] after:w-[168px] 
+            md:after:h-[164px] md:after:w-[178px] after:bottom-[-13px] after:right-[0px]  md:after:left-[-80px]">
+            <p class="apply_title_h6_nomq text-left md:text-center">Explorez les colos<br>en aveyron</p>
+            <a href=""
+                class="apply_body_bold_sm text-neutrals-white bg-green w-fit  flex items-center gap-2 px-3 py-2 rounded-4xl ">
+                <span class="inline-block">Voir les colonies</span>
+                <span
+                    class="apply_background_center_contain bg-arrow_narrow_white flex-none inline-block w-3 h-3 "></span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="h-30 md:h-60 apply_background_center_cover bg-[url('../sources/img/cgv/cgv_background.jpeg')]">
+        </section>
+        <section
+            class="bg-neutrals-white relative apply_before_clip before:bg-clip_white_top_18 before:top-[-5px] md:before:top-[-17px] before:h-[6px] md:before:h-[18px] ">
+
+            <div class="apply_wrapper_1152 py-10 md:pt-20 md:pb-24">
+                <p class="apply_title_h2 pb-8 md:pb-16 text-green">
+                    Conditions de vente de nos <em>colonies de
+                        <span class="relative apply_after_background_center_contain after:bg-highlight_cgv_mobile md:after:bg-highlight_cgv_desktop after:absolute after:inline-block after:right-[-26px] after:bottom-[-5px]  md:after:right-[-40px] md:after:bottom-[30px]
+                        after:w-[27px] after:h-[42px] md:after:w-[48px] md:after:h-[73px]">vacances</span></em></p>
+                <div class="flex flex-col gap-8 md:gap-10">
+
+                    <div>
+                        <p class="apply_title_h3 pb-2 md:pb-4 text-green">Tarifs des colonies de vacances</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Les tarifs sont indiqués Toutes Taxes
+                            Comprises, ils comprennent :
+                            <br>
+                            - L’hébergement et la restauration
+                            <br>
+                            - L’encadrement des mineurs
+                            <br>
+                            - Les activités de prestation
+                            <br>
+                            - L’assurance de responsabilité civile
+                            <br>
+                            - Les frais de dossier
+                            <br>
+                            - Le transport (si l’option a été souscrite)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="apply_title_h3 pb-2 md:pb-4 text-green">Les frais médicaux en colonie</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Les représentants légaux du mineur
+                            s'engagent à renseigner tous les éléments connus et importants de la santé du participant
+                            dans une fiche sanitaire fournie par GoColo. Ils acceptent par avance que GoColo autorise,
+                            si nécessaire, une hospitalisation ou une opération chirurgicale conseillée(s) par un
+                            médecin.
+                            <br><br>
+                            Les représentants s'engagent par avance à rembourser les frais médicaux  avancés par GoColo,
+                            dès le retour de l'enfant.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-6 md:gap-8">
+                        <p class="apply_title_h3 text-green">Modalités de règlement de nos colonies</p>
+                        <div>
+                            <p class="apply_title_h4 pb-4 text-green">Réservation d'une colonie</p>
+                            <p class="apply_body_medium_base text-neutrals-dark">La réservation d'un séjour s'effectue
+                                par l'envoi à  GoColo d'<strong>un acompte égal à
+                                    30% minimum du montant TTC du séjour choisi</strong> (acompte impérativement par
+                                chèque bancaire, CB ou chèque vacances - un bon CAF* ou MSA, ne peuvent en aucun cas
+                                constituer un acompte), soit de la totalité du montant du séjour.
+                                <br><br>
+                                Les transports doivent être réservés  au moment de l'inscription, un ajout est toutefois
+                                possible, dans la limite des places disponibles, Lorsque l'inscription est définitive
+                                (un premier acompte a été versé), il n'est pas possible de modifier ou d'annuler un
+                                transport, l'enfant pourra éventuellement arriver ou  rester sur place, dans ce cas,
+                                <strong><em><a href="">lien dans le texte</a></em></strong> aucun remboursement du prix
+                                du transport ne  sera effectué.
+                                <br><br>
+                                GoColo envoie alors un accusé de réception, par e mail, de la réservation accompagné
+                                d'un dossier complet de renseignements de l'enfant. Tous ces documents sont également
+                                téléchargeables sur notre site, via l'espace parents.
+                                <br><br>
+                                <strong>La famille devra solder le montant du séjour 30 jours</strong>, au plus tard,
+                                avant le jour du
+                                départ. En cas de retard, GoColo se réserve le droit de revendre la place à un autre
+                                participant, et de garder le montant de l'acompte, soit 30% du montant total du séjour.
+                                <br><br>
+                                En cas de difficultés passagères pour régler le séjour, contactez-nous par téléphone
+                                afin que nous puissions trouver un arrangement.
+                                <br><br>
+                                GoColo met en ligne sur le site, dans l'espace parents,  les lieux et heures de
+                                rendez-vous du départ du séjour, au plus tard,  2 semaines avant le départ, il
+                                appartient à chaque participant de télécharger sa convocation.
+                                <br><br>
+                                Le règlement du solde se fait par chèques bancaires, cartes bancaires, virements, bons
+                                de la CAF*, MSA  ou chèques vacances.
+                                <br><br>
+                                * Sous réserve de l’acceptation de la prise en charge par la CAF (nous contacter)
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="apply_title_h4 pb-4 text-green">Modalités de règlement en plusieurs mensualités
+                            </p>
+                            <p class="apply_body_medium_base text-neutrals-dark">GoColo accepte le règlement en
+                                plusieurs mensualités (jusqu'à trois). Pour cela, vous devez
+                                nous faire parvenir par chèque :
+                                <br><br>
+                                - 30% d'acompte au moment de l'inscription +  le solde au plus tard 1 mois avant le
+                                début du
+                                séjour (vous devrez nous faire parvenir ce solde de manière spontanée, aucun courrier ne
+                                vous sera envoyé)
+                                <br><br>
+                                OU
+                                <br><br>
+                                - En plusieurs chèques dont le montant total est égal au prix du séjour (1, 2 ou 3). Le
+                                dernier chèque sera toujours encaissé avant l’arrivée de l’enfant sur le séjour
+                                <br><br>
+                                Nous encaisserons les chèques aux dates qui vous conviennent (merci de nous les indiquer
+                                au
+                                dos de chacun de vos chèques). L'intégralité du montant du séjour devra avoir été
+                                encaissée
+                                avant l'arrivée de l'enfant.
+                                <br><br>
+                                En cas de trop-perçu généré par une aide ce dernier ne sera remboursé qu'après
+                                encaissement
+                                de l'intégralité des paiements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
+        before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
+
+        <div
+            class="text-neutrals-white apply_body_medium_sm text-center apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
+                <p>Séjours agréés DDCSPP</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
+                <p>Encadrement diplômé et contrôlé</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
+                <p>Charte qualité depuis 10 ans</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
+                <p>Paiement sécurisé en ligne</p>
+            </div>
+        </div>
+
+        <hr class=" border-green-600">
+
+
+        <div class="apply_wrapper_1440 py-8 md:py-14 flex flex-col items-start md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between  gap-6 lg:gap-x-8 xl:gap-x-16
+        bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
+
+            <div class="flex flex-col gap-4">
+                <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
+                <p class="apply_body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt
+                    eveniet
+                    reiciendis.</p>
+            </div>
+
+            <div class="min-w-[265px] flex flex-col gap-4">
+                <p class="apply_title_h6">Nos Dernières actus</p>
+                <a href="" class="flex gap-4 items-center">
+                    <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm">Toutes les aides au départ en colonie de vacances</p>
+                </a>
+                <a href="" class="flex gap-4 items-center">
+                    <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm">Colonie de vacances pas chère, ou se situe Gocolo ?</p>
+
+                </a>
+            </div>
+            <div class="min-w-[110px] flex flex-col gap-4">
+                <p class="apply_title_h6">Liens utiles</p>
+                <div class="apply_body_medium_sm flex flex-col gap-2">
+                    <a href="">Recrutement</a>
+                    <a href="">Contact</a>
+                    <a href="">Actualités</a>
+                </div>
+            </div>
+            <div class="min-w-[160px] flex flex-col gap-4">
+                <p class="apply_title_h6">Nos colonies</p>
+                <div class="apply_body_medium_sm flex flex-col gap-2">
+                    <a href="">Colonies sportives</a>
+                    <a href="">Colonies artistiques</a>
+                    <a href="">Colonies culturelles</a>
+                    <a href="">Colonies scientifiques</a>
+                    <a href="">Colonies multi-activités</a>
+                </div>
+            </div>
+            <div class="min-w-[170px] flex flex-col gap-4">
+                <p class="apply_title_h6">Contactez-nous</p>
+                <a href="tel:0033471782243" class="apply_body_semibold_sm flex items-center gap-3">
+                    <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
+                    <span class="inline-block">04 71 78 22 43</span>
+                </a>
+                <a href="mailto:contact@gocolo.fr" class="apply_body_semibold_sm flex items-center gap-2">
+                    <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
+                    <span class="inline-block">contact@gocolo.fr</span>
+                </a>
+                <a href="/" class="apply_body_semibold_sm flex items-center gap-2">
+                    <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
+                    <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
+                </a>
+            </div>
+        </div>
+
+        <hr class=" border-green-600">
+
+
+        <div
+            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <p class="apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="flex flex-wrap apply_body_bold_sm">
+                <p><a href="">Mentions légales</a><span class="inline-block">&ensp;|&ensp;</span></p>
+                <p><a href="">Politique de confidentialité</a><span class="inline-block">&ensp;|&ensp;</span></p>
+                <p><a href="">CGU & CGV</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
