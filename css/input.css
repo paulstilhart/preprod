@@ -155,6 +155,13 @@
   }
 
 
+  .apply_img_center_cover {
+    @apply object-cover object-center;
+  }
+
+  .apply_img_center_contain {
+    @apply object-contain object-center;
+  }
 
   .apply_background_center_contain {
     @apply bg-contain bg-center bg-no-repeat;
@@ -180,9 +187,6 @@
     @apply after:bg-cover after:bg-center after:bg-no-repeat;
   }
 
-  .apply_background_center_cover {
-    @apply bg-cover bg-center bg-no-repeat;
-  }
 
   .apply_before_clip {
     @apply before:absolute before:z-10 before:w-full before:left-0 before:bg-center before:bg-cover before:bg-no-repeat;
@@ -255,7 +259,7 @@
     display: none !important;
   }
 
-  .css_listing_pages_infos_double_background{
+  .css_listing_pages_infos_double_background {
     background-position: left 0px top 17%, right 0px top 70%;
     background-size: 391px 194px, 275px 331px;
   }

@@ -2,7 +2,7 @@
 module.exports = {
   content: {
     relative: true,
-    files: ["/pages/**/*.{html,js}", "/components/**/*.{html,js}"],
+    files: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
   },
 
   darkMode: "selector",
@@ -232,8 +232,7 @@ module.exports = {
           "url('/sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
           "url('/sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up:
-          "url('/sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_thumb_up: "url('/sources/icons/tabler-icon-thumb-up.svg')",
         tabler_icon_user_shield:
           "url('/sources/icons/tabler-icon-user-shield.svg')",
         tabler_icon_credit_card_white:
@@ -275,7 +274,19 @@ module.exports = {
         highlight_kidyellow_underline:
           "url('/sources/highlight/highlight_kidyellow_underline.svg')",
         highlight_kidyellow_underline_double:
-          "url('/sources/highlight/highlight_kidyellow_underline_double')",
+          "url('/sources/highlight/highlight_kidyellow_underline_double.svg')",
+        listing_pages_infos_1:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
+        listing_pages_infos_2:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg')",
+          listing_pages_infos_3:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg')",
+          listing_pages_infos_4:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg')",
+          listing_pages_infos_5:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
+          listing_pages_infos_6:
+          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
       },
 
       keyframes: {
