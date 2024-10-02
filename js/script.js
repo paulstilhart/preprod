@@ -68,3 +68,23 @@ function swiper_centre(containerClass, nextButtonClass, prevButtonClass = {}) {
 const swiper_centre_1 = swiper_centre(".swiper_centre_1", ".swiper_centre_1_next", ".swiper_centre_1_prev");
 const swiper_centre_2 = swiper_centre(".swiper_centre_2", ".swiper_centre_2_next", ".swiper_centre_2_prev");
 const swiper_centre_3 = swiper_centre(".swiper_centre_3", ".swiper_centre_3_next", ".swiper_centre_3_prev");
+
+
+
+
+
+
+// Ajout d'un gestionnaire d'événements pour le clic sur le swiper
+const swiperContainer = document.querySelector('.swiper_centre_1');
+
+swiperContainer.addEventListener('click', () => {
+    // Obtenez l'index de la diapositive active
+    const activeIndex = swiper_centre_1.activeIndex;
+    console.log('Diapositive active au clic : ', activeIndex);
+
+    // Vous pouvez également accéder à l'élément DOM de la diapositive active
+    const activeSlide = swiper_centre_1.slides[activeIndex];
+    console.log('Élément DOM de la diapositive active : ', activeSlide);
+    console.log(getComputedStyle(activeSlide).backgroundImage);
+});
+

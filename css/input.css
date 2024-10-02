@@ -22,10 +22,16 @@
 
 
 @layer components {
-  /*   a,
-  button {
-    @apply cursor-pointer
-  } */
+
+  /* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
+  .apply_wrapper_1440 {
+    @apply max-w-1440 mx-auto px-4 md:px-8 xl:px-30;
+  }
+
+
+  em {
+    @apply not-italic text-neonorange;
+  }
 
   .apply_title_h1 {
     @apply font-francoisone font-normal uppercase text-title_h1_mobile md:text-title_h1;
@@ -149,10 +155,6 @@
   }
 
 
-  /* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
-  .apply_wrapper_1440 {
-    @apply max-w-1328 mx-auto px-4 md:px-8 lg:px-16;
-  }
 
   .apply_background_center_contain {
     @apply bg-contain bg-center bg-no-repeat;
@@ -160,6 +162,14 @@
 
   .apply_background_center_cover {
     @apply bg-cover bg-center bg-no-repeat;
+  }
+
+  .apply_before_background_center_contain {
+    @apply before:bg-contain before:bg-center before:bg-no-repeat;
+  }
+
+  .apply_before_background_center_cover {
+    @apply before:bg-cover before:bg-center before:bg-no-repeat;
   }
 
   .apply_after_background_center_contain {
@@ -243,6 +253,11 @@
 
   [x-cloak] {
     display: none !important;
+  }
+
+  .css_listing_pages_infos_double_background{
+    background-position: left 0px top 17%, right 0px top 70%;
+    background-size: 391px 194px, 275px 331px;
   }
 
 }

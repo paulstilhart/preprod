@@ -166,7 +166,8 @@ module.exports = {
         /*reviews:
           "0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00)", */
 
-        cards: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)", //0px 4px 80px 0px rgba(89, 57, 13, 0.10)
+        cards_spread_8: "0px 4px 8px 0px rgba(89, 57, 13, 0.10)", //0px 4px 80px 0px rgba(89, 57, 13, 0.10)
+        cards_spread_16: "0px 4px 16px 0px rgba(89, 57, 13, 0.10)", //0px 4px 80px 0px rgba(89, 57, 13, 0.10)
       },
 
       spacing: {
@@ -182,6 +183,7 @@ module.exports = {
         30: "7.5rem", //120px
         31: "7.75rem", //124px
         34: "8.5rem", //136px
+        50: "12.5rem", //200px
       },
 
       fontFamily: {
@@ -200,7 +202,8 @@ module.exports = {
         arrow_narrow: "url('../sources/icons/Arrow_narrow.svg')",
         arrow_narrow_green: "url('../sources/icons/Arrow_narrow_green.svg')",
         arrow_narrow_white: "url('../sources/icons/Arrow_narrow_white.svg')",
-        arrow_narrow_disabled:"url('../sources/icons/Arrow_narrow_disabled.svg')",
+        arrow_narrow_disabled:
+          "url('../sources/icons/Arrow_narrow_disabled.svg')",
         phone: "url('../sources/icons/Phone.svg')",
         phone_green: "url('../sources/icons/Phone_green.svg')",
         phone_white: "url('../sources/icons/Phone_white.svg')",
@@ -215,7 +218,8 @@ module.exports = {
         close_red: "url('../sources/icons/close_red.svg')",
         gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
         gocolo_green: "url('../sources/logos/gocolo_green.svg')",
-        freepik_character: "url('../sources/logos/freepik--Character--inject-109.svg')",
+        freepik_character:
+          "url('../sources/logos/freepik--Character--inject-109.svg')",
         star_green: "url('../sources/icons/star_green.svg')",
         cart: "url('../sources/icons/Cart.svg')",
         cart_green: "url('../sources/icons/Cart_green.svg')",
@@ -224,31 +228,54 @@ module.exports = {
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
-        tabler_icon_credit_card:"url('../sources/icons/tabler-icon-credit-card.svg')",
-        tabler_icon_home_shield:"url('../sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up:"url('../sources/icons/tabler-icon-thumb-up.svg')",
-        tabler_icon_user_shield:"url('../sources/icons/tabler-icon-user-shield.svg')",
-        tabler_icon_credit_card_white:"url('../sources/icons/tabler-icon-credit-card-white.svg')",
-        tabler_icon_home_shield_white:"url('../sources/icons/tabler-icon-home-shield-white.svg')",
-        tabler_icon_thumb_up_white:"url('../sources/icons/tabler-icon-thumb-up-white.svg')",
-        tabler_icon_user_shield_white:"url('../sources/icons/tabler-icon-user-shield-white.svg')",
+        tabler_icon_credit_card:
+          "url('../sources/icons/tabler-icon-credit-card.svg')",
+        tabler_icon_home_shield:
+          "url('../sources/icons/tabler-icon-home-shield.svg')",
+        tabler_icon_thumb_up:
+          "url('../sources/icons/tabler-icon-thumb-up.svg')",
+        tabler_icon_user_shield:
+          "url('../sources/icons/tabler-icon-user-shield.svg')",
+        tabler_icon_credit_card_white:
+          "url('../sources/icons/tabler-icon-credit-card-white.svg')",
+        tabler_icon_home_shield_white:
+          "url('../sources/icons/tabler-icon-home-shield-white.svg')",
+        tabler_icon_thumb_up_white:
+          "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
+        tabler_icon_user_shield_white:
+          "url('../sources/icons/tabler-icon-user-shield-white.svg')",
         background_footer: "url('../sources/background/background_footer.svg')",
         background_points: "url('../sources/background/background_points.svg')",
-        clip_green_footer_top_34:"url('../sources/clip/clip_green_footer_top_34.svg')",
-        clip_camel_top_18:"url('../sources/clip/clip_camel_top_18.svg')",
-        clip_camel_top_34:"url('../sources/clip/clip_camel_top_34.svg')",
-        clip_camel_top_35:"url('../sources/clip/clip_camel_top_35.svg')",
-        clip_camel_bottom_18:"url('../sources/clip/clip_camel_bottom_18.svg')",
-        clip_camel_bottom_18_nav:"url('../sources/clip/clip_camel_bottom_18_nav.svg')",
-        clip_camel_bottom_34:"url('../sources/clip/clip_camel_bottom_34.svg')",
-        clip_camel_bottom_35:"url('../sources/clip/clip_camel_bottom_35.svg')",
-        highlight_green_star:"url('../sources/highlight/highlight_green_star.svg')",
-        highlight_kidyellow_faq:"url('../sources/highlight/highlight_kidyellow_faq.svg')",
-        highlight_kidyellow_star:"url('../sources/highlight/highlight_kidyellow_star.svg')",
-        highlight_kidyellow_stars_1:"url('../sources/highlight/highlight_kidyellow_stars_1.svg')",
-        highlight_kidyellow_stars_2:"url('../sources/highlight/highlight_kidyellow_stars_2.svg')",
-        highlight_kidyellow_underline:"url('../sources/highlight/highlight_kidyellow_underline.svg')",
-        highlight_kidyellow_underline_double:"url('../sources/highlight/highlight_kidyellow_underline_double')",
+        background_striated_low:
+          "url('../sources/background/background_striated_low.svg')",
+        background_striated_high:
+          "url('../sources/background/background_striated_high.svg')",
+        background_striated_low_and_points:
+          "url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg')",
+        clip_green_footer_top_34:
+          "url('../sources/clip/clip_green_footer_top_34.svg')",
+        clip_camel_top_18: "url('../sources/clip/clip_camel_top_18.svg')",
+        clip_camel_top_34: "url('../sources/clip/clip_camel_top_34.svg')",
+        clip_camel_top_35: "url('../sources/clip/clip_camel_top_35.svg')",
+        clip_camel_bottom_18: "url('../sources/clip/clip_camel_bottom_18.svg')",
+        clip_camel_bottom_18_nav:
+          "url('../sources/clip/clip_camel_bottom_18_nav.svg')",
+        clip_camel_bottom_34: "url('../sources/clip/clip_camel_bottom_34.svg')",
+        clip_camel_bottom_35: "url('../sources/clip/clip_camel_bottom_35.svg')",
+        highlight_green_star:
+          "url('../sources/highlight/highlight_green_star.svg')",
+        highlight_kidyellow_faq:
+          "url('../sources/highlight/highlight_kidyellow_faq.svg')",
+        highlight_kidyellow_star:
+          "url('../sources/highlight/highlight_kidyellow_star.svg')",
+        highlight_kidyellow_stars_1:
+          "url('../sources/highlight/highlight_kidyellow_stars_1.svg')",
+        highlight_kidyellow_stars_2:
+          "url('../sources/highlight/highlight_kidyellow_stars_2.svg')",
+        highlight_kidyellow_underline:
+          "url('../sources/highlight/highlight_kidyellow_underline.svg')",
+        highlight_kidyellow_underline_double:
+          "url('../sources/highlight/highlight_kidyellow_underline_double')",
       },
 
       keyframes: {

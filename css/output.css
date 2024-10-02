@@ -765,10 +765,35 @@ html {
   --tw-contain-style:  ;
 }
 
-/*   a,
-  button {
-    @apply cursor-pointer
-  } */
+/* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
+
+.apply_wrapper_1440{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px){
+  .apply_wrapper_1440{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .apply_wrapper_1440{
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
+}
+
+em{
+  font-style: normal;
+  --tw-text-opacity: 1;
+  color: rgb(253 99 24 / var(--tw-text-opacity));
+}
 
 .apply_title_h1{
   font-family: "Francois One", sans-serif;
@@ -978,30 +1003,6 @@ html {
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
-}
-
-/* 1200px max pour le contenue evolution du padding en fonction de largeur d'écran  0 (16px) 768 (32px) 1024 (64px)  */
-
-.apply_wrapper_1440{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1328px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px){
-  .apply_wrapper_1440{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .apply_wrapper_1440{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
 }
 
 .apply_background_center_contain{
@@ -1306,6 +1307,10 @@ html {
   height: 1.125rem;
 }
 
+.h-50{
+  height: 12.5rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -1344,10 +1349,6 @@ html {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-20{
-  height: 5rem;
 }
 
 .min-h-0{
@@ -1412,6 +1413,10 @@ html {
 
 .w-4\.5{
   width: 1.125rem;
+}
+
+.w-50{
+  width: 12.5rem;
 }
 
 .w-6{
@@ -1479,14 +1484,6 @@ html {
   max-width: 880px;
 }
 
-.max-w-\[\]{
-  max-width: ;
-}
-
-.max-w-\[704px\]{
-  max-width: 704px;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1550,6 +1547,10 @@ html {
 
 .flex-nowrap{
   flex-wrap: nowrap;
+}
+
+.place-items-stretch{
+  place-items: stretch;
 }
 
 .items-start{
@@ -1649,6 +1650,10 @@ html {
   row-gap: 0.5rem;
 }
 
+.gap-y-3{
+  row-gap: 0.75rem;
+}
+
 .gap-y-4{
   row-gap: 1rem;
 }
@@ -1661,6 +1666,10 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.self-center{
+  align-self: center;
 }
 
 .overflow-hidden{
@@ -1724,6 +1733,10 @@ html {
   border-width: 0px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1745,6 +1758,11 @@ html {
 .border-green-600{
   --tw-border-opacity: 1;
   border-color: rgb(56 94 82 / var(--tw-border-opacity));
+}
+
+.border-neutrals-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(12 12 12 / var(--tw-border-opacity));
 }
 
 .bg-camel{
@@ -1800,26 +1818,6 @@ html {
 .bg-neutrals-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\.\.\/\]{
-  background-color: ../;
-}
-
-.bg-\[\.\.\/\/media\/paul\/DATA\/FREELANCE\/PROJETS_CLIENTS\/preprod\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\]{
-  background-color: ..//media/paul/DATA/FREELANCE/PROJETS CLIENTS/preprod/sources/img/centre de vacances/centre de vacances faq.png;
-}
-
-.bg-\[\.\.\/\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\]{
-  background-color: ..//sources/img/centre de vacances/centre de vacances faq.png;
-}
-
-.bg-\[\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\]{
-  background-color: ../sources/img/centre de vacances/centre de vacances faq.png;
-}
-
-.bg-\[url\(\'\.\.\/sources\/background\/background_centre\.svg\'\)\]{
-  background-image: url('../sources/background/background_centre.svg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-home-shield\.svg\'\)\]{
@@ -1890,6 +1888,30 @@ html {
   background-image: url('../sources/img/homepage_numbers/8+.svg');
 }
 
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_1\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_2\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_3\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_4\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_5\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg');
+}
+
+.bg-\[url\(\'\.\.\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_6\.svg\'\)\]{
+  background-image: url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg');
+}
+
 .bg-\[url\(\'\.\.\/sources\/img\/thematiques\/thematiques_1\.png\'\)\]{
   background-image: url('../sources/img/thematiques/thematiques_1.png');
 }
@@ -1932,6 +1954,10 @@ html {
 
 .bg-background_footer{
   background-image: url('../sources/background/background_footer.svg');
+}
+
+.bg-background_striated_low{
+  background-image: url('../sources/background/background_striated_low.svg');
 }
 
 .bg-carret_down{
@@ -2018,12 +2044,36 @@ html {
   background-image: url('../sources/icons/User_green.svg');
 }
 
-.bg-\[url\(\)\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\]{
-  background-image: url()../sources/img/centre de vacances/centre de vacances faq.png;
+.bg-\[url\(\'\/sources\/img\/footer\/footer_actus_1\.jpeg\'\)\]{
+  background-image: url('/sources/img/footer/footer_actus_1.jpeg');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_faq.png');
+.bg-\[url\(\'\/sources\/img\/footer\/footer_actus_2\.jpeg\'\)\]{
+  background-image: url('/sources/img/footer/footer_actus_2.jpeg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_1\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_2\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_3\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_4\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_5\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg');
+}
+
+.bg-\[url\(\'\/sources\/img\/infos_pratiques\/listing_pages_infos\/listing_pages_infos_6\.svg\'\)\]{
+  background-image: url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg');
 }
 
 .bg-\[length\:260px_129px\]{
@@ -2032,6 +2082,10 @@ html {
 
 .bg-\[length\:275px_194px\]{
   background-size: 275px 194px;
+}
+
+.bg-\[length\:275px_331px\]{
+  background-size: 275px 331px;
 }
 
 .bg-\[length\:50\%_auto\]{
@@ -2054,16 +2108,20 @@ html {
   background-size: cover;
 }
 
-.bg-\[length\:275px_331px\]{
-  background-size: 275px 331px;
-}
-
 .bg-\[left_-25px_center\]{
   background-position: left -25px center;
 }
 
 .bg-\[left_0px_top_330px\]{
   background-position: left 0px top 330px;
+}
+
+.bg-\[left_0px_top_40\%\]{
+  background-position: left 0px top 40%;
+}
+
+.bg-\[left_0px_top_450px\]{
+  background-position: left 0px top 450px;
 }
 
 .bg-\[left_0px_top_500px\]{
@@ -2082,21 +2140,8 @@ html {
   background-position: left bottom;
 }
 
-.bg-\[left_0px_top_450px\]{
-  background-position: left 0px top 450px;
-}
-
-.bg-\[left_0px_top_40\%\]{
-  background-position: left 0px top 40%;
-}
-
 .bg-no-repeat{
   background-repeat: no-repeat;
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-24{
@@ -2363,6 +2408,10 @@ html {
   text-transform: uppercase;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .leading-none{
   line-height: 1;
 }
@@ -2412,7 +2461,17 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-cards{
+.underline{
+  text-decoration-line: underline;
+}
+
+.shadow-cards_spread_16{
+  --tw-shadow: 0px 4px 16px 0px rgba(89, 57, 13, 0.10);
+  --tw-shadow-colored: 0px 4px 16px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-cards_spread_8{
   --tw-shadow: 0px 4px 8px 0px rgba(89, 57, 13, 0.10);
   --tw-shadow-colored: 0px 4px 8px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -2438,10 +2497,6 @@ html {
 
 .outline-dark-300{
   outline-color: #C1C1C1;
-}
-
-.outline-green-700{
-  outline-color: #26433A;
 }
 
 .outline-green-400{
@@ -2514,6 +2569,11 @@ input {
   display: none !important;
 }
 
+.css_listing_pages_infos_double_background{
+  background-position: left 0px top 17%, right 0px top 70%;
+  background-size: 391px 194px, 275px 331px;
+}
+
 .after\:apply_body_bold_xs::after {
   content: var(--tw-content);
   font-family: "Manrope", sans-serif;
@@ -2530,6 +2590,11 @@ input {
 .before\:left-0::before{
   content: var(--tw-content);
   left: 0px;
+}
+
+.before\:top-\[-11px\]::before{
+  content: var(--tw-content);
+  top: -11px;
 }
 
 .before\:top-\[-12px\]::before{
@@ -2552,14 +2617,14 @@ input {
   top: -9px;
 }
 
-.before\:top-\[-11px\]::before{
-  content: var(--tw-content);
-  top: -11px;
-}
-
 .before\:h-\[10px\]::before{
   content: var(--tw-content);
   height: 10px;
+}
+
+.before\:h-\[12px\]::before{
+  content: var(--tw-content);
+  height: 12px;
 }
 
 .before\:h-\[13px\]::before{
@@ -2580,11 +2645,6 @@ input {
 .before\:h-full::before{
   content: var(--tw-content);
   height: 100%;
-}
-
-.before\:h-\[12px\]::before{
-  content: var(--tw-content);
-  height: 12px;
 }
 
 .before\:w-full::before{
@@ -2758,6 +2818,11 @@ input {
   right: 0px;
 }
 
+.after\:right-\[-20px\]::after{
+  content: var(--tw-content);
+  right: -20px;
+}
+
 .after\:right-\[-35px\]::after{
   content: var(--tw-content);
   right: -35px;
@@ -2771,6 +2836,11 @@ input {
 .after\:right-\[0px\]::after{
   content: var(--tw-content);
   right: 0px;
+}
+
+.after\:top-0::after{
+  content: var(--tw-content);
+  top: 0px;
 }
 
 .after\:top-\[-27px\]::after{
@@ -2788,19 +2858,9 @@ input {
   top: -80px;
 }
 
-.after\:top-0::after{
+.after\:top-\[55\%\]::after{
   content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:right-\[-\]::after{
-  content: var(--tw-content);
-  right: -;
-}
-
-.after\:right-\[-20px\]::after{
-  content: var(--tw-content);
-  right: -20px;
+  top: 55%;
 }
 
 .after\:-z-10::after{
@@ -2958,6 +3018,11 @@ input {
   width: 337px;
 }
 
+.after\:w-\[451px\]::after{
+  content: var(--tw-content);
+  width: 451px;
+}
+
 .after\:w-\[60px\]::after{
   content: var(--tw-content);
   width: 60px;
@@ -2971,21 +3036,6 @@ input {
 .after\:w-full::after{
   content: var(--tw-content);
   width: 100%;
-}
-
-.after\:w-\[\]::after{
-  content: var(--tw-content);
-  width: ;
-}
-
-.after\:w-\[45\]::after{
-  content: var(--tw-content);
-  width: 45;
-}
-
-.after\:w-\[451px\]::after{
-  content: var(--tw-content);
-  width: 451px;
 }
 
 .after\:-translate-x-1\/2::after{
@@ -3046,6 +3096,11 @@ input {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(253 99 24 / var(--tw-bg-opacity));
+}
+
+.after\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_faq.png');
 }
 
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_desktop\.svg\'\)\]::after{
@@ -3116,11 +3171,6 @@ input {
 .after\:bg-highlight_kidyellow_underline::after{
   content: var(--tw-content);
   background-image: url('../sources/highlight/highlight_kidyellow_underline.svg');
-}
-
-.after\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\'\)\]::after{
-  content: var(--tw-content);
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_faq.png');
 }
 
 .after\:bg-contain::after{
@@ -3567,10 +3617,6 @@ input {
     gap: 2rem;
   }
 
-  .md\:bg-\[url\(\'\.\.\/sources\/background\/background_faq_homepage\.svg\'\)\]{
-    background-image: url('../sources/background/background_faq_homepage.svg');
-  }
-
   .md\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_map_desktop\.svg\'\)\]{
     background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg');
   }
@@ -3581,6 +3627,14 @@ input {
 
   .md\:bg-background_points{
     background-image: url('../sources/background/background_points.svg');
+  }
+
+  .md\:bg-background_striated_high{
+    background-image: url('../sources/background/background_striated_high.svg');
+  }
+
+  .md\:bg-background_striated_low_and_points{
+    background-image: url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg');
   }
 
   .md\:bg-\[length\:391px_194px\]{
@@ -3602,6 +3656,11 @@ input {
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:py-14{
@@ -3679,6 +3738,10 @@ input {
     padding-top: 5rem;
   }
 
+  .md\:pt-22{
+    padding-top: 5.5rem;
+  }
+
   .md\:pt-24{
     padding-top: 6rem;
   }
@@ -3701,10 +3764,6 @@ input {
 
   .md\:pt-8{
     padding-top: 2rem;
-  }
-
-  .md\:pb-8{
-    padding-bottom: 2rem;
   }
 
   .md\:text-center{
@@ -4001,6 +4060,11 @@ input {
     gap: 1.5rem;
   }
 
+  .lg\:gap-x-16{
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .lg\:gap-x-25{
     -moz-column-gap: 6.25rem;
          column-gap: 6.25rem;
@@ -4063,6 +4127,11 @@ input {
   .xl\:gap-x-16{
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+  }
+
+  .xl\:gap-x-22{
+    -moz-column-gap: 5.5rem;
+         column-gap: 5.5rem;
   }
 }
 
