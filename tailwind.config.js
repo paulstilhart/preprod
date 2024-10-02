@@ -199,94 +199,94 @@ module.exports = {
       },
 
       backgroundImage: {
-        arrow_narrow: "url('/sources/icons/Arrow_narrow.svg')",
-        arrow_narrow_green: "url('/sources/icons/Arrow_narrow_green.svg')",
-        arrow_narrow_white: "url('/sources/icons/Arrow_narrow_white.svg')",
+        arrow_narrow: "url('../sources/icons/Arrow_narrow.svg')",
+        arrow_narrow_green: "url('../sources/icons/Arrow_narrow_green.svg')",
+        arrow_narrow_white: "url('../sources/icons/Arrow_narrow_white.svg')",
         arrow_narrow_disabled:
-          "url('/sources/icons/Arrow_narrow_disabled.svg')",
-        phone: "url('/sources/icons/Phone.svg')",
-        phone_green: "url('/sources/icons/Phone_green.svg')",
-        phone_white: "url('/sources/icons/Phone_white.svg')",
-        mail: "url('/sources/icons/Mail.svg')",
-        mail_green: "url('/sources/icons/Mail_green.svg')",
-        mail_white: "url('/sources/icons/Mail_white.svg')",
-        home: "url('/sources/icons/Home.svg')",
-        home_green: "url('/sources/icons/Home_green.svg')",
-        home_white: "url('/sources/icons/Home_white.svg')",
-        add: "url('/sources/icons/add.svg')",
-        close: "url('/sources/icons/close.svg')",
-        close_red: "url('/sources/icons/close_red.svg')",
-        gocolo_yellow: "url('/sources/logos/gocolo_yellow.svg')",
-        gocolo_green: "url('/sources/logos/gocolo_green.svg')",
+          "url('../sources/icons/Arrow_narrow_disabled.svg')",
+        phone: "url('../sources/icons/Phone.svg')",
+        phone_green: "url('../sources/icons/Phone_green.svg')",
+        phone_white: "url('../sources/icons/Phone_white.svg')",
+        mail: "url('../sources/icons/Mail.svg')",
+        mail_green: "url('../sources/icons/Mail_green.svg')",
+        mail_white: "url('../sources/icons/Mail_white.svg')",
+        home: "url('../sources/icons/Home.svg')",
+        home_green: "url('../sources/icons/Home_green.svg')",
+        home_white: "url('../sources/icons/Home_white.svg')",
+        add: "url('../sources/icons/add.svg')",
+        close: "url('../sources/icons/close.svg')",
+        close_red: "url('../sources/icons/close_red.svg')",
+        gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
+        gocolo_green: "url('../sources/logos/gocolo_green.svg')",
         freepik_character:
-          "url('/sources/logos/freepik--Character--inject-109.svg')",
-        star_green: "url('/sources/icons/star_green.svg')",
-        cart: "url('/sources/icons/Cart.svg')",
-        cart_green: "url('/sources/icons/Cart_green.svg')",
-        carret_down: "url('/sources/icons/Carret_down.svg')",
-        carret_right: "url('/sources/icons/Carret_right.svg')",
-        user: "url('/sources/icons/User.svg')",
-        user_green: "url('/sources/icons/User_green.svg')",
-        menu_green: "url('/sources/icons/Menu_green.svg')",
+          "url('../sources/logos/freepik--Character--inject-109.svg')",
+        star_green: "url('../sources/icons/star_green.svg')",
+        cart: "url('../sources/icons/Cart.svg')",
+        cart_green: "url('../sources/icons/Cart_green.svg')",
+        carret_down: "url('../sources/icons/Carret_down.svg')",
+        carret_right: "url('../sources/icons/Carret_right.svg')",
+        user: "url('../sources/icons/User.svg')",
+        user_green: "url('../sources/icons/User_green.svg')",
+        menu_green: "url('../sources/icons/Menu_green.svg')",
         tabler_icon_credit_card:
-          "url('/sources/icons/tabler-icon-credit-card.svg')",
+          "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
-          "url('/sources/icons/tabler-icon-home-shield.svg')",
-        tabler_icon_thumb_up: "url('/sources/icons/tabler-icon-thumb-up.svg')",
+          "url('../sources/icons/tabler-icon-home-shield.svg')",
+        tabler_icon_thumb_up: "url('../sources/icons/tabler-icon-thumb-up.svg')",
         tabler_icon_user_shield:
-          "url('/sources/icons/tabler-icon-user-shield.svg')",
+          "url('../sources/icons/tabler-icon-user-shield.svg')",
         tabler_icon_credit_card_white:
-          "url('/sources/icons/tabler-icon-credit-card-white.svg')",
+          "url('../sources/icons/tabler-icon-credit-card-white.svg')",
         tabler_icon_home_shield_white:
-          "url('/sources/icons/tabler-icon-home-shield-white.svg')",
+          "url('../sources/icons/tabler-icon-home-shield-white.svg')",
         tabler_icon_thumb_up_white:
-          "url('/sources/icons/tabler-icon-thumb-up-white.svg')",
+          "url('../sources/icons/tabler-icon-thumb-up-white.svg')",
         tabler_icon_user_shield_white:
-          "url('/sources/icons/tabler-icon-user-shield-white.svg')",
-        background_footer: "url('/sources/background/background_footer.svg')",
-        background_points: "url('/sources/background/background_points.svg')",
+          "url('../sources/icons/tabler-icon-user-shield-white.svg')",
+        background_footer: "url('../sources/background/background_footer.svg')",
+        background_points: "url('../sources/background/background_points.svg')",
         background_striated_low:
-          "url('/sources/background/background_striated_low.svg')",
+          "url('../sources/background/background_striated_low.svg')",
         background_striated_high:
-          "url('/sources/background/background_striated_high.svg')",
+          "url('../sources/background/background_striated_high.svg')",
         background_striated_low_and_points:
-          "url('/sources/background/background_striated_low.svg'),url('/sources/background/background_points.svg')",
+          "url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg')",
         clip_green_footer_top_34:
-          "url('/sources/clip/clip_green_footer_top_34.svg')",
-        clip_camel_top_18: "url('/sources/clip/clip_camel_top_18.svg')",
-        clip_camel_top_34: "url('/sources/clip/clip_camel_top_34.svg')",
-        clip_camel_top_35: "url('/sources/clip/clip_camel_top_35.svg')",
-        clip_camel_bottom_18: "url('/sources/clip/clip_camel_bottom_18.svg')",
+          "url('../sources/clip/clip_green_footer_top_34.svg')",
+        clip_camel_top_18: "url('../sources/clip/clip_camel_top_18.svg')",
+        clip_camel_top_34: "url('../sources/clip/clip_camel_top_34.svg')",
+        clip_camel_top_35: "url('../sources/clip/clip_camel_top_35.svg')",
+        clip_camel_bottom_18: "url('../sources/clip/clip_camel_bottom_18.svg')",
         clip_camel_bottom_18_nav:
-          "url('/sources/clip/clip_camel_bottom_18_nav.svg')",
-        clip_camel_bottom_34: "url('/sources/clip/clip_camel_bottom_34.svg')",
-        clip_camel_bottom_35: "url('/sources/clip/clip_camel_bottom_35.svg')",
+          "url('../sources/clip/clip_camel_bottom_18_nav.svg')",
+        clip_camel_bottom_34: "url('../sources/clip/clip_camel_bottom_34.svg')",
+        clip_camel_bottom_35: "url('../sources/clip/clip_camel_bottom_35.svg')",
         highlight_green_star:
-          "url('/sources/highlight/highlight_green_star.svg')",
+          "url('../sources/highlight/highlight_green_star.svg')",
         highlight_kidyellow_faq:
-          "url('/sources/highlight/highlight_kidyellow_faq.svg')",
+          "url('../sources/highlight/highlight_kidyellow_faq.svg')",
         highlight_kidyellow_star:
-          "url('/sources/highlight/highlight_kidyellow_star.svg')",
+          "url('../sources/highlight/highlight_kidyellow_star.svg')",
         highlight_kidyellow_stars_1:
-          "url('/sources/highlight/highlight_kidyellow_stars_1.svg')",
+          "url('../sources/highlight/highlight_kidyellow_stars_1.svg')",
         highlight_kidyellow_stars_2:
-          "url('/sources/highlight/highlight_kidyellow_stars_2.svg')",
+          "url('../sources/highlight/highlight_kidyellow_stars_2.svg')",
         highlight_kidyellow_underline:
-          "url('/sources/highlight/highlight_kidyellow_underline.svg')",
+          "url('../sources/highlight/highlight_kidyellow_underline.svg')",
         highlight_kidyellow_underline_double:
-          "url('/sources/highlight/highlight_kidyellow_underline_double.svg')",
+          "url('../sources/highlight/highlight_kidyellow_underline_double.svg')",
         listing_pages_infos_1:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
         listing_pages_infos_2:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_2.svg')",
           listing_pages_infos_3:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_3.svg')",
           listing_pages_infos_4:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_4.svg')",
           listing_pages_infos_5:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
           listing_pages_infos_6:
-          "url('/sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
+          "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
       },
 
       keyframes: {
