@@ -75,12 +75,12 @@
 
                         <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
                             aria-controls="dropdownmenu" class="group/dropdown relative">
-                            <div x-on:click="opendropdown = ! opendropdown"
+                            <button x-on:click="opendropdown = ! opendropdown"
                                 class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
                                 <span class="inline-block">Les colos par thématique</span>
                                 <span
-                                    class="flex-none inline-block w-3.5 h-3.5 bg-carret_down apply_background_center_contain group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
-                            </div>
+                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
+                            </button>
 
                             <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
                             flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">

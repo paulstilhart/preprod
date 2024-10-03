@@ -28,7 +28,7 @@
 </head>
 
 <body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+    class="bg-neutrals-white !overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
@@ -72,12 +72,12 @@
 
                         <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
                             aria-controls="dropdownmenu" class="group/dropdown relative">
-                            <div x-on:click="opendropdown = ! opendropdown"
+                            <button x-on:click="opendropdown = ! opendropdown"
                                 class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
                                 <span class="inline-block">Les colos par thématique</span>
                                 <span
                                     class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
-                            </div>
+                            </button>
 
                             <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
                             flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
@@ -149,7 +149,7 @@
 
 
 <main>
-    <section class="bg-neutrals-white">
+    <section>
         <div class="apply_wrapper_1440 flex flex-col gap-8 md:gap-18 pt-10 pb-6 md:pt-18 md:pb-36">
 
             <div>
@@ -379,104 +379,108 @@
 
 
 
-    <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
-        before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
+<footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
+before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
 
-        <div
-            class="text-neutrals-white apply_body_medium_sm text-center apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
-                <p>Séjours agréés DDCSPP</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
-                <p>Encadrement diplômé et contrôlé</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
-                <p>Charte qualité depuis 10 ans</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
-                <p>Paiement sécurisé en ligne</p>
-            </div>
+<div class=" apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
+    <div class="flex flex-col items-center gap-2.5">
+        <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
+        <p class="text-neutrals-white apply_body_medium_sm">Séjours agréés DDCSPP</p>
+    </div>
+    <div class="flex flex-col items-center gap-2.5">
+        <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
+        <p class="text-neutrals-white apply_body_medium_sm">Encadrement diplômé et contrôlé</p>
+    </div>
+    <div class="flex flex-col items-center gap-2.5">
+        <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
+        <p class="text-neutrals-white apply_body_medium_sm">Charte qualité depuis 10 ans</p>
+    </div>
+    <div class="flex flex-col items-center gap-2.5">
+        <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
+        <p class="text-neutrals-white apply_body_medium_sm">Paiement sécurisé en ligne</p>
+    </div>
+</div>
+
+<hr class=" border-green-600">
+
+
+<div class="apply_wrapper_1440 py-8 md:py-14 flex flex-col items-start md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between  gap-6 lg:gap-x-8 xl:gap-x-16
+bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
+
+    <div class="flex flex-col gap-4">
+        <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
+        <p class="apply_body_medium_xs text-neutrals-white">Numquam cumque facere molestiae tenetur quia quasi.
+            Sunt et incidunt
+            eveniet
+            reiciendis.</p>
+    </div>
+
+    <div class="min-w-[265px] flex flex-col gap-4">
+        <h6 class="text-neutrals-white ">Nos Dernières actus</h6>
+        <a href="" class="flex gap-4 items-center">
+            <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
+                class="apply_img_center_cover w-18 h-12 rounded">
+            <p class="apply_body_medium_sm text-neutrals-white">Toutes les aides au départ en colonie de
+                vacances</p>
+        </a>
+        <a href="" class="flex gap-4 items-center">
+            <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
+                class="apply_img_center_cover w-18 h-12 rounded">
+            <p class="apply_body_medium_sm text-neutrals-white">Colonie de vacances pas chère, ou se situe
+                Gocolo ?</p>
+
+        </a>
+    </div>
+    <div class="min-w-[110px] flex flex-col gap-4 ">
+        <h6 class="text-neutrals-white ">Liens utiles</h6>
+        <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
+            <a href="">Recrutement</a>
+            <a href="">Contact</a>
+            <a href="">Actualités</a>
         </div>
-
-        <hr class=" border-green-600">
-
-
-        <div class="apply_wrapper_1440 py-8 md:py-14 flex flex-col items-start md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between  gap-6 lg:gap-x-8 xl:gap-x-16
-        bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
-
-            <div class="flex flex-col gap-4">
-                <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
-                <p class="apply_body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt
-                    eveniet
-                    reiciendis.</p>
-            </div>
-
-            <div class="min-w-[265px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos Dernières actus</p>
-                <a href="" class="flex gap-4 items-center">
-                    <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
-                        class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm">Toutes les aides au départ en colonie de vacances</p>
-                </a>
-                <a href="" class="flex gap-4 items-center">
-                    <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
-                        class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm">Colonie de vacances pas chère, ou se situe Gocolo ?</p>
-
-                </a>
-            </div>
-            <div class="min-w-[110px] flex flex-col gap-4">
-                <p class="apply_title_h6">Liens utiles</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
-                    <a href="">Recrutement</a>
-                    <a href="">Contact</a>
-                    <a href="">Actualités</a>
-                </div>
-            </div>
-            <div class="min-w-[160px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos colonies</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
-                    <a href="">Colonies sportives</a>
-                    <a href="">Colonies artistiques</a>
-                    <a href="">Colonies culturelles</a>
-                    <a href="">Colonies scientifiques</a>
-                    <a href="">Colonies multi-activités</a>
-                </div>
-            </div>
-            <div class="min-w-[170px] flex flex-col gap-4">
-                <p class="apply_title_h6">Contactez-nous</p>
-                <a href="tel:0033471782243" class="apply_body_semibold_sm flex items-center gap-3">
-                    <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
-                    <span class="inline-block">04 71 78 22 43</span>
-                </a>
-                <a href="mailto:contact@gocolo.fr" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
-                    <span class="inline-block">contact@gocolo.fr</span>
-                </a>
-                <a href="/" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
-                    <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
-                </a>
-            </div>
+    </div>
+    <div class="min-w-[160px] flex flex-col gap-4">
+        <h6 class="text-neutrals-white ">Nos colonies</h6>
+        <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
+            <a href="">Colonies sportives</a>
+            <a href="">Colonies artistiques</a>
+            <a href="">Colonies culturelles</a>
+            <a href="">Colonies scientifiques</a>
+            <a href="">Colonies multi-activités</a>
         </div>
-
-        <hr class=" border-green-600">
-
-
-        <div
-            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-            <p class="apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
-            <div class="flex flex-wrap apply_body_bold_sm">
-                <p><a href="">Mentions légales</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">Politique de confidentialité</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">CGU & CGV</a></p>
-            </div>
+    </div>
+    <div class="min-w-[170px] flex flex-col gap-4">
+        <h6 class="text-neutrals-white ">Contactez-nous</h6>
+        <div class="text-neutrals-white apply_body_semibold_sm flex flex-col gap-4">
+            <a href="tel:0033471782243" class="flex items-center gap-3">
+                <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
+                <span class="inline-block">04 71 78 22 43</span>
+            </a>
+            <a href="mailto:contact@gocolo.fr" class=" flex items-center gap-2">
+                <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
+                <span class="inline-block">contact@gocolo.fr</span>
+            </a>
+            <a href="/" class=" flex items-center gap-2">
+                <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
+                <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
+            </a>
         </div>
-    </footer>
+    </div>
+</div>
+
+<hr class=" border-green-600">
+
+
+<div
+    class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+    <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+    <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
+        <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
+        <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
+        <div><a href="">CGU & CGV</a></div>
+    </div>
+</div>
+</footer>
 </body>
 
 </html>

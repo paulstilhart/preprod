@@ -28,17 +28,70 @@
     @apply max-w-1440 mx-auto px-4 md:px-8 xl:px-30;
   }
 
-  /* pour les cgv, avec 32px paddingX => 1088px de contenu max  */
-  .apply_wrapper_1152 {
-    @apply max-w-1152 mx-auto px-4 md:px-8;
-  }
 
-
-
+  /* BALISE GENERIQUES ==================================================================== */
   em {
     @apply not-italic text-neonorange;
   }
 
+  strong {
+    @apply font-bold;
+  }
+
+  p {
+    @apply text-neutrals-dark font-manrope font-medium text-body_base;
+  }
+
+  ul {
+    @apply text-neutrals-dark font-manrope font-medium text-body_base list-disc list-outside pl-4;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-green font-francoisone font-normal uppercase;
+  }
+
+  h1 {
+    @apply text-title_h1_mobile md:text-title_h1;
+  }
+
+  h2 {
+    @apply text-title_h2_mobile md:text-title_h2;
+  }
+
+  h3 {
+    @apply text-title_h3_mobile md:text-title_h3;
+  }
+
+  h4 {
+    @apply text-title_h4_mobile md:text-title_h4;
+  }
+
+  h5 {
+    @apply text-title_h5_mobile md:text-title_h5;
+  }
+
+  h6 {
+    @apply text-title_h6_mobile md:text-title_h6;
+  }
+
+  /* FONT SPECIFIQUES ==================================================================== */
+
+  .apply_mogra_20{
+    @apply text-green font-mogra font-normal text-[20px] leading-none ;
+  }
+
+  .apply_gochihand_18{
+    @apply text-green font-gochihand font-normal text-[18px] leading-none;
+  }
+
+
+  /* BALISE TITLE ==================================================================== */
   .apply_title_h1 {
     @apply font-francoisone font-normal uppercase text-title_h1_mobile md:text-title_h1;
   }
@@ -80,6 +133,8 @@
     @apply font-francoisone font-normal text-title_drop_2_mobile md:text-title_drop_2;
   }
 
+
+  /* BALISE BODY ==================================================================== */
   .apply_body_bold_xl {
     @apply font-manrope font-bold text-body_xl;
   }
@@ -160,12 +215,19 @@
     @apply font-manrope font-normal text-body_xs;
   }
 
+
+
+  /* BALISE ICON IMG BACKGROUND AFTER BEFORE ==================================================================== */
   .apply_span_icon {
     @apply flex-none inline-block bg-contain bg-center bg-no-repeat;
   }
 
   .apply_span_icon_50 {
     @apply flex-none inline-block bg-[length:50%_auto] bg-center bg-no-repeat;
+  }
+
+  .apply_span_icon_75 {
+    @apply flex-none inline-block bg-[length:75%_auto] bg-center bg-no-repeat;
   }
 
   .apply_img_center_cover {
@@ -200,15 +262,25 @@
     @apply after:bg-cover after:bg-center after:bg-no-repeat;
   }
 
+  .apply_after_absolute_background_center_contain {
+    @apply relative after:absolute after:inline-block after:bg-contain after:bg-center after:bg-no-repeat;
+  }
+
+  .apply_after_absolute_background_center_cover {
+    @apply relative after:absolute after:inline-block after:bg-cover after:bg-center after:bg-no-repeat;
+  }
+
 
   .apply_before_clip {
-    @apply before:absolute before:z-10 before:w-full before:left-0 before:bg-center before:bg-cover before:bg-no-repeat;
+    @apply relative before:absolute before:z-10 before:w-full before:left-0 before:bg-center before:bg-cover before:bg-no-repeat;
   }
 
   .apply_after_clip {
-    @apply after:absolute after:z-10 after:w-full after:left-0 after:bg-center after:bg-cover after:bg-no-repeat;
+    @apply relative after:absolute after:z-10 after:w-full after:left-0 after:bg-center after:bg-cover after:bg-no-repeat;
   }
 
+
+  /* BALISE BREADCRUMB ==================================================================== */
   .apply_breadcrumb>li {
     @apply flex items-center;
   }
@@ -232,6 +304,81 @@
 
   .apply_breadcrumb>li:not(:last-of-type):after {
     @apply content-[''] inline-block ml-2 w-2.5 h-2.5 flex-none bg-contain bg-center bg-no-repeat bg-carret_right;
+  }
+
+  /* CGV ==================================================================== */
+  /* CGV avec 32px paddingX => 1088px de contenu max  pour 1152px max de large*/
+  .apply_style_cgv {
+    @apply max-w-1152 mx-auto px-4 md:px-8 py-10 md:pt-20 md:pb-24;
+  }
+
+  .apply_style_cgv>div {
+    @apply flex flex-col gap-8 md:gap-10;
+  }
+
+  .apply_style_cgv h2 {
+    @apply mb-8 md:mb-16;
+  }
+
+  .apply_style_cgv h3 {
+    @apply mb-2 md:mb-4;
+  }
+
+  .apply_style_cgv h4 {
+    @apply mb-4;
+  }
+
+  .apply_style_cgv h3+h4,
+  .apply_style_cgv p+h4 {
+    @apply mt-6 md:mt-8;
+  }
+
+
+
+  /* TEMPLATE 2 ==================================================================== */
+  .apply_style_template_2 {
+    @apply apply_wrapper_1440 flex flex-col gap-8 md:gap-18 pt-10 pb-6 md:pt-18 md:pb-36;
+  }
+
+  .apply_style_template_2 section {
+    @apply flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16;
+  }
+
+  .apply_style_template_2 section aside {
+    @apply w-full h-[160px] md:h-auto md:w-[250px] lg:w-[400px] md:flex-none rounded-2xl apply_background_center_cover;
+  }
+
+  .apply_style_template_2 section div {
+    @apply md:py-8 flex flex-col gap-4;
+  }
+
+  /* ARTICLE ==================================================================== */
+  .apply_style_article {
+    @apply apply_wrapper_1440;
+  }
+
+  .apply_style_article header {
+    @apply max-w-960 mx-auto pt-10 pb-8 md:pt-20 md:pb-14 flex flex-col gap-2 md:gap-4;
+  }
+
+  .apply_style_article img {
+    @apply max-w-1184 mx-auto block apply_img_center_cover w-full h-[240px] md:h-[480px] rounded-5xl;
+  }
+
+  .apply_style_article>div {
+    @apply max-w-960 mx-auto pt-8 pb-10 md:pt-16 md:pb-24 flex flex-col gap-6 md:gap-10;
+  }
+
+  .apply_style_article header h2 {
+    @apply text-neutrals-dark;
+  }
+
+  .apply_style_article section h3 {
+    @apply mb-2 md:mb-4;
+  }
+
+  .apply_style_article header p {
+    @apply text-dark-600 apply_body_medium_lg;
   }
 
 }
@@ -275,6 +422,10 @@
   .css_listing_pages_infos_double_background {
     background-position: left 0px top 17%, right 0px top 70%;
     background-size: 391px 194px, 275px 331px;
+  }
+
+  .css_clip_path_circle {
+    clip-path: circle(100% at 0 50%);
   }
 
 }

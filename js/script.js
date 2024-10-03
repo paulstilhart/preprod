@@ -29,9 +29,9 @@ const swiper_thematiques = new Swiper(".swiper_thematiques", {
       slidesOffsetBefore:32,
       slidesOffsetAfter:16,
     },
-    1024: {
+    1280: {
       spaceBetween: 32,
-      slidesOffsetBefore:64,
+      slidesOffsetBefore:120,
       slidesOffsetAfter:16,
     },
   },

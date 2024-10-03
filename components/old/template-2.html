@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>TEMPLATE 2</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/draft.js"></script>
+</head>
+
+<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+
+    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
+
+        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed w-full h-16 apply_wrapper_1440   
+            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
+            <a href="/" class="apply_span_icon h-8 w-30 bg-gocolo_green"></a>
+            <div class="flex items-center gap-3">
+                <a data-cart="3" href="/"
+                    class="apply_span_icon_50 bg-cart_green h-10 w-10 bg-neutrals-white rounded-lg 
+                    ring-1 ring-green ring-inset relative 
+                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs"></a>
+                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile"
+                    class="apply_span_icon_50 bg-menu_green h-10 w-10 bg-kidyellow rounded-lg"></button>
+            </div>
+        </div>
+
+        <div x-show="openheadermobile" x-cloak x-transition
+            class="z-40 fixed w-full !h-dvh h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto lg:overflow-y-visible">
+            <hr class="hidden lg:block border-dark-200">
+            <div class="bg-neutrals-white text-green  relative lg:static 
+                apply_wrapper_1440 w-full min-h-[calc(100%_-150px)] lg:min-h-16 py-22 lg:py-2 
+                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+
+                <a href="/" class="apply_span_icon hidden lg:inline-block h-8 w-30 bg-gocolo_green"></a>
+
+                <div
+                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
+                    <div class="apply_title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
+                            centres de vacances</a>
+                        <a href="/" aria-selected="true"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
+                            pratiques</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
+                    </div>
+                    <div class="flex lg:items-center gap-x-2">
+
+                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                            aria-controls="dropdownmenu" class="group/dropdown relative">
+                            <button x-on:click="opendropdown = ! opendropdown"
+                                class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
+                                <span class="inline-block">Les colos par thématique</span>
+                                <span
+                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
+                            </button>
+
+                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
+                            flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
+                                <a href="/">Les colos sportives</a>
+                                <a href="/">Les colos culturelles</a>
+                                <a href="/">Les colos scientifiques</a>
+                                <a href="/">Les colos sportives</a>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="absolute bottom-6 lg:static apply_body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
+                            <span class="apply_span_icon bg-user_green w-3.5 h-3.5"></span>
+                            <span class="inline-block">Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hidden lg:block border-dark-200">
+            <div
+                class="bg-camel lg:bg-neutrals-white text-green  apply_body_bold_sm  apply_wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="">Pourquoi choisir Gocolo ?</a>
+                    <a href="">Nos colonie de vacances</a>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a data-cart="3" href="/"
+                        class="hidden lg:flex items-center gap-2 relative 
+                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-cart_green"></span>
+                        <span class="inline-block">Mon panier</span>
+                    </a>
+                    <a href="tel:0033471782243" class="apply_body_semibold_sm  flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green"></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <nav aria-hidden="false" aria-label="breadcrumb" class="aria-hidden:hidden bg-camel relative apply_after_clip after:bg-clip_camel_bottom_18_nav 
+    after:h-[12px] after:bottom-[-11px] md:after:h-[18px] md:after:bottom-[-17px]">
+
+        <ul
+            class="apply_breadcrumb apply_wrapper_1440 apply_body_medium_base text-green pt-4 pb-3 md:pb-1 flex flex-wrap items-center justify-start gap-2">
+            <li><a href="/"></a></li>
+            <li><a href="/">Infos pratiques</a></li>
+            <li><a href="/">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+
+    <div aria-hidden="true" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[180px]">
+        <div class="w-full md:w-[312px] relative z-20   bg-kidyellow text-green px-4 py-5 flex flex-col items-start md:items-center gap-3 
+            after:absolute after:inline-block apply_after_background_center_contain after:bg-freepik_character after:h-[155px] after:w-[168px] 
+            md:after:h-[164px] md:after:w-[178px] after:bottom-[-13px] after:right-[0px]  md:after:left-[-80px]">
+            <p class="apply_title_h6_nomq text-left md:text-center">Explorez les colos<br>en aveyron</p>
+            <a href=""
+                class="apply_body_bold_sm text-neutrals-white bg-green w-fit  flex items-center gap-2 px-3 py-2 rounded-4xl ">
+                <span class="inline-block">Voir les colonies</span>
+                <span
+                    class="apply_background_center_contain bg-arrow_narrow_white flex-none inline-block w-3 h-3 "></span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="bg-neutrals-white">
+            <div class="apply_wrapper_1440 flex flex-col gap-8 md:gap-18 pt-10 pb-6 md:pt-18 md:pb-36">
+    
+                <p class="apply_title_h2 text-green">Questions et réponses pour les enfants avant le départ en colo</p>
+    
+    
+                <div data-direction="normal"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+                    bg-[url('../sources/img/infos_pratiques/template/template_2.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Est-ce qu'il y a des règles à suivre ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Comme partout il y a des règles à suivre avec
+                            des
+                            choses qui sont permises et d’autres non. D’une façon générale nous souhaitons que tout le monde
+                            passe un agréable séjour. Nous te demanderons donc de faire en sorte que ton comportement
+                            n’empêche
+                            pas les autres participants de passer eux aussi de bonnes vacances.</p>
+                    </div>
+                </div>
+    
+                <div data-direction="reverse"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+                bg-[url('../sources/img/infos_pratiques/template/template_3.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Quand est-ce qu'on mange ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Chez Gocolo, tous les repas sont servis de
+                            façon
+                            échelonnés et libres. Échelonné cela veut dire qu’il y a une heure de début et une heure de fin
+                            pour
+                            chaque repas. Et libre cela veut dire que tu peux venir manger à l’heure que tu veux.
+                            Concrètement
+                            cela donne :
+                            <br>
+                        </p>
+                        <ul class="apply_body_medium_base text-neutrals-dark list-disc list-outside pl-4">
+                            <li>Le petit déjeuner qui est servi entre 7h45 et 9h30. Tu peux ainsi te lever à l’heure que tu
+                                préfères et
+                                venir déjeuner à ton rythme.</li>
+                            <li>Le repas du midi qui est servi entre 12h00 et 13h15. Tu peux ainsi finir ton activité
+                                tranquillement ou
+                                attendre tes copains qui sont sur une autre activité pour manger avec eux</li>
+                            <li>Le repas du soir servi entre 19h00 et 20h00. Le soir on «échelonne » un peu moins les
+                                horaires
+                                car juste
+                                après le repas il y a les veillées qui commencent.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div data-direction="normal"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover 
+                    bg-[url('../sources/img/infos_pratiques/template/template_7.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Quel est le programme de la journée ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">En dehors des heures de repas dont nous parlons
+                            au-dessus il y a bien entendu les activités. Il y a une activité le matin, une autre
+                            l’après-midi et
+                            une veillée tous les soirs. Alors comment ça se passe :
+                            <br>
+                        </p>
+                        <ul class="apply_body_medium_base text-neutrals-dark list-disc list-outside pl-4">
+                            <li>Si tu es inscris sur un séjour avec une seule activité, tu es certainement un passionné et
+                                tu
+                                auras donc cette activité tous les matins et tous les après-midi</li>
+                            <li>Si tu es inscris sur un séjour avec deux activités, tu en pratiqueras une le matin et une
+                                autre
+                                l’après-midi</li>
+                            <li>Et si dans ton séjour tu es inscris en multi-activités c’est toi qui choisiras chaque jour,
+                                sur
+                                place, ce que tu veux faire parmi les activités proposées par l’équipe d’animation. Tu
+                                pourras
+                                même proposer les activités que tu souhaites.</li>
+                        </ul>
+                        <p class="apply_body_medium_base text-neutrals-dark">Dans tous les cas et quel que soit le séjour
+                            sur
+                            lequel tu es inscris il y aura tous les soirs des veillées proposées par notre équipe
+                            d’animation.
+                        </p>
+                    </div>
+                </div>
+    
+                <div data-direction="reverse"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+            bg-[url('../sources/img/infos_pratiques/template/template_5.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Que faire si l’activité sur laquelle je suis inscrit ne me
+                            plaît
+                            pas ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Pas d’inquiétude cela peut arriver. Dans ce cas
+                            il
+                            te sera toujours possible d’aller sur une autre activité qui te plaît. Il faudra juste qu’il
+                            reste
+                            de la place dans celle-ci.
+                            <br><br>
+                            Si tu étais inscris sur cette activité nous préviendrons tes parents de ton souhait de changer
+                            de
+                            thématique.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+    
+                <div data-direction="normal"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+                     bg-[url('../sources/img/infos_pratiques/template/template_1.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">À quelle heure va-t-on se coucher en colonie ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">L'heure de coucher en colonie de vacances
+                            dépend de
+                            plusieurs choses : l'âge des jeunes, l'état de fatigue et le type de soirée organisé.
+                            <br><br>
+                            En règle générale, les plus jeunes (6 à 8 ans) vont se coucher vers 21h30, les plus grands (9
+                            /12
+                            ans) vers 22h30 et les ados vers 23h00. Pendant la colo, il y aura également des soirées plus
+                            longues (boum, casino...) qui se termineront forcément plus tard.
+                            <br><br>
+                            Il est également toujours possible, si on est trop fatigué, de demander à aller se coucher plus
+                            tôt
+                            que les autres. Mais ça n’arrive que rarement.
+                        </p>
+                    </div>
+                </div>
+    
+                <div data-direction="reverse"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+                 bg-[url('../sources/img/infos_pratiques/template/template_6.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Est-ce qu'il y a des activités pour les jours de pluie ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Les jours de pluie les activités se déroulent
+                            normalement mais à l’intérieur. Chaque thématique dispose de sa propre salle d’activité donc ce
+                            n’est pas un problème. Seules les activités devant forcement se dérouler en extérieur peuvent
+                            être
+                            remplacées par d’autres.
+                        </p>
+                    </div>
+                </div>
+    
+                <div data-direction="normal"
+                    class="flex flex-col md:flex-row md:data-[direction=reverse]:flex-row-reverse md:items-stretch gap-x-16 gap-y-6 xl:gap-x-16">
+    
+                    <div class="w-full h-[160px] md:h-auto  md:w-[250px] lg:w-[400px]   md:flex-none  rounded-2xl apply_background_center_cover
+             bg-[url('../sources/img/infos_pratiques/template/template_4.jpeg')]">
+                    </div>
+    
+                    <div class="md:py-8 flex flex-col gap-4">
+                        <p class="apply_title_h3 text-green">Est-ce qu'il y a une infirmerie sur place ?</p>
+                        <p class="apply_body_medium_base text-neutrals-dark">Chacun de nos centres dispose d’une infirmerie
+                            et
+                            de deux assistants sanitaires. Si tu as un traitement médical en cours pendant le séjour il
+                            faudra
+                            t’y rendre pour le prendre car on ne doit pas laisser de médicaments dans les chambres ou les
+                            valises.
+                            <br><br>
+                            Si tu ne te sens pas bien ou que tu as le moindre problème tu pourras aller en discuter avec un
+                            des
+                            assistants sanitaires. Il t’écoutera et s’il le faut, te prendra un rendez-vous avec un médecin.
+                        </p>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
+        before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
+
+        <div
+            class="text-neutrals-white apply_body_medium_sm text-center apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
+                <p>Séjours agréés DDCSPP</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
+                <p>Encadrement diplômé et contrôlé</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
+                <p>Charte qualité depuis 10 ans</p>
+            </div>
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
+                <p>Paiement sécurisé en ligne</p>
+            </div>
+        </div>
+
+        <hr class=" border-green-600">
+
+
+        <div class="apply_wrapper_1440 py-8 md:py-14 flex flex-col items-start md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between  gap-6 lg:gap-x-8 xl:gap-x-16
+        bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
+
+            <div class="flex flex-col gap-4">
+                <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
+                <p class="apply_body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt
+                    eveniet
+                    reiciendis.</p>
+            </div>
+
+            <div class="min-w-[265px] flex flex-col gap-4">
+                <p class="apply_title_h6">Nos Dernières actus</p>
+                <a href="" class="flex gap-4 items-center">
+                    <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm">Toutes les aides au départ en colonie de vacances</p>
+                </a>
+                <a href="" class="flex gap-4 items-center">
+                    <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm">Colonie de vacances pas chère, ou se situe Gocolo ?</p>
+
+                </a>
+            </div>
+            <div class="min-w-[110px] flex flex-col gap-4">
+                <p class="apply_title_h6">Liens utiles</p>
+                <div class="apply_body_medium_sm flex flex-col gap-2">
+                    <a href="">Recrutement</a>
+                    <a href="">Contact</a>
+                    <a href="">Actualités</a>
+                </div>
+            </div>
+            <div class="min-w-[160px] flex flex-col gap-4">
+                <p class="apply_title_h6">Nos colonies</p>
+                <div class="apply_body_medium_sm flex flex-col gap-2">
+                    <a href="">Colonies sportives</a>
+                    <a href="">Colonies artistiques</a>
+                    <a href="">Colonies culturelles</a>
+                    <a href="">Colonies scientifiques</a>
+                    <a href="">Colonies multi-activités</a>
+                </div>
+            </div>
+            <div class="min-w-[170px] flex flex-col gap-4">
+                <p class="apply_title_h6">Contactez-nous</p>
+                <a href="tel:0033471782243" class="apply_body_semibold_sm flex items-center gap-3">
+                    <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
+                    <span class="inline-block">04 71 78 22 43</span>
+                </a>
+                <a href="mailto:contact@gocolo.fr" class="apply_body_semibold_sm flex items-center gap-2">
+                    <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
+                    <span class="inline-block">contact@gocolo.fr</span>
+                </a>
+                <a href="/" class="apply_body_semibold_sm flex items-center gap-2">
+                    <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
+                    <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
+                </a>
+            </div>
+        </div>
+
+        <hr class=" border-green-600">
+
+
+        <div
+            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <p class="apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="flex flex-wrap apply_body_bold_sm">
+                <p><a href="">Mentions légales</a><span class="inline-block">&ensp;|&ensp;</span></p>
+                <p><a href="">Politique de confidentialité</a><span class="inline-block">&ensp;|&ensp;</span></p>
+                <p><a href="">CGU & CGV</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

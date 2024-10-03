@@ -142,12 +142,15 @@ module.exports = {
       "2xl": "1rem", //16px
       "3xl": "1.5rem", //24px
       "4xl": "2rem", //32px
+      "5xl": "2.5rem", //40px
       full: "9999px",
     },
 
     extend: {
       maxWidth: {
-        1152: "1152px",//pour les cgv, avec 32px paddingX => 1088px de contenu max
+        960: "960px",
+        1152: "1152px", //pour les cgv, avec 32px paddingX => 1088px de contenu max
+        1184: "1184px",
         1328: "1328px",
         1440: "1440px",
       },
@@ -255,7 +258,20 @@ module.exports = {
           "url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg')",
         background_camel_template_desktop_79:
           "url('../sources/background/background_camel_template_desktop_79.svg')",
-          background_camel_template_mobile_62:"url('../sources/background/background_camel_template_mobile_62.svg')",
+        background_camel_template_mobile_62:
+          "url('../sources/background/background_camel_template_mobile_62.svg')",
+        cgv_background: "url('../sources/img/cgv/cgv_background.jpeg')",
+        actus_background: "url('../sources/img/actus/actus_background.jpeg')",
+        homepage_section3_blob: "url('../sources/img/homepage/homepage_section3_blob.png')",
+        homepage_map_mobile: "url('../sources/img/homepage/homepage_map_mobile.svg')",
+        homepage_map_desktop: "url('../sources/img/homepage/homepage_map_desktop.svg')",
+        homepage_banner: "url('../sources/img/homepage/homepage_banner.jpeg')",
+        thematiques_1: "url('../sources/img/thematiques/thematiques_1.png')",
+        thematiques_2: "url('../sources/img/thematiques/thematiques_2.png')",
+        thematiques_3: "url('../sources/img/thematiques/thematiques_3.png')",
+        thematiques_4: "url('../sources/img/thematiques/thematiques_4.png')",
+        thematiques_5: "url('../sources/img/thematiques/thematiques_5.png')",
+        thematiques_6: "url('../sources/img/thematiques/thematiques_6.png')",
         clip_green_footer_top_34:
           "url('../sources/clip/clip_green_footer_top_34.svg')",
         clip_camel_top_18: "url('../sources/clip/clip_camel_top_18.svg')",
@@ -281,9 +297,9 @@ module.exports = {
           "url('../sources/highlight/highlight_kidyellow_underline.svg')",
         highlight_kidyellow_underline_double:
           "url('../sources/highlight/highlight_kidyellow_underline_double.svg')",
-          highlight_cgv_desktop:
+        highlight_cgv_desktop:
           "url('../sources/highlight/highlight_cgv_desktop.svg')",
-          highlight_cgv_mobile:
+        highlight_cgv_mobile:
           "url('../sources/highlight/highlight_cgv_mobile.svg')",
         listing_pages_infos_1:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
@@ -297,6 +313,7 @@ module.exports = {
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
         listing_pages_infos_6:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
+          homepage_avis_blur_desktop:"url('../sources/img/homepage/homepage_avis_blur_desktop.svg')",
       },
 
       keyframes: {

@@ -28,7 +28,7 @@
 </head>
 
 <body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+    class="bg-neutrals-white !overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
@@ -72,12 +72,12 @@
 
                         <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
                             aria-controls="dropdownmenu" class="group/dropdown relative">
-                            <div x-on:click="opendropdown = ! opendropdown"
+                            <button x-on:click="opendropdown = ! opendropdown"
                                 class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
                                 <span class="inline-block">Les colos par thématique</span>
                                 <span
                                     class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
-                            </div>
+                            </button>
 
                             <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
                             flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
@@ -149,124 +149,111 @@
 
     <main>
 
-        <section class="h-30 md:h-60 apply_background_center_cover bg-[url('../sources/img/cgv/cgv_background.jpeg')]">
-        </section>
-        <section
-            class="bg-neutrals-white relative apply_before_clip before:bg-clip_white_top_18 before:top-[-5px] md:before:top-[-17px] before:h-[6px] md:before:h-[18px] ">
+        <div class="apply_background_center_cover bg-cgv_background  h-30 md:h-60 
+                    apply_after_clip after:bg-clip_white_top_18 after:bottom-[-1px] after:h-[8px] md:after:h-[18px] ">
+        </div>
 
-            <div class="apply_wrapper_1152 py-10 md:pt-20 md:pb-24">
-                <p class="apply_title_h2 pb-8 md:pb-16 text-green">
-                    Conditions de vente de nos <em>colonies de
-                        <span class="relative apply_after_background_center_contain after:bg-highlight_cgv_mobile md:after:bg-highlight_cgv_desktop after:absolute after:inline-block after:right-[-26px] after:bottom-[-5px]  md:after:right-[-40px] md:after:bottom-[30px]
-                        after:w-[27px] after:h-[42px] md:after:w-[48px] md:after:h-[73px]">vacances</span></em></p>
-                <div class="flex flex-col gap-8 md:gap-10">
 
-                    <div>
-                        <p class="apply_title_h3 pb-2 md:pb-4 text-green">Tarifs des colonies de vacances</p>
-                        <p class="apply_body_medium_base text-neutrals-dark">Les tarifs sont indiqués Toutes Taxes
-                            Comprises, ils comprennent :
-                            <br>
-                            - L’hébergement et la restauration
-                            <br>
-                            - L’encadrement des mineurs
-                            <br>
-                            - Les activités de prestation
-                            <br>
-                            - L’assurance de responsabilité civile
-                            <br>
-                            - Les frais de dossier
-                            <br>
-                            - Le transport (si l’option a été souscrite)
-                        </p>
-                    </div>
+        <article class="apply_style_cgv">
 
-                    <div>
-                        <p class="apply_title_h3 pb-2 md:pb-4 text-green">Les frais médicaux en colonie</p>
-                        <p class="apply_body_medium_base text-neutrals-dark">Les représentants légaux du mineur
-                            s'engagent à renseigner tous les éléments connus et importants de la santé du participant
-                            dans une fiche sanitaire fournie par GoColo. Ils acceptent par avance que GoColo autorise,
-                            si nécessaire, une hospitalisation ou une opération chirurgicale conseillée(s) par un
-                            médecin.
-                            <br><br>
-                            Les représentants s'engagent par avance à rembourser les frais médicaux  avancés par GoColo,
-                            dès le retour de l'enfant.
-                        </p>
-                    </div>
+            <h2>Conditions de vente de nos <em>colonies de
+                    <span class="apply_after_absolute_background_center_contain after:bg-highlight_cgv_mobile md:after:bg-highlight_cgv_desktop after:right-[-26px] after:bottom-[-5px]  md:after:right-[-40px] md:after:bottom-[30px]
+                    after:w-[27px] after:h-[42px] md:after:w-[48px] md:after:h-[73px]">vacances</span></em></h2>
 
-                    <div class="flex flex-col gap-6 md:gap-8">
-                        <p class="apply_title_h3 text-green">Modalités de règlement de nos colonies</p>
-                        <div>
-                            <p class="apply_title_h4 pb-4 text-green">Réservation d'une colonie</p>
-                            <p class="apply_body_medium_base text-neutrals-dark">La réservation d'un séjour s'effectue
-                                par l'envoi à  GoColo d'<strong>un acompte égal à
-                                    30% minimum du montant TTC du séjour choisi</strong> (acompte impérativement par
-                                chèque bancaire, CB ou chèque vacances - un bon CAF* ou MSA, ne peuvent en aucun cas
-                                constituer un acompte), soit de la totalité du montant du séjour.
-                                <br><br>
-                                Les transports doivent être réservés  au moment de l'inscription, un ajout est toutefois
-                                possible, dans la limite des places disponibles, Lorsque l'inscription est définitive
-                                (un premier acompte a été versé), il n'est pas possible de modifier ou d'annuler un
-                                transport, l'enfant pourra éventuellement arriver ou  rester sur place, dans ce cas,
-                                <strong><em><a href="">lien dans le texte</a></em></strong> aucun remboursement du prix
-                                du transport ne  sera effectué.
-                                <br><br>
-                                GoColo envoie alors un accusé de réception, par e mail, de la réservation accompagné
-                                d'un dossier complet de renseignements de l'enfant. Tous ces documents sont également
-                                téléchargeables sur notre site, via l'espace parents.
-                                <br><br>
-                                <strong>La famille devra solder le montant du séjour 30 jours</strong>, au plus tard,
-                                avant le jour du
-                                départ. En cas de retard, GoColo se réserve le droit de revendre la place à un autre
-                                participant, et de garder le montant de l'acompte, soit 30% du montant total du séjour.
-                                <br><br>
-                                En cas de difficultés passagères pour régler le séjour, contactez-nous par téléphone
-                                afin que nous puissions trouver un arrangement.
-                                <br><br>
-                                GoColo met en ligne sur le site, dans l'espace parents,  les lieux et heures de
-                                rendez-vous du départ du séjour, au plus tard,  2 semaines avant le départ, il
-                                appartient à chaque participant de télécharger sa convocation.
-                                <br><br>
-                                Le règlement du solde se fait par chèques bancaires, cartes bancaires, virements, bons
-                                de la CAF*, MSA  ou chèques vacances.
-                                <br><br>
-                                * Sous réserve de l’acceptation de la prise en charge par la CAF (nous contacter)
-                            </p>
-                        </div>
+            <div>
 
-                        <div>
-                            <p class="apply_title_h4 pb-4 text-green">Modalités de règlement en plusieurs mensualités
-                            </p>
-                            <p class="apply_body_medium_base text-neutrals-dark">GoColo accepte le règlement en
-                                plusieurs mensualités (jusqu'à trois). Pour cela, vous devez
-                                nous faire parvenir par chèque :
-                                <br><br>
-                                - 30% d'acompte au moment de l'inscription +  le solde au plus tard 1 mois avant le
-                                début du
-                                séjour (vous devrez nous faire parvenir ce solde de manière spontanée, aucun courrier ne
-                                vous sera envoyé)
-                                <br><br>
-                                OU
-                                <br><br>
-                                - En plusieurs chèques dont le montant total est égal au prix du séjour (1, 2 ou 3). Le
-                                dernier chèque sera toujours encaissé avant l’arrivée de l’enfant sur le séjour
-                                <br><br>
-                                Nous encaisserons les chèques aux dates qui vous conviennent (merci de nous les indiquer
-                                au
-                                dos de chacun de vos chèques). L'intégralité du montant du séjour devra avoir été
-                                encaissée
-                                avant l'arrivée de l'enfant.
-                                <br><br>
-                                En cas de trop-perçu généré par une aide ce dernier ne sera remboursé qu'après
-                                encaissement
-                                de l'intégralité des paiements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <section>
+                    <h3>Tarifs des colonies de vacances</h3>
+                    <p>Les tarifs sont indiqués Toutes Taxes
+                        Comprises, ils comprennent :
+                        <br>- L’hébergement et la restauration
+                        <br>- L’encadrement des mineurs
+                        <br>- Les activités de prestation
+                        <br>- L’assurance de responsabilité civile
+                        <br>- Les frais de dossier
+                        <br>- Le transport (si l’option a été souscrite)
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Les frais médicaux en colonie</h3>
+                    <p>Les représentants légaux du mineur
+                        s'engagent à renseigner tous les éléments connus et importants de la santé du participant
+                        dans une fiche sanitaire fournie par GoColo. Ils acceptent par avance que GoColo autorise,
+                        si nécessaire, une hospitalisation ou une opération chirurgicale conseillée(s) par un
+                        médecin.
+                        <br><br>
+                        Les représentants s'engagent par avance à rembourser les frais médicaux  avancés par GoColo,
+                        dès le retour de l'enfant.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Modalités de règlement de nos colonies</h3>
+                    <h4>Réservation d'une colonie</h4>
+                    <p>La réservation d'un séjour s'effectue
+                        par l'envoi à  GoColo d'<strong>un acompte égal à
+                            30% minimum du montant TTC du séjour choisi</strong> (acompte impérativement par
+                        chèque bancaire, CB ou chèque vacances - un bon CAF* ou MSA, ne peuvent en aucun cas
+                        constituer un acompte), soit de la totalité du montant du séjour.
+                        <br><br>
+                        Les transports doivent être réservés  au moment de l'inscription, un ajout est toutefois
+                        possible, dans la limite des places disponibles, Lorsque l'inscription est définitive
+                        (un premier acompte a été versé), il n'est pas possible de modifier ou d'annuler un
+                        transport, l'enfant pourra éventuellement arriver ou  rester sur place, dans ce cas,
+                        <strong><em><a href="/">lien dans le texte</a></em></strong> aucun remboursement du prix
+                        du transport ne  sera effectué.
+                        <br><br>
+                        GoColo envoie alors un accusé de réception, par e mail, de la réservation accompagné
+                        d'un dossier complet de renseignements de l'enfant. Tous ces documents sont également
+                        téléchargeables sur notre site, via l'espace parents.
+                        <br><br>
+                        <strong>La famille devra solder le montant du séjour 30 jours</strong>, au plus tard,
+                        avant le jour du
+                        départ. En cas de retard, GoColo se réserve le droit de revendre la place à un autre
+                        participant, et de garder le montant de l'acompte, soit 30% du montant total du séjour.
+                        <br><br>
+                        En cas de difficultés passagères pour régler le séjour, contactez-nous par téléphone
+                        afin que nous puissions trouver un arrangement.
+                        <br><br>
+                        GoColo met en ligne sur le site, dans l'espace parents,  les lieux et heures de
+                        rendez-vous du départ du séjour, au plus tard,  2 semaines avant le départ, il
+                        appartient à chaque participant de télécharger sa convocation.
+                        <br><br>
+                        Le règlement du solde se fait par chèques bancaires, cartes bancaires, virements, bons
+                        de la CAF*, MSA  ou chèques vacances.
+                        <br><br>
+                        * Sous réserve de l’acceptation de la prise en charge par la CAF (nous contacter)
+                    </p>
+                    <h4>Modalités de règlement en plusieurs mensualités</h4>
+                    <p>GoColo accepte le règlement en
+                        plusieurs mensualités (jusqu'à trois). Pour cela, vous devez
+                        nous faire parvenir par chèque :
+                        <br><br>
+                        - 30% d'acompte au moment de l'inscription +  le solde au plus tard 1 mois avant le
+                        début du
+                        séjour (vous devrez nous faire parvenir ce solde de manière spontanée, aucun courrier ne
+                        vous sera envoyé)
+                        <br><br>
+                        OU
+                        <br><br>
+                        - En plusieurs chèques dont le montant total est égal au prix du séjour (1, 2 ou 3). Le
+                        dernier chèque sera toujours encaissé avant l’arrivée de l’enfant sur le séjour
+                        <br><br>
+                        Nous encaisserons les chèques aux dates qui vous conviennent (merci de nous les indiquer
+                        au
+                        dos de chacun de vos chèques). L'intégralité du montant du séjour devra avoir été
+                        encaissée
+                        avant l'arrivée de l'enfant.
+                        <br><br>
+                        En cas de trop-perçu généré par une aide ce dernier ne sera remboursé qu'après
+                        encaissement
+                        de l'intégralité des paiements.
+                    </p>
+                </section>
 
             </div>
-            </div>
-        </section>
+        </article>
     </main>
 
 
@@ -274,23 +261,22 @@
     <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
         before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
 
-        <div
-            class="text-neutrals-white apply_body_medium_sm text-center apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
+        <div class=" apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
             <div class="flex flex-col items-center gap-2.5">
                 <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
-                <p>Séjours agréés DDCSPP</p>
+                <p class="text-neutrals-white apply_body_medium_sm">Séjours agréés DDCSPP</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
                 <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
-                <p>Encadrement diplômé et contrôlé</p>
+                <p class="text-neutrals-white apply_body_medium_sm">Encadrement diplômé et contrôlé</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
                 <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
-                <p>Charte qualité depuis 10 ans</p>
+                <p class="text-neutrals-white apply_body_medium_sm">Charte qualité depuis 10 ans</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
                 <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
-                <p>Paiement sécurisé en ligne</p>
+                <p class="text-neutrals-white apply_body_medium_sm">Paiement sécurisé en ligne</p>
             </div>
         </div>
 
@@ -302,36 +288,39 @@
 
             <div class="flex flex-col gap-4">
                 <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
-                <p class="apply_body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt
+                <p class="apply_body_medium_xs text-neutrals-white">Numquam cumque facere molestiae tenetur quia quasi.
+                    Sunt et incidunt
                     eveniet
                     reiciendis.</p>
             </div>
 
             <div class="min-w-[265px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos Dernières actus</p>
+                <h6 class="text-neutrals-white ">Nos Dernières actus</h6>
                 <a href="" class="flex gap-4 items-center">
                     <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
                         class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm">Toutes les aides au départ en colonie de vacances</p>
+                    <p class="apply_body_medium_sm text-neutrals-white">Toutes les aides au départ en colonie de
+                        vacances</p>
                 </a>
                 <a href="" class="flex gap-4 items-center">
                     <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
                         class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm">Colonie de vacances pas chère, ou se situe Gocolo ?</p>
+                    <p class="apply_body_medium_sm text-neutrals-white">Colonie de vacances pas chère, ou se situe
+                        Gocolo ?</p>
 
                 </a>
             </div>
-            <div class="min-w-[110px] flex flex-col gap-4">
-                <p class="apply_title_h6">Liens utiles</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
+            <div class="min-w-[110px] flex flex-col gap-4 ">
+                <h6 class="text-neutrals-white ">Liens utiles</h6>
+                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Recrutement</a>
                     <a href="">Contact</a>
                     <a href="">Actualités</a>
                 </div>
             </div>
             <div class="min-w-[160px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos colonies</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
+                <h6 class="text-neutrals-white ">Nos colonies</h6>
+                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Colonies sportives</a>
                     <a href="">Colonies artistiques</a>
                     <a href="">Colonies culturelles</a>
@@ -340,19 +329,21 @@
                 </div>
             </div>
             <div class="min-w-[170px] flex flex-col gap-4">
-                <p class="apply_title_h6">Contactez-nous</p>
-                <a href="tel:0033471782243" class="apply_body_semibold_sm flex items-center gap-3">
-                    <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
-                    <span class="inline-block">04 71 78 22 43</span>
-                </a>
-                <a href="mailto:contact@gocolo.fr" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
-                    <span class="inline-block">contact@gocolo.fr</span>
-                </a>
-                <a href="/" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
-                    <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
-                </a>
+                <h6 class="text-neutrals-white ">Contactez-nous</h6>
+                <div class="text-neutrals-white apply_body_semibold_sm flex flex-col gap-4">
+                    <a href="tel:0033471782243" class="flex items-center gap-3">
+                        <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                    <a href="mailto:contact@gocolo.fr" class=" flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
+                        <span class="inline-block">contact@gocolo.fr</span>
+                    </a>
+                    <a href="/" class=" flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
+                        <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -361,11 +352,11 @@
 
         <div
             class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-            <p class="apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
-            <div class="flex flex-wrap apply_body_bold_sm">
-                <p><a href="">Mentions légales</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">Politique de confidentialité</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">CGU & CGV</a></p>
+            <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
+                <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">CGU & CGV</a></div>
             </div>
         </div>
     </footer>
