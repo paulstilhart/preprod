@@ -175,6 +175,7 @@ module.exports = {
       },
 
       spacing: {
+        0.5: "0.125rem", //2px
         2.5: "0.625rem", //10px
         3.5: "0.875rem", //14px
         4.5: "1.125rem", //18px
@@ -220,6 +221,7 @@ module.exports = {
         add: "url('../sources/icons/add.svg')",
         close: "url('../sources/icons/close.svg')",
         close_red: "url('../sources/icons/close_red.svg')",
+        close_white: "url('../sources/icons/close_white.svg')",
         gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
         gocolo_green: "url('../sources/logos/gocolo_green.svg')",
         freepik_character:
@@ -301,6 +303,8 @@ module.exports = {
           "url('../sources/highlight/highlight_cgv_desktop.svg')",
         highlight_cgv_mobile:
           "url('../sources/highlight/highlight_cgv_mobile.svg')",
+          highlight_kidyellow_sun:
+          "url('../sources/highlight/highlight_kidyellow_sun.svg')",
         listing_pages_infos_1:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
         listing_pages_infos_2:
@@ -314,7 +318,12 @@ module.exports = {
         listing_pages_infos_6:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
           homepage_avis_blur_desktop:"url('../sources/img/homepage/homepage_avis_blur_desktop.svg')",
-      },
+          centre_de_vacances_map_mobile:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')",
+          centre_de_vacances_map_desktop:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')",
+          detail_colo_banner:"url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
+         
+
+        },
 
       keyframes: {
         fadein: {

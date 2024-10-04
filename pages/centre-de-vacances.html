@@ -28,8 +28,8 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden">
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
@@ -139,45 +139,31 @@
         </ul>
     </nav>
 
-    <div aria-hidden="false" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[180px]">
-        <div class="w-full md:w-[312px] relative z-20   bg-kidyellow text-green px-4 py-5 flex flex-col items-start md:items-center gap-3 
-            after:absolute after:inline-block apply_after_background_center_contain after:bg-freepik_character after:h-[155px] after:w-[168px] 
-            md:after:h-[164px] md:after:w-[178px] after:bottom-[-13px] after:right-[0px]  md:after:left-[-80px]">
-            <p class="apply_title_h6_nomq text-left md:text-center">Explorez les colos<br>en aveyron</p>
-            <a href=""
-                class="apply_body_bold_sm text-neutrals-white bg-green w-fit  flex items-center gap-2 px-3 py-2 rounded-4xl ">
-                <span class="inline-block">Voir les colonies</span>
-                <span
-                    class="apply_background_center_contain bg-arrow_narrow_white flex-none inline-block w-3 h-3 "></span>
-            </a>
-        </div>
-    </div>
-
 
     <main>
+
+        
 
         <section class="bg-neutrals-white text-green">
             <div
                 class="apply_wrapper_1440 py-10 md:pt-18 md:pb-36  bg-background_striated_low bg-[left_0px_top_330px] md:bg-[left_0px_top_440px]  bg-[length:260px_129px] md:bg-[length:391px_194px] bg-no-repeat">
 
                 <div class="text-center">
-                    <p class="apply_title_h2 pb-4">LE Domaine de Moulibez</p>
-                    <p class="font-gochihand font-normal text-[22px] md:text-[28px] leading-none">Saint-Beauzely,
-                        Averyron</p>
+                    <h2 class="pb-4">LE Domaine de Moulibez</h2>
+                    <p class="text-green font-gochihand font-normal text-[22px] md:text-[28px] leading-none">Saint-Beauzely,Averyron</p>
                 </div>
 
                 <div
                     class="pt-6 pb-12 md:pt-25 md:pb-22 flex flex-col md:flex-row md:items-center md:justify-between gap-y-6">
 
                     <div class="apply_background_center_contain w-full h-[330px] md:w-[40%] md:h-[462px] md:flex-none
-                        bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')] 
-                        md:bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')]">
+                        bg-centre_de_vacances_map_mobile md:bg-centre_de_vacances_map_desktop">
                     </div>
 
                     <div class="md:flex-auto md:max-w-[640px]">
-                        <p class="apply_title_h3 pb-4">Où se situe le centre ?</p>
-                        <p class="apply_body_medium_base text-neutrals-dark">Le domaine de Moulibez se situe sur la
-                            commune de <strong class="font-bold">Saint Beauzély</strong>, proche des gorges du Tarn,
+                        <h3 class="pb-4">Où se situe le centre ?</h3>
+                        <p>Le domaine de Moulibez se situe sur la
+                            commune de <strong>Saint Beauzély</strong>, proche des gorges du Tarn,
                             du Larzac et du pays de Roquefort. Il est très facile d’accès, à 8 km de Millau, cinq
                             minutes de la sortie du viaduc de Millau et à environ 1 heure et demie de Montpellier.
                             <br><br>
@@ -196,8 +182,8 @@
                     <div data-direction="normal"
                         class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-8 xl:gap-x-16">
                         <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
-                            <p class="apply_title_h3">Les infrastructures</p>
-                            <p class="apply_body_medium_base text-neutrals-dark">12 salles d’activités sont à la
+                            <h3>Les infrastructures</h3>
+                            <p>12 salles d’activités sont à la
                                 disposition des enfants, ainsi qu’une bibliothèque, un babyfoot, une table de ping pong,
                                 un terrain de sports collectifs, une salle de restaurant avec vue sur La Muse, un espace
                                 repas aménagé en extérieur et la piscine chauffée et privée du domaine.
@@ -208,10 +194,10 @@
                             </p>
                             <div class="hidden md:flex gap-4 items-center">
                                 <div
-                                    class="swiper_centre_1_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_1_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                                 <div
-                                    class="swiper_centre_1_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_1_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                             </div>
                         </div>
@@ -219,33 +205,27 @@
 
                             <div class="swiper swiper_centre_1">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
-                                    </div>
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
-                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
-                                    </div>
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg" 
+                                    alt="centre de vacances" data-legend="legende premiere photo"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg" 
+                                    alt="centre de vacances"  data-legend="legende 2"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg" alt="centre de vacances" data-legend="legende 3"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg" alt="centre de vacances" data-legend="legende 4"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
                                 </div>
                             </div>
 
-                            <p
-                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
-                                Légende de la photo mise en avant</p>
+                            <p class="swiper_legend_1 text-green font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6"></p>
+
                         </div>
                     </div>
 
                     <div data-direction="reverse"
                         class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse gap-8 xl:gap-x-16">
                         <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
-                            <p class="apply_title_h3">Les chambres</p>
-                            <p class="apply_body_medium_base text-neutrals-dark">12 salles d’activités sont à la
+                            <h3>Les chambres</h3>
+                            <p>12 salles d’activités sont à la
                                 disposition des enfants, ainsi qu’une bibliothèque, un babyfoot, une table de ping pong,
                                 un terrain de sports collectifs, une salle de restaurant avec vue sur La Muse, un espace
                                 repas aménagé en extérieur et la piscine chauffée et privée du domaine.
@@ -256,10 +236,10 @@
                             </p>
                             <div class="hidden md:flex gap-4 items-center">
                                 <div
-                                    class="swiper_centre_2_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_2_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                                 <div
-                                    class="swiper_centre_2_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_2_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                             </div>
                         </div>
@@ -267,42 +247,35 @@
 
                             <div class="swiper swiper_centre_2">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
-                                    </div>
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
-                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
-                                    </div>
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg" 
+                                    alt="centre de vacances" data-legend="legende premiere photo"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg" 
+                                    alt="centre de vacances"  data-legend="legende 2"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg" alt="centre de vacances" data-legend="legende 3"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg" alt="centre de vacances" data-legend="legende 4"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
                                 </div>
                             </div>
 
-                            <p
-                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
-                                Légende de la photo mise en avant</p>
+                            <p class="swiper_legend_2 text-green font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6"></p>
                         </div>
                     </div>
 
                     <div data-direction="normal"
                         class="flex flex-col md:flex-row md:items-center md:data-[direction=reverse]:flex-row-reverse  gap-8 xl:gap-x-16">
                         <div class="md:flex-1 flex flex-col gap-4 md:pb-6">
-                            <p class="apply_title_h3">Les repas</p>
-                            <p class="apply_body_medium_base text-neutrals-dark">Les repas sont confectionnés sur place
+                            <h3>Les repas</h3>
+                            <p>Les repas sont confectionnés sur place
                                 par notre équipe de cuisine. Ils sont servis sous forme de buffet pour les entrées, le
                                 fromage et les desserts, les plats chaud sont servis à table, pour que chacun profite de
                                 ce moment de convivialité.</p>
                             <div class="hidden md:flex gap-4 items-center">
                                 <div
-                                    class="swiper_centre_3_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_3_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                                 <div
-                                    class="swiper_centre_3_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
+                                    class="swiper_centre_3_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
                                 </div>
                             </div>
                         </div>
@@ -310,25 +283,18 @@
 
                             <div class="swiper swiper_centre_3">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg')]">
-                                    </div>
-                                    <div class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover 
-                                    bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden
-                                    apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg')]">
-                                    </div>
-                                    <div
-                                        class="swiper-slide !w-[80%] !aspect-[3/2] rounded-xl overflow-hidden apply_background_center_cover bg-[url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg')]">
-                                    </div>
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg" 
+                                    alt="centre de vacances" data-legend="legende premiere photo"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
+                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg" 
+                                    alt="centre de vacances"  data-legend="legende 2"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg" alt="centre de vacances" data-legend="legende 3"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">                                    <img src="../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg" alt="centre de vacances" data-legend="legende 4"
+                                    class="swiper-slide !w-[80%] aspect-[3/2]  apply_img_center_cover rounded-xl">
                                 </div>
                             </div>
 
-                            <p
-                                class="font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">
-                                Légende de la photo mise en avant</p>
+                            <p class="swiper_legend_3 text-green font-gochihand font-normal text-[18px] md:text-[20px] leading-none text-center pt-3 md:pt-6">legende placeholder</p>
                         </div>
                     </div>
                 </div>
@@ -339,15 +305,14 @@
 
 
 
-        <section class="bg-camel text-green relative apply_before_clip apply_after_clip before:bg-clip_camel_top_34 after:bg-clip_camel_bottom_35
-            before:top-[-8px] md:before:top-[-33px] before:h-[9px] md:before:h-[34px] 
+        <section class="bg-camel  apply_before_clip apply_after_clip before:bg-clip_camel_top_34 after:bg-clip_camel_bottom_35
+            before:top-[-8px] md:before:top-[-32px] before:h-[9px] md:before:h-[34px] 
             after:bottom-[-7px] md:after:bottom-[-34px] after:h-[8px] md:after:h-[35px]">
 
             <div class="pt-10 pb-28 md:pt-30 md:pb-18 relative">
 
                 <div class="apply_wrapper_1440 flex flex-wrap items-center justify-between gap-4">
-                    <p class="apply_title_h2">Les séjours au <span class="inline-block text-neonorange">domaine de
-                            moulibez</span></p>
+                    <h2>Les séjours au <em>domaine de moulibez</em></h2>
 
                     <div class="w-full md:w-auto absolute md:static left-0 bottom-8 px-4 md:px-0">
                         <a href=""
@@ -357,26 +322,26 @@
                     </div>
                 </div>
 
-                <div class="apply_wrapper_1440 px-0">
+                <div
+                    class=" apply_wrapper_1440  px-0">
 
-                    <div class="swiper swiper_thematiques !pt-8 md:!pt-16">
+                    <div class="swiper swiper_thematiques  !py-8 md:!py-16">
                         <div class="swiper-wrapper">
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_1.png')] apply_background_center_cover relative">
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
 
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-17</p>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
+                                        <span class="apply_title_drop">12-17</span>
+                                        <span class="mt-[-10px] apply_title_drop_2">ans</span>
                                     </div>
 
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -384,11 +349,11 @@
                                 <div class="p-4 flex flex-col gap-3">
 
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            culturelle</span>
-                                        <p class="apply_title_h5">COLONIE CABANE EN FORÊT</p>
-                                        <p class="apply_body_medium_sm">Tu as toujours rêvé d'être comme Robinson Crusoé
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                culturelle</em></span>
+                                        <h5>COLONIE CABANE EN FORÊT</h5>
+                                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
+                                            Robinson Crusoé
                                             ...
                                             alors
                                             viens
@@ -396,7 +361,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse
                                             à
                                             outils,
@@ -406,8 +371,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Sa découverte de la nature</li>
                                             <li>Le développement de l'entraide</li>
                                             <li>L'éveil de son côté débrouillard</li>
@@ -416,13 +381,13 @@
                                 </div>
                             </a>
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_2.png')] apply_background_center_cover relative">
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
 
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-14</p>
+                                        <span class="apply_title_drop">12-14</span>
                                         <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
 
                                     </div>
@@ -430,7 +395,7 @@
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -438,10 +403,9 @@
                                 <div class="p-4 flex flex-col gap-3">
 
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            sportive</span>
-                                        <p class="apply_title_h5">Colonie découverte du poney</p>
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                sportive</em></span>
+                                        <h5>Colonie découverte du poney</h5>
                                         <p class="apply_body_medium_sm">Tu as toujours rêvé de découvrir le monde
                                             équestre.
                                             Enfile
@@ -450,7 +414,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Découverte du compagnon, découverte des règles
                                             de
                                             sécurité,
@@ -458,8 +422,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Sa découverte en douceur de l'animal</li>
                                             <li>Sa demande d'implication</li>
                                             <li>Son évolution au fil de la colonie</li>
@@ -468,13 +432,13 @@
                                 </div>
                             </a>
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_2.png')] apply_background_center_cover relative">
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
 
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-14</p>
+                                        <span class="apply_title_drop">12-14</span>
                                         <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
 
                                     </div>
@@ -482,7 +446,7 @@
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -490,10 +454,9 @@
 
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            sportive</span>
-                                        <p class="apply_title_h5">Colonie Multisport montagne</p>
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                culturelle</em></span>
+                                        <h5>Colonie Multisport montagne</h5>
                                         <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
                                             jamais
                                             vu
@@ -502,7 +465,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -510,8 +473,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
                                             <li>Son exploration de lieux uniques</li>
@@ -520,13 +483,13 @@
                                 </div>
                             </a>
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_2.png')] apply_background_center_cover relative">
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
 
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-14</p>
+                                        <span class="apply_title_drop">12-14</span>
                                         <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
 
                                     </div>
@@ -534,7 +497,7 @@
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -542,10 +505,9 @@
 
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            sportive</span>
-                                        <p class="apply_title_h5">Colonie Multisport montagne</p>
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                culturelle</em></span>
+                                        <h5>Colonie Multisport montagne</h5>
                                         <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
                                             jamais
                                             vu
@@ -554,7 +516,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -562,8 +524,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
                                             <li>Son exploration de lieux uniques</li>
@@ -572,13 +534,12 @@
                                 </div>
                             </a>
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_2.png')] apply_background_center_cover relative">
-
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-14</p>
+                                        <span class="apply_title_drop">12-14</span>
                                         <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
 
                                     </div>
@@ -586,7 +547,7 @@
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -594,10 +555,10 @@
 
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            sportive</span>
-                                        <p class="apply_title_h5">Colonie Multisport montagne</p>
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                culturelle</em></span>
+                                        <h5>Colonie Multisport montagne</h5>
+
                                         <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
                                             jamais
                                             vu
@@ -606,7 +567,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -614,8 +575,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
                                             <li>Son exploration de lieux uniques</li>
@@ -624,13 +585,13 @@
                                 </div>
                             </a>
                             <a href="/"
-                                class="swiper-slide !w-[320px] md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div
-                                    class="h-[160px] md:h-[172px] bg-[url('../sources/img/homepage/homepage_colos_coeur_2.png')] apply_background_center_cover relative">
+                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
 
                                     <div
                                         class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <p class="apply_title_drop">12-14</p>
+                                        <span class="apply_title_drop">12-14</span>
                                         <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
 
                                     </div>
@@ -638,7 +599,7 @@
 
                                     <div
                                         class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <p class="apply_body_regular_sm">À partir de</p>
+                                        <span class="apply_body_regular_sm">À partir de</span>
                                         <span class="apply_title_h5">599 €</span>
                                     </div>
 
@@ -646,10 +607,9 @@
 
                                 <div class="p-4 flex flex-col gap-3">
                                     <div class="flex flex-col gap-1">
-                                        <span
-                                            class="bg-kidorange-100 text-neonorange inline-block w-fit apply_title_mini px-2 rounded-2xl">Colo
-                                            sportive</span>
-                                        <p class="apply_title_h5">Colonie Multisport montagne</p>
+                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                                culturelle</em></span>
+                                        <h5>Colonie Multisport montagne</h5>
                                         <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
                                             jamais
                                             vu
@@ -658,7 +618,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">Les activités</p>
+                                        <h6 class="apply_title_mini">Les activités</h6>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -666,8 +626,8 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <p class="apply_title_mini">On aime pour</p>
-                                        <ul class="apply_body_regular_sm list-disc list-inside space-y-1">
+                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
                                             <li>Son exploration de lieux uniques</li>
@@ -676,15 +636,15 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- Flèches de navigation -->
-                        <div class="apply_wrapper_1440 pt-8 md:pt-16 flex gap-4 justify-end">
-                            <div
-                                class="swiper_thematiques_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
-                            </div>
-                            <div
-                                class="swiper_thematiques_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 apply_background_center_contain md:hover:scale-125 md:transition-transform">
-                            </div>
-                        </div>
+                    </div>
+                </div>
+
+                <div class="apply_wrapper_1440 flex gap-4 justify-end">
+                    <div
+                        class="swiper_thematiques_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
+                    </div>
+                    <div
+                        class="swiper_thematiques_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
                     </div>
                 </div>
 
@@ -694,14 +654,15 @@
         </section>
 
         <section class="bg-neutrals-white text-neutrals-dark">
+
             <div class="apply_wrapper_1440 py-10 md:py-36 
             bg-none md:bg-background_points bg-[left_0px_top_450px] bg-no-repeat bg-[length:275px_331px]">
+
                 <div class="pb-12 md:pb-25 text-left md:text-center">
-                    <p class="apply_title_h2 text-green pb-4">
-                        Foire aux <span class="inline-block relative apply_after_background_center_contain after:bg-highlight_kidyellow_faq after:hidden md:after:inline-block after:absolute after:top-[-40px] 
-                        after:right-[-40px] after:h-[56px] after:w-[66px] ">questions</span>
-                    </p>
-                    <p class=" apply_body_medium_base text-dark-700 max-w-[560px] md:mx-auto">Nous avons répertorié les
+                    <h2 class="pb-4">Foire aux <span
+                            class="apply_after_absolute_background_center_contain after:hidden md:after:inline-block after:top-[-40px] 
+                    after:right-[-40px] after:h-[56px] after:w-[66px] after:bg-highlight_kidyellow_faq">questions</span></h2>
+                    <p class=" text-dark-700 max-w-[560px] md:mx-auto">Nous avons répertorié les
                         questions
                         fréquente des parents eos sunt ipsa vel dicta vel. Est debitis rerum ut autem voluptatum minus.
                     </p>
@@ -718,15 +679,17 @@
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p
                                     class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    Quelles sont les activités des colos au domaine de Moulibez ?</p>
+                                    Aux
+                                    enfants de
+                                    quel âge s’adressent vos colonies ?</p>
                                 <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
+                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                                <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -735,8 +698,9 @@
                                     votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
                                     et
                                     plaisante</p>
-                                <p class="apply_body_bold_base">La durée du séjour</p>
-                                <p class="apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -746,76 +710,13 @@
                                     séjour
                                     pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
                                 </p>
-
-                            </div>
-                        </div>
-
-                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
-                            aria-controls="accordion-item" class="group/accordion  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
-                        aria-expanded:outline-neonorange aria-expanded:outline-2">
-
-                            <div x-on:click="openaccordion = ! openaccordion"
-                                class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
-                                <p
-                                    class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    À quel âge mon enfant peut-il participer aux colonies ?</p>
-                                <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
-                            </div>
-
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
-                                    passions
-                                    de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
-                                    activités
-                                    artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
-                                    Consultez
-                                    votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
-                                    et
-                                    plaisante</p>
-                                <p class="apply_body_bold_base">La durée du séjour</p>
-                                <p class="apply_body_regular_base">La durée du séjour joue un rôle important. Certains
-                                    enfants
-                                    s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
-                                    expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
-                                    l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
-                                    vous
-                                    ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
-                                    séjour
-                                    pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
-                            aria-controls="accordion-item" class="group/accordion  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
-                        aria-expanded:outline-neonorange aria-expanded:outline-2">
-
-                            <div x-on:click="openaccordion = ! openaccordion"
-                                class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
-                                <p
-                                    class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    Qui
-                                    encadre les séjours au domaine de Moulibez ?</p>
-                                <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
-                            </div>
-
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_regular_base">Le séjour est encadré par les animateurs dès la ville
-                                    de
-                                    départ. L'équipe d'encadrement est composée d'un directeur de séjour et
-                                    d'animateurs. Ils seront disponibles pour les jeunes tout au long du séjour :</p>
-                                <ul class="apply_body_bold_base list-disc list-inside ">
+                                <ul class="text-dark-700 apply_body_bold_base pl-0 list-inside">
                                     <li>Un directeur de séjour</li>
                                     <li>Une équipe d'animation</li>
                                     <li>Un ou une assistante sanitaire</li>
                                     <li>Une équipe de cuisine</li>
                                 </ul>
+
                             </div>
                         </div>
 
@@ -827,15 +728,17 @@
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p
                                     class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    Quels types de séjours sont proposés en Aveyron ?</p>
+                                    Quelles sont
+                                    les
+                                    prestations de vos colonies de vacances ?</p>
                                 <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
+                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                                <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -844,8 +747,95 @@
                                     votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
                                     et
                                     plaisante</p>
-                                <p class="apply_body_bold_base">La durée du séjour</p>
-                                <p class="apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
+                                    enfants
+                                    s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                    expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                    l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                    vous
+                                    ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                    séjour
+                                    pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group/accordion  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                            <div x-on:click="openaccordion = ! openaccordion"
+                                class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                                <p
+                                    class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                    Pourquoi
+                                    partir en
+                                    colonie de vacances ?</p>
+                                <span
+                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                            </div>
+
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                                <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
+                                    passions
+                                    de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                    activités
+                                    artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                    Consultez
+                                    votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                    et
+                                    plaisante</p>
+                                <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
+                                    enfants
+                                    s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                    expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                    l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                    vous
+                                    ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                    séjour
+                                    pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                            aria-controls="accordion-item" class="group/accordion  rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
+                        aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                            <div x-on:click="openaccordion = ! openaccordion"
+                                class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                                <p
+                                    class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                    Comment
+                                    choisir la
+                                    meilleure colonie de vacances ?</p>
+                                <span
+                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                            </div>
+
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                                <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
+                                    passions
+                                    de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                    activités
+                                    artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                    Consultez
+                                    votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                    et
+                                    plaisante</p>
+                                <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -867,15 +857,16 @@
                                 class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
                                 <p
                                     class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    Quels sont les avantages de la colonie de vacances Aveyron ?</p>
+                                    Pourquoi faire
+                                    confiance à Gocolo ?</p>
                                 <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
+                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                                <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -884,48 +875,9 @@
                                     votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
                                     et
                                     plaisante</p>
-                                <p class="apply_body_bold_base">La durée du séjour</p>
-                                <p class="apply_body_regular_base">La durée du séjour joue un rôle important. Certains
-                                    enfants
-                                    s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
-                                    expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
-                                    l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
-                                    vous
-                                    ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
-                                    séjour
-                                    pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
-                            aria-controls="accordion-item" class="group/accordion rounded-2xl bg-neutrals-white outline outline-1 outline-dark-300 
-                    aria-expanded:outline-neonorange aria-expanded:outline-2">
-
-                            <div x-on:click="openaccordion = ! openaccordion"
-                                class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
-                                <p
-                                    class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
-                                    Quel est le cadre de vacances au domaine de Moulibez ?</p>
-                                <span
-                                    class="flex-none inline-block bg-add  w-4.5 h-4.5 apply_background_center_cover group-aria-expanded/accordion:bg-close_red"></span>
-                            </div>
-
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2 text-dark-700">
-                                <p class="apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
-                                    passions
-                                    de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
-                                    activités
-                                    artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
-                                    Consultez
-                                    votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
-                                    et
-                                    plaisante</p>
-                                <p class="apply_body_bold_base">La durée du séjour</p>
-                                <p class="apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -942,24 +894,20 @@
                     </div>
 
 
-                    <div class="flex-none md:w-[320px] px-6 py-8 bg-camel rounded-3xl text-center md:sticky md:top-30">
-                        <p class="apply_title_h6 text-green pb-2">Vous ne trouvez pas les réponses à vos questions ?</p>
+                    <div class="flex-none md:w-80 px-6 py-8 bg-camel rounded-3xl text-center md:sticky md:top-30">
+                        <h6 class="pb-2">Vous ne trouvez pas les réponses à vos questions ?</h6>
                         <p class="apply_body_medium_sm text-dark-700">Prenez-contact avec nos équipes, nous nous ferons
                             un
                             plaisir
                             de vous renseigner.</p>
-                        <div class="flex flex-col gap-3 items-center py-6">
-                            <a href="tel:0033471782243"
-                                class="apply_body_semibold_sm text-green flex items-center gap-2">
-                                <span
-                                    class="flex-none inline-block w-4.5 h-4.5 bg-phone_green apply_background_center_contain"></span>
-                                <span class="inline-block">04 71 78 22 43</span>
+                        <div class="apply_body_semibold_sm text-green flex flex-col gap-3 items-center py-6">
+                            <a href="tel:0033471782243" class=" flex items-center gap-2">
+                                <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green "></span>
+                                <span>04 71 78 22 43</span>
                             </a>
-                            <a href="mailto:contact@gocolo.fr"
-                                class="apply_body_semibold_sm text-green flex items-center gap-2">
-                                <span
-                                    class="flex-none inline-block w-4.5 h-4.5 bg-mail_green apply_background_center_contain"></span>
-                                <span class="inline-block">contact@gocolo.fr</span>
+                            <a href="mailto:contact@gocolo.fr" class="flex items-center gap-2">
+                                <span class="apply_span_icon w-4.5 h-4.5 bg-mail_green"></span>
+                                <span>contact@gocolo.fr</span>
                             </a>
                         </div>
                         <a href=""
@@ -971,8 +919,9 @@
         </section>
 
 
+
         <section class="bg-camel apply_before_clip before:bg-clip_camel_top_34  
-        before:top-[-8px] md:before:top-[-33px] before:h-[9px] md:before:h-[34px] ">
+        before:top-[-8px] md:before:top-[-32px] before:h-[9px] md:before:h-[34px] ">
             <div class="apply_wrapper_1440 py-10 md:pt-18 md:pb-20">
 
                 <h2 class="pb-8 md:pb-18 text-left md:text-center">Explorez nos <span class="apply_after_absolute_background_center_contain after:bg-highlight_kidyellow_underline 
@@ -1065,23 +1014,22 @@
     <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
         before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
 
-        <div
-            class="text-neutrals-white apply_body_medium_sm text-center apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
+        <div class=" apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
             <div class="flex flex-col items-center gap-2.5">
-                <span class="inline h-10 w-10 bg-tabler_icon_home_shield_white apply_background_center_contain"></span>
-                <p>Séjours agréés DDCSPP</p>
+                <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
+                <p class="text-neutrals-white apply_body_medium_sm">Séjours agréés DDCSPP</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
-                <span class="inline h-10 w-10 bg-tabler_icon_user_shield_white apply_background_center_contain"></span>
-                <p>Encadrement diplômé et contrôlé</p>
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
+                <p class="text-neutrals-white apply_body_medium_sm">Encadrement diplômé et contrôlé</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
-                <span class="inline h-10 w-10 bg-tabler_icon_thumb_up_white apply_background_center_contain"></span>
-                <p>Charte qualité depuis 10 ans</p>
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
+                <p class="text-neutrals-white apply_body_medium_sm">Charte qualité depuis 10 ans</p>
             </div>
             <div class="flex flex-col items-center gap-2.5">
-                <span class="inline h-10 w-10 bg-tabler_icon_credit_card_white apply_background_center_contain"></span>
-                <p>Paiement sécurisé en ligne</p>
+                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
+                <p class="text-neutrals-white apply_body_medium_sm">Paiement sécurisé en ligne</p>
             </div>
         </div>
 
@@ -1092,38 +1040,40 @@
         bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
 
             <div class="flex flex-col gap-4">
-                <a href="/"
-                    class="flex-none inline-block h-8 w-30 bg-gocolo_yellow apply_background_center_contain"></a>
-                <p class="apply_body_medium_xs">Numquam cumque facere molestiae tenetur quia quasi. Sunt et incidunt
+                <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
+                <p class="apply_body_medium_xs text-neutrals-white">Numquam cumque facere molestiae tenetur quia quasi.
+                    Sunt et incidunt
                     eveniet
                     reiciendis.</p>
             </div>
 
             <div class="min-w-[265px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos Dernières actus</p>
+                <h6 class="text-neutrals-white ">Nos Dernières actus</h6>
                 <a href="" class="flex gap-4 items-center">
-                    <span class="flex-none inline-block w-18 h-12 rounded 
-                        bg-[url('../sources/img/footer/footer_actus_1.jpeg')] bg-center bg-cover bg-no-repeat"></span>
-                    <p class="apply_body_medium_sm">Toutes les aides au départ en colonie de vacances</p>
+                    <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm text-neutrals-white">Toutes les aides au départ en colonie de
+                        vacances</p>
                 </a>
                 <a href="" class="flex gap-4 items-center">
-                    <span class="flex-none inline-block w-18 h-12 rounded 
-                        bg-[url('../sources/img/footer/footer_actus_2.jpeg')] bg-center bg-cover bg-no-repeat"></span>
-                    <p class="apply_body_medium_sm">Colonie de vacances pas chère, ou se situe Gocolo ?</p>
+                    <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
+                        class="apply_img_center_cover w-18 h-12 rounded">
+                    <p class="apply_body_medium_sm text-neutrals-white">Colonie de vacances pas chère, ou se situe
+                        Gocolo ?</p>
 
                 </a>
             </div>
-            <div class="min-w-[110px] flex flex-col gap-4">
-                <p class="apply_title_h6">Liens utiles</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
+            <div class="min-w-[110px] flex flex-col gap-4 ">
+                <h6 class="text-neutrals-white ">Liens utiles</h6>
+                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Recrutement</a>
                     <a href="">Contact</a>
                     <a href="">Actualités</a>
                 </div>
             </div>
             <div class="min-w-[160px] flex flex-col gap-4">
-                <p class="apply_title_h6">Nos colonies</p>
-                <div class="apply_body_medium_sm flex flex-col gap-2">
+                <h6 class="text-neutrals-white ">Nos colonies</h6>
+                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Colonies sportives</a>
                     <a href="">Colonies artistiques</a>
                     <a href="">Colonies culturelles</a>
@@ -1132,20 +1082,21 @@
                 </div>
             </div>
             <div class="min-w-[170px] flex flex-col gap-4">
-                <p class="apply_title_h6">Contactez-nous</p>
-                <a href="tel:0033471782243" class="apply_body_semibold_sm flex items-center gap-3">
-                    <span
-                        class="flex-none inline-block w-4.5 h-4.5 bg-phone_white apply_background_center_contain"></span>
-                    <span class="inline-block">04 71 78 22 43</span>
-                </a>
-                <a href="mailto:contact@gocolo.fr" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="flex-none inline-block w-4.5 h-4.5 bg-mail_white apply_background_center_cover"></span>
-                    <span class="inline-block">contact@gocolo.fr</span>
-                </a>
-                <a href="/" class="apply_body_semibold_sm flex items-center gap-2">
-                    <span class="flex-none w-4.5 h-4.5 bg-home_white apply_background_center_contain"></span>
-                    <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
-                </a>
+                <h6 class="text-neutrals-white ">Contactez-nous</h6>
+                <div class="text-neutrals-white apply_body_semibold_sm flex flex-col gap-4">
+                    <a href="tel:0033471782243" class="flex items-center gap-3">
+                        <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                    <a href="mailto:contact@gocolo.fr" class=" flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
+                        <span class="inline-block">contact@gocolo.fr</span>
+                    </a>
+                    <a href="/" class=" flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
+                        <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -1154,14 +1105,39 @@
 
         <div
             class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-            <p class="apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
-            <div class="flex flex-wrap apply_body_bold_sm">
-                <p><a href="">Mentions légales</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">Politique de confidentialité</a><span class="inline-block">&ensp;|&ensp;</span></p>
-                <p><a href="">CGU & CGV</a></p>
+            <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
+                <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">CGU & CGV</a></div>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- encart publicité -->
+    <div aria-hidden="false" class="aria-hidden:hidden static md:fixed z-20 md:right-0 md:top-[180px]">
+        <div class="w-full md:w-[312px] relative z-20   bg-kidyellow text-green px-4 py-5 flex flex-col items-start md:items-center gap-3 
+            after:absolute after:inline-block apply_after_background_center_contain after:bg-freepik_character after:h-[155px] after:w-[168px] 
+            md:after:h-[164px] md:after:w-[178px] after:bottom-[-13px] after:right-[0px]  md:after:left-[-80px]">
+            <p class="apply_title_h6_nomq text-left md:text-center">Explorez les colos<br>en aveyron</p>
+            <a href=""
+                class="apply_body_bold_sm text-neutrals-white bg-green w-fit  flex items-center gap-2 px-3 py-2 rounded-4xl ">
+                <span class="inline-block">Voir les colonies</span>
+                <span
+                    class="apply_background_center_contain bg-arrow_narrow_white flex-none inline-block w-3 h-3 "></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- popin image = visionneuse html -->
+    <div aria-hidden="true" class="swiper_popin px-4 py-8 fixed top-0 bottom-0 left-0 right-0 z-[99] bg-black aria-hidden:!hidden flex justify-center items-center">
+        <img class="apply_img_center_contain h-full w-full" src="" alt="">
+        <button class="apply_span_icon bg-close_white w-6 h-6 fixed right-4 top-2 z-[100]"></button>
+    </div>
+
+
 </body>
 
 </html>

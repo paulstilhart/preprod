@@ -1181,6 +1181,13 @@ h6{
      object-position: center;
 }
 
+.apply_img_center_contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .apply_background_center_contain{
   background-size: contain;
   background-position: center;
@@ -1629,6 +1636,14 @@ h6{
   right: 0px;
 }
 
+.right-4{
+  right: 1rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .top-2{
   top: 0.5rem;
 }
@@ -1655,6 +1670,14 @@ h6{
 
 .z-50{
   z-index: 50;
+}
+
+.z-\[100\]{
+  z-index: 100;
+}
+
+.z-\[99\]{
+  z-index: 99;
 }
 
 .-order-1{
@@ -1730,8 +1753,8 @@ h6{
   display: none;
 }
 
-.\!aspect-\[3\/2\]{
-  aspect-ratio: 3/2 !important;
+.aspect-\[3\/2\]{
+  aspect-ratio: 3/2;
 }
 
 .\!h-8{
@@ -1780,6 +1803,10 @@ h6{
 
 .h-30{
   height: 7.5rem;
+}
+
+.h-36{
+  height: 9rem;
 }
 
 .h-4\.5{
@@ -1850,8 +1877,8 @@ h6{
   width: 2rem !important;
 }
 
-.\!w-\[320px\]{
-  width: 320px !important;
+.\!w-80{
+  width: 20rem !important;
 }
 
 .\!w-\[80\%\]{
@@ -1916,6 +1943,10 @@ h6{
 
 .w-8{
   width: 2rem;
+}
+
+.w-\[440px\]{
+  width: 440px;
 }
 
 .w-fit{
@@ -2261,6 +2292,11 @@ h6{
   border-color: rgb(12 12 12 / var(--tw-border-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-camel{
   --tw-bg-opacity: 1;
   background-color: rgb(255 242 225 / var(--tw-bg-opacity));
@@ -2320,36 +2356,12 @@ h6{
   background-image: url('../sources/icons/tabler-icon-home-shield.svg');
 }
 
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_map_mobile\.svg\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_slider_1\.jpeg\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_slider_1.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_slider_2\.jpeg\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_slider_2.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_slider_3\.jpeg\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_slider_3.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_slider_4\.jpeg\'\)\]{
-  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_slider_4.jpeg');
-}
-
 .bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_actus_1\.jpeg\'\)\]{
   background-image: url('../sources/img/footer/footer_actus_1.jpeg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/footer\/footer_actus_2\.jpeg\'\)\]{
   background-image: url('../sources/img/footer/footer_actus_2.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_1\.jpeg\'\)\]{
-  background-image: url('../sources/img/homepage/homepage_avis_1.jpeg');
 }
 
 .bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_colos_coeur_1\.png\'\)\]{
@@ -2432,8 +2444,20 @@ h6{
   background-image: url('../sources/icons/Cart_green.svg');
 }
 
+.bg-centre_de_vacances_map_mobile{
+  background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg');
+}
+
 .bg-cgv_background{
   background-image: url('../sources/img/cgv/cgv_background.jpeg');
+}
+
+.bg-close_white{
+  background-image: url('../sources/icons/close_white.svg');
+}
+
+.bg-detail_colo_banner{
+  background-image: url('../sources/img/toutes_colos/detail_colo_banner.jpeg');
 }
 
 .bg-gocolo_green{
@@ -2640,6 +2664,14 @@ h6{
   background-position: top;
 }
 
+.bg-\[right_0px_top_40\%\]{
+  background-position: right 0px top 40%;
+}
+
+.bg-\[right_0px_top_70\%\]{
+  background-position: right 0px top 70%;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -2686,6 +2718,11 @@ h6{
   padding-right: 1.5rem;
 }
 
+.py-0\.5{
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2724,10 +2761,6 @@ h6{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.\!pt-8{
-  padding-top: 2rem !important;
 }
 
 .pb-1{
@@ -3363,6 +3396,31 @@ input {
   top: 55%;
 }
 
+.after\:right-\[-100px\]::after{
+  content: var(--tw-content);
+  right: -100px;
+}
+
+.after\:bottom-5::after{
+  content: var(--tw-content);
+  bottom: 1.25rem;
+}
+
+.after\:bottom-\[50px\]::after{
+  content: var(--tw-content);
+  bottom: 50px;
+}
+
+.after\:bottom-\[-40px\]::after{
+  content: var(--tw-content);
+  bottom: -40px;
+}
+
+.after\:right-\[-130px\]::after{
+  content: var(--tw-content);
+  right: -130px;
+}
+
 .after\:-z-10::after{
   content: var(--tw-content);
   z-index: -10;
@@ -3483,6 +3541,16 @@ input {
   height: 100%;
 }
 
+.after\:h-26::after{
+  content: var(--tw-content);
+  height: 6.5rem;
+}
+
+.after\:h-28::after{
+  content: var(--tw-content);
+  height: 7rem;
+}
+
 .after\:w-10::after{
   content: var(--tw-content);
   width: 2.5rem;
@@ -3548,6 +3616,16 @@ input {
   width: 66px;
 }
 
+.after\:w-26::after{
+  content: var(--tw-content);
+  width: 6.5rem;
+}
+
+.after\:w-28::after{
+  content: var(--tw-content);
+  width: 7rem;
+}
+
 .after\:-translate-x-1\/2::after{
   content: var(--tw-content);
   --tw-translate-x: -50%;
@@ -3611,11 +3689,6 @@ input {
 .after\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_faq\.png\'\)\]::after{
   content: var(--tw-content);
   background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_faq.png');
-}
-
-.after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_avis_blur_desktop\.svg\'\)\]::after{
-  content: var(--tw-content);
-  background-image: url('../sources/img/homepage/homepage_avis_blur_desktop.svg');
 }
 
 .after\:bg-\[url\(\'\.\.\/sources\/img\/homepage\/homepage_vector\/homepage_vector_section2_underline\.svg\'\)\]::after{
@@ -3701,6 +3774,11 @@ input {
 .after\:bg-homepage_avis_blur_desktop::after{
   content: var(--tw-content);
   background-image: url('../sources/img/homepage/homepage_avis_blur_desktop.svg');
+}
+
+.after\:bg-highlight_kidyellow_sun::after{
+  content: var(--tw-content);
+  background-image: url('../sources/highlight/highlight_kidyellow_sun.svg');
 }
 
 .after\:bg-contain::after{
@@ -3789,8 +3867,16 @@ input {
   outline-color: #FD6318;
 }
 
+.aria-hidden\:\!hidden[aria-hidden="true"]{
+  display: none !important;
+}
+
 .aria-hidden\:hidden[aria-hidden="true"]{
   display: none;
+}
+
+.aria-hidden\:overflow-y-hidden[aria-hidden="true"]{
+  overflow-y: hidden;
 }
 
 .aria-selected\:after\:inline-block[aria-selected="true"]::after{
@@ -4000,10 +4086,6 @@ input {
     top: 180px;
   }
 
-  .md\:top-\[226px\]{
-    top: 226px;
-  }
-
   .md\:order-none{
     order: 0;
   }
@@ -4023,6 +4105,10 @@ input {
 
   .md\:h-60{
     height: 15rem;
+  }
+
+  .md\:h-80{
+    height: 20rem;
   }
 
   .md\:h-\[172px\]{
@@ -4053,6 +4139,10 @@ input {
     width: 4.25rem;
   }
 
+  .md\:w-80{
+    width: 20rem;
+  }
+
   .md\:w-\[200px\]{
     width: 200px;
   }
@@ -4067,10 +4157,6 @@ input {
 
   .md\:w-\[312px\]{
     width: 312px;
-  }
-
-  .md\:w-\[320px\]{
-    width: 320px;
   }
 
   .md\:w-\[40\%\]{
@@ -4178,10 +4264,6 @@ input {
     gap: 2rem;
   }
 
-  .md\:bg-\[url\(\'\.\.\/sources\/img\/centre_de_vacances\/centre_de_vacances_map_desktop\.svg\'\)\]{
-    background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg');
-  }
-
   .md\:bg-background_camel_template_desktop_79{
     background-image: url('../sources/background/background_camel_template_desktop_79.svg');
   }
@@ -4196,6 +4278,10 @@ input {
 
   .md\:bg-background_striated_low_and_points{
     background-image: url('../sources/background/background_striated_low.svg'),url('../sources/background/background_points.svg');
+  }
+
+  .md\:bg-centre_de_vacances_map_desktop{
+    background-image: url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg');
   }
 
   .md\:bg-homepage_map_desktop{
@@ -4246,9 +4332,19 @@ input {
     padding-right: 1.75rem;
   }
 
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:py-14{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .md\:py-26{
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
   }
 
   .md\:py-36{
@@ -4261,10 +4357,6 @@ input {
     padding-bottom: 2rem;
   }
 
-  .md\:\!pt-16{
-    padding-top: 4rem !important;
-  }
-
   .md\:pb-1{
     padding-bottom: 0.25rem;
   }
@@ -4275,6 +4367,10 @@ input {
 
   .md\:pb-12{
     padding-bottom: 3rem;
+  }
+
+  .md\:pb-14{
+    padding-bottom: 3.5rem;
   }
 
   .md\:pb-16{
@@ -4323,10 +4419,6 @@ input {
 
   .md\:pb-6{
     padding-bottom: 1.5rem;
-  }
-
-  .md\:pt-16{
-    padding-top: 4rem;
   }
 
   .md\:pt-18{
@@ -4420,6 +4512,11 @@ input {
   .md\:before\:top-\[-17px\]::before{
     content: var(--tw-content);
     top: -17px;
+  }
+
+  .md\:before\:top-\[-32px\]::before{
+    content: var(--tw-content);
+    top: -32px;
   }
 
   .md\:before\:top-\[-33px\]::before{
@@ -4532,6 +4629,11 @@ input {
     height: 73px;
   }
 
+  .md\:after\:h-44::after{
+    content: var(--tw-content);
+    height: 11rem;
+  }
+
   .md\:after\:w-48::after{
     content: var(--tw-content);
     width: 12rem;
@@ -4550,6 +4652,11 @@ input {
   .md\:after\:w-\[48px\]::after{
     content: var(--tw-content);
     width: 48px;
+  }
+
+  .md\:after\:w-44::after{
+    content: var(--tw-content);
+    width: 11rem;
   }
 
   .md\:after\:bg-highlight_cgv_desktop::after{
@@ -4579,6 +4686,10 @@ input {
 
   .lg\:static{
     position: static;
+  }
+
+  .lg\:relative{
+    position: relative;
   }
 
   .lg\:sticky{
@@ -4660,6 +4771,10 @@ input {
     width: 100%;
   }
 
+  .lg\:flex-auto{
+    flex: 1 1 auto;
+  }
+
   .lg\:auto-rows-\[106px\]{
     grid-auto-rows: 106px;
   }
@@ -4670,6 +4785,10 @@ input {
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .lg\:flex-wrap{
