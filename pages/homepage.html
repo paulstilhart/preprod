@@ -28,8 +28,8 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden">
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
@@ -287,7 +287,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse
                                             à
                                             outils,
@@ -297,7 +297,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Sa découverte de la nature</li>
                                             <li>Le développement de l'entraide</li>
@@ -340,7 +340,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Découverte du compagnon, découverte des règles
                                             de
                                             sécurité,
@@ -348,7 +348,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Sa découverte en douceur de l'animal</li>
                                             <li>Sa demande d'implication</li>
@@ -391,7 +391,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -399,7 +399,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
@@ -442,7 +442,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -450,7 +450,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
@@ -493,7 +493,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -501,7 +501,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
@@ -544,7 +544,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
+                                        <p class="text-green apply_title_mini">Les activités</p>
                                         <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
                                             rappel
                                             géant
@@ -552,7 +552,7 @@
                                     </div>
 
                                     <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
+                                        <p class="text-green apply_title_mini">On aime pour</p>
                                         <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
                                             <li>Le goût de l'aventure</li>
                                             <li>Sa multitude d'activités</li>
@@ -742,7 +742,8 @@
 
                 <div
                     class="z-10 md:flex-auto flex flex-col gap-4 apply_after_absolute_background_center_contain after:hidden md:after:inline-block after:-z-10 after:top-[-80px] after:left-[-70px] after:h-[141px] after:w-[141px] after:bg-highlight_kidyellow_stars_1">
-                    <h2>L’avis des <em class="apply_after_absolute_background_center_contain md:static after:inline-block md:after:hidden after:-z-10 after:top-[-27px] after:right-[-35px] after:h-[60px] after:w-[60px] after:bg-highlight_kidyellow_stars_2">parents</em>
+                    <h2>L’avis des <em
+                            class="apply_after_absolute_background_center_contain md:static after:inline-block md:after:hidden after:-z-10 after:top-[-27px] after:right-[-35px] after:h-[60px] after:w-[60px] after:bg-highlight_kidyellow_stars_2">parents</em>
                     </h2>
                     <p class="md:max-w-[358px] text-dark-700">Asperiores quod distinctio dolorem
                         modi
@@ -751,8 +752,7 @@
 
                 <div class="2xl:mr-28 flex-none relative z-10">
 
-                    <div
-                        class=" md:w-[470px] overflow-hidden bg-neutrals-white  shadow-reviews  px-6 py-8 rounded-3xl">
+                    <div class=" md:w-[470px] overflow-hidden bg-neutrals-white  shadow-reviews  px-6 py-8 rounded-3xl">
 
                         <div data-slide="2"
                             class="group/slide overflow-hidden data-[slide=2]:animate-blurAnimation_5s data-[slide=3]:animate-blurAnimation_5s">
@@ -762,14 +762,15 @@
 
                                 <!-- bloc commentaire -->
                                 <div class="w-full flex-none flex flex-col gap-6">
-                                    <p class="text-dark-700 apply_body_medium_lg">“Numquam placeat hic voluptatem officiis suscipit
+                                    <p class="text-dark-700 apply_body_medium_lg">“Numquam placeat hic voluptatem
+                                        officiis suscipit
                                         voluptas
                                         ut
                                         vitae
                                         quia. Fuga iusto et libero unde. Numquam laborum vel rerum minus sit.”</p>
                                     <div class="flex items-center justify-start gap-4">
-                                        <img src="../sources/img/homepage/homepage_avis_1.jpeg" alt="photo avis" 
-                                        class="flex-none apply_img_center_cover w-14 h-14 rounded-full">
+                                        <img src="../sources/img/homepage/homepage_avis_1.jpeg" alt="photo avis"
+                                            class="flex-none apply_img_center_cover w-14 h-14 rounded-full">
                                         <div>
                                             <p class="text-dark-700 apply_body_bold_base">Geraldine Bailey</p>
                                             <p class="text-dark-700 apply_body_regular_sm">Maman de Louise, 8 ans</p>
@@ -781,8 +782,8 @@
                                 <div class="w-full flex-none flex flex-col gap-6">
                                     <p class="apply_body_medium_lg apply_body_medium_lg">“2eme commentaire text”</p>
                                     <div class="flex items-center justify-start gap-4">
-                                        <img src="../sources/img/homepage/homepage_avis_1.jpeg" alt="photo avis" 
-                                        class="flex-none apply_img_center_cover w-14 h-14 rounded-full">
+                                        <img src="../sources/img/homepage/homepage_avis_1.jpeg" alt="photo avis"
+                                            class="flex-none apply_img_center_cover w-14 h-14 rounded-full">
                                         <div>
                                             <p class="text-dark-700 apply_body_bold_base">Autre personne</p>
                                             <p class="text-dark-700 apply_body_regular_sm">Maman de enfant, 3ans</p>
@@ -806,7 +807,7 @@
             bg-none md:bg-background_striated_high bg-[left_0px_top_500px] bg-no-repeat bg-[length:275px_194px]">
                 <div class="pb-12 md:pb-25 text-left md:text-center">
                     <h2 class="pb-4">Foire aux <span
-                        class="apply_after_absolute_background_center_contain after:hidden md:after:inline-block after:top-[-40px] 
+                            class="apply_after_absolute_background_center_contain after:hidden md:after:inline-block after:top-[-40px] 
                     after:right-[-40px] after:h-[56px] after:w-[66px] after:bg-highlight_kidyellow_faq">questions</span></h2>
                     <p class=" text-dark-700 max-w-[560px] md:mx-auto">Nous avons répertorié les
                         questions
@@ -832,10 +833,10 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
                                 <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -845,7 +846,8 @@
                                     et
                                     plaisante</p>
                                 <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
-                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -874,10 +876,10 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
                                 <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -887,7 +889,8 @@
                                     et
                                     plaisante</p>
                                 <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
-                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -916,10 +919,10 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
                                 <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -929,7 +932,8 @@
                                     et
                                     plaisante</p>
                                 <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
-                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -958,10 +962,10 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
                                 <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -971,7 +975,8 @@
                                     et
                                     plaisante</p>
                                 <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
-                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -999,10 +1004,10 @@
                                     class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
                             </div>
 
-                            <div x-show="openaccordion" x-cloak x-transition
-                                class="px-6 pb-4 pt-2 flex flex-col gap-2">
+                            <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2">
                                 <p class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</p>
-                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des intérêts et des
+                                <p class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                    intérêts et des
                                     passions
                                     de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
                                     activités
@@ -1012,7 +1017,8 @@
                                     et
                                     plaisante</p>
                                 <p class="text-dark-700 apply_body_bold_base">La durée du séjour</p>
-                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle important. Certains
+                                <p class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                    important. Certains
                                     enfants
                                     s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
                                     expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
@@ -1036,13 +1042,11 @@
                             plaisir
                             de vous renseigner.</p>
                         <div class="apply_body_semibold_sm text-green flex flex-col gap-3 items-center py-6">
-                            <a href="tel:0033471782243"
-                                class=" flex items-center gap-2">
+                            <a href="tel:0033471782243" class=" flex items-center gap-2">
                                 <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green "></span>
                                 <span>04 71 78 22 43</span>
                             </a>
-                            <a href="mailto:contact@gocolo.fr"
-                                class="flex items-center gap-2">
+                            <a href="mailto:contact@gocolo.fr" class="flex items-center gap-2">
                                 <span class="apply_span_icon w-4.5 h-4.5 bg-mail_green"></span>
                                 <span>contact@gocolo.fr</span>
                             </a>
@@ -1095,7 +1099,7 @@
             </div>
 
             <div class="min-w-[265px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Nos Dernières actus</h6>
+                <p class="text-neutrals-white apply_title_h6">Nos Dernières actus</p>
                 <a href="" class="flex gap-4 items-center">
                     <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
                         class="apply_img_center_cover w-18 h-12 rounded">
@@ -1111,7 +1115,7 @@
                 </a>
             </div>
             <div class="min-w-[110px] flex flex-col gap-4 ">
-                <h6 class="text-neutrals-white ">Liens utiles</h6>
+                <p class="text-neutrals-white apply_title_h6">Liens utiles</p>
                 <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Recrutement</a>
                     <a href="">Contact</a>
@@ -1119,7 +1123,7 @@
                 </div>
             </div>
             <div class="min-w-[160px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Nos colonies</h6>
+                <p class="text-neutrals-white apply_title_h6">Nos colonies</p>
                 <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
                     <a href="">Colonies sportives</a>
                     <a href="">Colonies artistiques</a>
@@ -1129,7 +1133,7 @@
                 </div>
             </div>
             <div class="min-w-[170px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Contactez-nous</h6>
+                <p class="text-neutrals-white apply_title_h6">Contactez-nous</p>
                 <div class="text-neutrals-white apply_body_semibold_sm flex flex-col gap-4">
                     <a href="tel:0033471782243" class="flex items-center gap-3">
                         <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>

@@ -28,567 +28,356 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden">
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
+    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden">
 
-    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
 
-        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed w-full h-16 apply_wrapper_1440   
-            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
-            <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green apply_background_center_contain"></a>
-            <div class="flex items-center gap-3">
-                <a data-cart="3" href="/"
-                    class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
-                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset relative 
-                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs"></a>
-                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
-                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto] 
-                "></button>
-            </div>
-        </div>
 
-        <div x-show="openheadermobile" x-cloak x-transition
-            class="z-40 fixed w-full !h-dvh h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto lg:overflow-y-visible">
-            <hr class="hidden lg:block border-dark-200">
-            <div class="bg-neutrals-white text-green  relative lg:static 
-                apply_wrapper_1440 w-full min-h-[calc(100%_-150px)] lg:min-h-16 py-22 lg:py-2 
-                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
 
-                <a href="/"
-                    class="flex-none hidden lg:inline-block h-8 w-30 bg-gocolo_green apply_background_center_contain"></a>
+    <div class="apply_background_center_cover bg-detail_colo_banner  h-36 md:h-80 
+        apply_after_clip after:bg-clip_white_top_18 after:bottom-[-1px] after:h-[8px] md:after:h-[18px] ">
+    </div>
 
-                <div
-                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
-                    <div class="apply_title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
-                        <a href="/" aria-selected="false"
-                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
-                        <a href="/" aria-selected="false"
-                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
-                            centres de vacances</a>
-                        <a href="/" aria-selected="false"
-                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
-                            pratiques</a>
-                        <a href="/" aria-selected="false"
-                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
-                    </div>
-                    <div class="flex lg:items-center gap-x-2">
 
-                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
-                            aria-controls="dropdownmenu" class="group/dropdown relative">
-                            <button x-on:click="opendropdown = ! opendropdown"
-                                class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
-                                <span class="inline-block">Les colos par thématique</span>
-                                <span
-                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
-                            </button>
+    <section class="bg-camel  apply_before_clip before:bg-clip_camel_top_34 after:bg-clip_camel_bottom_35
+    before:top-[-8px] md:before:top-[-32px] before:h-[9px] md:before:h-[34px] ">
 
-                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
-                            flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
-                                <a href="/">Les colos sportives</a>
-                                <a href="/">Les colos culturelles</a>
-                                <a href="/">Les colos scientifiques</a>
-                                <a href="/">Les colos sportives</a>
+        <div class="pt-10 pb-28 md:pt-30 md:pb-18">
+
+            <h2 class="apply_wrapper_1440">Nos autres colos dans la même thématique</h2>
+
+            <div class=" apply_wrapper_1440  px-0">
+
+                <div class="swiper swiper_thematiques  !py-8 md:!py-16">
+                    <div class="swiper-wrapper">
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-17</span>
+                                    <span class="mt-[-10px] apply_title_drop_2">ans</span>
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
                             </div>
-                        </div>
-                        <a href=""
-                            class="absolute bottom-6 lg:static apply_body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
-                            <span
-                                class="flex-none inline-block w-3.5 h-3.5 bg-user_green apply_background_center_contain"></span>
-                            <span class="inline-block">Mon compte</span>
+                            <div class="p-4 flex flex-col gap-3">
+
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            culturelle</em></span>
+                                    <h5>COLONIE CABANE EN FORÊT</h5>
+                                    <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
+                                        Robinson Crusoé
+                                        ...
+                                        alors
+                                        viens
+                                        apprendre à construire ta cabane !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse
+                                        à
+                                        outils,
+                                        apprentissage de la manipulation des outils, récupération des matériaux,
+                                        construction de
+                                        la cabane</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Sa découverte de la nature</li>
+                                        <li>Le développement de l'entraide</li>
+                                        <li>L'éveil de son côté débrouillard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-14</span>
+                                    <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
+
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
+                            </div>
+                            <div class="p-4 flex flex-col gap-3">
+
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            sportive</em></span>
+                                    <h5>Colonie découverte du poney</h5>
+                                    <p class="apply_body_medium_sm">Tu as toujours rêvé de découvrir le monde
+                                        équestre.
+                                        Enfile
+                                        ta
+                                        bombe et viens faire connaissance avec nos poneys !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Découverte du compagnon, découverte des règles
+                                        de
+                                        sécurité,
+                                        initiation au poney, premières montées, promenades.</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Sa découverte en douceur de l'animal</li>
+                                        <li>Sa demande d'implication</li>
+                                        <li>Son évolution au fil de la colonie</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-14</span>
+                                    <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
+
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 flex flex-col gap-3">
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            culturelle</em></span>
+                                    <h5>Colonie Multisport montagne</h5>
+                                    <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
+                                        jamais
+                                        vu
+                                        et
+                                        deviens le meilleur grimpeur de la montage !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
+                                        rappel
+                                        géant
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Le goût de l'aventure</li>
+                                        <li>Sa multitude d'activités</li>
+                                        <li>Son exploration de lieux uniques</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-14</span>
+                                    <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
+
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 flex flex-col gap-3">
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            culturelle</em></span>
+                                    <h5>Colonie Multisport montagne</h5>
+                                    <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
+                                        jamais
+                                        vu
+                                        et
+                                        deviens le meilleur grimpeur de la montage !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
+                                        rappel
+                                        géant
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Le goût de l'aventure</li>
+                                        <li>Sa multitude d'activités</li>
+                                        <li>Son exploration de lieux uniques</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-14</span>
+                                    <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
+
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 flex flex-col gap-3">
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            culturelle</em></span>
+                                    <h5>Colonie Multisport montagne</h5>
+
+                                    <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
+                                        jamais
+                                        vu
+                                        et
+                                        deviens le meilleur grimpeur de la montage !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
+                                        rappel
+                                        géant
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Le goût de l'aventure</li>
+                                        <li>Sa multitude d'activités</li>
+                                        <li>Son exploration de lieux uniques</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/"
+                            class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+                            <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
+                                class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                                <div
+                                    class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                                    <span class="apply_title_drop">12-14</span>
+                                    <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
+
+                                </div>
+
+
+                                <div
+                                    class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                                    <span class="apply_body_regular_sm">À partir de</span>
+                                    <span class="apply_title_h5">599 €</span>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 flex flex-col gap-3">
+                                <div class="flex flex-col gap-1">
+                                    <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                            culturelle</em></span>
+                                    <h5>Colonie Multisport montagne</h5>
+                                    <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
+                                        jamais
+                                        vu
+                                        et
+                                        deviens le meilleur grimpeur de la montage !</p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">Les activités</p>
+                                    <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
+                                        rappel
+                                        géant
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-green apply_title_mini">On aime pour</p>
+                                    <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
+                                        <li>Le goût de l'aventure</li>
+                                        <li>Sa multitude d'activités</li>
+                                        <li>Son exploration de lieux uniques</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <hr class="hidden lg:block border-dark-200">
-            <div
-                class="bg-camel lg:bg-neutrals-white text-green  apply_body_bold_sm  apply_wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
-                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                    <a href="">Pourquoi choisir Gocolo ?</a>
-                    <a href="">Nos colonie de vacances</a>
-                </div>
 
-                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                    <a data-cart="3" href="/"
-                        class="hidden lg:flex items-center gap-2 relative 
-                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs">
-                        <span
-                            class="flex-none inline-block w-4.5 h-4.5 bg-cart_green apply_background_center_contain"></span>
-                        <span class="inline-block">Mon panier</span>
-                    </a>
-                    <a href="tel:0033471782243" class="apply_body_semibold_sm  flex items-center gap-2">
-                        <span
-                            class="flex-none inline-block w-4.5 h-4.5 bg-phone_green apply_background_center_contain"></span>
-                        <span class="inline-block">04 71 78 22 43</span>
-                    </a>
+            <div class="apply_wrapper_1440 flex gap-4 justify-end">
+                <div
+                    class="swiper_thematiques_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
+                </div>
+                <div
+                    class="swiper_thematiques_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
                 </div>
             </div>
 
 
         </div>
 
-    </header>
+    </section>
 
-    <nav aria-hidden="false" aria-label="breadcrumb" class="aria-hidden:hidden bg-camel relative apply_after_clip after:bg-clip_camel_bottom_18_nav 
-    after:h-[12px] after:bottom-[-11px] md:after:h-[18px] md:after:bottom-[-17px]">
 
-        <ul
-            class="apply_breadcrumb apply_wrapper_1440 apply_body_medium_base text-green pt-4 pb-3 md:pb-1 flex flex-wrap items-center justify-start gap-2">
-            <li><a href="/"></a></li>
-            <li><a href="/">Toutes les colos 2024</a></li>
-            <li><a href="/">Colonie cuisine</a></li>
-        </ul>
-    </nav>
 
-
-    <main>
-
-        <div class="apply_background_center_cover bg-detail_colo_banner  h-36 md:h-80 
-        apply_after_clip after:bg-clip_white_top_18 after:bottom-[-1px] after:h-[8px] md:after:h-[18px] ">
-        </div>
-
-
-        <section class="bg-camel  apply_before_clip before:bg-clip_camel_top_34 after:bg-clip_camel_bottom_35
-    before:top-[-8px] md:before:top-[-32px] before:h-[9px] md:before:h-[34px] ">
-
-            <div class="pt-10 pb-28 md:pt-30 md:pb-18">
-
-                <h2 class="apply_wrapper_1440">Nos autres colos dans la même thématique</h2>
-
-                <div class=" apply_wrapper_1440  px-0">
-
-                    <div class="swiper swiper_thematiques  !py-8 md:!py-16">
-                        <div class="swiper-wrapper">
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-17</span>
-                                        <span class="mt-[-10px] apply_title_drop_2">ans</span>
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-                                <div class="p-4 flex flex-col gap-3">
-
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                culturelle</em></span>
-                                        <h5>COLONIE CABANE EN FORÊT</h5>
-                                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
-                                            Robinson Crusoé
-                                            ...
-                                            alors
-                                            viens
-                                            apprendre à construire ta cabane !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse
-                                            à
-                                            outils,
-                                            apprentissage de la manipulation des outils, récupération des matériaux,
-                                            construction de
-                                            la cabane</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Sa découverte de la nature</li>
-                                            <li>Le développement de l'entraide</li>
-                                            <li>L'éveil de son côté débrouillard</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-14</span>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-                                <div class="p-4 flex flex-col gap-3">
-
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                sportive</em></span>
-                                        <h5>Colonie découverte du poney</h5>
-                                        <p class="apply_body_medium_sm">Tu as toujours rêvé de découvrir le monde
-                                            équestre.
-                                            Enfile
-                                            ta
-                                            bombe et viens faire connaissance avec nos poneys !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Découverte du compagnon, découverte des règles
-                                            de
-                                            sécurité,
-                                            initiation au poney, premières montées, promenades.</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Sa découverte en douceur de l'animal</li>
-                                            <li>Sa demande d'implication</li>
-                                            <li>Son évolution au fil de la colonie</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-14</span>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="p-4 flex flex-col gap-3">
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                culturelle</em></span>
-                                        <h5>Colonie Multisport montagne</h5>
-                                        <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
-                                            jamais
-                                            vu
-                                            et
-                                            deviens le meilleur grimpeur de la montage !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
-                                            rappel
-                                            géant
-                                        </p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Le goût de l'aventure</li>
-                                            <li>Sa multitude d'activités</li>
-                                            <li>Son exploration de lieux uniques</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-14</span>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="p-4 flex flex-col gap-3">
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                culturelle</em></span>
-                                        <h5>Colonie Multisport montagne</h5>
-                                        <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
-                                            jamais
-                                            vu
-                                            et
-                                            deviens le meilleur grimpeur de la montage !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
-                                            rappel
-                                            géant
-                                        </p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Le goût de l'aventure</li>
-                                            <li>Sa multitude d'activités</li>
-                                            <li>Son exploration de lieux uniques</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-14</span>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="p-4 flex flex-col gap-3">
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                culturelle</em></span>
-                                        <h5>Colonie Multisport montagne</h5>
-
-                                        <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
-                                            jamais
-                                            vu
-                                            et
-                                            deviens le meilleur grimpeur de la montage !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
-                                            rappel
-                                            géant
-                                        </p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Le goût de l'aventure</li>
-                                            <li>Sa multitude d'activités</li>
-                                            <li>Son exploration de lieux uniques</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/"
-                                class="swiper-slide !w-80 md:!w-[375px] !h-auto bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-                                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_2.png')"
-                                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                                    <div
-                                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                                        <span class="apply_title_drop">12-14</span>
-                                        <span class="mt-[-10px] inline-block apply_title_drop_2">ans</span>
-
-                                    </div>
-
-
-                                    <div
-                                        class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                                        <span class="apply_body_regular_sm">À partir de</span>
-                                        <span class="apply_title_h5">599 €</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="p-4 flex flex-col gap-3">
-                                    <div class="flex flex-col gap-1">
-                                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                                culturelle</em></span>
-                                        <h5>Colonie Multisport montagne</h5>
-                                        <p class="apply_body_medium_sm">Découvre la montagne sous un angle que tu n'as
-                                            jamais
-                                            vu
-                                            et
-                                            deviens le meilleur grimpeur de la montage !</p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">Les activités</h6>
-                                        <p class="apply_body_regular_sm">Escalade, tyroliennes, aventure verticale,
-                                            rappel
-                                            géant
-                                        </p>
-                                    </div>
-
-                                    <div class="flex flex-col gap-1">
-                                        <h6 class="apply_title_mini">On aime pour</h6>
-                                        <ul class="apply_body_regular_sm text-green pl-0 list-inside space-y-1">
-                                            <li>Le goût de l'aventure</li>
-                                            <li>Sa multitude d'activités</li>
-                                            <li>Son exploration de lieux uniques</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="apply_wrapper_1440 flex gap-4 justify-end">
-                    <div
-                        class="swiper_thematiques_prev !m-0 after:!hidden !static  !h-8 !w-8 rotate-180 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
-                    </div>
-                    <div
-                        class="swiper_thematiques_next !m-0 after:!hidden !static !h-8 !w-8 bg-arrow_narrow aria-disabled:pointer-events-none aria-disabled:bg-arrow_narrow_disabled aria-disabled:!opacity-100 bg-center bg-no-repeat bg-contain md:hover:scale-125 md:transition-transform">
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section>
-    </main>
-
-
-
-    <footer class="bg-green text-neutrals-white relative apply_before_clip before:bg-clip_green_footer_top_34 
-before:top-[-9px] md:before:top-[-33px]   before:h-[10px] md:before:h-[34px] ">
-
-        <div class=" apply_wrapper_1440 pt-2 pb-6 grid grid-cols-2 md:grid-cols-4  gap-x-2 gap-y-4">
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon bg-tabler_icon_home_shield_white h-10 w-10"></span>
-                <p class="text-neutrals-white apply_body_medium_sm">Séjours agréés DDCSPP</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_user_shield_white"></span>
-                <p class="text-neutrals-white apply_body_medium_sm">Encadrement diplômé et contrôlé</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_thumb_up_white"></span>
-                <p class="text-neutrals-white apply_body_medium_sm">Charte qualité depuis 10 ans</p>
-            </div>
-            <div class="flex flex-col items-center gap-2.5">
-                <span class="apply_span_icon h-10 w-10 bg-tabler_icon_credit_card_white"></span>
-                <p class="text-neutrals-white apply_body_medium_sm">Paiement sécurisé en ligne</p>
-            </div>
-        </div>
-
-        <hr class=" border-green-600">
-
-
-        <div class="apply_wrapper_1440 py-8 md:py-14 flex flex-col items-start md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between  gap-6 lg:gap-x-8 xl:gap-x-16
-bg-background_footer bg-left-bottom bg-no-repeat bg-contain">
-
-            <div class="flex flex-col gap-4">
-                <a href="/" class="apply_span_icon bg-gocolo_yellow h-8 w-30 "></a>
-                <p class="apply_body_medium_xs text-neutrals-white">Numquam cumque facere molestiae tenetur quia quasi.
-                    Sunt et incidunt
-                    eveniet
-                    reiciendis.</p>
-            </div>
-
-            <div class="min-w-[265px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Nos Dernières actus</h6>
-                <a href="" class="flex gap-4 items-center">
-                    <img src="../sources/img/footer/footer_actus_1.jpeg" alt="footer actus 1"
-                        class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm text-neutrals-white">Toutes les aides au départ en colonie de
-                        vacances</p>
-                </a>
-                <a href="" class="flex gap-4 items-center">
-                    <img src="../sources/img/footer/footer_actus_2.jpeg" alt="footer actus 1"
-                        class="apply_img_center_cover w-18 h-12 rounded">
-                    <p class="apply_body_medium_sm text-neutrals-white">Colonie de vacances pas chère, ou se situe
-                        Gocolo ?</p>
-
-                </a>
-            </div>
-            <div class="min-w-[110px] flex flex-col gap-4 ">
-                <h6 class="text-neutrals-white ">Liens utiles</h6>
-                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
-                    <a href="">Recrutement</a>
-                    <a href="">Contact</a>
-                    <a href="">Actualités</a>
-                </div>
-            </div>
-            <div class="min-w-[160px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Nos colonies</h6>
-                <div class="text-neutrals-white apply_body_medium_sm flex flex-col gap-2">
-                    <a href="">Colonies sportives</a>
-                    <a href="">Colonies artistiques</a>
-                    <a href="">Colonies culturelles</a>
-                    <a href="">Colonies scientifiques</a>
-                    <a href="">Colonies multi-activités</a>
-                </div>
-            </div>
-            <div class="min-w-[170px] flex flex-col gap-4">
-                <h6 class="text-neutrals-white ">Contactez-nous</h6>
-                <div class="text-neutrals-white apply_body_semibold_sm flex flex-col gap-4">
-                    <a href="tel:0033471782243" class="flex items-center gap-3">
-                        <span class="apply_span_icon bg-phone_white w-4.5 h-4.5 "></span>
-                        <span class="inline-block">04 71 78 22 43</span>
-                    </a>
-                    <a href="mailto:contact@gocolo.fr" class=" flex items-center gap-2">
-                        <span class="apply_span_icon w-4.5 h-4.5 bg-mail_white"></span>
-                        <span class="inline-block">contact@gocolo.fr</span>
-                    </a>
-                    <a href="/" class=" flex items-center gap-2">
-                        <span class="apply_span_icon w-4.5 h-4.5 bg-home_white"></span>
-                        <span class="inline-block">Bp 3, 15400<br>Riom-es-Montagnes</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <hr class=" border-green-600">
-
-
-        <div
-            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-            <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
-            <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
-                <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
-                <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
-                <div><a href="">CGU & CGV</a></div>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
