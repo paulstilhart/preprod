@@ -4,8 +4,6 @@ const html = document.querySelector("html");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 
-
-
 const swiper_thematiques = new Swiper(".swiper_thematiques", {
   slidesPerView: "auto", // S'adapte à la taille des slides définie par CSS
   spaceBetween: 16, // espace entre les slides
@@ -50,7 +48,7 @@ function swiper_centre(
     grabCursor: true,
     centeredSlides: true,
     spaceBetween: 24,
-    loop: false,
+    loop: true,
     //slideToClickedSlide:true,
     preventClicks: true,
     preventClicksPropagation: true,
@@ -66,17 +64,20 @@ function swiper_centre(
       prevEl: prevButtonClass,
     },
     breakpoints: {
-      768: {
+      500: {
         spaceBetween: 32,
+      },
+      1024: {
+        spaceBetween: 36,
       },
     },
 
     on: {
       init: function () {
-        legendImage(this.slides, this.realIndex, swiperLegend);
+        legendImage(this.slides, this.activeIndex, swiperLegend);
       },
-      realIndexChange: function () {
-        legendImage(this.slides, this.realIndex, swiperLegend);
+      activeIndexChange: function () {
+        legendImage(this.slides, this.activeIndex, swiperLegend);
       },
       click: function () {
         popInImage(this.slides, this.activeIndex);
@@ -85,36 +86,38 @@ function swiper_centre(
   });
 }
 
-function legendImage(slides, realIndex, swiperLegend) {
+function legendImage(slides, activeIndex, swiperLegend) {
   legendText = document.querySelector(swiperLegend);
-  const imageLegend = slides[realIndex].getAttribute("data-legend");
+  const imageLegend = slides[activeIndex].getAttribute("data-legend");
   legendText.textContent = imageLegend;
 }
 
 function popInImage(slides, activeIndex) {
-  swiper_popin = document.querySelector(".swiper_popin");
-  swiper_popin_img = document.querySelector(".swiper_popin>img");
+  js_popin_swiper = document.querySelector(".js_popin_swiper");
+  js_popin_swiper_img = document.querySelector(".js_popin_swiper>img");
   const image = slides[activeIndex].src;
-  if (image && swiper_popin && swiper_popin_img) {
+  if (image && js_popin_swiper && js_popin_swiper_img) {
     body.setAttribute("aria-hidden", "true");
-    swiper_popin.setAttribute("aria-hidden", "false");
-    swiper_popin_img.src = image;
+    js_popin_swiper.setAttribute("aria-hidden", "false");
+    js_popin_swiper_img.src = image;
   } else {
     return;
   }
 }
 
-function closePopIn() {
-  const swiper_popin_img_close = document.querySelector(".swiper_popin>button");
-  if (swiper_popin_img_close) {
-    swiper_popin_img_close.addEventListener("click", () => {
+function closePopInImage() {
+  const js_popin_swiper_img_close = document.querySelector(
+    ".js_popin_swiper>button"
+  );
+  if (js_popin_swiper_img_close) {
+    js_popin_swiper_img_close.addEventListener("click", () => {
       body.setAttribute("aria-hidden", "false");
-      swiper_popin.setAttribute("aria-hidden", "true");
+      js_popin_swiper.setAttribute("aria-hidden", "true");
     });
   }
 }
 
-closePopIn();
+closePopInImage();
 
 // Initialisation des Swipers
 const swiper_centre_1 = swiper_centre(
@@ -136,8 +139,35 @@ const swiper_centre_3 = swiper_centre(
   ".swiper_legend_3"
 );
 
+const swiper_detail_colo = swiper_centre(
+  ".swiper_detail_colo",
+  ".swiper_detail_colo_next",
+  ".swiper_detail_colo_prev",
+  ".swiper_detail_colo_legend"
+);
 
+function popInHandler(popinBaseClass) {
+  const popin = document.querySelector(`.${popinBaseClass}`);
+  if (!popin) return;
 
+  const triggers = document.querySelectorAll(`.${popinBaseClass}_trigger`);
+  const popinClose = document.querySelectorAll(`.${popinBaseClass}_close`);
+  const body = document.body;
 
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault(); // Prévenir le comportement par défaut
+      body.setAttribute("aria-hidden", "true");
+      popin.setAttribute("aria-hidden", "false");
+    });
+  });
+  popinClose.forEach((close) => {
+    close.addEventListener("click", function (event) {
+      body.setAttribute("aria-hidden", "false");
+      popin.setAttribute("aria-hidden", "true");
+    });
+  });
+}
 
-
+popInHandler("js_popin_cart");
+popInHandler("js_popin_quote");

@@ -30,6 +30,10 @@
 
 
   /* BALISE GENERIQUES ==================================================================== */
+  select {
+    cursor: pointer;
+  }
+
   em {
     @apply not-italic text-neonorange;
   }
@@ -38,13 +42,20 @@
     @apply font-bold;
   }
 
-  p {
+  /* apply_body_medium_base 
+    .apply_body_medium_base {
+    @apply font-manrope font-medium text-body_base;
+
+     p {
     @apply text-neutrals-dark font-manrope font-medium text-body_base;
   }
+  }
+  */
 
   ul {
     @apply text-neutrals-dark font-manrope font-medium text-body_base list-disc list-outside pl-4;
   }
+
 
 
   h1,
@@ -82,11 +93,11 @@
 
   /* FONT SPECIFIQUES ==================================================================== */
 
-  .apply_mogra_20{
-    @apply text-green font-mogra font-normal text-[20px] leading-none ;
+  .apply_mogra_20 {
+    @apply text-green font-mogra font-normal text-[20px] leading-none;
   }
 
-  .apply_gochihand_18{
+  .apply_gochihand_18 {
     @apply text-green font-gochihand font-normal text-[18px] leading-none;
   }
 
@@ -110,6 +121,10 @@
 
   .apply_title_h5 {
     @apply font-francoisone font-normal uppercase text-title_h5_mobile md:text-title_h5;
+  }
+
+  .apply_title_h5_mobile {
+    @apply font-francoisone font-normal uppercase text-title_h5_mobile;
   }
 
   .apply_title_h6 {
@@ -381,6 +396,16 @@
     @apply text-dark-600 apply_body_medium_lg;
   }
 
+  /* SELECT INPUT ==================================================================== */
+  .apply_select_double_background {
+    @apply apply_body_medium_base p-[7px_36px_7px_40px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-beige-200 rounded-lg focus:ring-0 focus:border-neutrals-dark;
+  }
+
+  .apply_select_carret_right {
+    @apply apply_body_medium_base text-neutrals-dark bg-neutrals-white  border-solid border-2 border-dark-200 rounded-lg 
+    p-[7px_36px_7px_16px] bg-carret_down bg-[length:12px_12px] bg-[right_16px_center] bg-no-repeat focus:ring-0 focus:border-neutrals-dark ;
+  }
+
 }
 
 
@@ -419,9 +444,15 @@
     display: none !important;
   }
 
+
   .css_listing_pages_infos_double_background {
     background-position: left 0px top 17%, right 0px top 70%;
     background-size: 391px 194px, 275px 331px;
+  }
+
+  .css_select_double_background {
+    background-position: left 16px center, right 16px center;
+    background-size: 16px 16px, 12px 12px;
   }
 
   .css_clip_path_circle {

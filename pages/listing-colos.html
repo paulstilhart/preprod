@@ -32,12 +32,70 @@
     class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden">
 
 
-    <section>
-        <div class="apply_wrapper_1440 py-6 md:pt-10 md:pb-6">
-            <h2 class="pb-4 md:pb-8">Parcourez nos colonies <em class="apply_after_absolute_background_center_contain after:hidden md:after:inline-block after:bg-highlight_kidyellow_sun
-                after:bottom-[-40px] after:right-[-130px] after:w-28 after:h-28 md:after:w-44 md:after:h-44 ">2024</em></h2>
+
+    <section class="bg-camel">
+        <div
+            class="overflow-hidden apply_wrapper_1440 apply_background_center_contain bg-none xl:bg-background_listing_colos  bg-right-bottom">
+
+            <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" aria-controls="accordion-item"
+                class="py-6 md:pt-10 md:pb-6  group/accordion flex flex-col gap-4 md:gap-8 
+                bg-highlight_kidyellow_sun bg-no-repeat bg-[length:170px_170px]  bg-[left_650px_top_-25px]">
+
+
+                <div class="text-green apply_title_h2">Parcourez nos colonies <em>2024</em>
+                    <button x-on:click="openaccordion = ! openaccordion" class="apply_span_icon bg-carret_down_green ml-4 h-6 w-6 
+                    group-aria-expanded/accordion:rotate-180 transition-transform"></button>
+                </div>
+
+                <div x-show="openaccordion" x-cloak x-transition
+                    class="max-w-[700px] text-neutrals-dark apply_body_medium_base ">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Cupiditate vitae tempora obcaecati veniam enim culpa reiciendis asperiores harum, aperiam, quibusdam
+                    expedita ipsa tenetur facere unde quis corporis incidunt, quia earum.</div>
+
+                <div class="flex flex-wrap gap-2 md:gap-3">
+
+                    <select id="place" name="place"
+                        class="apply_select_double_background css_select_double_background bg-carret_and_home">
+                        <option selected disabled value="">Lieu de séjour</option>
+                        <option value="paris">paris</option>
+                        <option value="toulouse">toulouse</option>
+                        <option value="autre">autre</option>
+                    </select>
+
+                    <select id="age" name="age"
+                        class="apply_select_double_background css_select_double_background bg-carret_and_kid">
+                        <option selected disabled value="">Âge des enfants</option>
+                        <option value="age_1">12ans</option>
+                        <option value="age_2">plus</option>
+                        <option value="age_3">moins</option>
+                    </select>
+
+                    <select id="theme" name="theme"
+                        class="apply_select_double_background css_select_double_background bg-carret_and_bubble">
+                        <option selected disabled value="">Thématique</option>
+                        <option value="theme_1">theme_1</option>
+                        <option value="theme_2">theme_2</option>
+                        <option value="theme_3">theme_3</option>
+                    </select>
+
+                    <select id="duration" name="duration"
+                        class="apply_select_double_background css_select_double_background bg-carret_and_clock">
+                        <option selected disabled value="">Durée du séjour</option>
+                        <option value="duration_1">1 jour</option>
+                        <option value="duration_2">2 semaines</option>
+                        <option value="duration_3">autre</option>
+                    </select>
+
+                </div>
+            </div>
+
+
+
         </div>
+
     </section>
+
 
 
     <section class="bg-neutrals-white text-green">
@@ -72,81 +130,24 @@
                     <div class="flex flex-col gap-1">
                         <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
                                 culturelle</em></span>
-                        <h5>COLONIE CABANE EN FORÊT</h5>
-                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
-                            Robinson Crusoé
-                            ...
-                            alors
-                            viens
-                            apprendre à construire ta cabane !</p>
+                        <div class="text-green apply_title_h5">COLONIE CABANE EN FORÊT</div>
+                        <div class="text-neutrals-dark apply_body_medium_sm">Tu as toujours rêvé d'être comme Robinson
+                            Crusoé ... alors viens apprendre à construire ta cabane !</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">Les activités</p>
-                        <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse à
+                        <div class="text-green apply_title_mini">Les activités</div>
+                        <div class="text-neutrals-dark apply_body_regular_sm">Analyse du terrain, construction d'une
+                            trousse à
                             outils,
                             apprentissage de la manipulation des outils, récupération des matériaux,
                             construction de
-                            la cabane</p>
+                            la cabane</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">On aime pour</p>
-                        <ul class="apply_body_regular_sm  pl-0 list-inside space-y-1">
-                            <li>Sa découverte de la nature</li>
-                            <li>Le développement de l'entraide</li>
-                            <li>L'éveil de son côté débrouillard</li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
-
-
-            <a href="/" class=" bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
-
-                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
-                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
-
-                    <div
-                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
-                        <span class="apply_title_drop">12-17</span>
-                        <span class="mt-[-10px] apply_title_drop_2">ans</span>
-                    </div>
-
-
-                    <div class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
-                        <span class="apply_body_regular_sm">À partir de</span>
-                        <span class="apply_title_h5">599 €</span>
-                    </div>
-
-                </div>
-
-                <div class="p-4 flex flex-col gap-3">
-
-                    <div class="flex flex-col gap-1">
-                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
-                                culturelle</em></span>
-                        <h5>COLONIE CABANE EN FORÊT</h5>
-                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
-                            Robinson Crusoé
-                            ...
-                            alors
-                            viens
-                            apprendre à construire ta cabane !</p>
-                    </div>
-
-                    <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">Les activités</p>
-                        <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse à
-                            outils,
-                            apprentissage de la manipulation des outils, récupération des matériaux,
-                            construction de
-                            la cabane</p>
-                    </div>
-
-                    <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">On aime pour</p>
-                        <ul class="apply_body_regular_sm  pl-0 list-inside space-y-1">
+                        <div class="text-green apply_title_mini">On aime pour</div>
+                        <ul class="text-neutrals-dark apply_body_regular_sm pl-0 list-disc list-inside space-y-1">
                             <li>Sa découverte de la nature</li>
                             <li>Le développement de l'entraide</li>
                             <li>L'éveil de son côté débrouillard</li>
@@ -179,27 +180,24 @@
                     <div class="flex flex-col gap-1">
                         <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
                                 culturelle</em></span>
-                        <h5>COLONIE CABANE EN FORÊT</h5>
-                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
-                            Robinson Crusoé
-                            ...
-                            alors
-                            viens
-                            apprendre à construire ta cabane !</p>
+                        <div class="text-green apply_title_h5">COLONIE CABANE EN FORÊT</div>
+                        <div class="text-neutrals-dark apply_body_medium_sm">Tu as toujours rêvé d'être comme Robinson
+                            Crusoé ... alors viens apprendre à construire ta cabane !</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">Les activités</p>
-                        <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse à
+                        <div class="text-green apply_title_mini">Les activités</div>
+                        <div class="text-neutrals-dark apply_body_regular_sm">Analyse du terrain, construction d'une
+                            trousse à
                             outils,
                             apprentissage de la manipulation des outils, récupération des matériaux,
                             construction de
-                            la cabane</p>
+                            la cabane</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">On aime pour</p>
-                        <ul class="apply_body_regular_sm  pl-0 list-inside space-y-1">
+                        <div class="text-green apply_title_mini">On aime pour</div>
+                        <ul class="text-neutrals-dark apply_body_regular_sm pl-0 list-disc list-inside space-y-1">
                             <li>Sa découverte de la nature</li>
                             <li>Le développement de l'entraide</li>
                             <li>L'éveil de son côté débrouillard</li>
@@ -232,27 +230,74 @@
                     <div class="flex flex-col gap-1">
                         <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
                                 culturelle</em></span>
-                        <h5>COLONIE CABANE EN FORÊT</h5>
-                        <p class=" apply_body_medium_sm">Tu as toujours rêvé d'être comme
-                            Robinson Crusoé
-                            ...
-                            alors
-                            viens
-                            apprendre à construire ta cabane !</p>
+                        <div class="text-green apply_title_h5">COLONIE CABANE EN FORÊT</div>
+                        <div class="text-neutrals-dark apply_body_medium_sm">Tu as toujours rêvé d'être comme Robinson
+                            Crusoé ... alors viens apprendre à construire ta cabane !</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">Les activités</p>
-                        <p class="apply_body_regular_sm">Analyse du terrain, construction d'une trousse à
+                        <div class="text-green apply_title_mini">Les activités</div>
+                        <div class="text-neutrals-dark apply_body_regular_sm">Analyse du terrain, construction d'une
+                            trousse à
                             outils,
                             apprentissage de la manipulation des outils, récupération des matériaux,
                             construction de
-                            la cabane</p>
+                            la cabane</div>
                     </div>
 
                     <div class="flex flex-col gap-1">
-                        <p class="text-green apply_title_mini">On aime pour</p>
-                        <ul class="apply_body_regular_sm  pl-0 list-inside space-y-1">
+                        <div class="text-green apply_title_mini">On aime pour</div>
+                        <ul class="text-neutrals-dark apply_body_regular_sm pl-0 list-disc list-inside space-y-1">
+                            <li>Sa découverte de la nature</li>
+                            <li>Le développement de l'entraide</li>
+                            <li>L'éveil de son côté débrouillard</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/" class=" bg-neutrals-white text-green shadow-cards_spread_8 rounded-2xl overflow-hidden">
+
+                <div style="background-image: url('../sources/img/homepage/homepage_colos_coeur_1.png')"
+                    class="apply_background_center_cover h-[160px] md:h-[172px] relative">
+
+                    <div
+                        class="text-neutrals-white absolute top-2 left-2 md:top-3 md:left-4 w-15 h-15 md:w-17 md:h-17 bg-star_green apply_background_center_contain flex flex-col justify-center items-center">
+                        <span class="apply_title_drop">12-17</span>
+                        <span class="mt-[-10px] apply_title_drop_2">ans</span>
+                    </div>
+
+
+                    <div class="absolute bottom-0 right-0 w-fit bg-kidyellow text-green px-2 flex items-center gap-2">
+                        <span class="apply_body_regular_sm">À partir de</span>
+                        <span class="apply_title_h5">599 €</span>
+                    </div>
+
+                </div>
+
+                <div class="p-4 flex flex-col gap-3">
+
+                    <div class="flex flex-col gap-1">
+                        <span class="bg-kidorange-100 w-fit apply_title_mini px-2 rounded-2xl"><em>Colo
+                                culturelle</em></span>
+                        <div class="text-green apply_title_h5">COLONIE CABANE EN FORÊT</div>
+                        <div class="text-neutrals-dark apply_body_medium_sm">Tu as toujours rêvé d'être comme Robinson
+                            Crusoé ... alors viens apprendre à construire ta cabane !</div>
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <div class="text-green apply_title_mini">Les activités</div>
+                        <div class="text-neutrals-dark apply_body_regular_sm">Analyse du terrain, construction d'une
+                            trousse à
+                            outils,
+                            apprentissage de la manipulation des outils, récupération des matériaux,
+                            construction de
+                            la cabane</div>
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <div class="text-green apply_title_mini">On aime pour</div>
+                        <ul class="text-neutrals-dark apply_body_regular_sm pl-0 list-disc list-inside space-y-1">
                             <li>Sa découverte de la nature</li>
                             <li>Le développement de l'entraide</li>
                             <li>L'éveil de son côté débrouillard</li>
@@ -264,6 +309,223 @@
 
         </div>
     </section>
+
+    <section class="overflow-hidden bg-camel apply_before_clip before:bg-clip_camel_top_34  
+    before:top-[-11px] md:before:top-[-32px] before:h-[12px] md:before:h-[34px] ">
+
+        <div
+            class="apply_wrapper_1440 py-10 md:pt-18 md:pb-34 
+            flex flex-col md:flex-row md:items-start gap-8 lg:gap-x-25 ">
+
+            <div>
+                <div class="text-green  apply_title_h2">Quasi consequatur dolores consectetur.</div>
+                <div class="text-neutrals-dark apply_body_medium_base  pt-2 pb-8 md:py-8">Repudiandae explicabo dolor
+                    labore in aspernatur ullam dolorem accusamus. Nihil nulla aliquam occaecati qui assumenda deserunt
+                    odit laborum impedit. Eos et et facere.
+                </div>
+
+                <div class="flex flex-col gap-4">
+
+                    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                        aria-controls="accordion-item" class="group/accordion  rounded-2xl outline outline-2 outline-green-400 
+                        aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                        <div x-on:click="openaccordion = ! openaccordion"
+                            class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                            <div class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                Aux
+                                enfants de
+                                quel âge s’adressent vos colonies ?</div>
+                            <span
+                                class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                        </div>
+
+                        <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 ">
+                            <div class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</div>
+                            <div class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                intérêts et des
+                                passions
+                                de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                activités
+                                artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                Consultez
+                                votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                et
+                                plaisante</div>
+                            <div class="text-dark-700 apply_body_bold_base">La durée du séjour</div>
+                            <div class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                important. Certains
+                                enfants
+                                s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                vous
+                                ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                séjour
+                                pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                        aria-controls="accordion-item" class="group/accordion  rounded-2xl outline outline-2 outline-green-400 
+                    aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                        <div x-on:click="openaccordion = ! openaccordion"
+                            class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                            <div class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                Aux
+                                enfants de
+                                quel âge s’adressent vos colonies ?</div>
+                            <span
+                                class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                        </div>
+
+                        <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 ">
+                            <div class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</div>
+                            <div class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                intérêts et des
+                                passions
+                                de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                activités
+                                artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                Consultez
+                                votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                et
+                                plaisante</div>
+                            <div class="text-dark-700 apply_body_bold_base">La durée du séjour</div>
+                            <div class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                important. Certains
+                                enfants
+                                s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                vous
+                                ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                séjour
+                                pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                        aria-controls="accordion-item" class="group/accordion  rounded-2xl outline outline-2 outline-green-400 
+                aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                        <div x-on:click="openaccordion = ! openaccordion"
+                            class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                            <div class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                Aux
+                                enfants de
+                                quel âge s’adressent vos colonies ?</div>
+                            <span
+                                class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                        </div>
+
+                        <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 ">
+                            <div class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</div>
+                            <div class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                intérêts et des
+                                passions
+                                de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                activités
+                                artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                Consultez
+                                votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                et
+                                plaisante</div>
+                            <div class="text-dark-700 apply_body_bold_base">La durée du séjour</div>
+                            <div class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                important. Certains
+                                enfants
+                                s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                vous
+                                ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                séjour
+                                pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion"
+                        aria-controls="accordion-item" class="group/accordion  rounded-2xl outline outline-2 outline-green-400 
+            aria-expanded:outline-neonorange aria-expanded:outline-2">
+
+                        <div x-on:click="openaccordion = ! openaccordion"
+                            class="px-6 py-4 flex flex-nowrap justify-between items-center gap-4 cursor-pointer">
+                            <div class="apply_body_bold_lg text-dark-700 group-aria-expanded/accordion:text-neonorange">
+                                Aux
+                                enfants de
+                                quel âge s’adressent vos colonies ?</div>
+                            <span
+                                class="flex-none inline-block bg-add  w-4.5 h-4.5 bg-center bg-no-repeat bg-cover group-aria-expanded/accordion:bg-close_red"></span>
+                        </div>
+
+                        <div x-show="openaccordion" x-cloak x-transition class="px-6 pb-4 pt-2 flex flex-col gap-2 ">
+                            <div class="text-dark-700 apply_body_bold_base">Les intérêts personnels de l’enfant</div>
+                            <div class="text-dark-700 apply_body_regular_base">Il est essentiel de tenir compte des
+                                intérêts et des
+                                passions
+                                de l'enfant. Certaines de nos colonies de vacances se spécialisent dans des
+                                activités
+                                artistiques, tandis que d'autres se concentrent sur le sport ou les sciences.
+                                Consultez
+                                votre enfant sur ses préférences permet de lui garantir une expérience enrichissante
+                                et
+                                plaisante</div>
+                            <div class="text-dark-700 apply_body_bold_base">La durée du séjour</div>
+                            <div class="text-dark-700 apply_body_regular_base">La durée du séjour joue un rôle
+                                important. Certains
+                                enfants
+                                s'épanouissent dans des séjours plus courts, tandis que d'autres préfèrent des
+                                expériences plus longues pour établir des liens plus profonds. Votre enfant a-t-il
+                                l’habitude de partir sans vous ? Est-il indépendant ou a-t-il constamment besoin de
+                                vous
+                                ? Les réponses à ces questions vous aideront à décider de la meilleure durée de
+                                séjour
+                                pour les colonies de vacances de votre enfant : 1 semaine, 2 semaines ou 3 semaines.
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="px-6 py-8 bg-neutrals-white rounded-3xl text-center outline outline-2 outline-green-400">
+                <div class="text-green apply_title_h6 pb-2">Vous ne trouvez pas les réponses à vos questions
+                    ?</div>
+                <div class="text-dark-700 apply_body_medium_sm">Prenez-contact avec nos équipes, nous nous
+                    ferons un plaisir de vous renseigner.</div>
+                <div class=" flex flex-col gap-3 items-center py-6">
+                    <a href="tel:0033471782243"
+                        class="text-green  apply_body_semibold_sm flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green "></span>
+                        <span>04 71 78 22 43</span>
+                    </a>
+                    <a href="mailto:contact@gocolo.fr"
+                        class="text-green  apply_body_semibold_sm flex items-center gap-2">
+                        <span class="apply_span_icon w-4.5 h-4.5 bg-mail_green"></span>
+                        <span>contact@gocolo.fr</span>
+                    </a>
+                </div>
+                <a href=""
+                    class="inline-block px-4 py-2 apply_body_bold_base text-neutrals-dark bg-kidyellow rounded-4xl">Contacter
+                    Gocolo</a>
+            </div>
+
+        </div>
+    </section>
+
+
 
 
 

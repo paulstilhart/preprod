@@ -14,9 +14,11 @@ module.exports = {
 
       white: "#FFFFFF", // rgb(255, 255, 255)
       black: "#000000", // rgb(0, 0, 0)
+      black_40 :"#00000066", //rgba(0, 0, 0, 0.4)
 
       camel: "#FFF2E1", // rgb(255, 242, 225) OU var(--Yellow-BG, #FFF2E1)
       camellight: "#FFFBF8", // rgb(255, 251, 248)
+      camel_outline :'#FFE4C2',
 
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
@@ -50,6 +52,19 @@ module.exports = {
         700: "#3D3D3D", // rgb(61, 61, 61)
         800: "#2D2D2D", // rgb(45, 45, 45)
         900: "#282828", // rgb(40, 40, 40)
+      },
+      beige: {
+        DEFAULT: "#F7E6CC",
+        50: "#FCFCFB", 
+        100: "#F6F4F1", 
+        200: "#E5DFD7", 
+        300: "#CBC0B0",
+        400: "#A99B86", 
+        500: "#84765F", 
+        600: "#615541", 
+        700: "#453C2D", 
+        800: "#332C22",
+        900: "#2D271E", 
       },
       neonorange: {
         DEFAULT: "#FD6318",
@@ -222,6 +237,7 @@ module.exports = {
         close: "url('../sources/icons/close.svg')",
         close_red: "url('../sources/icons/close_red.svg')",
         close_white: "url('../sources/icons/close_white.svg')",
+        close_dark_400: "url('../sources/icons/close_dark_400.svg')",
         gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
         gocolo_green: "url('../sources/logos/gocolo_green.svg')",
         freepik_character:
@@ -230,10 +246,26 @@ module.exports = {
         cart: "url('../sources/icons/Cart.svg')",
         cart_green: "url('../sources/icons/Cart_green.svg')",
         carret_down: "url('../sources/icons/Carret_down.svg')",
+        carret_down_green: "url('../sources/icons/Carret_down_green.svg')",
         carret_right: "url('../sources/icons/Carret_right.svg')",
+        carret_and_home:"url('../sources/icons/Home.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_kid:"url('../sources/icons/Kid.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_bubble:"url('../sources/icons/Bubble.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_clock:"url('../sources/icons/Clock.svg'),url('../sources/icons/Carret_down.svg')",
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
+        kid:"url('../sources/icons/Kid.svg')",
+        kid_green:"url('../sources/icons/Kid_green.svg')",
+        pin:"url('../sources/icons/pin.svg')",
+        pin_green:"url('../sources/icons/pin_green.svg')",
+        bed:"url('../sources/icons/Bed.svg')",
+        bed_green:"url('../sources/icons/Bed_green.svg')",
+        bubble:"url('../sources/icons/Bubble.svg')",
+        bubble_green:"url('../sources/icons/Bubble_green.svg')",
+        clock:"url('../sources/icons/Clock.svg')",
+        calendar:"url('../sources/icons/Calendar.svg')",
+        calendar_green:"url('../sources/icons/Calendar_green.svg')",
         tabler_icon_credit_card:
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
@@ -251,6 +283,7 @@ module.exports = {
         tabler_icon_user_shield_white:
           "url('../sources/icons/tabler-icon-user-shield-white.svg')",
         background_footer: "url('../sources/background/background_footer.svg')",
+        background_listing_colos: "url('../sources/background/background_listing_colos.svg')",
         background_points: "url('../sources/background/background_points.svg')",
         background_striated_low:
           "url('../sources/background/background_striated_low.svg')",
@@ -321,8 +354,7 @@ module.exports = {
           centre_de_vacances_map_mobile:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')",
           centre_de_vacances_map_desktop:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')",
           detail_colo_banner:"url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
-         
-
+          toutes_les_colos : "url('../sources/img/toutes_colos/toutes_les_colos.png')",
         },
 
       keyframes: {
