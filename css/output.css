@@ -1743,10 +1743,6 @@ h6{
   top: 1.25rem;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -1781,10 +1777,6 @@ h6{
 
 .\!m-0{
   margin: 0px !important;
-}
-
-.m-4{
-  margin: 1rem;
 }
 
 .mx-2{
@@ -1984,6 +1976,10 @@ h6{
   min-height: calc(100% - 150px);
 }
 
+.min-h-full{
+  min-height: 100%;
+}
+
 .\!w-8{
   width: 2rem !important;
 }
@@ -2089,6 +2085,11 @@ h6{
   min-width: 265px;
 }
 
+.min-w-fit{
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -2135,16 +2136,6 @@ h6{
 
 .flex-none{
   flex: none;
-}
-
-.translate-y-50{
-  --tw-translate-y: 12.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-1\/2{
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-180{
@@ -2891,10 +2882,6 @@ h6{
   padding: 1.5rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
 .\!py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
@@ -2923,11 +2910,6 @@ h6{
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-0\.5{
@@ -4309,6 +4291,10 @@ input {
     margin-right: auto;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -4343,6 +4329,10 @@ input {
 
   .md\:min-h-\[480px\]{
     min-height: 480px;
+  }
+
+  .md\:min-h-0{
+    min-height: 0px;
   }
 
   .md\:\!w-\[375px\]{
@@ -4400,6 +4390,10 @@ input {
 
   .md\:max-w-\[640px\]{
     max-width: 640px;
+  }
+
+  .md\:max-w-\[720px\]{
+    max-width: 720px;
   }
 
   .md\:flex-1{
@@ -4482,6 +4476,10 @@ input {
     gap: 2rem;
   }
 
+  .md\:rounded-3xl{
+    border-radius: 1.5rem;
+  }
+
   .md\:bg-background_camel_template_desktop_79{
     background-image: url('../sources/background/background_camel_template_desktop_79.svg');
   }
@@ -4550,6 +4548,11 @@ input {
     padding-right: 1.75rem;
   }
 
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -4558,6 +4561,11 @@ input {
   .md\:py-14{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:py-26{
@@ -4575,14 +4583,9 @@ input {
     padding-bottom: 2rem;
   }
 
-  .md\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:pb-1{

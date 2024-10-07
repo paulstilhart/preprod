@@ -737,16 +737,16 @@
 
     <!-- popin panier -->
     <div aria-hidden="true" class="js_popin_cart fixed top-0 bottom-0 left-0 right-0 z-[99] bg-black_40 aria-hidden:!hidden 
-        w-full !h-dvh h-screen overflow-y-auto px-4 py-8 md:py-16">
+        w-full !h-dvh h-screen overflow-y-auto md:px-6 md:py-16">
 
-        <form action="" class=" bg-neutrals-white rounded-3xl w-full max-w-[720px] mx-auto">
+        <form action="" class=" bg-neutrals-white md:rounded-3xl min-h-full md:min-h-0 w-full md:max-w-[720px] mx-auto flex md:block flex-col">
 
             <div class="border-b border-dark-200 p-4 md:px-8 flex items-center justify-between gap-4 ">
                 <div class="text-green apply_title_h3">Colonie cuisine</div>
                 <div class="js_popin_cart_close apply_span_icon bg-close_dark_400 w-4.5 h-4.5 cursor-pointer"></div>
             </div>
 
-            <div class="px-4 py-8 md:px-8">
+            <div class="px-4 py-8 md:px-8 flex-auto">
                 <div class="px-6 py-4 rounded-2xl bg-camel">
                     <div
                         class="pb-3 flex flex-col md:flex-row md:flex-wrap items-start md:items-center gap-x-4 gap-y-2">
@@ -796,12 +796,12 @@
 
 
             <div
-                class="border-t border-dark-200 p-4 md:px-8 flex flex-col items-stretch md:flex-row md:flex-wrap md:items-center md:justify-end gap-2">
+                class="border-t border-dark-200 p-4 md:px-8 flex flex-wrap md:justify-end gap-2">
                 <div
-                    class="js_popin_cart_close apply_body_bold_base text-neutrals-dark bg-dark-200 inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer">
+                    class="js_popin_cart_close apply_body_bold_base text-neutrals-dark bg-dark-200 inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer flex-1 md:flex-none min-w-fit">
                     Quitter</div>
                 <button
-                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer">Ajouter
+                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer flex-1 md:flex-none min-w-fit">Ajouter
                     au panier</button>
             </div>
         </form>
@@ -809,16 +809,16 @@
 
     <!-- popin devis -->
     <div aria-hidden="true" class="js_popin_quote fixed top-0 bottom-0 left-0 right-0 z-[99] bg-black_40 aria-hidden:!hidden 
-        w-full !h-dvh h-screen overflow-y-auto px-4 py-8 md:py-16">
+        w-full !h-dvh h-screen overflow-y-auto md:px-6 md:py-16">
 
-        <form action="" class=" bg-neutrals-white rounded-3xl w-full max-w-[720px] mx-auto">
+        <form action="" class=" bg-neutrals-white md:rounded-3xl min-h-full md:min-h-0 w-full md:max-w-[720px] mx-auto flex md:block flex-col">
 
             <div class="border-b border-dark-200 p-4 md:px-8 flex items-center justify-between gap-4 ">
                 <div class="text-green apply_title_h3">Colonie cuisine</div>
                 <div class="js_popin_quote_close apply_span_icon bg-close_dark_400 w-4.5 h-4.5 cursor-pointer"></div>
             </div>
 
-            <div class="px-4 py-8 md:px-8 flex flex-col gap-4">
+            <div class="px-4 py-8 md:px-8 flex flex-col gap-4 flex-auto">
 
 
                 <div class="flex flex-col gap-2">
@@ -857,13 +857,12 @@
 
 
             <div
-                class="border-t border-dark-200 p-4 md:px-8 flex flex-col items-stretch md:flex-row md:flex-wrap md:items-center md:justify-end gap-2">
+                class="border-t border-dark-200 p-4 md:px-8 flex flex-wrap md:justify-end gap-2">
                 <div
-                    class="js_popin_quote_close apply_body_bold_base text-neutrals-dark bg-dark-200 inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer">
+                    class="js_popin_quote_close apply_body_bold_base text-neutrals-dark bg-dark-200 inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer flex-1 md:flex-none min-w-fit">
                     Quitter</div>
                 <button
-                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer">Ajouter
-                    au panier</button>
+                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer  flex-1 md:flex-none min-w-fit">Demander un devis</button>
             </div>
         </form>
     </div>
