@@ -407,13 +407,12 @@
   }
 
   .apply_select_carret_right {
-    @apply apply_body_medium_base text-neutrals-dark bg-neutrals-white  border-solid border-2 border-dark-200 rounded-lg 
-    p-[7px_36px_7px_16px] bg-carret_down bg-[length:12px_12px] bg-[right_16px_center] bg-no-repeat focus:ring-0 focus:border-neutrals-dark ;
+    @apply apply_body_medium_base p-[7px_36px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 rounded-lg bg-carret_down bg-[length:12px_12px] bg-[right_16px_center] bg-no-repeat focus:ring-0 focus:border-neutrals-dark;
   }
 
   .apply_input {
-    @apply apply_body_medium_base text-neutrals-dark bg-neutrals-white  border-solid border-2 border-dark-200 rounded-lg 
-    p-[7px_16px_7px_16px] focus:ring-0 focus:border-neutrals-dark ;
+    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 
+    placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
   }
 
 }

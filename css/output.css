@@ -1720,6 +1720,16 @@ h6{
   color: rgb(12 12 12 / var(--tw-text-opacity));
 }
 
+.apply_input::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(120 120 120 / var(--tw-text-opacity));
+}
+
+.apply_input::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(120 120 120 / var(--tw-text-opacity));
+}
+
 .apply_input:focus{
   --tw-border-opacity: 1;
   border-color: rgb(12 12 12 / var(--tw-border-opacity));
