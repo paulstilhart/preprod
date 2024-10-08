@@ -270,6 +270,12 @@ module.exports = {
         clock: "url('../sources/icons/Clock.svg')",
         calendar: "url('../sources/icons/Calendar.svg')",
         calendar_green: "url('../sources/icons/Calendar_green.svg')",
+        check: "url('../sources/icons/Check.svg')",
+        check_white: "url('../sources/icons/Check_white.svg')",
+        route: "url('../sources/icons/Route.svg')",
+        route_green: "url('../sources/icons/Route_green.svg')",
+        info: "url('../sources/icons/Info.svg')",
+        info_dark_400: "url('../sources/icons/Info_dark_400.svg')",
         tabler_icon_credit_card:
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
@@ -305,7 +311,9 @@ module.exports = {
         background_yellow_sun_desktop: "url('../sources/background/background_yellow_sun_desktop.svg')",
         background_yellow_sun_mobile: "url('../sources/background/background_yellow_sun_mobile.svg')",
         background_line_dashed_dark_300: "url('../sources/background/background_line_dashed_dark_300.svg')",
+        background_line_full_green: "url('../sources/background/background_line_full_green.svg')",
         background_circle_1_2: "url('../sources/background/background_circle_1_2.svg')",
+        background_dark_100_50: "url('../sources/background/background_dark_100_50.svg')",
         homepage_section3_blob:
           "url('../sources/img/homepage/homepage_section3_blob.png')",
         homepage_map_mobile:

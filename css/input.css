@@ -415,6 +415,11 @@
     placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
   }
 
+  .apply_textarea {
+    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 
+    placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
+  }
+
 }
 
 
