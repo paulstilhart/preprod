@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>DEMANDE DE DEVIS => CONNEXION</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+    flex flex-col min-h-dvh! min-h-screen bg-camel">
+
+
+
+    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
+
+        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed w-full h-16 apply_wrapper_1440   
+            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
+            <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+            <div class="flex items-center gap-3">
+                <a data-cart="3" href="/"
+                    class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
+                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset relative 
+                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs"></a>
+                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
+                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto] 
+                "></button>
+            </div>
+        </div>
+
+        <div x-show="openheadermobile" x-cloak x-transition
+            class="z-40 fixed w-full !h-dvh h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto lg:overflow-y-visible">
+            <hr class="hidden lg:block border-dark-200">
+            <div class="bg-neutrals-white text-green  relative lg:static 
+                apply_wrapper_1440 w-full min-h-[calc(100%_-150px)] lg:min-h-16 py-22 lg:py-2 
+                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+
+                <a href="/"
+                    class="flex-none hidden lg:inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+
+                <div
+                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
+                    <div class="apply_title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
+                        <a href="/" aria-selected="true"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
+                            centres de vacances</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
+                            pratiques</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
+                    </div>
+                    <div class="flex lg:items-center gap-x-2">
+
+                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                            aria-controls="dropdownmenu" class="group/dropdown relative">
+                            <button x-on:click="opendropdown = ! opendropdown"
+                                class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
+                                <span class="inline-block">Les colos par thématique</span>
+                                <span
+                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
+                            </button>
+
+                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
+                            flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
+                                <a href="/">Les colos sportives</a>
+                                <a href="/">Les colos culturelles</a>
+                                <a href="/">Les colos scientifiques</a>
+                                <a href="/">Les colos sportives</a>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="absolute bottom-6 lg:static apply_body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
+                            <span
+                                class="flex-none inline-block w-3.5 h-3.5 bg-user_green bg-center bg-no-repeat bg-contain"></span>
+                            <span class="inline-block">Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hidden lg:block border-dark-200">
+            <div
+                class="bg-camel lg:bg-neutrals-white text-green  apply_body_bold_sm 
+        apply_wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="">Pourquoi choisir Gocolo ?</a>
+                    <a href="">Nos colonie de vacances</a>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a data-cart="3" href="/"
+                        class="hidden lg:flex items-center gap-2 relative 
+                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">Mon panier</span>
+                    </a>
+                    <a href="tel:0033471782243" class="apply_body_semibold_sm  flex items-center gap-2">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-phone_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <nav aria-hidden="true" aria-label="breadcrumb" class="aria-hidden:hidden bg-neutrals-white relative apply_after_clip after:bg-clip_white_bottom_18_nav 
+    after:h-[12px] after:bottom-[-11px] md:after:h-[18px] md:after:bottom-[-17px]">
+
+        <ul
+            class="apply_breadcrumb apply_wrapper_1440 apply_body_medium_base text-green pt-4 pb-3 md:pb-1 flex flex-wrap items-center justify-start gap-2">
+            <li><a href="/"></a></li>
+            <li><a href="/">Toutes les colos 2024</a></li>
+            <li><a href="/">Colonie cuisine</a></li>
+            <li><a href="/">Demande de devis</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main
+        class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
+
+        <section>
+            <div class="apply_wrapper_960 pt-4 pb-10 md:p-14 md:pb-22 flex flex-col gap-6 md:gap-12 md:items-center">
+
+                <div class="hidden md:flex w-full max-w-[560px] justify-between items-center 
+                bg-background_line_dashed_dark_300 bg-no-repeat bg-[length:420px_2px] bg-[top_16px_center]">
+                    <div class="w-[127px] flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-green text-neutrals-white text-[18px] font-francoisone">1</span>
+                        <div class="text-neutrals-dark apply_body_bold_base">Connexion</div>
+                    </div>
+                    <div class="w-[127px] flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">2</span>
+                        <div class="text-neutrals-dark apply_body_medium_base">Infos enfants</div>
+                    </div>
+                </div>
+
+                <div class="flex md:hidden gap-4 items-center">
+
+                    <div class="h-15 w-15 flex-none bg-background_circle_1_2 apply_before_background_center_contain 
+                    flex justify-center items-center apply_title_h6 text-green">1 / 2</div>
+
+                    <div class="flex flex-col">
+                        <div class="text-green apply_title_h6">Connexion</div>
+                        <div class="text-neutrals-dark apply_body_medium_base">Suivant : Infos enfants</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-stretch gap-10 w-full">
+
+                    <div
+                        class="md:flex-1 py-8 px-6 md:py-8 md:px-10 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-8">
+                        <div class="hidden md:block">
+                            <div class="text-neonorange apply_title_h6">Déjà client ?</div>
+                            <div class="text-green apply_title_h4">Connectez-vous</div>
+                        </div>
+
+                        <div class="md:flex-auto">
+                            <div class="flex flex-col gap-2">
+                                <div class="text-neutrals-dark apply_body_bold_base">E-mail</div>
+                                <input type="email" name="email" placeholder="Ex : mail@monmail.com" class="apply_input">
+                            </div>
+                        </div>
+
+
+
+                        <a href=""
+                            class="apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                            <span class="inline-block">Se connecter</span>
+                            <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                        </a>
+
+
+                    </div>
+
+                    <div
+                        class="md:flex-1 py-8 px-6 md:py-8 md:px-10 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-8">
+                        <div class="hidden md:block">
+                            <div class="text-neonorange apply_title_h6">Pas encore de compte ?</div>
+                            <div class="text-green apply_title_h4">Créez votre compte parent</div>
+                        </div>
+
+                        <div class="md:flex-auto">
+
+                        </div>
+
+
+                        <a href=""
+                            class="apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                            <span class="inline-block">Créer mon compte</span>
+                            <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+    <footer class=" bg-green text-neutrals-white apply_before_clip before:bg-clip_green_footer_top_34 
+    before:top-[-9px] md:before:top-[-15px]   before:h-[10px] md:before:h-[16px] ">
+
+        <div
+            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
+                <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">CGU & CGV</a></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

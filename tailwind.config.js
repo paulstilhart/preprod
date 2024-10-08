@@ -14,11 +14,11 @@ module.exports = {
 
       white: "#FFFFFF", // rgb(255, 255, 255)
       black: "#000000", // rgb(0, 0, 0)
-      black_40 :"#00000066", //rgba(0, 0, 0, 0.4)
+      black_40: "#00000066", //rgba(0, 0, 0, 0.4)
 
       camel: "#FFF2E1", // rgb(255, 242, 225) OU var(--Yellow-BG, #FFF2E1)
       camellight: "#FFFBF8", // rgb(255, 251, 248)
-      camel_outline :'#FFE4C2',
+      camel_outline: "#FFE4C2",
 
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
@@ -55,16 +55,16 @@ module.exports = {
       },
       beige: {
         DEFAULT: "#F7E6CC",
-        50: "#FCFCFB", 
-        100: "#F6F4F1", 
-        200: "#E5DFD7", 
+        50: "#FCFCFB",
+        100: "#F6F4F1",
+        200: "#E5DFD7",
         300: "#CBC0B0",
-        400: "#A99B86", 
-        500: "#84765F", 
-        600: "#615541", 
-        700: "#453C2D", 
+        400: "#A99B86",
+        500: "#84765F",
+        600: "#615541",
+        700: "#453C2D",
         800: "#332C22",
-        900: "#2D271E", 
+        900: "#2D271E",
       },
       neonorange: {
         DEFAULT: "#FD6318",
@@ -248,24 +248,28 @@ module.exports = {
         carret_down: "url('../sources/icons/Carret_down.svg')",
         carret_down_green: "url('../sources/icons/Carret_down_green.svg')",
         carret_right: "url('../sources/icons/Carret_right.svg')",
-        carret_and_home:"url('../sources/icons/Home.svg'),url('../sources/icons/Carret_down.svg')",
-        carret_and_kid:"url('../sources/icons/Kid.svg'),url('../sources/icons/Carret_down.svg')",
-        carret_and_bubble:"url('../sources/icons/Bubble.svg'),url('../sources/icons/Carret_down.svg')",
-        carret_and_clock:"url('../sources/icons/Clock.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_home:
+          "url('../sources/icons/Home.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_kid:
+          "url('../sources/icons/Kid.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_bubble:
+          "url('../sources/icons/Bubble.svg'),url('../sources/icons/Carret_down.svg')",
+        carret_and_clock:
+          "url('../sources/icons/Clock.svg'),url('../sources/icons/Carret_down.svg')",
         user: "url('../sources/icons/User.svg')",
         user_green: "url('../sources/icons/User_green.svg')",
         menu_green: "url('../sources/icons/Menu_green.svg')",
-        kid:"url('../sources/icons/Kid.svg')",
-        kid_green:"url('../sources/icons/Kid_green.svg')",
-        pin:"url('../sources/icons/pin.svg')",
-        pin_green:"url('../sources/icons/pin_green.svg')",
-        bed:"url('../sources/icons/Bed.svg')",
-        bed_green:"url('../sources/icons/Bed_green.svg')",
-        bubble:"url('../sources/icons/Bubble.svg')",
-        bubble_green:"url('../sources/icons/Bubble_green.svg')",
-        clock:"url('../sources/icons/Clock.svg')",
-        calendar:"url('../sources/icons/Calendar.svg')",
-        calendar_green:"url('../sources/icons/Calendar_green.svg')",
+        kid: "url('../sources/icons/Kid.svg')",
+        kid_green: "url('../sources/icons/Kid_green.svg')",
+        pin: "url('../sources/icons/pin.svg')",
+        pin_green: "url('../sources/icons/pin_green.svg')",
+        bed: "url('../sources/icons/Bed.svg')",
+        bed_green: "url('../sources/icons/Bed_green.svg')",
+        bubble: "url('../sources/icons/Bubble.svg')",
+        bubble_green: "url('../sources/icons/Bubble_green.svg')",
+        clock: "url('../sources/icons/Clock.svg')",
+        calendar: "url('../sources/icons/Calendar.svg')",
+        calendar_green: "url('../sources/icons/Calendar_green.svg')",
         tabler_icon_credit_card:
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:
@@ -283,7 +287,8 @@ module.exports = {
         tabler_icon_user_shield_white:
           "url('../sources/icons/tabler-icon-user-shield-white.svg')",
         background_footer: "url('../sources/background/background_footer.svg')",
-        background_listing_colos: "url('../sources/background/background_listing_colos.svg')",
+        background_listing_colos:
+          "url('../sources/background/background_listing_colos.svg')",
         background_points: "url('../sources/background/background_points.svg')",
         background_striated_low:
           "url('../sources/background/background_striated_low.svg')",
@@ -297,9 +302,16 @@ module.exports = {
           "url('../sources/background/background_camel_template_mobile_62.svg')",
         cgv_background: "url('../sources/img/cgv/cgv_background.jpeg')",
         actus_background: "url('../sources/img/actus/actus_background.jpeg')",
-        homepage_section3_blob: "url('../sources/img/homepage/homepage_section3_blob.png')",
-        homepage_map_mobile: "url('../sources/img/homepage/homepage_map_mobile.svg')",
-        homepage_map_desktop: "url('../sources/img/homepage/homepage_map_desktop.svg')",
+        background_yellow_sun_desktop: "url('../sources/background/background_yellow_sun_desktop.svg')",
+        background_yellow_sun_mobile: "url('../sources/background/background_yellow_sun_mobile.svg')",
+        background_line_dashed_dark_300: "url('../sources/background/background_line_dashed_dark_300.svg')",
+        background_circle_1_2: "url('../sources/background/background_circle_1_2.svg')",
+        homepage_section3_blob:
+          "url('../sources/img/homepage/homepage_section3_blob.png')",
+        homepage_map_mobile:
+          "url('../sources/img/homepage/homepage_map_mobile.svg')",
+        homepage_map_desktop:
+          "url('../sources/img/homepage/homepage_map_desktop.svg')",
         homepage_banner: "url('../sources/img/homepage/homepage_banner.jpeg')",
         thematiques_1: "url('../sources/img/thematiques/thematiques_1.png')",
         thematiques_2: "url('../sources/img/thematiques/thematiques_2.png')",
@@ -315,6 +327,9 @@ module.exports = {
         clip_camel_bottom_18: "url('../sources/clip/clip_camel_bottom_18.svg')",
         clip_camel_bottom_18_nav:
           "url('../sources/clip/clip_camel_bottom_18_nav.svg')",
+        clip_white_bottom_18_nav:
+          "url('../sources/clip/clip_white_bottom_18_nav.svg')",
+
         clip_camel_bottom_34: "url('../sources/clip/clip_camel_bottom_34.svg')",
         clip_camel_bottom_35: "url('../sources/clip/clip_camel_bottom_35.svg')",
         clip_white_top_18: "url('../sources/clip/clip_white_top_18.svg')",
@@ -336,7 +351,7 @@ module.exports = {
           "url('../sources/highlight/highlight_cgv_desktop.svg')",
         highlight_cgv_mobile:
           "url('../sources/highlight/highlight_cgv_mobile.svg')",
-          highlight_kidyellow_sun:
+        highlight_kidyellow_sun:
           "url('../sources/highlight/highlight_kidyellow_sun.svg')",
         listing_pages_infos_1:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_1.svg')",
@@ -350,12 +365,17 @@ module.exports = {
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_5.svg')",
         listing_pages_infos_6:
           "url('../sources/img/infos_pratiques/listing_pages_infos/listing_pages_infos_6.svg')",
-          homepage_avis_blur_desktop:"url('../sources/img/homepage/homepage_avis_blur_desktop.svg')",
-          centre_de_vacances_map_mobile:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')",
-          centre_de_vacances_map_desktop:"url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')",
-          detail_colo_banner:"url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
-          toutes_les_colos : "url('../sources/img/toutes_colos/toutes_les_colos.png')",
-        },
+        homepage_avis_blur_desktop:
+          "url('../sources/img/homepage/homepage_avis_blur_desktop.svg')",
+        centre_de_vacances_map_mobile:
+          "url('../sources/img/centre_de_vacances/centre_de_vacances_map_mobile.svg')",
+        centre_de_vacances_map_desktop:
+          "url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')",
+        detail_colo_banner:
+          "url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
+        toutes_les_colos:"url('../sources/img/toutes_colos/toutes_les_colos.png')",
+        demande_devis_commande_effectuee:"url('../sources/img/demande_devis/demande_devis_commande_effectuee.svg')",
+      },
 
       keyframes: {
         fadein: {
