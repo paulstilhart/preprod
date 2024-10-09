@@ -34,63 +34,59 @@
 
 
     <section class="bg-camel">
-        <div
-            class="overflow-hidden apply_wrapper_1440 apply_background_center_contain bg-none xl:bg-background_listing_colos  bg-right-bottom">
+        <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" class="overflow-hidden apply_wrapper_1440 py-6 md:pt-10 md:pb-6 group/accordion flex flex-col gap-4 md:gap-8
+            apply_background_center_contain bg-none xl:bg-background_listing_colos  bg-right-bottom ">
 
-            <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" aria-controls="accordion-item"
-                class="py-6 md:pt-10 md:pb-6  group/accordion flex flex-col gap-4 md:gap-8 
-                bg-highlight_kidyellow_sun bg-no-repeat bg-[length:170px_170px]  bg-[left_650px_top_-25px]">
-
-
-                <div class="text-green apply_title_h2">Parcourez nos colonies <em>2024</em>
-                    <button x-on:click="openaccordion = ! openaccordion" class="apply_span_icon bg-carret_down_green ml-4 h-6 w-6 
-                    group-aria-expanded/accordion:rotate-180 transition-transform"></button>
-                </div>
-
-                <div x-show="openaccordion" x-cloak x-transition
-                    class="max-w-[700px] text-neutrals-dark apply_body_medium_base ">Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Cupiditate vitae tempora obcaecati veniam enim culpa reiciendis asperiores harum, aperiam, quibusdam
-                    expedita ipsa tenetur facere unde quis corporis incidunt, quia earum.</div>
-
-                <div class="flex flex-wrap gap-2 md:gap-3">
-
-                    <select id="place" name="place"
-                        class="apply_select_double_background css_select_double_background bg-carret_and_home">
-                        <option selected disabled value="">Lieu de séjour</option>
-                        <option value="paris">paris</option>
-                        <option value="toulouse">toulouse</option>
-                        <option value="autre">autre</option>
-                    </select>
-
-                    <select id="age" name="age"
-                        class="apply_select_double_background css_select_double_background bg-carret_and_kid">
-                        <option selected disabled value="">Âge des enfants</option>
-                        <option value="age_1">12ans</option>
-                        <option value="age_2">plus</option>
-                        <option value="age_3">moins</option>
-                    </select>
-
-                    <select id="theme" name="theme"
-                        class="apply_select_double_background css_select_double_background bg-carret_and_bubble">
-                        <option selected disabled value="">Thématique</option>
-                        <option value="theme_1">theme_1</option>
-                        <option value="theme_2">theme_2</option>
-                        <option value="theme_3">theme_3</option>
-                    </select>
-
-                    <select id="duration" name="duration"
-                        class="apply_select_double_background css_select_double_background bg-carret_and_clock">
-                        <option selected disabled value="">Durée du séjour</option>
-                        <option value="duration_1">1 jour</option>
-                        <option value="duration_2">2 semaines</option>
-                        <option value="duration_3">autre</option>
-                    </select>
-
-                </div>
+            <div class="text-green apply_title_h2 relative z-10">
+                Parcourez nos colonies <em>2024</em>
+                <span x-on:click="openaccordion = ! openaccordion" 
+                class="after:-z-10 apply_after_absolute_background_center_contain after:bg-highlight_kidyellow_sun 
+                after:w-[170px] after:h-[170px] after:top-[-62px]  after:left-[-20px]">
+                    <span class="cursor-pointer apply_span_icon bg-carret_down_green ml-4 h-6 w-6 group-aria-expanded/accordion:rotate-180 transition-transform "></span>
+                </span>
             </div>
 
+            <div x-show="openaccordion" x-cloak x-transition
+                class="relative z-10 max-w-[700px] text-neutrals-dark apply_body_medium_base ">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Cupiditate vitae tempora obcaecati veniam enim culpa reiciendis asperiores harum, aperiam, quibusdam
+                expedita ipsa tenetur facere unde quis corporis incidunt, quia earum.</div>
 
+            <div class="relative z-10 flex flex-wrap gap-2 md:gap-3">
+
+                <select id="place" name="place"
+                    class="apply_select_double_background css_select_double_background bg-carret_and_home">
+                    <option selected disabled value="">Lieu de séjour</option>
+                    <option value="paris">paris</option>
+                    <option value="toulouse">toulouse</option>
+                    <option value="autre">autre</option>
+                </select>
+
+                <select id="age" name="age"
+                    class="apply_select_double_background css_select_double_background bg-carret_and_kid">
+                    <option selected disabled value="">Âge des enfants</option>
+                    <option value="age_1">12ans</option>
+                    <option value="age_2">plus</option>
+                    <option value="age_3">moins</option>
+                </select>
+
+                <select id="theme" name="theme"
+                    class="apply_select_double_background css_select_double_background bg-carret_and_bubble">
+                    <option selected disabled value="">Thématique</option>
+                    <option value="theme_1">theme_1</option>
+                    <option value="theme_2">theme_2</option>
+                    <option value="theme_3">theme_3</option>
+                </select>
+
+                <select id="duration" name="duration"
+                    class="apply_select_double_background css_select_double_background bg-carret_and_clock">
+                    <option selected disabled value="">Durée du séjour</option>
+                    <option value="duration_1">1 jour</option>
+                    <option value="duration_2">2 semaines</option>
+                    <option value="duration_3">autre</option>
+                </select>
+
+            </div>
 
         </div>
 
@@ -313,8 +309,7 @@
     <section class="bg-camel apply_before_clip before:bg-clip_camel_top_34  
     before:top-[-11px] md:before:top-[-32px] before:h-[12px] md:before:h-[34px] ">
 
-        <div
-            class="apply_wrapper_1440 py-10 md:pt-18 md:pb-34 
+        <div class="apply_wrapper_1440 py-10 md:pt-18 md:pb-34 
             flex flex-col md:flex-row md:items-start gap-8 lg:gap-x-25 ">
 
             <div>
@@ -507,8 +502,7 @@
                 <div class="text-dark-700 apply_body_medium_sm">Prenez-contact avec nos équipes, nous nous
                     ferons un plaisir de vous renseigner.</div>
                 <div class=" flex flex-col gap-3 items-center py-6">
-                    <a href="tel:0033471782243"
-                        class="text-green  apply_body_semibold_sm flex items-center gap-2">
+                    <a href="tel:0033471782243" class="text-green  apply_body_semibold_sm flex items-center gap-2">
                         <span class="apply_span_icon w-4.5 h-4.5 bg-phone_green "></span>
                         <span>04 71 78 22 43</span>
                     </a>

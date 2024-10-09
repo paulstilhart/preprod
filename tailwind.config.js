@@ -127,7 +127,7 @@ module.exports = {
       title_h3: ["2.25rem", "1.25"], // 36px 45px
       title_h3_mobile: ["1.875rem", "1.25"], // 30px 37.5px
       title_h4: ["1.875rem", "1.25"], // 30px 37.5px
-      title_h4_mobile: ["1.875rem", "1.25"], // Pas encore trouvé dans le design
+      title_h4_mobile: ["1.5rem", "1.25"], // 24px 30px
       title_h5: ["1.5rem", "1.25"], // 24px 30px
       title_h5_mobile: ["1.25rem", "1.5"], // 20px 30px
       title_h6: ["1.25rem", "1.5"], // 20px 30px
@@ -194,6 +194,7 @@ module.exports = {
         2.5: "0.625rem", //10px
         3.5: "0.875rem", //14px
         4.5: "1.125rem", //18px
+        7.5: "1.875rem", //30px
         15: "3.75rem", //60px
         17: "4.25rem", //68px
         18: "4.5rem", //72px
@@ -276,6 +277,10 @@ module.exports = {
         route_green: "url('../sources/icons/Route_green.svg')",
         info: "url('../sources/icons/Info.svg')",
         info_dark_400: "url('../sources/icons/Info_dark_400.svg')",
+        file: "url('../sources/icons/File.svg')",
+        file_green: "url('../sources/icons/File_green.svg')",
+        logout: "url('../sources/icons/Logout.svg')",
+        logout_green: "url('../sources/icons/Logout_green.svg')",
         tabler_icon_credit_card:
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:

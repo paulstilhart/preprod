@@ -140,6 +140,14 @@
     @apply font-francoisone font-normal uppercase text-title_h6;
   }
 
+  .apply_title_h6_mobile {
+    @apply font-francoisone font-normal uppercase text-title_h6_mobile;
+  }
+
+  .apply_title_h4_mobile {
+    @apply font-francoisone font-normal uppercase text-title_h4_mobile;
+  }
+
 
   .apply_title_mini {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
