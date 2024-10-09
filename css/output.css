@@ -2438,6 +2438,10 @@ h6{
        column-gap: 2rem;
 }
 
+.gap-y-1{
+  row-gap: 0.25rem;
+}
+
 .gap-y-2{
   row-gap: 0.5rem;
 }
@@ -2452,10 +2456,6 @@ h6{
 
 .gap-y-6{
   row-gap: 1.5rem;
-}
-
-.gap-y-1{
-  row-gap: 0.25rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
@@ -3168,17 +3168,8 @@ h6{
   padding-bottom: 2rem;
 }
 
-.py-40{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
 .pb-1{
   padding-bottom: 0.25rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .pb-12{
@@ -4634,12 +4625,12 @@ input {
     margin-bottom: 2rem;
   }
 
-  .md\:mt-18{
-    margin-top: 4.5rem;
-  }
-
   .md\:mb-12{
     margin-bottom: 3rem;
+  }
+
+  .md\:mt-18{
+    margin-top: 4.5rem;
   }
 
   .md\:block{
@@ -4747,6 +4738,10 @@ input {
     max-width: 358px;
   }
 
+  .md\:max-w-\[400px\]{
+    max-width: 400px;
+  }
+
   .md\:max-w-\[480px\]{
     max-width: 480px;
   }
@@ -4757,10 +4752,6 @@ input {
 
   .md\:max-w-\[720px\]{
     max-width: 720px;
-  }
-
-  .md\:max-w-\[400px\]{
-    max-width: 400px;
   }
 
   .md\:flex-1{
@@ -5052,10 +5043,6 @@ input {
     padding-top: 2.5rem;
   }
 
-  .md\:pt-14{
-    padding-top: 3.5rem;
-  }
-
   .md\:pt-18{
     padding-top: 4.5rem;
   }
@@ -5090,10 +5077,6 @@ input {
 
   .md\:pt-8{
     padding-top: 2rem;
-  }
-
-  .md\:pt-32{
-    padding-top: 8rem;
   }
 
   .md\:text-center{
