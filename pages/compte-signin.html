@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>MON COMPTE > CONNEXION > SIGN IN</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+    flex flex-col min-h-dvh! min-h-screen bg-camel">
+    <main class="flex-auto">
+
+
+
+        <section>
+            <div class="apply_wrapper_1440 py-10 md:pt-22 md:pb-36">
+                <div class="text-green apply_title_h2 text-left md:text-center">Déjà client ? Connectez-vous</div>
+
+                <form
+                    class="md:max-w-[400px] md:mx-auto my-6 md:mt-18 md:mb-12 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16">
+
+                    <div class="pb-8 md:flex-auto flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <label for="email_account_yes"
+                                class="text-neutrals-dark apply_body_bold_base">E-mail</label>
+                            <input type="email" id="email_account_yes" name="email_account_yes"
+                                placeholder="Ex : mail@monmail.com" class="apply_input">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="password_account_yes" class="text-neutrals-dark apply_body_bold_base">Mot de
+                                passe</label>
+                            <input type="password" id="password_account_yes" name="password_account_yes"
+                                placeholder="Entrez votre mot de passe" class="apply_input">
+                        </div>
+                        <a href="/" class="text-neonorange apply_body_bold_sm inline-block w-fit self-end">J’ai
+                            oublié mon mot de passe</a>
+                        <div class="flex items-center gap-3">
+                            <input type="checkbox" id="keep_connexion" name="keep_connexion"
+                                class="text-green accent-green cursor-pointer inline-block w-4.5 h-4.5 focus:ring-0 focus:ring-offset-0 focus:shadow-none" />
+                            <label for="keep_connexion" class="text-neutrals-dark apply_body_medium_sm">Rester
+                                connecté</label>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                        <span class="inline-block">Se connecter</span>
+                        <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                    </button>
+                </form>
+
+                <div class="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+                    <div class="text-neutrals-dark apply_body_medium_base">Je n’ai pas encore de compte Gocolo.</div>
+                    <a href="/" class="text-neonorange apply_body_bold_base">Créer un compte.</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+</body>
+
+</html>
