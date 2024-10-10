@@ -220,6 +220,7 @@ module.exports = {
       },
 
       backgroundImage: {
+        warning_triangle_neon_orange: "url('../sources/icons/Warning_triangle_neon_orange.svg')",
         arrow_narrow: "url('../sources/icons/Arrow_narrow.svg')",
         arrow_narrow_green: "url('../sources/icons/Arrow_narrow_green.svg')",
         arrow_narrow_white: "url('../sources/icons/Arrow_narrow_white.svg')",

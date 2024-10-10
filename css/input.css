@@ -423,13 +423,11 @@
   }
 
   .apply_input {
-    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 
-    placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
+    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
   }
 
   .apply_textarea {
-    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 
-    placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
+    @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
   }
 
 }
@@ -485,4 +483,9 @@
     clip-path: circle(100% at 0 50%);
   }
 
+  @media (max-width: 768px) {
+    .css_clip_path_ellipse {
+      clip-path: ellipse(55% 98% at 50% 0%);
+    }
+  }
 }

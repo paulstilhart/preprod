@@ -7,7 +7,7 @@
 
     <meta name="robots" content="noindex">
 
-    <title>MON COMPTE > MES ENFANTS</title>
+    <title>MON COMPTE > MES DEVIS</title>
 
     <!-- Alpine Plugins -->
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
@@ -155,7 +155,7 @@
                 <div class="text-green apply_title_h6_mobile">Mes séjours commandés</div>
             </a>
 
-            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            <a href="" aria-selected="true" class="flex items-center gap-3 rounded px-4 py-3.5 
             aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
                 <span class=" bg-file_green apply_span_icon w-4 h-4"></span>
                 <div class="text-green apply_title_h6_mobile">mes devis</div>
@@ -167,7 +167,7 @@
                 <div class="text-green apply_title_h6_mobile">mon profil</div>
             </a>
 
-            <a href="" aria-selected="true" class="flex items-center gap-3 rounded px-4 py-3.5 
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
             aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
                 <span class=" bg-kid_green apply_span_icon w-4 h-4"></span>
                 <div class="text-green apply_title_h6_mobile">Mes enfants</div>
@@ -193,177 +193,119 @@
             class="lg:flex-auto max-w-[1140px] mx-auto p-[78px_16px_40px_16px] md:p-[94px_32px_40px_32px] lg:p-[48px_64px]">
 
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-8">
+            <div class="  md:p-10 md:pt-8 flex flex-col gap-6
+            md:bg-neutrals-white md:rounded-2xl md:shadow-cards_spread_16">
 
-                <form
-                    class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
+                <div class="px-4 py-2 rounded-lg bg-neutrals-white md:bg-neonorange-100 flex gap-2 flex-nowrap">
+                    <span class="bg-warning_triangle_neon_orange apply_span_icon w-4 h-4"></span>
+                    <div class="text-neonorange apply_body_bold_sm">
+                        Attention les devis ne sont pas des reservations.
+                        Aucune place n'est reservée lors de l'établissement d'un devis.
+                        Pour transformer un devis en reservation, merci de nous contacter
+                    </div>
+                </div>
 
-                    <div class="text-green apply_title_h5">Maël</div>
+                <div
+                    class="flex flex-col md:flex-row items-stretch bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
 
-                    <div class="flex flex-col gap-4">
+                    <div style="background-image: url('../sources/img/mon_compte/devis_1.png');"
+                        class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse"></div>
 
-                        <div class=" flex flex-col gap-2">
-                            <label for="nom_child_1" class="text-neutrals-dark apply_body_bold_base">Nom</label>
-                            <input type="text" id="nom_child_1" name="nom_child_1" placeholder="Lambert"
-                                class="apply_input">
+                    <div class="md:flex-auto p-4 pb-18 md:p-6 md:pr-4 relative md:static">
+
+                        <div class="pb-4 md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                            <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                <div class="text-green apply_title_h5">Devis COLONIE CABANE EN FORÊT</div>
+                                <span class="text-green bg-kidyellow apply_title_h5 px-2 w-fit">599 €</span>
+                            </div>
+
+                            <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0">
+                                <a href="download/" download="texte alternatif" class="md:flex-none inline-block px-3 py-2  apply_body_bold_sm text-green bg-neutrals-white text-center rounded-4xl w-full md:w-fit 
+                                outline outline-1 border-green ">
+                                    <span class="inline-block">Télécharger<span class="inline-block md:hidden">&nbsp;le
+                                            devis</span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="flex gap-2">
+                                <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Maël</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Aller par vos propres moyens <strong>|
+                                         Retour</strong> en car (Paris)</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">
+                                    Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                         |</strong> Réduction : <strong>non</strong>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class=" flex flex-col gap-2">
-                            <label for="prenom_child_1" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="text" id="prenom_child_1" name="prenom_child_1" placeholder="Marie"
-                                class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="date_child_1" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="date" id="date_child_1" name="date_child_1" class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="sexe_child_1" class="text-neutrals-dark apply_body_bold_base">Sexe</label>
-                            <select id="sexe_child_1" name="sexe_child_1" class="apply_select_carret_right">
-                                <option value="garcon">Garçon</option>
-                                <option value="fille">Fille</option>
-                            </select>
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="phone_child_1" class="text-neutrals-dark apply_body_bold_base">
-                                Coordonnées du responsable légal <span
-                                    class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span></label>
-                            <input type="tel" id="phone_child_1" name="phone_child_1" placeholder="Ex : 00 00 00 00 00"
-                                class="apply_input">
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="allergies_child_1" class="text-neutrals-dark apply_body_bold_base">
-                                Allergies ou régime alimentaire particulier
-                                <span class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span>
-                            </label>
-                            <textarea id="allergies_child_1" name="allergies_child_1" placeholder="Votre texte ici"
-                                class="apply_textarea h-[72px] resize-none"></textarea>
-                        </div>
                     </div>
 
-                    <button
-                        class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
-                        <span class="inline-block">Enregistrer les modifications</span>
-                    </button>
-                </form>
+                </div>
 
-                <form
-                    class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
+                <div
+                    class="flex flex-col md:flex-row items-stretch bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
 
-                    <div class="text-green apply_title_h5">Louison</div>
+                    <div style="background-image: url('../sources/img/mon_compte/devis_2.png');"
+                        class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse"></div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="md:flex-auto p-4 pb-18 md:p-6 md:pr-4 relative md:static">
 
-                        <div class=" flex flex-col gap-2">
-                            <label for="nom_child_2" class="text-neutrals-dark apply_body_bold_base">Nom</label>
-                            <input type="text" id="nom_child_2" name="nom_child_2" placeholder="Lambert"
-                                class="apply_input">
+                        <div class="pb-4 md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                            <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                <div class="text-green apply_title_h5">Devis COLONIE CABANE EN FORÊT</div>
+                                <span class="text-green bg-kidyellow apply_title_h5 px-2 w-fit">599 €</span>
+                            </div>
+
+                            <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0">
+                                <a href="download/" download="texte alternatif" class="md:flex-none inline-block px-3 py-2  apply_body_bold_sm text-green bg-neutrals-white text-center rounded-4xl w-full md:w-fit 
+                            outline outline-1 border-green ">
+                                    <span class="inline-block">Télécharger<span class="inline-block md:hidden">&nbsp;le
+                                            devis</span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="flex gap-2">
+                                <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Maël</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">Aller par vos propres moyens <strong>|
+                                         Retour</strong> en car (Paris)</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-green apply_body_medium_sm">
+                                    Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                         |</strong> Réduction : <strong>non</strong>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class=" flex flex-col gap-2">
-                            <label for="prenom_child_2" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="text" id="prenom_child_2" name="prenom_child_2" placeholder="Marie"
-                                class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="date_child_2" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="date" id="date_child_2" name="date_child_2" class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="sexe_child_2" class="text-neutrals-dark apply_body_bold_base">Sexe</label>
-                            <select id="sexe_child_2" name="sexe_child_2" class="apply_select_carret_right">
-                                <option value="garcon">Garçon</option>
-                                <option value="fille">Fille</option>
-                            </select>
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="phone_child_2" class="text-neutrals-dark apply_body_bold_base">
-                                Coordonnées du responsable légal <span
-                                    class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span></label>
-                            <input type="tel" id="phone_child_2" name="phone_child_2" placeholder="Ex : 00 00 00 00 00"
-                                class="apply_input">
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="allergies_child_2" class="text-neutrals-dark apply_body_bold_base">
-                                Allergies ou régime alimentaire particulier
-                                <span class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span>
-                            </label>
-                            <textarea id="allergies_child_2" name="allergies_child_2" placeholder="Votre texte ici"
-                                class="apply_textarea h-[72px] resize-none"></textarea>
-                        </div>
                     </div>
 
-                    <button
-                        class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
-                        <span class="inline-block">Enregistrer les modifications</span>
-                    </button>
-                </form>
-
-                <form
-                    class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
-
-                    <div class="text-green apply_title_h5">Louison</div>
-
-                    <div class="flex flex-col gap-4">
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="nom_child_3" class="text-neutrals-dark apply_body_bold_base">Nom</label>
-                            <input type="text" id="nom_child_3" name="nom_child_3" placeholder="Lambert"
-                                class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="prenom_child_3" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="text" id="prenom_child_3" name="prenom_child_3" placeholder="Marie"
-                                class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="date_child_3" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
-                            <input type="date" id="date_child_3" name="date_child_3" class="apply_input">
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="sexe_child_3" class="text-neutrals-dark apply_body_bold_base">Sexe</label>
-                            <select id="sexe_child_3" name="sexe_child_3" class="apply_select_carret_right">
-                                <option value="garcon">Garçon</option>
-                                <option value="fille">Fille</option>
-                            </select>
-                        </div>
-
-                        <div class=" flex flex-col gap-2">
-                            <label for="phone_child_3" class="text-neutrals-dark apply_body_bold_base">
-                                Coordonnées du responsable légal <span
-                                    class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span></label>
-                            <input type="tel" id="phone_child_3" name="phone_child_3" placeholder="Ex : 00 00 00 00 00"
-                                class="apply_input">
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="allergies_child_3" class="text-neutrals-dark apply_body_bold_base">
-                                Allergies ou régime alimentaire particulier
-                                <span class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span>
-                            </label>
-                            <textarea id="allergies_child_3" name="allergies_child_3" placeholder="Votre texte ici"
-                                class="apply_textarea h-[72px] resize-none"></textarea>
-                        </div>
-                    </div>
-
-                    <button
-                        class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
-                        <span class="inline-block">Enregistrer les modifications</span>
-                    </button>
-                </form>
-
+                </div>
             </div>
+
 
         </div>
 
