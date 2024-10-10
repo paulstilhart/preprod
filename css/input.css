@@ -132,6 +132,10 @@
     @apply font-francoisone font-normal uppercase text-title_h5_mobile;
   }
 
+  .apply_title_h5_nomq {
+    @apply font-francoisone font-normal uppercase text-title_h5_mobile md:text-title_h5;
+  }
+
   .apply_title_h6 {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_h6;
   }

@@ -7,7 +7,7 @@
 
     <meta name="robots" content="noindex">
 
-    <title>DEMANDE DE DEVIS => CONNEXION</title>
+    <title>MON COMPTE > MES ENFANTS</title>
 
     <!-- Alpine Plugins -->
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
@@ -28,9 +28,9 @@
     <script defer src="../js/script.js"></script>
 </head>
 
+
 <body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
     flex flex-col min-h-dvh! min-h-screen bg-camel">
-
 
 
     <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
@@ -131,167 +131,205 @@
 
     </header>
 
-    <nav aria-hidden="true" aria-label="breadcrumb" class="aria-hidden:hidden bg-neutrals-white relative apply_after_clip after:bg-clip_white_bottom_18_nav 
-    after:h-[12px] after:bottom-[-11px] md:after:h-[18px] md:after:bottom-[-17px]">
-
-        <ul
-            class="apply_breadcrumb apply_wrapper_1440 apply_body_medium_base text-green pt-4 pb-3 md:pb-1 flex flex-wrap items-center justify-start gap-2">
-            <li><a href="/"></a></li>
-            <li><a href="/">Toutes les colos 2024</a></li>
-            <li><a href="/">Colonie cuisine</a></li>
-            <li><a href="/">Demande de devis</a></li>
-        </ul>
-    </nav>
 
 
 
-    <main
-        class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
 
-        <section>
-            <div x-data="{ account: 'account_yes' }"
-                class="apply_wrapper_960 flex flex-col gap-6 md:gap-12 md:items-center">
+    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" class="group/accordion bg-neutrals-white border-b border-[#EAEAEB] lg:border-none 
+    fixed z-20 top-[64px] lg:top-[106px] w-full lg:w-[300px]">
 
-                <div class="hidden md:flex w-full max-w-[560px] justify-between items-center 
-                bg-background_line_dashed_dark_300 bg-no-repeat bg-[length:420px_2px] bg-[top_16px_center]">
-                    <div class="w-[127px] flex flex-col gap-3 items-center">
-                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
-                        border-2 border-green bg-green text-neutrals-white text-[18px] font-francoisone">1</span>
-                        <div class="text-neutrals-dark apply_body_bold_base">Connexion</div>
-                    </div>
-                    <div class="w-[127px] flex flex-col gap-3 items-center">
-                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
-                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">2</span>
-                        <div class="text-neutrals-dark apply_body_medium_base">Infos enfants</div>
-                    </div>
-                </div>
+        <div x-on:click="openaccordion = ! openaccordion"
+            class="cursor-pointer lg:hidden px-6 py-3 flex justify-between items-center">
+            <div class=" text-green apply_title_h4_mobile ">menu</div>
+            <button
+                class="bg-carret_down_green apply_span_icon_75 w-7.5 h-7.5 group-aria-expanded/accordion:rotate-180 transition-transform">
+            </button>
+        </div>
 
-                <div class="flex md:hidden gap-4 items-center">
+        <div x-show="openaccordion" x-cloak x-transition class="lg:!flex flex flex-col gap-2 px-6 pt-2 pb-3 lg:py-10 w-full">
 
-                    <div class="h-15 w-15 flex-none rounded-full ring-[6px] ring-inset ring-neonorange  
-                    apply_after_absolute_background_center_contain after:bg-background_circle_1_2 after:h-full after:w-full after:bg-left
-                    flex justify-center items-center apply_title_h6 text-green ">1 / 2</div>
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-calendar_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Mes séjours commandés</div>
+            </a>
 
-                    <div class="flex flex-col">
-                        <div class="text-green apply_title_h6">Connexion</div>
-                        <div class="text-neutrals-dark apply_body_medium_base">Suivant : Infos enfants</div>
-                    </div>
-                </div>
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-file_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">mes devis</div>
+            </a>
 
-                <div
-                    class="md:hidden flex items-stretch rounded bg-neutrals-white outline outline-1 outline-dark-200">
-                    <div class="flex-1">
-                        <input x-model="account" checked type="radio" name="account" id="account_yes"
-                            value="account_yes" class="hidden peer">
-                        <label for="account_yes" class="text-neutrals-dark apply_body_bold_base px-4 py-2 leading-none w-full h-full 
-                        peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
-                            <span class="text-center">J’ai un compte Gocolo</span>
-                        </label>
-                    </div>
-                    <div class="flex-1">
-                        <input x-model="account" type="radio" name="account" id="account_no" value="account_no"
-                            class="hidden peer">
-                        <label for="account_no" class="text-neutrals-dark apply_body_bold_base px-4 py-2 leading-none w-full h-full
-                        peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
-                            <span class="text-center">Je n’ai pas de compte Gocolo</span>
-                        </label>
-                    </div>
-                </div>
+            <a href="" aria-selected="true" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-user_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">mon profil</div>
+            </a>
 
-                <div class="flex flex-col md:flex-row md:items-stretch gap-10 w-full">
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-kid_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Mes enfants</div>
+            </a>
 
-                    <form x-show="account === 'account_yes'" class="md:flex-1 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 
-                        flex md:!flex flex-col gap-8">
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-logout_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Déconnexion</div>
+            </a>
 
-                        <div class="hidden md:block">
-                            <div class="text-neonorange apply_title_h6">Déjà client ?</div>
-                            <div class="text-green apply_title_h4">Connectez-vous</div>
-                        </div>
+        </div>
 
-                        <div class="md:flex-auto flex flex-col gap-4">
+    </div>
+
+
+
+    <main class="flex-auto lg:flex lg:items-stretch bg-camel">
+
+        <div class="hidden lg:block bg-neutrals-white w-[300px] flex-none"></div>
+
+        <div class="lg:flex-auto max-w-[1140px] mx-auto p-[78px_16px_40px_16px] md:p-[94px_32px_40px_32px] lg:p-[48px_64px]">
+
+            <div class="flex flex-col xl:flex-row items-stretch justify-stretch gap-4 md:gap-8">
+
+                <div class="xl:flex-1 flex flex-col items-stretch gap-6 md:gap-8">
+                    <form
+                        class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
+
+                        <div class="text-green apply_title_h5">mot de passe</div>
+
+                        <div class="flex flex-col gap-4">
+
                             <div class="flex flex-col gap-2">
-                                <label for="email_account_yes" class="text-neutrals-dark apply_body_bold_base">E-mail</label>
-                                <input type="email" id="email_account_yes" name="email_account_yes" placeholder="Ex : mail@monmail.com"
-                                    class="apply_input">
+                                <label for="password_change_current" class="text-neutrals-dark apply_body_bold_base">Mot
+                                    de passe actuel</label>
+                                <input class="apply_input" type="password" id="password_change_current"
+                                    name="password_change_current" placeholder="•••••••">
                             </div>
+
                             <div class="flex flex-col gap-2">
-                                <label for="password_account_yes" class="text-neutrals-dark apply_body_bold_base">Mot de
+                                <label for="password_change_new" class="text-neutrals-dark apply_body_bold_base">Nouveau
+                                    mot de passe</label>
+                                <input class="apply_input" type="password" id="password_change_new"
+                                    name="password_change_new" placeholder="•••••••">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="password_change_new_confirmation"
+                                    class="text-neutrals-dark apply_body_bold_base">Confirmation du nouveau mot de
                                     passe</label>
-                                <input type="password" id="password_account_yes" name="password_account_yes"
-                                    placeholder="•••••••" class="apply_input">
-                            </div>
-                            <a href="/" class="text-neonorange apply_body_bold_sm inline-block w-fit self-end">J’ai
-                                oublié mon mot de passe</a>
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="keep_connexion" name="keep_connexion"
-                                    class="text-green accent-green cursor-pointer  inline-block w-4.5 h-4.5 focus:ring-0 focus:ring-offset-0 focus:shadow-none" />
-                                <label for="keep_connexion" class="text-neutrals-dark apply_body_medium_sm">Rester
-                                    connecté</label>
+                                <input class="apply_input" type="password" id="password_change_new_confirmation"
+                                    name="password_change_new_confirmation" placeholder="•••••••">
                             </div>
 
-                        </div>
-
-
-
-                        <button
-                            class="apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
-                            <span class="inline-block">Se connecter</span>
-                            <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
-                        </button>
-
-
-                    </form>
-
-                    <form x-show="account === 'account_no'"
-                        class="md:flex-1 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex md:!flex flex-col gap-8">
-                        <div class="hidden md:block">
-                            <div class="text-neonorange apply_title_h6">Pas encore de compte ?</div>
-                            <div class="text-green apply_title_h4">Créez votre compte parent</div>
-                        </div>
-
-
-                        <div class="md:flex-auto flex flex-col gap-4">
-
-                            <div class="flex flex-col gap-2">
-                                <label for="email_account_no" class="text-neutrals-dark apply_body_bold_base">E-mail</label>
-                                <input type="email" id="email_account_no" name="email_account_no" placeholder="Ex : mail@monmail.com"
-                                    class="apply_input">
-                            </div>
-
-                            <div class="flex flex-col gap-2">
-                                <label for="password_account_no" class="text-neutrals-dark apply_body_bold_base">Mot de
-                                    passe</label>
-                                <input type="password" id="password_account_no" name="password_account_no"
-                                    placeholder="•••••••" class="apply_input">
-                            </div>
-
-                            <div class="flex flex-col gap-2">
-                                <label for="password_confirmation_account_no"
-                                    class="text-neutrals-dark apply_body_bold_base">Confirmation du mot de passe</label>
-                                <input type="password" id="password_confirmation_account_no" name="password_confirmation_account_no"
-                                    placeholder="•••••••" class="apply_input">
-                            </div>
                         </div>
 
 
                         <button
-                            class="apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
-                            <span class="inline-block">Créer mon compte</span>
-                            <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                            class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                            <span class="inline-block">Changer mon mot de passe</span>
                         </button>
+                    </form>
+
+                    <form
+                        class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
+
+                        <div class="text-green apply_title_h5">E-mail</div>
+
+                        <div class="flex flex-col gap-4">
+
+                            <div class="flex flex-col gap-2">
+                                <label for="email_change_current"
+                                    class="text-neutrals-dark apply_body_bold_base">E-mail</label>
+                                <input type="email" id="email_change_current" name="email_change_current"
+                                    placeholder="Ex : mail@monmail.com" class="apply_input">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="email_change_new" class="text-neutrals-dark apply_body_bold_base">Nouvel
+                                    e-mail</label>
+                                <input type="email" id="email_change_new" name="email_change_new"
+                                    placeholder="Ex : mail@monmail.com" class="apply_input">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="email_change_new_confirmation"
+                                    class="text-neutrals-dark apply_body_bold_base">Confirmation du nouvel
+                                    e-mail</label>
+                                <input type="email" id="email_change_new_confirmation"
+                                    name="email_change_new_confirmation" placeholder="•••••••" class="apply_input">
+                            </div>
+
+                        </div>
 
 
+                        <button
+                            class="w-full apply_body_bold_base text-green bg-kidyellow  flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                            <span class="inline-block">Changer mon email</span>
+                        </button>
                     </form>
                 </div>
 
+                <div class="xl:flex-1">
+                    <form
+                        class="p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex flex-col gap-6">
+
+                        <div class="text-green apply_title_h5">Informations personnelles</div>
+
+                        <div class="flex flex-col gap-4">
+
+                            <div class=" flex flex-col gap-2">
+                                <label for="nom" class="text-neutrals-dark apply_body_bold_base">Nom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Lambert" class="apply_input">
+                            </div>
+
+                            <div class=" flex flex-col gap-2">
+                                <label for="prenom" class="text-neutrals-dark apply_body_bold_base">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Marie" class="apply_input">
+                            </div>
+
+                            <div class=" flex gap-2">
+                                <div class="w-[110px] flex flex-col gap-2">
+                                    <label for="postcode" class="text-neutrals-dark apply_body_bold_base">Code
+                                        postal</label>
+                                    <input type="number" id="postcode" name="postcode" placeholder="33300"
+                                        class="apply_input">
+                                </div>
+                                <div class="flex-auto flex flex-col gap-2">
+                                    <label for="city" class="text-neutrals-dark apply_body_bold_base">Ville</label>
+                                    <input type="text" id="city" name="city" placeholder="Bordeaux" class="apply_input w-full">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="country" class="text-neutrals-dark apply_body_bold_base">Pays</label>
+                                <select id="country" name="country" class="apply_select_carret_right">
+                                    <option value="france">France</option>
+                                    <option value="autre">autre pays</option>
+                                </select>
+                            </div>
+
+                            <div class=" flex flex-col gap-2">
+                                <label for="phone" class="text-neutrals-dark apply_body_bold_base">N° de
+                                    téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0666010950" class="apply_input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
 
             </div>
-        </section>
 
+
+
+
+        </div>
 
 
     </main>
+
+
 
 
 
@@ -309,6 +347,8 @@
             </div>
         </div>
     </footer>
+
+
 
 </body>
 
