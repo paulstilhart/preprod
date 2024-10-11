@@ -348,6 +348,7 @@
     @apply flex flex-col gap-8 md:gap-10;
   }
 
+
   .apply_style_cgv h2 {
     @apply mb-8 md:mb-16;
   }
@@ -364,6 +365,9 @@
   .apply_style_cgv p+h4 {
     @apply mt-6 md:mt-8;
   }
+
+
+
 
 
 

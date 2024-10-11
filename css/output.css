@@ -2262,6 +2262,10 @@ h6{
   min-width: fit-content;
 }
 
+.max-w-1152{
+  max-width: 1152px;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -3231,10 +3235,6 @@ h6{
 
 .pb-1{
   padding-bottom: 0.25rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .pb-12{
