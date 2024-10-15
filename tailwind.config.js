@@ -20,6 +20,9 @@ module.exports = {
       camellight: "#FFFBF8", // rgb(255, 251, 248)
       camel_outline: "#FFE4C2",
 
+      blue:"#1864FD",
+      blue_soft: "#E9F0FF",
+
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
         dark: "#0C0C0C", // rgb(12, 12, 12)
@@ -191,6 +194,7 @@ module.exports = {
 
       spacing: {
         0.5: "0.125rem", //2px
+        1.5: "0.375rem", //6px
         2.5: "0.625rem", //10px
         3.5: "0.875rem", //14px
         4.5: "1.125rem", //18px
@@ -239,6 +243,7 @@ module.exports = {
         close: "url('../sources/icons/close.svg')",
         close_red: "url('../sources/icons/close_red.svg')",
         close_white: "url('../sources/icons/close_white.svg')",
+        close_dark_300: "url('../sources/icons/close_dark_300.svg')",
         close_dark_400: "url('../sources/icons/close_dark_400.svg')",
         gocolo_yellow: "url('../sources/logos/gocolo_yellow.svg')",
         gocolo_green: "url('../sources/logos/gocolo_green.svg')",
@@ -249,6 +254,7 @@ module.exports = {
         cart_green: "url('../sources/icons/Cart_green.svg')",
         carret_down: "url('../sources/icons/Carret_down.svg')",
         carret_down_green: "url('../sources/icons/Carret_down_green.svg')",
+        carret_down_white: "url('../sources/icons/Carret_down_white.svg')",
         carret_right: "url('../sources/icons/Carret_right.svg')",
         carret_and_home:
           "url('../sources/icons/Home.svg'),url('../sources/icons/Carret_down.svg')",
@@ -274,14 +280,21 @@ module.exports = {
         calendar_green: "url('../sources/icons/Calendar_green.svg')",
         check: "url('../sources/icons/Check.svg')",
         check_white: "url('../sources/icons/Check_white.svg')",
+        check_green_500: "url('../sources/icons/Check_green_500.svg')",
         route: "url('../sources/icons/Route.svg')",
         route_green: "url('../sources/icons/Route_green.svg')",
         info: "url('../sources/icons/Info.svg')",
         info_dark_400: "url('../sources/icons/Info_dark_400.svg')",
         file: "url('../sources/icons/File.svg')",
         file_green: "url('../sources/icons/File_green.svg')",
+        files: "url('../sources/icons/Files.svg')",
+        files_green: "url('../sources/icons/Files_green.svg')",
         logout: "url('../sources/icons/Logout.svg')",
         logout_green: "url('../sources/icons/Logout_green.svg')",
+        wallet: "url('../sources/icons/Wallet.svg')",
+        wallet_green: "url('../sources/icons/Wallet_green.svg')",
+        walk: "url('../sources/icons/Walk.svg')",
+        walk_green: "url('../sources/icons/Walk_green.svg')",
         tabler_icon_credit_card:
           "url('../sources/icons/tabler-icon-credit-card.svg')",
         tabler_icon_home_shield:

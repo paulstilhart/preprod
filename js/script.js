@@ -171,3 +171,26 @@ function popInHandler(popinBaseClass) {
 
 popInHandler("js_popin_cart");
 popInHandler("js_popin_quote");
+popInHandler("js_popin_documents");
+
+
+//Gestion du nom du fichier input type file
+function inputFileName() {
+  const fileInputs = document.querySelectorAll("input[type='file']");
+
+  fileInputs.forEach(fileInput => {
+    const fileText = document.getElementById(`${fileInput.id}_text`);
+
+    if (fileText) {
+      fileInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          fileText.setAttribute("aria-hidden", "false");
+          fileText.textContent = file.name;
+        }
+      });
+    }
+  });
+}
+
+inputFileName();

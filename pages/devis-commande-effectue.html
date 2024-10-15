@@ -28,8 +28,7 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile"
-    class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
     flex flex-col min-h-dvh! min-h-screen bg-camel">
 
 
@@ -146,21 +145,23 @@
 
 
 
-    <main class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
+    <main
+        class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
 
         <section>
             <div class="apply_wrapper_960 flex flex-col gap-4 md:gap-6 items-center ">
-                <img src="../sources/img/demande_devis/demande_devis_commande_effectuee.svg" alt="image devis enregistré"
-                class="apply_img_center_contain h-50 w-50 md:h-80 md:w-80">
+                <img src="../sources/img/demande_devis/demande_devis_commande_effectuee.svg"
+                    alt="image devis enregistré" class="apply_img_center_contain h-50 w-50 md:h-80 md:w-80">
                 <div class="flex flex-col gap-3 items-center text-center max-w-[400px]">
                     <div class="text-green apply_title_h5">Votre devis a bien été enregistré</div>
-                    <div class="text-green apply_body_medium_sm  ">Vous pouvez le consulter sur votre espace parent dans "Devis". Il vous a également été envoyé par e-mail.</div>
+                    <div class="text-green apply_body_medium_sm  ">Vous pouvez le consulter sur votre espace parent dans
+                        "Devis". Il vous a également été envoyé par e-mail.</div>
                 </div>
                 <a href=""
-                class="apply_body_bold_base text-green bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ">
-                <span class="inline-block">Aller à mon compte</span>
-                <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5"></span>
-            </a>       
+                    class="apply_body_bold_base text-green bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ">
+                    <span class="inline-block">Aller à mon compte</span>
+                    <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5"></span>
+                </a>
             </div>
         </section>
 
@@ -176,7 +177,7 @@
 
         <div
             class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-            <p class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</p>
+            <div class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</div>
             <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
                 <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
                 <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>

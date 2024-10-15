@@ -33,6 +33,10 @@
     @apply max-w-5xl mx-auto px-4 md:px-8 py-10 md:pt-12 md:pb-22;
   }
 
+  .apply_wrapper_1140_account{
+    @apply max-w-[1140px] mx-auto p-[78px_16px_40px_16px] md:p-[94px_32px_40px_32px] lg:p-[40px_32px] xl:p-[48px_64px];
+  }
+
 
   /* BALISE GENERIQUES ==================================================================== */
   select {
@@ -132,6 +136,10 @@
     @apply font-francoisone font-normal uppercase text-title_h5_mobile;
   }
 
+  .apply_title_h5_desktop {
+    @apply font-francoisone font-normal uppercase text-title_h5;
+  }
+
   .apply_title_h5_nomq {
     @apply font-francoisone font-normal uppercase text-title_h5_mobile md:text-title_h5;
   }
@@ -146,6 +154,10 @@
 
   .apply_title_h6_mobile {
     @apply font-francoisone font-normal uppercase text-title_h6_mobile;
+  }
+
+  .apply_title_h6_desktop {
+    @apply font-francoisone font-normal uppercase text-title_h6;
   }
 
   .apply_title_h4_mobile {

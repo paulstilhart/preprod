@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>MON COMPTE > MES SEJOURS COMMANDES</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+    flex flex-col min-h-dvh! min-h-screen bg-camel">
+
+
+    <header class="lg:z-50 lg:sticky lg:top-0 lg:left-0 h-16 lg:h-auto">
+
+        <div class="z-50 lg:-z-50 lg:hidden lg:invisible fixed w-full h-16 apply_wrapper_1440   
+            flex justify-between items-center bg-neutrals-white border-b border-[#EAEAEB]">
+            <a href="/" class="flex-none inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+            <div class="flex items-center gap-3">
+                <a data-cart="3" href="/"
+                    class="flex-none inline-block h-10 w-10 bg-neutrals-white rounded-lg 
+                bg-cart_green bg-center bg-no-repeat bg-[length:50%_auto] ring-1 ring-green ring-inset relative 
+                data-[cart=0]:after:!hidden after:absolute after:-bottom-2 after:-left-2 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs"></a>
+                <button x-on:click="openheadermobile = ! openheadermobile" aria-controls="headermobile" class="flex-none inline-block h-10 w-10 bg-kidyellow rounded-lg 
+                bg-menu_green bg-center bg-no-repeat bg-[length:50%_auto] 
+                "></button>
+            </div>
+        </div>
+
+        <div x-show="openheadermobile" x-cloak x-transition
+            class="z-40 fixed w-full !h-dvh h-screen lg:!static lg:!h-auto lg:!flex flex-col-reverse bg-neutrals-white overflow-y-auto lg:overflow-y-visible">
+            <hr class="hidden lg:block border-dark-200">
+            <div class="bg-neutrals-white text-green  relative lg:static 
+                apply_wrapper_1440 w-full min-h-[calc(100%_-150px)] lg:min-h-16 py-22 lg:py-2 
+                flex flex-col items-start lg:flex-row lg:justify-between lg:items-center gap-6">
+
+                <a href="/"
+                    class="flex-none hidden lg:inline-block h-8 w-30 bg-gocolo_green bg-center bg-no-repeat bg-contain"></a>
+
+                <div
+                    class="h-full lg:h-auto flex flex-col-reverse items-start lg:flex-row lg:flex-wrap justify-end gap-y-6 lg:gap-y-2 gap-x-8 lg:items-center">
+                    <div class="apply_title_h6_nomq flex flex-col items-start lg:flex-row lg:items-center gap-6">
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">accueil</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Nos
+                            centres de vacances</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Infos
+                            pratiques</a>
+                        <a href="/" aria-selected="false"
+                            class="inline-block relative after:hidden aria-selected:after:inline-block   after:absolute after:bottom-[-3px] after:left-1/2 after:w-10 after:h-[5px] after:bg-kidyellow after:rounded-lg after:-translate-x-1/2">Contact</a>
+                    </div>
+                    <div class="flex lg:items-center gap-x-2">
+
+                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                            aria-controls="dropdownmenu" class="group/dropdown relative">
+                            <button x-on:click="opendropdown = ! opendropdown"
+                                class="relative z-40 cursor-pointer  apply_body_bold_base text-neutrals-dark bg-kidyellow w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl">
+                                <span class="inline-block">Les colos par thématique</span>
+                                <span
+                                    class="apply_span_icon bg-carret_down w-3.5 h-3.5  group-aria-expanded/dropdown:rotate-180 transition-transform"></span>
+                            </button>
+
+                            <div x-show="opendropdown" x-cloak x-transition class=" z-30 absolute top-5 left-0  w-full px-4 pb-4 pt-8 rounded-b-3xl
+                            flex flex-col gap-2 apply_body_bold_base text-neutrals-dark bg-kidyellow">
+                                <a href="/">Les colos sportives</a>
+                                <a href="/">Les colos culturelles</a>
+                                <a href="/">Les colos scientifiques</a>
+                                <a href="/">Les colos sportives</a>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="absolute bottom-6 lg:static apply_body_bold_base text-green bg-neutrals-white w-fit  flex items-center gap-2 px-4 py-2 rounded-4xl ring-2 ring-green ring-inset">
+                            <span
+                                class="flex-none inline-block w-3.5 h-3.5 bg-user_green bg-center bg-no-repeat bg-contain"></span>
+                            <span class="inline-block">Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hidden lg:block border-dark-200">
+            <div
+                class="bg-camel lg:bg-neutrals-white text-green  apply_body_bold_sm 
+        apply_wrapper_1440 py-6 lg:py-0 lg:w-full lg:h-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 ">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a href="">Pourquoi choisir Gocolo ?</a>
+                    <a href="">Nos colonie de vacances</a>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+                    <a data-cart="3" href="/"
+                        class="hidden lg:flex items-center gap-2 relative 
+                    data-[cart=0]:after:!hidden after:absolute after:-bottom-2.5 after:-left-2.5 after:inline-flex after:justify-center after:items-center after:content-[attr(data-cart)] after:w-5 after:h-5 after:rounded-full after:bg-neonorange after:text-neutrals-white after:apply_body_bold_xs">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-cart_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">Mon panier</span>
+                    </a>
+                    <a href="tel:0033471782243" class="apply_body_semibold_sm  flex items-center gap-2">
+                        <span
+                            class="flex-none inline-block w-4.5 h-4.5 bg-phone_green bg-center bg-no-repeat bg-contain"></span>
+                        <span class="inline-block">04 71 78 22 43</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" class="group/accordion bg-neutrals-white border-b border-[#EAEAEB] lg:border-none 
+    fixed z-20 top-[64px] lg:top-[106px] w-full lg:w-[300px]">
+
+        <div x-on:click="openaccordion = ! openaccordion"
+            class="cursor-pointer lg:hidden px-6 py-3 flex justify-between items-center">
+            <div class=" text-green apply_title_h4_mobile ">menu</div>
+            <button
+                class="bg-carret_down_green apply_span_icon_75 w-7.5 h-7.5 group-aria-expanded/accordion:rotate-180 transition-transform">
+            </button>
+        </div>
+
+        <div x-show="openaccordion" x-cloak x-transition
+            class="lg:!flex flex flex-col gap-2 px-6 pt-2 pb-3 lg:py-10 w-full">
+
+            <a href="" aria-selected="true" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-calendar_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Mes séjours commandés</div>
+            </a>
+
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-file_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">mes devis</div>
+            </a>
+
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-user_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">mon profil</div>
+            </a>
+
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-kid_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Mes enfants</div>
+            </a>
+
+            <a href="" aria-selected="false" class="flex items-center gap-3 rounded px-4 py-3.5 
+            aria-selected:pointer-events-none aria-selected:bg-kidyellow-100">
+                <span class=" bg-logout_green apply_span_icon w-4 h-4"></span>
+                <div class="text-green apply_title_h6_mobile">Déconnexion</div>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <main class="flex-auto lg:flex lg:items-stretch bg-camel">
+
+        <div class="hidden lg:block bg-neutrals-white w-[300px] flex-none"></div>
+
+        <div class="lg:flex-auto apply_wrapper_1140_account">
+            <div x-data="{ stays: 'stays_upcoming' }"
+                class="md:p-10 md:pt-8 flex flex-col gap-6 md:gap-8 md:bg-neutrals-white md:rounded-2xl md:shadow-cards_spread_16">
+
+                <div class="flex items-stretch md:w-fit rounded bg-neutrals-white outline outline-1 outline-dark-200">
+
+                    <div class="flex-1 md:flex-initial">
+                        <input checked x-model="stays" type="radio" name="stays" id="stays_upcoming"
+                            value="stays_upcoming" class="hidden peer">
+                        <label for="stays_upcoming" class="text-neutrals-dark apply_body_bold_base px-4 py-3 w-full h-full
+                    peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
+                            <span class="text-center">Séjours à venir</span>
+                        </label>
+                    </div>
+
+                    <div class="flex-1 md:flex-initial">
+                        <input x-model="stays" type="radio" name="stays" id="stays_completed" value="stays_completed"
+                            class="hidden peer">
+                        <label for="stays_completed" class="text-neutrals-dark apply_body_bold_base px-4 py-3 w-full h-full
+                    peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
+                            <span class="text-center">Séjours terminés</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div x-show="stays === 'stays_upcoming'" class="flex flex-col gap-6 md:gap-8">
+
+                    <div class="bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
+
+                        <div class="flex flex-col md:flex-row items-stretch">
+                            <div style="background-image: url('../sources/img/mon_compte/devis_1.png');"
+                                class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse">
+                            </div>
+
+                            <div
+                                class="md:flex-auto p-4 pb-18 md:p-6 md:pr-4 relative md:static border-b border-dark-200">
+
+                                <div class="pb-4 md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                                    <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                        <div class="text-green apply_title_h5_desktop">COLONIE CABANE EN FORÊT</div>
+                                        <span class="text-green bg-kidyellow apply_title_h5_desktop px-2 w-fit">599
+                                            €</span>
+                                    </div>
+
+                                    <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0">
+                                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                                            aria-controls="dropdownmenu" class="group/dropdown relative">
+
+                                            <button x-on:click="opendropdown = ! opendropdown"
+                                                class="p-[7px_12px] apply_body_bold_sm text-green bg-neutrals-white border border-green 
+                                                rounded-4xl w-full md:w-fit flex justify-center items-center gap-2 
+                                                group-aria-expanded/dropdown:text-white group-aria-expanded/dropdown:bg-green">
+                                                <span class="inline-block">Documents</span>
+                                                <span
+                                                    class="apply_span_icon bg-carret_down w-3 h-3.5 transition-transform
+                                                    group-aria-expanded/dropdown:bg-carret_down_white  group-aria-expanded/dropdown:rotate-180 "></span>
+                                            </button>
+
+                                            <div x-show="opendropdown" x-cloak x-transition
+                                                class=" z-10 absolute left-0 bottom-[40px] md:left-auto md:bottom-auto  md:right-0  md:top-[40px] 
+                                             p-6 rounded-2xl flex flex-col gap-4 apply_body_bold_base text-green bg-neutrals-white shadow-cards_spread_16 max-w-full md:max-w-none">
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger le dossier d’information</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de départ</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de retour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex gap-2">
+                                        <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Maël</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Aller par vos propres moyens
+                                            <strong>|
+                                                 Retour</strong> en car (Paris)
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                                 |</strong> Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-4 pt-3 flex flex-col gap-8 bg-background_dark_100_50 bg-no-repeat bg-top bg-auto xl:bg-[100%_auto]">
+                            <div class=" text-green apply_title_h6_desktop">À faire un mois avant le départ</div>
+
+                            <div
+                                class="flex flex-col items-start md:flex-row md:justify-around  gap-y-8 gap-x-4 xl:gap-x-8 overflow-hidden">
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-calendar_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                    after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-12 md:after:h-1 md:after:w-[300px] after:bg-dark-200 group-aria-checked/step:after:bg-green 
+                                    before:hidden md:before:inline-block before:rounded-l-4xl
+                                    before:absolute before:right-7 before:top-3
+                                    before:h-1 before:w-[50px] before:bg-dark-200 group-aria-checked/step:before:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">1</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm">
+                                        Réserver le séjour</div>
+                                </div>
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-stretch md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-files_green apply_span_icon w-8 h-8"></span>
+                                    <div class="flex-none relative after:inline-block after:absolute after:left-3 after:top-7 
+                                    md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-[calc(100%+12px)] md:after:h-1 md:after:w-[300px] 
+                                    after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">2</span>
+                                    </div>
+                                    <div class="  flex flex-col items-center gap-3">
+                                        <button
+                                            class="js_popin_documents_trigger p-[7px_12px] apply_body_bold_sm text-green bg-kidyellow rounded-4xl">Envoyer
+                                            les documents</button>
+                                        <div class="flex flex-col gap-1 items-start">
+                                            <div aria-checked="false" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Fiche sanitaire
+                                                </div>
+                                            </div>
+                                            <div aria-checked="true" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Vaccinations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div aria-checked="false"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-wallet_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[200px] after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">3</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm  ">
+                                        Payer le séjour</div>
+                                </div>
+
+                                <div aria-checked="false"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-walk_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:hidden md:after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[80px] after:bg-dark-200 group-aria-checked/step:after:bg-green md:after:rounded-r-4xl">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">4</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm  ">
+                                        C'est parti</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
+
+                        <div class="flex flex-col md:flex-row items-stretch">
+                            <div style="background-image: url('../sources/img/mon_compte/devis_1.png');"
+                                class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse">
+                            </div>
+
+                            <div
+                                class="md:flex-auto p-4 pb-18 md:p-6 md:pr-4 relative md:static border-b border-dark-200">
+
+                                <div class="pb-4 md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                                    <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                        <div class="text-green apply_title_h5_desktop">COLONIE CABANE EN FORÊT</div>
+                                        <span class="text-green bg-kidyellow apply_title_h5_desktop px-2 w-fit">599
+                                            €</span>
+                                    </div>
+
+                                    <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0">
+                                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                                            aria-controls="dropdownmenu" class="group/dropdown relative">
+
+                                            <button x-on:click="opendropdown = ! opendropdown"
+                                                class="p-[7px_12px] apply_body_bold_sm text-green bg-neutrals-white border border-green 
+                                                rounded-4xl w-full md:w-fit flex justify-center items-center gap-2 
+                                                group-aria-expanded/dropdown:text-white group-aria-expanded/dropdown:bg-green">
+                                                <span class="inline-block">Documents</span>
+                                                <span
+                                                    class="apply_span_icon bg-carret_down w-3 h-3.5 transition-transform
+                                                    group-aria-expanded/dropdown:bg-carret_down_white  group-aria-expanded/dropdown:rotate-180 "></span>
+                                            </button>
+
+                                            <div x-show="opendropdown" x-cloak x-transition
+                                                class=" z-10 absolute left-0 bottom-[40px] md:left-auto md:bottom-auto  md:right-0  md:top-[40px] 
+                                             p-6 rounded-2xl flex flex-col gap-4 apply_body_bold_base text-green bg-neutrals-white shadow-cards_spread_16 max-w-full md:max-w-none">
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger le dossier d’information</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de départ</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de retour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex gap-2">
+                                        <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Maël</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Aller par vos propres moyens
+                                            <strong>|
+                                                 Retour</strong> en car (Paris)
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                                 |</strong> Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-4 pt-3 flex flex-col gap-8 bg-background_dark_100_50 bg-no-repeat bg-top bg-auto xl:bg-[100%_auto]">
+                            <div class=" text-green apply_title_h6_desktop">À faire un mois avant le départ</div>
+
+                            <div
+                                class="flex flex-col items-start md:flex-row md:justify-around  gap-y-8 gap-x-4 xl:gap-x-8 overflow-hidden">
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-calendar_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                    after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-12 md:after:h-1 md:after:w-[300px] after:bg-dark-200 group-aria-checked/step:after:bg-green 
+                                    before:hidden md:before:inline-block before:rounded-l-4xl
+                                    before:absolute before:right-7 before:top-3
+                                    before:h-1 before:w-[50px] before:bg-dark-200 group-aria-checked/step:before:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">1</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm">
+                                        Réserver le séjour</div>
+                                </div>
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-stretch md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-files_green apply_span_icon w-8 h-8"></span>
+                                    <div class="flex-none relative after:inline-block after:absolute after:left-3 after:top-7 
+                                    md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-[calc(100%+12px)] md:after:h-1 md:after:w-[300px] 
+                                    after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">2</span>
+                                    </div>
+                                    <div class="  flex flex-col items-center gap-3">
+                                        <button
+                                            class="js_popin_documents_trigger p-[7px_12px] apply_body_bold_sm text-green bg-kidyellow rounded-4xl">Envoyer
+                                            les documents</button>
+                                        <div class="flex flex-col gap-1 items-start">
+                                            <div aria-checked="false" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Fiche sanitaire
+                                                </div>
+                                            </div>
+                                            <div aria-checked="true" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Vaccinations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div aria-checked="false"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-wallet_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[200px] after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">3</span>
+                                    </div>
+                                    <button
+                                        class="p-[7px_12px] apply_body_bold_sm text-green bg-kidyellow rounded-4xl">Payer
+                                        le séjour</button>
+                                </div>
+
+                                <div aria-checked="false"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-walk_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:hidden md:after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[80px] after:bg-dark-200 group-aria-checked/step:after:bg-green md:after:rounded-r-4xl">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">4</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm  ">
+                                        C'est parti</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div x-show="stays === 'stays_completed'" class="flex flex-col gap-6 md:gap-8">
+
+                    <div class="bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
+
+                        <div class="flex flex-col md:flex-row items-stretch">
+                            <div style="background-image: url('../sources/img/mon_compte/devis_1.png');"
+                                class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse">
+                            </div>
+
+                            <div
+                                class="md:flex-auto p-4 pb-18 md:p-6 md:pr-4 relative md:static border-b border-dark-200">
+
+                                <div class="pb-4 md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                                    <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                        <div class="text-green apply_title_h5_desktop">COLONIE DEJA FAITE</div>
+                                        <span class="text-green bg-kidyellow apply_title_h5_desktop px-2 w-fit">599
+                                            €</span>
+                                    </div>
+
+                                    <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0">
+                                        <div x-data="{ opendropdown: false }" x-bind:aria-expanded="opendropdown"
+                                            aria-controls="dropdownmenu" class="group/dropdown relative">
+
+                                            <button x-on:click="opendropdown = ! opendropdown"
+                                                class="p-[7px_12px] apply_body_bold_sm text-green bg-neutrals-white border border-green 
+                                                rounded-4xl w-full md:w-fit flex justify-center items-center gap-2 
+                                                group-aria-expanded/dropdown:text-white group-aria-expanded/dropdown:bg-green">
+                                                <span class="inline-block">Documents</span>
+                                                <span
+                                                    class="apply_span_icon bg-carret_down w-3 h-3.5 transition-transform
+                                                    group-aria-expanded/dropdown:bg-carret_down_white  group-aria-expanded/dropdown:rotate-180 "></span>
+                                            </button>
+
+                                            <div x-show="opendropdown" x-cloak x-transition
+                                                class=" z-10 absolute left-0 bottom-[40px] md:left-auto md:bottom-auto  md:right-0  md:top-[40px] 
+                                             p-6 rounded-2xl flex flex-col gap-4 apply_body_bold_base text-green bg-neutrals-white shadow-cards_spread_16 max-w-full md:max-w-none">
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger le dossier d’information</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de départ</a>
+                                                <a href="download/" download="texte alternatif"
+                                                    class="md:text-nowrap">Télécharger la convocation de retour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex gap-2">
+                                        <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Maël</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Aller par vos propres moyens
+                                            <strong>|
+                                                 Retour</strong> en car (Paris)
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                                 |</strong> Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-4 pt-3 flex flex-col gap-8 bg-background_dark_100_50 bg-no-repeat bg-top bg-auto xl:bg-[100%_auto]">
+                            <div class=" text-green apply_title_h6_desktop">À faire un mois avant le départ</div>
+
+                            <div
+                                class="flex flex-col items-start md:flex-row md:justify-around  gap-y-8 gap-x-4 xl:gap-x-8 overflow-hidden">
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-calendar_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                    after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-12 md:after:h-1 md:after:w-[300px] after:bg-dark-200 group-aria-checked/step:after:bg-green 
+                                    before:hidden md:before:inline-block before:rounded-l-4xl
+                                    before:absolute before:right-7 before:top-3
+                                    before:h-1 before:w-[50px] before:bg-dark-200 group-aria-checked/step:before:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">1</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm">
+                                        Réserver le séjour</div>
+                                </div>
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-stretch md:flex-col gap-x-4 gap-y-5 md:items-center">
+                                    <span class="mr-1 md:m-0 bg-files_green apply_span_icon w-8 h-8"></span>
+                                    <div class="flex-none relative after:inline-block after:absolute after:left-3 after:top-7 
+                                    md:after:left-7 md:after:top-3
+                                    after:w-1 after:h-[calc(100%+12px)] md:after:h-1 md:after:w-[300px] 
+                                    after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">2</span>
+                                    </div>
+                                    <div class="  flex flex-col items-center gap-3">
+                                        <button
+                                            class="js_popin_documents_trigger p-[7px_12px] apply_body_bold_sm text-green bg-kidyellow rounded-4xl">Envoyer
+                                            les documents</button>
+                                        <div class="flex flex-col gap-1 items-start">
+                                            <div aria-checked="false" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Fiche sanitaire
+                                                </div>
+                                            </div>
+                                            <div aria-checked="true" class="group/document flex gap-2 items-center">
+                                                <span aria class="bg-close_dark_300 apply_span_icon w-3.5 h-3.5 
+                                                group-aria-checked/document:bg-check_green_500"></span>
+                                                <div class="text-neutrals-dark apply_body_medium_xs">Vaccinations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-wallet_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[200px] after:bg-dark-200 group-aria-checked/step:after:bg-green">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                    flex justify-center items-center 
+                                    group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">3</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm  ">
+                                        Payer le séjour</div>
+                                </div>
+
+                                <div aria-checked="true"
+                                    class="group/step flex items-center md:flex-col gap-x-4 gap-y-5  md:items-center">
+                                    <span class="mr-1 md:m-0 bg-walk_green apply_span_icon w-8 h-8"></span>
+                                    <div
+                                        class="flex-none relative after:hidden md:after:inline-block 
+                                        after:absolute after:left-3 after:top-7 md:after:left-7 md:after:top-3
+                                        after:w-1 after:h-12 md:after:h-1 md:after:w-[80px] after:bg-dark-200 group-aria-checked/step:after:bg-green md:after:rounded-r-4xl">
+                                        <span
+                                            class="bg-white text-green border-2 apply_title_mini w-7 h-7 rounded-full   
+                                        flex justify-center items-center 
+                                        group-aria-checked/step:bg-green group-aria-checked/step:text-white group-aria-checked/step:border-green">4</span>
+                                    </div>
+                                    <div class="  md:pt-1.5 md:text-center text-neutrals-dark apply_body_medium_sm  ">
+                                        C'est parti</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+    <footer class=" bg-green text-neutrals-white apply_before_clip before:bg-clip_green_footer_top_34 
+    before:top-[-9px] md:before:top-[-15px]   before:h-[10px] md:before:h-[16px] ">
+
+        <div
+            class="apply_wrapper_1440 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="text-neutrals-white apply_body_medium_sm">© 2024 Gocolo. Tous droits réservés</div>
+            <div class="text-neutrals-white apply_body_bold_sm flex flex-wrap">
+                <div><a href="">Mentions légales</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">Politique de confidentialité</a><span>&ensp;|&ensp;</span></div>
+                <div><a href="">CGU & CGV</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- popin documents -->
+    <div aria-hidden="false" class="js_popin_documents fixed top-0 bottom-0 left-0 right-0 z-[99] bg-black_40 aria-hidden:!hidden 
+        w-full !h-dvh h-screen overflow-y-auto md:px-6 md:py-16">
+
+        <form action=""
+            class=" bg-neutrals-white md:rounded-3xl min-h-full md:min-h-0 w-full md:max-w-[1150px] mx-auto flex md:block flex-col">
+
+            <div class="border-b border-dark-200 p-4 md:px-8 flex items-center justify-between gap-4 ">
+                <div class="text-green apply_title_h3">Envoi des documents</div>
+                <div class="js_popin_documents_close apply_span_icon bg-close_dark_400 w-4.5 h-4.5 cursor-pointer">
+                </div>
+            </div>
+
+            <div class="p-4 md:p-8 flex flex-col lg:flex-row gap-10 flex-auto">
+
+                <div class="md:flex-1">
+                    <div class="pb-2 flex justify-start items-start gap-2">
+                        <div class="text-green apply_title_h5_desktop ">Documents facultatifs</div>
+                        <span class=" flex-none apply_title_mini text-neutrals-white bg-green rounded-full
+                         w-7 h-7  flex justify-center items-center">2</span>
+                    </div>
+                    <div class="pb-4 md:pb-8 text-green apply_body_medium_sm">Transmettez juqu’à 3 fichiers par document
+                        demandé. Une fois les documents vérifiés par notre équipe, leur statut passera en validé et la
+                        colonie pourra être réservée.</div>
+
+                    <div class="flex flex-col gap-4">
+
+                        <div class="rounded-2xl overflow-hidden bg-neutrals-white outline outline-[3px] outline-dark-200">
+                            <div class="p-4">
+
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                        <div class="text-green apply_title_h6_desktop">Fiche sanitaire</div>
+                                        <span
+                                            class=" text-neonorange bg-kidorange-100 px-2 apply_title_mini inline-block rounded-[14px]">Non
+                                            transmis</span>
+                                    </div>
+                                    <a aria-disabled="false" href="download/" download="texte alternatif"
+                                        class="truncate inline-block px-3 py-1.5 apply_body_bold_sm 
+                                        text-green bg-neutrals-white border rounded-4xl w-full md:w-fit text-center aria-disabled:pointer-events-none  aria-disabled:text-dark-300 aria-disabled:border-dark-300">
+                                        Télécharger la fiche
+                                    </a>
+                                </div>
+
+                                <div class="hidden md:block pt-1 max-w-xs text-green apply_body_medium_xs">6 MO max,
+                                    format PDF ou jpeg/jpg</div>
+                            </div>
+
+                            <div class="p-4 flex flex-col items-center md:flex-row md:justify-center md:flex-wrap  gap-y-2 gap-x-6 rounded-t-lg 
+                            bg-dark-100 border-t-[3px] border-dark-200 border-dashed relative">
+                                <label for="input_file_health_record" class="inline-block md:hidden text-green bg-kidyellow apply_body_bold_sm 
+                        rounded-4xl w-[240px] p-[7px_12px] text-center cursor-pointer">Envoyer un document</label>
+                                <input type="file" id="input_file_health_record" name="input_file_health_record"
+                                    accept=".pdf,image/jpg,image/jpeg"
+                                    class="hidden md:block opacity-0 absolute z-10 top-0 bottom-0 left-0 right-0" />
+                                <div class=" text-green apply_body_semibold_base hidden md:block">Glissez le fichier ici
+                                </div>
+                                <span class="text-dark-500 apply_body_medium_base hidden md:inline-block">ou</span>
+                                <button class="text-green bg-kidyellow apply_body_bold_sm rounded-4xl w-[136px] p-[7px_12px] text-center hidden md:inline-block">Parcourir</button>
+                                <span class="block md:hidden text-green apply_body_medium_xs">6 MO max, format PDF ou jpeg/jpg</span>
+                                <div id="input_file_health_record_text" aria-hidden="true"  class="w-full truncate text-center text-green apply_body_semibold_base  aria-hidden:hidden"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden bg-neutrals-white outline outline-[3px] outline-dark-200">
+                            <div class="p-4">
+
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
+                                    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                        <div class="text-green apply_title_h6_desktop">Vaccinations</div>
+                                        <span
+                                            class=" text-blue bg-blue_soft px-2 apply_title_mini inline-block rounded-[14px]">En
+                                            vérification</span>
+                                    </div>
+                                    <a aria-disabled="true" href="download/" download="texte alternatif"
+                                        class="truncate inline-block px-3 py-1.5 apply_body_bold_sm 
+                                        text-green bg-neutrals-white border rounded-4xl w-full md:w-fit text-center aria-disabled:pointer-events-none  aria-disabled:text-dark-300 aria-disabled:border-dark-300">
+                                        Télécharger la fiche
+                                    </a>
+                                </div>
+
+                                <div class="pt-1 max-w-xs text-green apply_body_medium_xs">Renvoyez ce document complété
+                                    par
+                                    votre
+                                    medecin ou les copies des pages vaccinations du carnet de santé. 6 MO max,
+                                    format PDF ou jpeg/jpg</div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="p-4 flex items-center gap-2 rounded-2xl overflow-hidden bg-neutrals-white outline outline-[3px] outline-dark-200 ">
+                            <div class="text-green apply_title_h6_desktop">Lorem ipsum</div>
+                            <span
+                                class="text-kidgreen bg-kidgreen-100 px-2 apply_title_mini inline-block rounded-[14px]">validé</span>
+                        </div>
+
+                        <div
+                            class="p-4 flex items-center gap-2 rounded-2xl overflow-hidden bg-neutrals-white outline outline-[3px] outline-dark-200">
+                            <div class="text-green apply_title_h6_desktop">Lorem ipsum</div>
+                            <span
+                                class="text-kidgreen bg-kidgreen-100 px-2 apply_title_mini inline-block rounded-[14px]">validé</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="md:flex-1">
+                    <div class="pb-2 flex justify-start items-start gap-2">
+                        <div class="text-green apply_title_h5_desktop ">Documents facultatifs</div>
+                        <span class=" flex-none apply_title_mini text-neutrals-white bg-green rounded-full
+                         w-7 h-7  flex justify-center items-center">0</span>
+                    </div>
+                    <div class="pb-4 md:pb-8 text-green apply_body_medium_sm">Vous pouvez envoyer jusqu'à 5 documents
+                        supplementaires (ordonnances, PAI, CMU etc...). Attention : sans ordonnance nous ne pouvons
+                        donner aucun traitement medical.</div>
+
+                    <div class="p-4 flex flex-col items-center gap-2 rounded-xl
+                    bg-dark-100 md:border-[3px] md:border-dark-200 md:border-dashed relative">
+                        <label for="input_file_optional" class="inline-block md:hidden text-green bg-kidyellow apply_body_bold_sm 
+                        rounded-4xl w-[240px] p-[7px_12px] text-center cursor-pointer">Envoyer un document</label>
+                        <input type="file" id="input_file_optional" name="input_file_optional" accept=".pdf,image/jpg,image/jpeg"
+                            class="hidden md:block opacity-0 absolute z-10 top-0 bottom-0 left-0 right-0" />
+                        <div class=" text-green apply_body_semibold_base hidden md:block">Glissez le fichier ici</div>
+                        <span class="text-dark-500 apply_body_medium_base hidden md:inline-block">ou</span>
+                        <button class="text-green bg-kidyellow apply_body_bold_sm rounded-4xl w-[240px] p-[7px_12px] text-center 
+                        hidden md:inline-block">Parcourir</button>
+                        <span class="text-green apply_body_medium_xs">6 MO max, format PDF ou jpeg/jpg</span>
+                        <div id="input_file_optional_text" aria-hidden="true"  class="w-full truncate text-center text-green apply_body_semibold_base  aria-hidden:hidden"></div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-dark-200 p-4 md:px-8 flex flex-wrap md:justify-end gap-2">
+                <button
+                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer  flex-1 md:flex-none min-w-fit">Enregistrer
+                    et quitter</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
