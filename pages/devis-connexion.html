@@ -152,6 +152,16 @@
             <div x-data="{ account: 'account_yes' }"
                 class="apply_wrapper_960 flex flex-col gap-6 md:gap-12 md:items-center">
 
+                <div class="flex md:hidden gap-4 items-center">
+
+                    <div class="apply_steps after:css_clip_path_step_1_2">1 / 2</div>
+
+                    <div class="flex flex-col">
+                        <div class="text-green apply_title_h6_desktop">Connexion</div>
+                        <div class="text-neutrals-dark apply_body_medium_base">Suivant : Infos enfants</div>
+                    </div>
+                </div>
+
                 <div class="hidden md:flex w-full max-w-[560px] justify-between items-center 
                 bg-background_line_dashed_dark_300 bg-no-repeat bg-[length:420px_2px] bg-[top_16px_center]">
                     <div class="w-[127px] flex flex-col gap-3 items-center">
@@ -166,17 +176,6 @@
                     </div>
                 </div>
 
-                <div class="flex md:hidden gap-4 items-center">
-
-                    <div class="h-15 w-15 flex-none rounded-full ring-[6px] ring-inset ring-neonorange  
-                    apply_after_absolute_background_center_contain after:bg-background_circle_1_2 after:h-full after:w-full after:bg-left
-                    flex justify-center items-center apply_title_h6 text-green ">1 / 2</div>
-
-                    <div class="flex flex-col">
-                        <div class="text-green apply_title_h6">Connexion</div>
-                        <div class="text-neutrals-dark apply_body_medium_base">Suivant : Infos enfants</div>
-                    </div>
-                </div>
 
                 <div
                     class="md:hidden flex items-stretch rounded bg-neutrals-white outline outline-1 outline-dark-200">
@@ -200,7 +199,7 @@
 
                 <div class="flex flex-col md:flex-row md:items-stretch gap-10 w-full">
 
-                    <form x-show="account === 'account_yes'" class="md:flex-1 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 
+                    <form x-cloak x-show="account === 'account_yes'" class="md:flex-1 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 
                         flex md:!flex flex-col gap-8">
 
                         <div class="hidden md:block">
@@ -242,7 +241,7 @@
 
                     </form>
 
-                    <form x-show="account === 'account_no'"
+                    <form x-cloak x-show="account === 'account_no'"
                         class="md:flex-1 p-4 md:p-10 md:pt-8 rounded-2xl bg-neutrals-white shadow-cards_spread_16 flex md:!flex flex-col gap-8">
                         <div class="hidden md:block">
                             <div class="text-neonorange apply_title_h6">Pas encore de compte ?</div>

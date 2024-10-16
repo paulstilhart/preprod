@@ -151,6 +151,15 @@
         <section>
             <div class="apply_wrapper_960 flex flex-col gap-4 md:gap-12 md:items-center">
 
+                <div class="flex md:hidden gap-4 items-center">
+
+                    <div class="apply_steps">2 / 2</div>
+
+                    <div class="flex flex-col">
+                        <div class="text-green apply_title_h6_desktop">Infos enfants</div>
+                    </div>
+                </div>
+
                 <div class="hidden md:flex w-full max-w-[560px] justify-between items-center 
                 bg-background_line_full_green bg-no-repeat bg-[length:420px_2px] bg-[top_16px_center]">
                     <div class="w-[127px] flex flex-col gap-3 items-center">
@@ -164,15 +173,10 @@
                     </div>
                 </div>
 
-                <div class="flex md:hidden gap-4 items-center">
-                    <div class="h-15 w-15 flex-none rounded-full ring-[6px] ring-inset ring-neonorange  
-                    flex justify-center items-center apply_title_h6 text-green ">2 / 2</div>
-                    <div class="text-green apply_title_h6">Infos enfants</div>
-                </div>
-
                 <form class="bg-neutrals-white md:p-10 md:pb-8 shadow-cards_spread_16 rounded-2xl w-full">
-                    <div
-                        class="rounded-2xl md:rounded-2xl md:outline md:outline-[3px] md:outline-dark-200 overflow-hidden">
+                    
+                    <div x-data="{ child_1_participated: 'child_1_participated_yes' }"
+                        class="bg-neutrals-white rounded-2xl md:rounded-2xl md:outline md:outline-[3px] md:outline-dark-200 overflow-hidden">
 
                         <div class="flex items-stretch">
                             <div style="background-image: url('../sources/img/demande_devis/demande_devis_infos_enfants.png');"
@@ -200,15 +204,17 @@
                             </div>
                         </div>
 
-                        <div class="p-4 pt-3 bg-background_dark_100_50 bg-no-repeat bg-top bg-auto lg:bg-[100%_auto]">
+                        <div 
+                            class="p-4 pt-3 bg-background_dark_100_50 bg-no-repeat bg-top bg-auto lg:bg-[100%_auto]">
                             <div class="text-green apply_title_h6">Qui participe à cette colonie ?</div>
 
                             <div
                                 class="mt-6 mb-4 md:my-8 flex items-stretch rounded bg-neutrals-white outline outline-1 outline-dark-200">
                                 <div class="flex-1">
-                                    <input checked type="radio" name="participate" id="participate_yes"
-                                        value="participate_yes" class="hidden peer">
-                                    <label for="participate_yes"
+                                    <input x-model="child_1_participated" checked type="radio"
+                                        name="child_1_participated" id="child_1_participated_yes"
+                                        value="child_1_participated_yes" class="hidden peer">
+                                    <label for="child_1_participated_yes"
                                         class="text-neutrals-dark apply_body_bold_sm md:apply_body_bold_base 
                                     p-2 leading-none w-full h-full peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
                                         <span class="text-center">Mon enfant a déjà participé à une colonie
@@ -216,9 +222,10 @@
                                     </label>
                                 </div>
                                 <div class="flex-1">
-                                    <input type="radio" name="participate" id="participate_no" value="participate_no"
+                                    <input x-model="child_1_participated" type="radio" name="child_1_participated"
+                                        id="child_1_participated_no" value="child_1_participated_no"
                                         class="hidden peer">
-                                    <label for="participate_no"
+                                    <label for="child_1_participated_no"
                                         class="text-neutrals-dark apply_body_bold_sm md:apply_body_bold_base 
                                     p-2 leading-none w-full h-full peer-checked:bg-kidyellow cursor-pointer flex justify-center items-center">
                                         <span class="text-center">Mon enfant n’a jamais participé à une colonie
@@ -227,51 +234,71 @@
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-2 items-end gap-x-2 md:gap-x-4 gap-y-4">
-                                <div class=" flex flex-col gap-2">
-                                    <label for="nom" class="text-neutrals-dark apply_body_bold_base">Nom de
-                                        l’enfant</label>
-                                    <input type="text" id="nom" name="nom" placeholder="Lambert" class="apply_input">
-                                </div>
-                                <div class=" flex flex-col gap-2">
-                                    <label for="prenom" class="text-neutrals-dark apply_body_bold_base">Prénom de
-                                        l’enfant</label>
-                                    <input type="text" id="prenom" name="prenom" placeholder="Maël" class="apply_input">
-                                </div>
-                                <div class=" flex flex-col gap-2">
-                                    <label for="naissance" class="text-neutrals-dark apply_body_bold_base">Date de
-                                        naissance</label>
-                                    <input type="date" id="naissance" name="naissance" class="apply_input">
-                                </div>
-                                <div class=" flex flex-col gap-2">
-                                    <label for="sexe" class="text-neutrals-dark apply_body_bold_base">Sexe</label>
-                                    <select id="sexe" name="sexe" class="apply_select_carret_right">
-                                        <option value="garcon">Garçon</option>
-                                        <option value="fille">Fille</option>
+                            <div class="flex flex-col gap-4">
+
+                                <div x-cloak x-show="child_1_participated === 'child_1_participated_yes'"
+                                    class="flex flex-col gap-2">
+                                    <label for="participated_yes_which_child"
+                                        class="text-neutrals-dark apply_body_bold_base">Sélectionnez l’enfant
+                                        participant</label>
+                                    <select id="participated_yes_which_child" name="participated_yes_which_child"
+                                        class="apply_select_carret_right">
+                                        <option value="france">Louison</option>
+                                        <option value="autre">autre enfant</option>
                                     </select>
                                 </div>
 
-                                <div class="col-span-2 flex flex-col gap-2">
-                                    <label for="allergies" class="text-neutrals-dark apply_body_bold_base">
-                                        Allergies ou régime alimentaire particulier
-                                        <span class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span>
-                                    </label>
-                                    <textarea id="allergies" name="allergies" placeholder="Votre texte ici"
-                                        class="apply_textarea h-[88px] resize-none"></textarea>
+                                <div x-cloak x-show="child_1_participated === 'child_1_participated_no'"
+                                    class="grid grid-cols-2 gap-x-2 md:gap-x-4 gap-y-4">
+                                    <div class=" flex flex-col gap-2">
+                                        <label for="nom" class="text-neutrals-dark apply_body_bold_base">Nom de
+                                            l’enfant</label>
+                                        <input type="text" id="nom" name="nom" placeholder="Lambert"
+                                            class="apply_input">
+                                    </div>
+                                    <div class=" flex flex-col gap-2">
+                                        <label for="prenom" class="text-neutrals-dark apply_body_bold_base">Prénom de
+                                            l’enfant</label>
+                                        <input type="text" id="prenom" name="prenom" placeholder="Maël"
+                                            class="apply_input">
+                                    </div>
+                                    <div class=" flex flex-col gap-2">
+                                        <label for="naissance" class="text-neutrals-dark apply_body_bold_base">Date de
+                                            naissance</label>
+                                        <input type="date" id="naissance" name="naissance" class="apply_input">
+                                    </div>
+                                    <div class=" flex flex-col gap-2">
+                                        <label for="sexe" class="text-neutrals-dark apply_body_bold_base">Sexe</label>
+                                        <select id="sexe" name="sexe" class="apply_select_carret_right">
+                                            <option value="garcon">Garçon</option>
+                                            <option value="fille">Fille</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-span-2 flex flex-col gap-2">
+                                        <label for="allergies" class="text-neutrals-dark apply_body_bold_base">
+                                            Allergies ou régime alimentaire particulier
+                                            <span
+                                                class="inline-block apply_body_bold_sm text-dark-400">(facultatif)</span>
+                                        </label>
+                                        <textarea id="allergies" name="allergies" placeholder="Votre texte ici"
+                                            class="apply_textarea h-[88px] resize-none"></textarea>
+                                    </div>
                                 </div>
 
-                                <div class="col-span-2 flex items-center gap-3">
-                                    <input type="checkbox" id="checkbox_caf" name="checkbox_caf" class="hidden peer">
-                                    <label for="checkbox_caf"
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="child_1_checkbox_caf" name="child_1_checkbox_caf"
+                                        class="hidden peer">
+                                    <label for="child_1_checkbox_caf"
                                         class="flex-none bg-dark-300 peer-checked:bg-kidyellow cursor-pointer block relative w-10 h-6 p-[3px] rounded-full
                                         before:absolute before:bg-neutrals-white before:w-4.5 before:h-4.5 before:rounded-full before:transition-all before:duration-300 before:left-[3px] peer-checked:before:left-[19px]"></label>
                                     <span class="text-neutrals-dark apply_body_semibold_base">Mon enfant est allocataire
                                         CAF</span>
                                 </div>
-                                <div class="col-span-2 flex items-center gap-3">
-                                    <input type="checkbox" id="checkbox_garantie" name="checkbox_garantie"
-                                        class="hidden peer">
-                                    <label for="checkbox_garantie"
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="child_1_checkbox_garantie"
+                                        name="child_1_checkbox_garantie" class="hidden peer">
+                                    <label for="child_1_checkbox_garantie"
                                         class="flex-none bg-dark-300 peer-checked:bg-kidyellow cursor-pointer block relative w-10 h-6 p-[3px] rounded-full
                                         before:absolute before:bg-neutrals-white before:w-4.5 before:h-4.5 before:rounded-full before:transition-all before:duration-300 before:left-[3px] peer-checked:before:left-[19px]"></label>
                                     <span class="text-neutrals-dark apply_body_semibold_base">Souscrire à une garantie
@@ -282,11 +309,17 @@
                             </div>
 
 
+
+
+
+
+
+
                         </div>
                     </div>
 
 
-                    <div class="flex  md:justify-end px-4 pb-4 pt-6 md:px-0 md:pb-0">
+                    <div class="flex  md:justify-end p-4 pt-6 md:p-0 md:pt-6">
                         <button
                             class="apply_body_bold_base text-green bg-kidyellow w-full md:w-fit flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
                             <span class="inline-block">Envoyer le devis</span>

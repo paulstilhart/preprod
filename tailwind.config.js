@@ -20,8 +20,13 @@ module.exports = {
       camellight: "#FFFBF8", // rgb(255, 251, 248)
       camel_outline: "#FFE4C2",
 
-      blue:"#1864FD",
+      camel_step: "#FFE19F",
+
+      blue: "#1864FD",
       blue_soft: "#E9F0FF",
+
+      cart_warning_text: "#FD4F18",
+      cart_warning_background: "#fd4f1814",
 
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
@@ -224,7 +229,12 @@ module.exports = {
       },
 
       backgroundImage: {
-        warning_triangle_neon_orange: "url('../sources/icons/Warning_triangle_neon_orange.svg')",
+        delete: "url('../sources/icons/Delete.svg')",
+        delete_red: "url('../sources/icons/Delete_red.svg')",
+        warning_triangle_neon_orange:
+          "url('../sources/icons/Warning_triangle_neon_orange.svg')",
+        warning: "url('../sources/icons/Warning.svg')",
+        warning_red: "url('../sources/icons/Warning_red.svg')",
         arrow_narrow: "url('../sources/icons/Arrow_narrow.svg')",
         arrow_narrow_green: "url('../sources/icons/Arrow_narrow_green.svg')",
         arrow_narrow_white: "url('../sources/icons/Arrow_narrow_white.svg')",
@@ -327,12 +337,18 @@ module.exports = {
           "url('../sources/background/background_camel_template_mobile_62.svg')",
         cgv_background: "url('../sources/img/cgv/cgv_background.jpeg')",
         actus_background: "url('../sources/img/actus/actus_background.jpeg')",
-        background_yellow_sun_desktop: "url('../sources/background/background_yellow_sun_desktop.svg')",
-        background_yellow_sun_mobile: "url('../sources/background/background_yellow_sun_mobile.svg')",
-        background_line_dashed_dark_300: "url('../sources/background/background_line_dashed_dark_300.svg')",
-        background_line_full_green: "url('../sources/background/background_line_full_green.svg')",
-        background_circle_1_2: "url('../sources/background/background_circle_1_2.svg')",
-        background_dark_100_50: "url('../sources/background/background_dark_100_50.svg')",
+        background_yellow_sun_desktop:
+          "url('../sources/background/background_yellow_sun_desktop.svg')",
+        background_yellow_sun_mobile:
+          "url('../sources/background/background_yellow_sun_mobile.svg')",
+        background_line_dashed_dark_300:
+          "url('../sources/background/background_line_dashed_dark_300.svg')",
+        background_line_full_green:
+          "url('../sources/background/background_line_full_green.svg')",
+        background_circle_1_2:
+          "url('../sources/background/background_circle_1_2.svg')",
+        background_dark_100_50:
+          "url('../sources/background/background_dark_100_50.svg')",
         homepage_section3_blob:
           "url('../sources/img/homepage/homepage_section3_blob.png')",
         homepage_map_mobile:
@@ -400,8 +416,10 @@ module.exports = {
           "url('../sources/img/centre_de_vacances/centre_de_vacances_map_desktop.svg')",
         detail_colo_banner:
           "url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
-        toutes_les_colos:"url('../sources/img/toutes_colos/toutes_les_colos.png')",
-        demande_devis_commande_effectuee:"url('../sources/img/demande_devis/demande_devis_commande_effectuee.svg')",
+        toutes_les_colos:
+          "url('../sources/img/toutes_colos/toutes_les_colos.png')",
+        demande_devis_commande_effectuee:
+          "url('../sources/img/demande_devis/demande_devis_commande_effectuee.svg')",
       },
 
       keyframes: {

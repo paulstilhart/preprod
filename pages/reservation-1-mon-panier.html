@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>RESERVATION D'UN SEJOUR => MON PANIER</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+    flex flex-col min-h-dvh! min-h-screen bg-camel">
+
+
+
+
+
+    <main
+        class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
+
+        <section>
+            <div class="apply_wrapper_960 flex flex-col gap-4 md:gap-12 md:items-center">
+
+                <div class="flex md:hidden gap-4 items-center">
+
+                    <div class="apply_steps after:css_clip_path_step_1_5">1 / 5</div>
+
+                    <div class="flex flex-col">
+                        <div class="text-green apply_title_h6_desktop">Mon panier</div>
+                        <div class="text-neutrals-dark apply_body_medium_base">Suivant : connexion</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex w-full justify-between relative">
+                    <div
+                        class="-z-10 absolute left-[60px] top-4 w-[calc(100%_-120px)] border-t-[3px] border-dashed border-dark-200 flex justify-start items-center">
+                        <span class="bg-green relative top-[-3px] h-[3px]  w-[0%] "></span>
+                    </div>
+
+
+                    <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-green text-neutrals-white text-[18px] font-francoisone">1</span>
+                        <div class="text-neutrals-dark apply_body_bold_base">Mon panier</div>
+                    </div>
+                    <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">2</span>
+                        <div class="text-neutrals-dark apply_body_medium_base">Connexion</div>
+                    </div>
+                    <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">3</span>
+                        <div class="text-neutrals-dark apply_body_medium_base">Infos parents</div>
+                    </div>
+                    <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">4</span>
+                        <div class="text-neutrals-dark apply_body_medium_base">Infos enfants</div>
+                    </div>
+                    <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                        <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                        border-2 border-green bg-camel text-green text-[18px] font-francoisone">5</span>
+                        <div class="text-neutrals-dark apply_body_medium_base">Paiement</div>
+                    </div>
+                </div>
+
+
+
+                <form class="md:bg-neutrals-white md:p-10 md:pb-8 md:shadow-cards_spread_16 md:rounded-2xl w-full">
+
+                    <div class="flex flex-col gap-4 md:gap-6">
+
+                        <div
+                            class="flex flex-col md:flex-row items-stretch bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
+
+                            <div style="background-image: url('../sources/img/mon_compte/devis_2.png');"
+                                class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse">
+                            </div>
+
+                            <div
+                                class="md:flex-auto p-4 pb-28 md:p-6 md:pr-4 relative md:static flex flex-col gap-4 items-stretch">
+
+                                <div class="md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                                    <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                        <div class="text-green apply_title_h5_desktop">Devis COLONIE CABANE EN FORÊT
+                                        </div>
+                                        <span class="text-green bg-kidyellow apply_title_h5_desktop px-2 w-fit">599
+                                            €</span>
+                                    </div>
+
+                                    <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0 
+                                    flex flex-col md:flex-row md:justify-end md:flex-wrap lg:flex-nowrap gap-2">
+                                        <button class="js_popin_cart_trigger truncate inline-block p-[7px_12px]  apply_body_bold_sm text-green bg-neutrals-white border 
+                                        text-center rounded-4xl w-full md:w-fit ">Modifier le séjour</button>
+                                        <button class="truncate p-[7px_12px]  apply_body_bold_sm text-cart_warning_text bg-neutrals-white border 
+                                        text-center rounded-4xl w-full md:w-fit flex items-center justify-center gap-2">
+                                            <span class="bg-delete_red apply_span_icon w-3 h-3"></span>
+                                            <span>Supprimer</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex gap-2">
+                                        <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Maël</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-pin_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Domaine de Moulibez, Aveyron</div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Aller par vos propres moyens
+                                            <strong>|
+                                                 Retour</strong> en car (Paris)
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                                 |</strong> Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div aria-hidden="true"
+                                    class="aria-hidden:hidden bg-cart_warning_background rounded-lg p-2 flex gap-2 items-start">
+                                    <span class="bg-warning_red apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-cart_warning_text apply_body_medium_sm">Molestiae in nihil ex
+                                        doloremque et et praesentium deleniti. Autem id iure qui. Sed qui sequi aut
+                                        corrupti placeat rerum. Rerum natus beatae dolore qui id repudiandae quae ut
+                                        dolore. Unde unde sit vel voluptatem.</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                        class="flex flex-col md:flex-row items-stretch bg-neutrals-white rounded-lg outline outline-[3px] outline-dark-200 overflow-hidden">
+
+                        <div style="background-image: url('../sources/img/mon_compte/devis_2.png');"
+                            class="h-20 md:h-auto md:w-[160px] md:flex-none apply_background_center_cover css_clip_path_ellipse">
+                        </div>
+
+                        <div
+                            class="md:flex-auto p-4 pb-28 md:p-6 md:pr-4 relative md:static flex flex-col gap-4 items-stretch">
+
+                            <div class="md:flex md:flex-nowrap md:justify-between md:items-start md:gap-4">
+
+                                <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4 gap-y-2">
+                                    <div class="text-green apply_title_h5_desktop">Devis COLONIE CABANE EN FORÊT
+                                    </div>
+                                    <span class="text-green bg-kidyellow apply_title_h5_desktop px-2 w-fit">599
+                                        €</span>
+                                </div>
+
+                                <div class="w-full md:w-fit absolute md:static bottom-6 left-0 px-4 md:px-0 
+                                flex flex-col md:flex-row md:justify-end md:flex-wrap lg:flex-nowrap gap-2">
+                                    <button class="js_popin_cart_trigger truncate inline-block p-[7px_12px]  apply_body_bold_sm text-green bg-neutrals-white border 
+                                    text-center rounded-4xl w-full md:w-fit ">Modifier le séjour</button>
+                                    <button class="truncate p-[7px_12px]  apply_body_bold_sm text-cart_warning_text bg-neutrals-white border 
+                                    text-center rounded-4xl w-full md:w-fit flex items-center justify-center gap-2">
+                                        <span class="bg-delete_red apply_span_icon w-3 h-3"></span>
+                                        <span>Supprimer</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <div class="flex gap-2">
+                                    <span class="bg-kid_green apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-green apply_body_medium_sm">Maël</div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="bg-pin_green apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-green apply_body_medium_sm">Domaine de Moulibez, Aveyron</div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="bg-route_green apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-green apply_body_medium_sm">Aller par vos propres moyens
+                                        <strong>|
+                                             Retour</strong> en car (Paris)
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                    <div class="text-green apply_body_medium_sm">
+                                        Garantie annulation : <strong>non  |</strong> Supplément : <strong>non
+                                             |</strong> Réduction : <strong>non</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div aria-hidden="true"
+                                class="aria-hidden:hidden bg-cart_warning_background rounded-lg p-2 flex gap-2 items-start">
+                                <span class="bg-warning_red apply_span_icon w-4.5 h-4.5"></span>
+                                <div class="text-cart_warning_text apply_body_medium_sm">Molestiae in nihil ex
+                                    doloremque et et praesentium deleniti. Autem id iure qui. Sed qui sequi aut
+                                    corrupti placeat rerum. Rerum natus beatae dolore qui id repudiandae quae ut
+                                    dolore. Unde unde sit vel voluptatem.</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    </div>
+
+
+                    <div class="flex  md:justify-end pt-6 md:p-0 md:pt-6">
+                        <button
+                            class="apply_body_bold_base text-green bg-kidyellow w-full md:w-fit flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                            <span class="inline-block">Continuer</span>
+                            <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+    <!-- popin panier -->
+    <div aria-hidden="true" class="js_popin_cart fixed top-0 bottom-0 left-0 right-0 z-[99] bg-black_40 aria-hidden:!hidden 
+        w-full !h-dvh h-screen overflow-y-auto md:px-6 md:py-16">
+
+        <form action=""
+            class=" bg-neutrals-white md:rounded-3xl min-h-full md:min-h-0 w-full md:max-w-[720px] mx-auto flex md:block flex-col">
+
+            <div class="border-b border-dark-200 p-4 md:px-8 flex items-center justify-between gap-4 ">
+                <div class="text-green apply_title_h3">Modifier le séjour</div>
+                <div class="js_popin_cart_close apply_span_icon bg-close_dark_400 w-4.5 h-4.5 cursor-pointer"></div>
+            </div>
+
+            <div class="p-4 md:p-8 flex-auto">
+                <div class="px-6 py-4 rounded-2xl bg-camel">
+                    <div
+                        class="pb-3 flex flex-col md:flex-row md:flex-wrap items-start md:items-center gap-x-4 gap-y-2">
+                        <div class="text-green apply_title_h5">Du 6 au 13 juillet 2024</div>
+                        <span class="text-green bg-kidyellow apply_title_h5 px-2">599 €</span>
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <div class="flex gap-2 items-center">
+                            <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                            <span class="text-green apply_body_medium_base">1 semaine</span>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="bg-pin_green apply_span_icon w-4.5 h-4.5"></span>
+                            <span class="text-green apply_body_medium_base">Domaine de Moulibez,
+                                Averyron</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 flex flex-col gap-4">
+                    <div class="flex flex-col gap-2">
+                        <label for="theme" class="text-neutrals-dark apply_body_bold_base">Thème du séjour</label>
+                        <select id="theme" name="theme" class="apply_select_carret_right">
+                            <option value="theme_1">Cuisine et Arts plastiques </option>
+                            <option value="theme_2">autre</option>
+                        </select>
+                        <div class="text-green apply_body_medium_xs">Les colonies cuisine fonctionnent en multi
+                            activités. Sélectionnez un deuxième thème pour votre séjour.</div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="transport_aller" class="text-neutrals-dark apply_body_bold_base">Transport aller le
+                            10/08/2024</label>
+                        <select id="transport_aller" name="transport_aller" class="apply_select_carret_right">
+                            <option value="transport_aller_1">Par vos propres moyens</option>
+                            <option value="transport_aller_2">autre</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="transport_retour" class="text-neutrals-dark apply_body_bold_base">Transport retour le
+                            17/08/2024</label>
+                        <select id="transport_retour" name="transport_retour" class="apply_select_carret_right">
+                            <option value="transport_retour_1">Par vos propres moyens</option>
+                            <option value="transport_retour_2">Car depuis Paris (+100€)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="border-t border-dark-200 p-4 md:px-8 flex flex-wrap md:justify-end gap-2">
+                <div
+                    class="js_popin_cart_close apply_body_bold_base text-neutrals-dark bg-dark-200 inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer flex-1 md:flex-none min-w-fit">
+                    Quitter</div>
+                <button
+                    class="apply_body_bold_base text-green bg-kidyellow inline-block  px-4 py-2 rounded-4xl md:w-[200px] text-center cursor-pointer flex-1 md:flex-none min-w-fit">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

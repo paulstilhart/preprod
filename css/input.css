@@ -446,6 +446,11 @@
     @apply apply_body_medium_base p-[7px_16px_7px_16px] text-neutrals-dark bg-neutrals-white border-solid border-2 border-dark-200 placeholder:text-dark-500 rounded-lg focus:ring-0 focus:border-neutrals-dark;
   }
 
+
+  /* AUTRES ==================================================================== */
+  .apply_steps{
+    @apply text-green apply_title_h6_desktop h-15 w-15 flex-none rounded-full ring-[6px] ring-inset ring-camel_step flex justify-center items-center relative after:absolute after:inline-block after:w-full after:h-full after:rounded-full after:ring-[6px] after:ring-inset after:ring-neonorange
+  }
 }
 
 
@@ -498,6 +503,31 @@
   .css_clip_path_circle {
     clip-path: circle(100% at 0 50%);
   }
+
+  .css_clip_path_step_1_2 {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+
+
+  .css_clip_path_step_1_5 {
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 25%, 50% 50%);
+  }
+
+  .css_clip_path_step_2_5 {
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 75%, 50% 50%);
+  }
+
+  .css_clip_path_step_3_5 {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 50% 50%);
+  }
+
+  .css_clip_path_step_4_5 {
+    clip-path: polygon(51% 0, 100% 0, 100% 100%, 0 100%, 0 25%, 50% 50%);
+  }
+
+
+
+
 
   @media (max-width: 768px) {
     .css_clip_path_ellipse {
