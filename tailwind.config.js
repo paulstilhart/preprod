@@ -28,6 +28,8 @@ module.exports = {
       cart_warning_text: "#FD4F18",
       cart_warning_background: "#fd4f1814",
 
+      grey_paiement_outline :"#D9D9D9",
+
       neutrals: {
         white: "#FFF", // rgb(255, 255, 255)
         dark: "#0C0C0C", // rgb(12, 12, 12)
@@ -349,6 +351,8 @@ module.exports = {
           "url('../sources/background/background_circle_1_2.svg')",
         background_dark_100_50:
           "url('../sources/background/background_dark_100_50.svg')",
+        background_dark_100_63:
+          "url('../sources/background/background_dark_100_63.svg')",
         homepage_section3_blob:
           "url('../sources/img/homepage/homepage_section3_blob.png')",
         homepage_map_mobile:
@@ -418,8 +422,14 @@ module.exports = {
           "url('../sources/img/toutes_colos/detail_colo_banner.jpeg')",
         toutes_les_colos:
           "url('../sources/img/toutes_colos/toutes_les_colos.png')",
-        demande_devis_commande_effectuee:
-          "url('../sources/img/demande_devis/demande_devis_commande_effectuee.svg')",
+        demande_devis_commande_effectuee:"url('../sources/img/demande_devis/demande_devis_commande_effectuee.svg')",
+        paiement_ancv:"url('../sources/logos/paiement/ancv.svg')",
+        paiement_caf:"url('../sources/logos/paiement/caf.svg')",
+        paiement_cb:"url('../sources/logos/paiement/cb.svg')",
+        paiement_cheque:"url('../sources/logos/paiement/cheque.svg')",
+        paiement_mastercard:"url('../sources/logos/paiement/mastercard.svg')",
+        paiement_visa:"url('../sources/logos/paiement/visa.svg')",
+        paiement_sepa:"url('../sources/logos/paiement/sepa.svg')",
       },
 
       keyframes: {

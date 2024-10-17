@@ -1133,6 +1133,14 @@ h6{
   }
 }
 
+.apply_title_mini_desktop{
+  font-family: "Francois One", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .apply_title_drop{
   font-family: "Francois One", sans-serif;
   font-size: 1.1rem;
@@ -1952,6 +1960,18 @@ h6{
   top: 64px;
 }
 
+.top-6{
+  top: 1.5rem;
+}
+
+.top-\[3px\]{
+  top: 3px;
+}
+
+.top-\[19px\]{
+  top: 19px;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -2009,6 +2029,16 @@ h6{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-\[3px\]{
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .-ml-6{
@@ -2270,6 +2300,10 @@ h6{
   width: 2.5rem;
 }
 
+.w-11{
+  width: 2.75rem;
+}
+
 .w-12{
   width: 3rem;
 }
@@ -2336,6 +2370,10 @@ h6{
 
 .w-\[0\%\]{
   width: 0%;
+}
+
+.w-\[100\%\]{
+  width: 100%;
 }
 
 .w-\[110px\]{
@@ -2418,6 +2456,14 @@ h6{
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
+}
+
+.max-w-\[1144px\]{
+  max-width: 1144px;
 }
 
 .max-w-\[343px\]{
@@ -2690,6 +2736,17 @@ h6{
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-dark-200 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-divide-opacity));
+}
+
 .self-end{
   align-self: flex-end;
 }
@@ -2756,6 +2813,10 @@ h6{
   border-radius: 0.5rem;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -2780,6 +2841,14 @@ h6{
 
 .border-2{
   border-width: 2px;
+}
+
+.border-\[2\.5px\]{
+  border-width: 2.5px;
+}
+
+.border-\[6px\]{
+  border-width: 6px;
 }
 
 .border-b{
@@ -2816,6 +2885,11 @@ h6{
   border-color: rgb(224 224 224 / var(--tw-border-opacity));
 }
 
+.border-dark-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(157 157 157 / var(--tw-border-opacity));
+}
+
 .border-green{
   --tw-border-opacity: 1;
   border-color: rgb(27 69 57 / var(--tw-border-opacity));
@@ -2832,6 +2906,24 @@ h6{
 }
 
 .border-neutrals-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(12 12 12 / var(--tw-border-opacity));
+}
+
+.border-\[\]{
+  border-color: ;
+}
+
+.border-transparent{
+  border-color: transparent;
+}
+
+.border-neutrals-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-dark{
   --tw-border-opacity: 1;
   border-color: rgb(12 12 12 / var(--tw-border-opacity));
 }
@@ -2922,6 +3014,15 @@ h6{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 12 12 / var(--tw-bg-opacity));
+}
+
+.\!bg-none{
+  background-image: none !important;
 }
 
 .bg-\[url\(\'\.\.\/sources\/icons\/tabler-icon-home-shield\.svg\'\)\]{
@@ -3072,6 +3173,10 @@ h6{
   background-image: url('../sources/icons/close_white.svg');
 }
 
+.bg-delete_red{
+  background-image: url('../sources/icons/Delete_red.svg');
+}
+
 .bg-detail_colo_banner{
   background-image: url('../sources/img/toutes_colos/detail_colo_banner.jpeg');
 }
@@ -3162,6 +3267,34 @@ h6{
 
 .bg-none{
   background-image: none;
+}
+
+.bg-paiement_ancv{
+  background-image: url('../sources/logos/paiement/ancv.svg');
+}
+
+.bg-paiement_caf{
+  background-image: url('../sources/logos/paiement/caf.svg');
+}
+
+.bg-paiement_cb{
+  background-image: url('../sources/logos/paiement/cb.svg');
+}
+
+.bg-paiement_cheque{
+  background-image: url('../sources/logos/paiement/cheque.svg');
+}
+
+.bg-paiement_mastercard{
+  background-image: url('../sources/logos/paiement/mastercard.svg');
+}
+
+.bg-paiement_sepa{
+  background-image: url('../sources/logos/paiement/sepa.svg');
+}
+
+.bg-paiement_visa{
+  background-image: url('../sources/logos/paiement/visa.svg');
 }
 
 .bg-phone_green{
@@ -3260,8 +3393,8 @@ h6{
   background-image: url('../sources/icons/Warning_triangle_neon_orange.svg');
 }
 
-.bg-delete_red{
-  background-image: url('../sources/icons/Delete_red.svg');
+.bg-\[length\:100\%_auto\]{
+  background-size: 100% auto;
 }
 
 .bg-\[length\:260px_129px\]{
@@ -3348,6 +3481,10 @@ h6{
   background-position: left bottom;
 }
 
+.bg-left-top{
+  background-position: left top;
+}
+
 .bg-right-bottom{
   background-position: right bottom;
 }
@@ -3396,6 +3533,11 @@ h6{
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2{
@@ -3572,6 +3714,14 @@ h6{
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pt-0{
+  padding-top: 0px;
 }
 
 .text-left{
@@ -3805,8 +3955,16 @@ h6{
   outline-width: 3px;
 }
 
+.outline-\[2\.5px\]{
+  outline-width: 2.5px;
+}
+
 .outline-offset-\[-3px\]{
   outline-offset: -3px;
+}
+
+.outline-offset-\[-2\.5px\]{
+  outline-offset: -2.5px;
 }
 
 .outline-camel_outline{
@@ -3825,6 +3983,24 @@ h6{
   outline-color: #7EA598;
 }
 
+.outline-grey_paiement_outline{
+  outline-color: #D9D9D9;
+}
+
+.outline-dark{
+  outline-color: #0C0C0C;
+}
+
+.outline-dark-400{
+  outline-color: #9D9D9D;
+}
+
+.\!ring-\[3\.5px\]{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3.5px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+}
+
 .ring-1{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -3837,13 +4013,26 @@ h6{
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.\!ring-inset{
+  --tw-ring-inset: inset !important;
+}
+
 .ring-inset{
   --tw-ring-inset: inset;
+}
+
+.\!ring-neutrals-white{
+  --tw-ring-opacity: 1 !important;
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity)) !important;
 }
 
 .ring-green{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(27 69 57 / var(--tw-ring-opacity));
+}
+
+.\!ring-offset-0{
+  --tw-ring-offset-width: 0px !important;
 }
 
 .transition-colors{
@@ -4722,6 +4911,15 @@ input {
   clip-path: polygon(51% 0, 100% 0, 100% 100%, 0 100%, 0 25%, 50% 50%);
 }
 
+.checked\:pointer-events-none:checked{
+  pointer-events: none;
+}
+
+.checked\:border-green:checked{
+  --tw-border-opacity: 1;
+  border-color: rgb(27 69 57 / var(--tw-border-opacity));
+}
+
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -4775,13 +4973,55 @@ input {
   color: rgb(120 120 120 / var(--tw-text-opacity));
 }
 
+.disabled\:opacity-\[0\.38\]:disabled{
+  opacity: 0.38;
+}
+
 .disabled\:opacity-\[0\.56\]:disabled{
   opacity: 0.56;
+}
+
+.group\/paiement:checked .group-checked\/paiement\:bg-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 69 57 / var(--tw-bg-opacity));
+}
+
+.group\/paiement:checked .group-checked\/paiement\:outline-green{
+  outline-color: #1B4539;
+}
+
+.group\/paiement:disabled .group-disabled\/paiement\:opacity-\[0\.38\]{
+  opacity: 0.38;
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:pointer-events-none{
+  pointer-events: none;
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:block{
+  display: block;
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:flex{
+  display: flex;
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:cursor-default{
+  cursor: default;
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:bg-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 69 57 / var(--tw-bg-opacity));
 }
 
 .peer:checked ~ .peer-checked\:bg-kidyellow{
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 73 / var(--tw-bg-opacity));
+}
+
+.peer\/paiement:checked ~ .peer-checked\/paiement\:outline-green{
+  outline-color: #1B4539;
 }
 
 .peer:checked ~ .peer-checked\:before\:left-\[19px\]::before{
@@ -4791,6 +5031,14 @@ input {
 
 .peer:disabled ~ .peer-disabled\:hidden{
   display: none;
+}
+
+.peer:disabled ~ .peer-disabled\:opacity-\[0\.38\]{
+  opacity: 0.38;
+}
+
+.peer\/paiement:disabled ~ .peer-disabled\/paiement\:opacity-\[0\.38\]{
+  opacity: 0.38;
 }
 
 .aria-disabled\:pointer-events-none[aria-disabled="true"]{
@@ -5073,6 +5321,10 @@ input {
 }
 
 @media (min-width: 768px){
+  .md\:pointer-events-none{
+    pointer-events: none;
+  }
+
   .md\:static{
     position: static;
   }
@@ -5117,6 +5369,18 @@ input {
     top: 40px;
   }
 
+  .md\:top-6{
+    top: 1.5rem;
+  }
+
+  .md\:top-\[\]{
+    top: ;
+  }
+
+  .md\:top-\[27px\]{
+    top: 27px;
+  }
+
   .md\:order-none{
     order: 0;
   }
@@ -5135,12 +5399,21 @@ input {
     margin-bottom: 2rem;
   }
 
+  .md\:my-6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:mb-12{
     margin-bottom: 3rem;
   }
 
   .md\:mt-18{
     margin-top: 4.5rem;
+  }
+
+  .md\:\!block{
+    display: block !important;
   }
 
   .md\:block{
@@ -5227,6 +5500,10 @@ input {
     width: 272px;
   }
 
+  .md\:w-\[280px\]{
+    width: 280px;
+  }
+
   .md\:w-\[312px\]{
     width: 312px;
   }
@@ -5294,6 +5571,10 @@ input {
 
   .md\:flex-none{
     flex: none;
+  }
+
+  .md\:cursor-default{
+    cursor: default;
   }
 
   .md\:grid-cols-4{
@@ -5428,6 +5709,10 @@ input {
     background-image: url('../sources/background/background_camel_template_desktop_79.svg');
   }
 
+  .md\:bg-background_dark_100_63{
+    background-image: url('../sources/background/background_dark_100_63.svg');
+  }
+
   .md\:bg-background_points{
     background-image: url('../sources/background/background_points.svg');
   }
@@ -5543,9 +5828,19 @@ input {
     padding-bottom: 9rem;
   }
 
+  .md\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:pb-1{
@@ -5624,6 +5919,10 @@ input {
     padding-top: 2.5rem;
   }
 
+  .md\:pt-12{
+    padding-top: 3rem;
+  }
+
   .md\:pt-18{
     padding-top: 4.5rem;
   }
@@ -5658,6 +5957,10 @@ input {
 
   .md\:pt-8{
     padding-top: 2rem;
+  }
+
+  .md\:pt-4{
+    padding-top: 1rem;
   }
 
   .md\:text-center{

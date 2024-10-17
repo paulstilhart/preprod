@@ -169,6 +169,10 @@
     @apply font-francoisone font-normal uppercase text-title_h6_mobile md:text-title_mini;
   }
 
+  .apply_title_mini_desktop {
+    @apply font-francoisone font-normal uppercase text-title_mini;
+  }
+
   .apply_title_drop {
     @apply font-francoisone font-normal text-title_drop_mobile md:text-title_drop;
   }

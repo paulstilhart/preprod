@@ -4,6 +4,57 @@ const html = document.querySelector("html");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 
+
+
+function popInHandler(popinBaseClass) {
+  const popin = document.querySelector(`.${popinBaseClass}`);
+  if (!popin) return;
+
+  const triggers = document.querySelectorAll(`.${popinBaseClass}_trigger`);
+  const popinClose = document.querySelectorAll(`.${popinBaseClass}_close`);
+  const body = document.body;
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault(); // Prévenir le comportement par défaut
+      body.setAttribute("aria-hidden", "true");
+      popin.setAttribute("aria-hidden", "false");
+    });
+  });
+  popinClose.forEach((close) => {
+    close.addEventListener("click", function (event) {
+      body.setAttribute("aria-hidden", "false");
+      popin.setAttribute("aria-hidden", "true");
+    });
+  });
+}
+
+popInHandler("js_popin_cart");
+popInHandler("js_popin_quote");
+popInHandler("js_popin_documents");
+
+
+//Gestion du nom du fichier input type file
+function inputFileName() {
+  const fileInputs = document.querySelectorAll("input[type='file']");
+
+  fileInputs.forEach(fileInput => {
+    const fileText = document.getElementById(`${fileInput.id}_text`);
+
+    if (fileText) {
+      fileInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          fileText.setAttribute("aria-hidden", "false");
+          fileText.textContent = file.name;
+        }
+      });
+    }
+  });
+}
+
+inputFileName();
+
 const swiper_thematiques = new Swiper(".swiper_thematiques", {
   slidesPerView: "auto", // S'adapte à la taille des slides définie par CSS
   spaceBetween: 16, // espace entre les slides
@@ -106,9 +157,7 @@ function popInImage(slides, activeIndex) {
 }
 
 function closePopInImage() {
-  const js_popin_swiper_img_close = document.querySelector(
-    ".js_popin_swiper>button"
-  );
+  const js_popin_swiper_img_close = document.querySelector(".js_popin_swiper>button");
   if (js_popin_swiper_img_close) {
     js_popin_swiper_img_close.addEventListener("click", () => {
       body.setAttribute("aria-hidden", "false");
@@ -145,52 +194,3 @@ const swiper_detail_colo = swiper_centre(
   ".swiper_detail_colo_prev",
   ".swiper_detail_colo_legend"
 );
-
-function popInHandler(popinBaseClass) {
-  const popin = document.querySelector(`.${popinBaseClass}`);
-  if (!popin) return;
-
-  const triggers = document.querySelectorAll(`.${popinBaseClass}_trigger`);
-  const popinClose = document.querySelectorAll(`.${popinBaseClass}_close`);
-  const body = document.body;
-
-  triggers.forEach((trigger) => {
-    trigger.addEventListener("click", function (event) {
-      event.preventDefault(); // Prévenir le comportement par défaut
-      body.setAttribute("aria-hidden", "true");
-      popin.setAttribute("aria-hidden", "false");
-    });
-  });
-  popinClose.forEach((close) => {
-    close.addEventListener("click", function (event) {
-      body.setAttribute("aria-hidden", "false");
-      popin.setAttribute("aria-hidden", "true");
-    });
-  });
-}
-
-popInHandler("js_popin_cart");
-popInHandler("js_popin_quote");
-popInHandler("js_popin_documents");
-
-
-//Gestion du nom du fichier input type file
-function inputFileName() {
-  const fileInputs = document.querySelectorAll("input[type='file']");
-
-  fileInputs.forEach(fileInput => {
-    const fileText = document.getElementById(`${fileInput.id}_text`);
-
-    if (fileText) {
-      fileInput.addEventListener("change", function (event) {
-        const file = event.target.files[0];
-        if (file) {
-          fileText.setAttribute("aria-hidden", "false");
-          fileText.textContent = file.name;
-        }
-      });
-    }
-  });
-}
-
-inputFileName();

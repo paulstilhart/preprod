@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+
+    <title>RESERVATION D'UN SEJOUR => PAIEMENT</title>
+
+    <!-- Alpine Plugins -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script> -->
+
+    <!-- Alpine Core CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- swiperJS CDN version 11 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- lien avec la feuille de style compilée tailwind -->
+    <link rel="stylesheet" href="../css/output.css">
+
+
+    <!-- script JS -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body aria-hidden="false" x-data="{ openheadermobile: false }" x-bind:aria-expanded="openheadermobile" class="!overflow-x-hidden max-[1024px]:aria-expanded:overflow-y-hidden aria-hidden:overflow-y-hidden 
+    flex flex-col min-h-dvh! min-h-screen bg-camel">
+
+
+
+
+
+    <main
+        class="flex-auto bg-background_yellow_sun_mobile md:bg-background_yellow_sun_desktop bg-right-top	 bg-[length:317px_320px] bg-no-repeat ">
+
+        <section>
+            <div class="py-10 md:pt-12 md:pb-22">
+
+                <div class="max-w-5xl mx-auto px-4 md:px-8 pb-4 md:pb-12">
+
+                    <div class="flex md:hidden gap-4 items-center">
+
+                        <div class="apply_steps">5 / 5</div>
+
+                        <div class="flex flex-col">
+                            <div class="text-green apply_title_h6_desktop">Paiement</div>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex w-full justify-between relative">
+                        <div
+                            class="absolute left-[60px] top-4 w-[calc(100%_-120px)] border-t-[3px] border-dashed border-dark-200 flex justify-start items-center">
+                            <span class="bg-green relative top-[-3px] h-[3px]  w-[100%] "></span>
+                        </div>
+
+
+                        <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                            <span class="bg-check_white apply_span_icon_50 w-8 h-8 rounded-full bg-green"></span>
+                            <div class="text-neutrals-dark apply_body_medium_base">Mon panier</div>
+                        </div>
+                        <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                            <span class="bg-check_white apply_span_icon_50 w-8 h-8 rounded-full bg-green"></span>
+                            <div class="text-neutrals-dark apply_body_medium_base">Connexion</div>
+                        </div>
+                        <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                            <span class="bg-check_white apply_span_icon_50 w-8 h-8 rounded-full bg-green"></span>
+                            <div class="text-neutrals-dark apply_body_medium_base">Infos parents</div>
+                        </div>
+                        <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                            <span class="bg-check_white apply_span_icon_50 w-8 h-8 rounded-full bg-green"></span>
+                            <div class="text-neutrals-dark apply_body_medium_base">Infos enfants</div>
+                        </div>
+                        <div class="w-[120px] relative z-10  flex flex-col gap-3 items-center">
+                            <span class="w-8 h-8 flex justify-center items-center rounded-full 
+                            border-2 border-green bg-green text-neutrals-white text-[18px] font-francoisone">5</span>
+                            <div class="text-neutrals-dark apply_body_bold_base">Paiement</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-[1144px] mx-auto px-4 md:px-8 flex flex-col md:flex-row-reverse items-stretch md:items-start  gap-x-6 gap-y-4">
+
+                    <div x-data="{ openaccordion: false }" x-bind:aria-expanded="openaccordion" class="group/accordion md:flex-none md:w-[280px] rounded-2xl bg-neutrals-white shadow-cards_spread_16 
+                    md:bg-background_dark_100_63 bg-no-repeat bg-[length:100%_auto] bg-left-top">
+
+                        <div x-on:click="openaccordion = ! openaccordion"
+                            class="p-4 md:p-6 flex justify-between items-center cursor-pointer md:cursor-default md:pointer-events-none">
+                            <div class="text-green apply_title_h6_desktop">Récapitulatif</div>
+                            <span
+                                class="md:hidden bg-carret_down_green apply_span_icon_75 w-7.5 h-7.5 group-aria-expanded/accordion:rotate-180 transition-transform"></span>
+                        </div>
+
+                        <div x-cloak x-transition x-show="openaccordion" class="md:!block px-4 md:px-6">
+
+                            <div class="flex flex-col gap-4 items-stretch">
+
+                                <div
+                                    class="pb-4 border-b border-dark-200 flex flex-col gap-2 justify-start items-stretch">
+                                    <div class="flex justify-between items-start gap-2">
+                                        <div class="text-green apply_title_mini_desktop">COLONIE CABANE EN FORÊT</div>
+                                        <span
+                                            class="flex-none inline-block px-1 bg-kidyellow text-green apply_title_mini_desktop">599
+                                            €</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non</strong>
+                                            <br>
+                                            Supplément : <strong>non</strong>
+                                            <br>
+                                            Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="pb-4 border-b border-dark-200 flex flex-col gap-2 justify-start items-stretch">
+                                    <div class="flex justify-between items-start gap-2">
+                                        <div class="text-green apply_title_mini_desktop">COLONIE lorem</div>
+                                        <span
+                                            class="flex-none inline-block px-1 bg-kidyellow text-green apply_title_mini_desktop">599
+                                            €</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <span class="bg-calendar_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">Du 17 au 24 août 2024</div>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <span class="bg-file_green apply_span_icon w-4.5 h-4.5"></span>
+                                        <div class="text-green apply_body_medium_sm">
+                                            Garantie annulation : <strong>non</strong>
+                                            <br>
+                                            Supplément : <strong>non</strong>
+                                            <br>
+                                            Réduction : <strong>non</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="py-4 md:py-6 flex justify-between items-center gap-4 text-green apply_title_h6_desktop">
+                                <span>total</span>
+                                <span>1198 €</span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <form class="md:flex-auto bg-neutrals-white p-4 md:p-10 md:pb-8 shadow-cards_spread_16 rounded-2xl">
+
+                        <div class=" flex flex-col items-stretch gap-4 md:gap-6">
+
+                            <div class="relative">
+                                <div class="hidden lg:flex items-center gap-2 absolute right-0 top-0">
+                                    <span
+                                        class=" bg-paiement_visa apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                    <span
+                                        class=" bg-paiement_mastercard apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                    <span
+                                        class=" bg-paiement_cb apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                </div>
+
+                                <input type="radio" name="payment" id="payment_card" value="payment_card"
+                                    class="peer/paiement hidden checked:pointer-events-none disabled:pointer-events-none" />
+
+                                <span
+                                    class="absolute left-0 top-0 my-[3px] inline-block w-6 h-6 bg-neutrals-white peer-checked/paiement:bg-green peer-disabled/paiement:opacity-[0.38] rounded-full border-[6px] border-neutrals-white outline outline-[2.5px] outline-offset-[-2.5px] outline-dark-400  peer-checked/paiement:outline-green"></span>
+
+                                <label for="payment_card"
+                                    class="block relative z-10 pl-10 text-green apply_title_h6_desktop 
+                                cursor-pointer peer-checked/paiement:cursor-default peer-checked/paiement:pointer-events-none">Paiement par
+                                    Carte bancaire</label>
+
+                                <div class="pt-4 md:pt-6 hidden peer-checked/paiement:flex  flex-col gap-2 items-stretch">
+                                    <label for=""></label>
+                                </div>
+
+
+
+                            </div>
+
+                            <hr class="border-dark-200">
+
+                            <div class="relative">
+                                <div class="hidden lg:flex items-center gap-2 absolute right-0 top-0">
+                                    <span
+                                        class=" bg-paiement_sepa apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                </div>
+
+                                <input type="radio" name="payment" id="payment_sepa" value="payment_sepa"
+                                    class="peer/paiement hidden checked:pointer-events-none disabled:pointer-events-none" />
+
+                                <span
+                                    class="absolute  left-0 top-0 my-[3px] inline-block w-6 h-6 bg-neutrals-white peer-checked/paiement:bg-green peer-disabled/paiement:opacity-[0.38] rounded-full border-[6px] border-neutrals-white outline outline-[2.5px] outline-offset-[-2.5px] outline-dark-400  peer-checked/paiement:outline-green"></span>
+
+                                <label for="payment_sepa"
+                                    class="block relative z-10 pl-10 text-green apply_title_h6_desktop 
+                                cursor-pointer peer-checked/paiement:cursor-default peer-checked/paiement:pointer-events-none">Paiement par
+                                    virement bancaire SEPA</label>
+
+
+
+                            </div>
+
+                            <hr class="border-dark-200">
+
+                            <div class="relative">
+                                <div class="hidden lg:flex items-center gap-2 absolute right-0 top-0">
+                                    <span
+                                        class=" bg-paiement_cheque apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                    <span
+                                        class=" bg-paiement_ancv apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                    <span
+                                        class=" bg-paiement_caf apply_span_icon h-7.5 w-11 rounded-md outline outline-1 outline-grey_paiement_outline"></span>
+                                </div>
+
+                                <input type="radio" name="payment" id="payment_post" value="payment_post"
+                                    class="peer/paiement hidden checked:pointer-events-none disabled:pointer-events-none" />
+
+                                <span
+                                    class="absolute  left-0 top-0 my-[3px] inline-block w-6 h-6 bg-neutrals-white peer-checked/paiement:bg-green peer-disabled/paiement:opacity-[0.38] rounded-full border-[6px] border-neutrals-white outline outline-[2.5px] outline-offset-[-2.5px] outline-dark-400  peer-checked/paiement:outline-green"></span>
+
+                                <label for="payment_post"
+                                    class="block relative z-10 pl-10 text-green apply_title_h6_desktop 
+                                    cursor-pointer peer-checked/paiement:cursor-default peer-checked/paiement:pointer-events-none">Paiement
+                                    par voie postale</label>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="flex md:justify-end pt-6 md:pt-10">
+                            <button
+                                class="apply_body_bold_base text-green bg-kidyellow w-full md:w-fit flex items-center justify-center gap-3 px-6 py-3 rounded-4xl ">
+                                <span class="inline-block">Valider l’inscription</span>
+                                <span class="bg-arrow_narrow_green apply_span_icon w-3.5 h-3.5 "></span>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
